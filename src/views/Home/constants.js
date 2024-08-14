@@ -1,0 +1,17 @@
+export const PlayListsUrls = [
+  'https%3A//api.soundcloud.com/playlists/1855221015',
+  'https%3A//api.soundcloud.com/playlists/1267854676',
+  'https%3A//api.soundcloud.com/playlists/1807393546',
+  'https%3A//api.soundcloud.com/playlists/1128439969',
+  'https%3A//api.soundcloud.com/playlists/1012878247',
+  'https%3A//api.soundcloud.com/playlists/1855221015',
+  'https%3A//api.soundcloud.com/playlists/1267854676',
+  'https%3A//api.soundcloud.com/playlists/1807393546',
+  'https%3A//api.soundcloud.com/playlists/1128439969',
+  'https%3A//api.soundcloud.com/playlists/1012878247',
+  'https%3A//api.soundcloud.com/playlists/1855221015',
+  'https%3A//api.soundcloud.com/playlists/1267854676',
+  'https%3A//api.soundcloud.com/playlists/1807393546',
+  'https%3A//api.soundcloud.com/playlists/1128439969',
+  'https%3A//api.soundcloud.com/playlists/1012878247',
+]
