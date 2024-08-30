@@ -1,21 +1,21 @@
 import { memo } from 'react'
 import * as S from './styles'
-import back from "../../assets/back.jpg"
+import back from '../../assets/back.webp'
 import Header from '../../components/Header'
-import SoundCloudPlayer from '../../components/Player'
-import { PlayListsUrls } from './constants'
-import AudioPlayer from '../../Reproductor'
+import Playlists from '../../components/Playlist'
+import GlobalPlayer from '../../components/GlobalPlayer'
+import { PlayerProvider } from '../../components/Player/PlayerContext'
+
 const Home = () => {
   return (
     <S.Home>
       <Header />
       <S.Content background={back}>
         <S.Releases>
-          <S.Card>
-            {PlayListsUrls.map((url, index) => (
-              <AudioPlayer key={index} playlistUrl={url} autoPlay={false} />
-            ))}
-          </S.Card>
+      <PlayerProvider>
+            <Playlists />
+            <GlobalPlayer />
+          </PlayerProvider>
         </S.Releases>
       </S.Content>
     </S.Home>
