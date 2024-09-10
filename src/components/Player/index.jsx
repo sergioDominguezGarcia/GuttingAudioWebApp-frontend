@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { usePlayer } from './PlayerContext'
+import { usePlayer } from './PlayerContext.jsx'
 import { FaPlay, FaPause } from 'react-icons/fa' // Para iconos de reproducción y pausa
 
 const PlayerContainer = styled.div`
@@ -8,7 +8,6 @@ const PlayerContainer = styled.div`
   align-items: center;
   padding: 15px;
   width: 14rem;
-  
   flex-direction: column;
   background-color: #282828d4;
   border-radius: 10px;
@@ -75,7 +74,7 @@ const Player = ({ track }) => {
     <PlayerContainer>
       <AlbumCover src={track.album_image} alt={`${track.album} cover`} />
       <TrackInfo>
-        <TrackTitle>{track.name}</TrackTitle>
+        <TrackTitle>{track.title}</TrackTitle>
         <TrackArtist>{track.artist}</TrackArtist>
       </TrackInfo>
       <PlayButton onClick={handlePlayPause}>
