@@ -1,86 +1,42 @@
-import React from 'react'
-import styled from 'styled-components'
-import { usePlayer } from './PlayerContext.jsx'
-import { FaPlay, FaPause } from 'react-icons/fa' // Para iconos de reproducción y pausa
+import React, { useState, useEffect } from 'react'
+import * as S from './styles'
+import { fetchTracks } from '../../services/db'
 
-const PlayerContainer = styled.div`
-  display: flex;
-  align-items: center;
-  padding: 15px;
-  width: 14rem;
-  flex-direction: column;
-  background-color: #282828d4;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  margin-bottom: 20px;
-`
+const Player = () => {
+  const [tracks, setTracks] = useState([])
 
-const AlbumCover = styled.img`
-  width: 100px;
-  height: 100px;
-  margin-bottom: 10px;
-  border-radius: 8px;
-  object-fit: cover;
-`
+  useEffect(() => {
+    const getTracks = async () => {
+      try {
+        const response = await fetchTracks() // La respuesta completa de la API
+        console.log(response) // Muestra la respuesta en consola
+        setTracks(response.tracks) // Asignamos solo el array de tracks
+      } catch (error) {
+        console.error('Error fetching tracks:', error)
+      }
+    }
 
-const TrackInfo = styled.div`
-  flex-grow: 1;
-  color: #e0e0e0;
-  margin-bottom: 10px;
-`
-
-const TrackTitle = styled.h4`
-  margin: 0;
-  font-size: 16px;
-  font-weight: bold;
-`
-
-const TrackArtist = styled.p`
-  margin: 0;
-  font-size: 14px;
-  color: #b3b3b3;
-`
-
-const PlayButton = styled.button`
-  background-color: #9eada3;
-  border: none;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-
-  &:hover {
-    background-color: #858e88;
-  }
-
-  &:focus {
-    outline: none;
-  }
-`
-
-const Player = ({ track }) => {
-  const { playTrack, isPlaying, currentTrack } = usePlayer()
-
-  const handlePlayPause = () => {
-    playTrack(track)
-  }
+    getTracks()
+  }, [])
 
   return (
-    <PlayerContainer>
-      <AlbumCover src={track.album_image} alt={`${track.album} cover`} />
-      <TrackInfo>
-        <TrackTitle>{track.title}</TrackTitle>
-        <TrackArtist>{track.artist}</TrackArtist>
-      </TrackInfo>
-      <PlayButton onClick={handlePlayPause}>
-        {currentTrack === track && isPlaying ? <FaPause /> : <FaPlay />}
-      </PlayButton>
-    </PlayerContainer>
+    <S.PlayerContainer>
+      {tracks.map((track) => (
+        <S.TrackCard key={track._id}>
+          <S.TrackInfo>
+            <S.Artist>{track.artist.replace(/['"]+/g, '')}</S.Artist>
+            <S.Title>{track.title.replace(/['"]+/g, '')}</S.Title>
+            {track.album && (
+              <S.Album>{track.album.replace(/['"]+/g, '')}</S.Album>
+            )}
+          </S.TrackInfo>
+          <S.Audio controls>
+            <source src={track.s3Url} type="audio/wav" />
+            Your browser does not support the audio element.
+          </S.Audio>
+        </S.TrackCard>
+      ))}
+    </S.PlayerContainer>
   )
 }
 
