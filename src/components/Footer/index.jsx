@@ -7,7 +7,7 @@ const Footer = () => {
     
     <S.Footer>
 
-
+    POWERED BY sergioDEV
   </S.Footer>
   )
 };

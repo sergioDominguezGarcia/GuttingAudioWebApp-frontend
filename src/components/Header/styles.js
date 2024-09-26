@@ -6,6 +6,7 @@ export const Header = styled.div`
   display: flex;
   width: 100vw;
   position: fixed;
+  top: 0%;
 `
 export const Content = styled.div`
   display: flex;
@@ -37,5 +38,5 @@ export const NavBar = styled.div`
 export const Link = styled.div``
 export const NavLink = styled.div`
   margin-bottom: 24px;
-
+  cursor: pointer;
 `

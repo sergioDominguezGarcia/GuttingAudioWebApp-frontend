@@ -1,9 +1,10 @@
 import styled from 'styled-components'
 
 export const Home = styled.div`
-  /* max-width: 100%; */
-  overflow-x: hidden;
-  /* height: 100vh; */
+  max-width: 100%;
+  /* overflow-x: hidden; */
+  
+  height: 100vh;
 `
 
 export const Content = styled.div`
@@ -14,22 +15,19 @@ export const Content = styled.div`
   background-size: center;
   justify-content: center;
   height: 100%;
-  padding: 1rem;
+  margin: 3rem 0rem 0rem 0rem;
   z-index: -1;
   width: 100%;
 `
 
-export const Releases = styled.div`
+export const Artists = styled.div`
   display: flex;
-  flex-wrap: wrap;
-
-  flex-direction:row; 
-  background: rgba(255, 255, 255, 0.15);
+  flex-direction: row;
+  background: #000000b6;
   color: white;
-  margin-top: 7rem;
+  padding: 7rem;
   justify-content: center;
-  width: 100%;
+  width: 80%;
   height: 100%;
-
   box-sizing: border-box;
 `

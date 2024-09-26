@@ -5,7 +5,7 @@ export const Footer = styled.div`
   display: flex;
   position: static;
   bottom: 0;
-
+  color: #fff;
   flex-direction: row;
 
   justify-content: space-between;

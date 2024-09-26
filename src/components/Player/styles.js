@@ -2,16 +2,20 @@ import styled from 'styled-components'
 
 export const PlayerContainer = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 1rem;
+  border: 3px solid green;
+  height: 20%;
+  /* width: 100%; */
 `
 
 export const TrackCard = styled.div`
-  background: #f0f0f0;
+  background: black;
   padding: 1rem;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   display: flex;
+  flex-direction:row;
   justify-content: space-between;
   align-items: center;
 `
@@ -40,4 +44,5 @@ export const Album = styled.p`
 export const Audio = styled.audio`
   width: 200px;
   margin-left: 1rem;
+  
 `
