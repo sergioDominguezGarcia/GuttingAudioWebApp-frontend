@@ -4,7 +4,8 @@ import mancha from '../../assets/mancha.jpg'
 import maniatics from '../../assets/maniatics.jpg'
 import vandermou from '../../assets/vandermou.jpg'
 import suspect from '../../assets/suspect.jpg'
-
+import { FaInstagram, FaSpotify } from 'react-icons/fa'
+import { SiSoundcloud } from 'react-icons/si'
 
 export const artistsData = {
   DavidSynth:{
