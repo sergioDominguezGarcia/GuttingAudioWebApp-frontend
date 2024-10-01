@@ -17,10 +17,10 @@ export const Content = styled.div`
   width: 100%;
   flex-direction: column;
   align-items: center;
-  background: rgb(94, 94, 94);
+  background: darkgray;
   background: linear-gradient(
     90deg,
-    rgba(94, 94, 94, 1) 0%,
+    rgba(50, 50, 50, 1) 0%,
     rgba(0, 0, 0, 1) 10%,
     rgba(0, 0, 0, 1) 90%,
     rgba(94, 94, 94, 1) 100%

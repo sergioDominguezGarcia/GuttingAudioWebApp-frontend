@@ -3,17 +3,24 @@ import styled from 'styled-components'
 import { eps } from '../../constants/constants' // Asegúrate de importar los EPs
 
 const CarouselContainer = styled.div`
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(255, 255, 255, 0.5130427170868348) 50%,
+    rgba(0, 0, 0, 1) 100%
+  );
   position: absolute;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   background-size: cover;
-  background-position: center;
-  filter: blur(4px);
   background-repeat: no-repeat;
-  transition: background-image 1s ease-in-out;
-  z-index: -1; /* Para que esté detrás de otros elementos */
+  background-position: center;
+  /* filter: blur(10px); */
+
+  transition: background-image 2s ease-in-out;
+  z-index: -1; 
 `
 
 const ImageCarousel = () => {

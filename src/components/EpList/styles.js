@@ -30,9 +30,9 @@ export const EpCard = styled.div`
 
   /* Ajusta el tamaño de las tarjetas según el tamaño de la pantalla */
   width: 100%;
-  max-width: 350px;
+  max-width: 550px;
   height: 100%;
-  max-height: 350px;
+  max-height: 550px;
 `
 
 // Imagen de portada del EP

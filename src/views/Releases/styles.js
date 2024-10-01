@@ -17,7 +17,9 @@ export const Releases = styled.div`
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  background: rgba(0, 0, 0, 0.3); /* Fondo oscuro semitransparente */
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px); /*no hace efecto borroso*/
+  opacity: 0.95;
   color: white;
   justify-content: center;
   width: 100%;

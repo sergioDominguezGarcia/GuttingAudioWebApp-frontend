@@ -5,10 +5,10 @@ import EpDetails from '../../components/EpDetails';
 
 const Releases = () => {
   return (
-    <S.Content background={back}>
-      <S.Releases>
+    <S.Content>
+      <S.ReleaseDetails>
         <EpDetails />
-      </S.Releases>
+      </S.ReleaseDetails>
     </S.Content>
   )
 };

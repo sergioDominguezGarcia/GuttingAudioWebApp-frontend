@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import { eps } from '../../constants/constants' // Importa el array de constants.js
-import TrackPlayer from '../TrackPlayer' 
+import TrackPlayer from '../TrackPlayer'
 import * as S from './styles'
 
 const EpDetail = () => {
@@ -17,8 +17,7 @@ const EpDetail = () => {
   if (!selectedEp) return <div>Loading...</div>
 
   return (
-    <S.EpDetailContainer>
-      <S.Title>{selectedEp.title}</S.Title>
+    <S.EpDetailContainer backgroundImage={selectedEp.coverUrl}>
       <S.EpContent>
         <S.EpCover>
           <img src={selectedEp.coverUrl} alt={selectedEp.title} />
@@ -27,10 +26,10 @@ const EpDetail = () => {
         <S.TrackList>
           {selectedEp.tracks.map((track) => (
             <TrackPlayer
-              key={track.id}
-              track={track}
-              currentTrackId={currentTrackId}
-              setCurrentTrackId={setCurrentTrackId}
+            key={track.id}
+            track={track}
+            currentTrackId={currentTrackId}
+            setCurrentTrackId={setCurrentTrackId}
             />
           ))}
         </S.TrackList>
