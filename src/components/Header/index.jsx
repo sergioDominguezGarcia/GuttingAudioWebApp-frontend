@@ -1,10 +1,12 @@
-import { memo, useCallback } from 'react'
+import { memo, useCallback, useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import * as S from './styles'
 import Gutting from '../../assets/Gutting.jpg'
 
 const Header = () => {
   const navigate = useNavigate()
+  const [isVisible, setIsVisible] = useState(true)
+  const [lastScrollY, setLastScrollY] = useState(0)
 
   const handleGoToArtists = useCallback(() => {
     navigate('/artists')
@@ -22,9 +24,29 @@ const Header = () => {
     navigate('/home')
   }, [navigate])
 
+  const controlHeaderVisibility = () => {
+    if (typeof window !== 'undefined') {
+      if (window.scrollY > lastScrollY) {
+        setIsVisible(false) // Scroll hacia abajo: esconder el header
+      } else {
+        setIsVisible(true) // Scroll hacia arriba: mostrar el header
+      }
+      setLastScrollY(window.scrollY)
+    }
+  }
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      window.addEventListener('scroll', controlHeaderVisibility)
+
+      return () => {
+        window.removeEventListener('scroll', controlHeaderVisibility)
+      }
+    }
+  }, [lastScrollY])
 
   return (
-    <S.Header>
+    <S.Header isVisible={isVisible}>
       <S.Content>
         <S.Logo>
           <img src={Gutting} width="200px" alt="" />

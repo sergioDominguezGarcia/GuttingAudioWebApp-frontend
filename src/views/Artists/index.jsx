@@ -1,7 +1,6 @@
 import { memo } from 'react'
 import * as S from './styles'
 import back from '../../assets/back.webp'
-import Header from '../../components/Header'
 import ArtistsList from '../../components/ArtistsList'
 
 const Artists = () => {
