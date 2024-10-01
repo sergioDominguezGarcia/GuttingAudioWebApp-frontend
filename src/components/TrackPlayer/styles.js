@@ -4,12 +4,13 @@ export const TrackPlayerContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #2d2d2d;
+  /* background-color: #2d2d2d; */
+  
   border-radius: 8px;
   padding: 20px;
   margin-bottom: 20px;
   width: 100%;
-  max-width: 500px;
+  max-width: 700px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 `
 

@@ -17,7 +17,7 @@ export const ReleaseDetails = styled.div`
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  background: rgba(255, 255, 255, 0.15);
+  /* background: rgba(255, 255, 255, 0.005); */
   color: white;
   
 

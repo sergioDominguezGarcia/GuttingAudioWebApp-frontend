@@ -5,11 +5,11 @@ export const Content = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  height: 100vh;
+  min-height: 100vh;
+  height: 100%;
   width: 100%;
   z-index: 1; /* Mantén un z-index mayor para que esté encima del carrusel */
   overflow: hidden;
-
 `
 
 export const Releases = styled.div`
@@ -24,6 +24,7 @@ export const Releases = styled.div`
   justify-content: center;
   width: 100%;
   height: 100%;
+  min-height: 100vh;
   box-sizing: border-box;
   justify-content: space-around;
   padding-top: 10rem;

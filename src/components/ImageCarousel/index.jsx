@@ -19,7 +19,7 @@ const CarouselContainer = styled.div`
   background-position: center;
   /* filter: blur(10px); */
 
-  transition: background-image 2s ease-in-out;
+  transition: background-image 1s ease-in-out;
   z-index: -1; 
 `
 
@@ -29,7 +29,7 @@ const ImageCarousel = () => {
   useEffect(() => {
     const intervalId = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % eps.length)
-    }, 3000) // Cambia la imagen cada 3 segundos
+    }, 2000) // Cambia la imagen cada 3 segundos
 
     return () => clearInterval(intervalId)
   }, [])

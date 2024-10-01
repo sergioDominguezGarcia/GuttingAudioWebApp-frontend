@@ -8,6 +8,7 @@ export const EpGrid = styled.div`
   gap: 20px; /* Espacio entre las tarjetas */
   padding: 20px;
   width: 100%;
+  
 
   box-sizing: border-box; /* Asegura que el padding esté incluido en el ancho total */
 `
@@ -30,9 +31,9 @@ export const EpCard = styled.div`
 
   /* Ajusta el tamaño de las tarjetas según el tamaño de la pantalla */
   width: 100%;
-  max-width: 550px;
+  max-width:450px;
   height: 100%;
-  max-height: 550px;
+  max-height: 450px;
 `
 
 // Imagen de portada del EP

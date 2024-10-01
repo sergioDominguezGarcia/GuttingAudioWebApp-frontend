@@ -23,7 +23,8 @@ export const EpDetailContainer = styled.div`
     background-image: url(${(props) => props.backgroundImage});
     background-size: cover;
     background-position: center;
-    filter: blur(8px); /* Aplicar desenfoque */
+    filter: blur(8px);
+     /* Aplicar desenfoque */
     /* z-index: -1; Colocar detrás del contenido */
     /* opacity: 0.7; Hacer que sea un poco transparente */
   }
