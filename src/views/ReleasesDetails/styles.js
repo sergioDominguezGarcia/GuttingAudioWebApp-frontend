@@ -1,11 +1,5 @@
 import styled from 'styled-components'
 
-export const Home = styled.div`
-  /* max-width: 100%; */
-  overflow-x: hidden;
-  /* height: 100vh; */
-`
-
 export const Content = styled.div`
   background-image: url(${(props) => props.background});
   background-position: center;
@@ -22,7 +16,6 @@ export const Content = styled.div`
 export const Releases = styled.div`
   display: flex;
   flex-wrap: wrap;
-
   flex-direction:row; 
   background: rgba(255, 255, 255, 0.15);
   color: white;
@@ -30,6 +23,6 @@ export const Releases = styled.div`
   justify-content: center;
   width: 100%;
   height: 100%;
-
   box-sizing: border-box;
+  
 `
