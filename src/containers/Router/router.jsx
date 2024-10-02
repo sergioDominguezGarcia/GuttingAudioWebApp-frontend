@@ -20,6 +20,7 @@ const Router = () => {
         <Route path="/*" element={<Releases />} />
         <Route path="/releases" element={<Releases />} />
         <Route path="/releases/:epId" element={<ReleasesDetails eps={eps} />} />
+        
         <Route path="/artists" element={<Artists />} />
         <Route path="/artists/:slug" element={<Detail />} />
       </Routes>

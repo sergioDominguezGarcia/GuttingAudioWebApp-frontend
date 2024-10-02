@@ -4,53 +4,61 @@ export const TrackPlayerContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-radius: 8px;
-  padding: 20px;
-  margin-bottom: 20px;
-  width: 90%;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  justify-content: center;
+  background-color: black;
 
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   /* Limitar la altura máxima */
-  max-height: 400px; /* ajusta según sea necesario */
-  overflow-y: auto; /* habilitar desplazamiento si el contenido supera la altura */
 `
 
 
 export const TrackTitle = styled.h4`
   font-size: 18px;
-  color: #fff;
-  margin-bottom: 10px;
+  display: flex;
+  gap: 32px;
+  color: #f0f0f0;
+  margin: 0px 0px 0px 30px;
+  align-self: self-start;
+  align-items: center;
 `
 
 export const StyledAudio = styled.audio`
   width: 100%;
+  /* border: 1px solid red; */
   outline: none;
-  margin-top: 10px;
-  background-color: #1f1f1f;
-  border-radius: 5px;
+  /* margin-top: 10px; */
 
+  height: 100%;
   &::-webkit-media-controls-panel {
-    background-color: #1f1f1f;
+    background-color: rgba(0, 0, 0, 0.6
+);
+    border: none;
   }
-
-  &::-webkit-media-controls-play-button,
+  &::-webkit-media-controls-play-button {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    margin-left: 40px;
+    margin-right: 20px;
+    width: 100%;
+  }
   &::-webkit-media-controls-current-time-display,
   &::-webkit-media-controls-time-remaining-display {
-    color: #fff;
+    color: #f0f0f0;
+    font-size: 16px;
   }
-
-  /* Asegurarse de que el audio no expanda el contenedor */
-  max-height: 50px;
 `
 
 
 export const ProgressBar = styled.input`
-  width: 100%;
+
+  width: 90%;
   appearance: none;
   background: #444;
-  height: 5px;
+  height: 50px;
   border-radius: 5px;
-  margin-top: 10px;
+  /* margin-top: 10px; */
 
   &::-webkit-slider-thumb {
     appearance: none;
@@ -68,6 +76,7 @@ export const ProgressBar = styled.input`
     border-radius: 50%;
     cursor: pointer;
   }
+  
 `
 
 export const VolumeControl = styled.input`
@@ -75,14 +84,17 @@ export const VolumeControl = styled.input`
   margin-top: 10px;
   appearance: none;
   background: #444;
-  height: 5px;
+  height: 8px;
+  margin: 16px;
+  position: relative;
+  align-self: start;
   border-radius: 5px;
 
   &::-webkit-slider-thumb {
     appearance: none;
     width: 10px;
     height: 10px;
-    background: #ff7f50;
+    background: #fff;
     border-radius: 50%;
     cursor: pointer;
   }
@@ -93,10 +105,12 @@ export const ControlContainer = styled.div`
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  margin-top: 10px;
+  margin-top: 100px;
+  /* border: 1px solid red; */
 `
 
 export const TimeDisplay = styled.span`
   font-size: 12px;
   color: #fff;
+  
 `

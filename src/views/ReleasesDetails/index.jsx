@@ -1,9 +1,10 @@
 import { memo } from 'react';
 import * as S from './styles';
-import back from '../../assets/back.webp';
+
 import EpDetails from '../../components/EpDetails';
 
-const Releases = () => {
+
+const ReleasesDetail = () => {
   return (
     <S.Content>
       <S.ReleaseDetails>
@@ -13,4 +14,4 @@ const Releases = () => {
   )
 };
 
-export default memo(Releases);
+export default memo(ReleasesDetail);

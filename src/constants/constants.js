@@ -19,8 +19,9 @@ import GTTNEP016 from '../components/EpList/Portadas/GTTNEP016.jpg'
 
 export const eps = [
   {
-    id: '1',
+    id: '001',
     title: 'HIT ME DOWN EP',
+    artist: 'Maniatics',
     coverUrl: GTTNEP001, // URL de la portada del EP
     tracks: [
       {
@@ -49,7 +50,7 @@ export const eps = [
           'https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/01.Fearless%20-%20Rampage.mp3?alt=media&token=4077885b-3e11-4811-936d-c6f48f00bcad',
       },
       {
-        artist: 'track4',
+        id: '004',
         title: 'Daybreak',
         audioUrl:
           'https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/02.Fearless%20-%20Daybreak.mp3?alt=media&token=5e4e1514-bf09-4908-ac68-5dd3d791af73',
@@ -62,13 +63,13 @@ export const eps = [
     coverUrl: GTTNEP003,
     tracks: [
       {
-        artist: 'track3',
+        id: 'track3',
         title: 'Assault',
         audioUrl:
           'https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/Suspect%20-%20Assault.mp3?alt=media&token=fa68bba9-3729-4e78-b5e5-fbe820b934b2',
       },
       {
-        artist: 'track4',
+        id: 'track4',
         title: 'Gloom',
         audioUrl:
           'https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/Suspect%20-%20Gloom.mp3?alt=media&token=407d3beb-abe0-48e8-994a-208f189cce5e',
@@ -170,7 +171,6 @@ export const eps = [
       },
     ],
   },
-
 
   {
     id: '009',

@@ -1,6 +1,6 @@
 import React, { useRef, useState, useEffect } from 'react'
 import * as S from './styles'
-
+import blanco from '../../assets/blanco.png'
 const TrackPlayer = ({ track, currentTrackId, setCurrentTrackId }) => {
   const audioRef = useRef(null)
   const [progress, setProgress] = useState(0)
@@ -54,7 +54,12 @@ const TrackPlayer = ({ track, currentTrackId, setCurrentTrackId }) => {
 
   return (
     <S.TrackPlayerContainer>
-      <S.TrackTitle>{track.title}</S.TrackTitle>
+     
+     <S.TrackTitle> 
+      
+      <img src={blanco} width="50px" />
+      {track.title}
+      </S.TrackTitle>
 
       <S.StyledAudio
         ref={audioRef}
@@ -64,21 +69,7 @@ const TrackPlayer = ({ track, currentTrackId, setCurrentTrackId }) => {
       >
         <source src={track.audioUrl} type="audio/mp3" />
         Your browser does not support the audio element.
-      </S.StyledAudio>
-
-      <S.ProgressBar
-        type="range"
-        value={progress}
-        onChange={handleProgressChange}
-        min="0"
-        max="100"
-      />
-
-      <S.ControlContainer>
-        <S.TimeDisplay>
-          {Math.floor(currentTime / 60)}:
-          {('0' + Math.floor(currentTime % 60)).slice(-2)}
-        </S.TimeDisplay>
+        </S.StyledAudio>
 
         <S.VolumeControl
           type="range"
@@ -86,13 +77,27 @@ const TrackPlayer = ({ track, currentTrackId, setCurrentTrackId }) => {
           onChange={handleVolumeChange}
           min="0"
           max="100"
-        />
+          />
+
+      {/* <S.ProgressBar
+        type="range"
+        value={progress}
+        onChange={handleProgressChange}
+        min="0"
+        max="100"
+      /> */}
+
+      {/* <S.ControlContainer>
+        <S.TimeDisplay>
+          {Math.floor(currentTime / 60)}:
+          {('0' + Math.floor(currentTime % 60)).slice(-2)}
+        </S.TimeDisplay>
 
         <S.TimeDisplay>
           {Math.floor(duration / 60)}:
           {('0' + Math.floor(duration % 60)).slice(-2)}
         </S.TimeDisplay>
-      </S.ControlContainer>
+      </S.ControlContainer> */}
     </S.TrackPlayerContainer>
   )
 }

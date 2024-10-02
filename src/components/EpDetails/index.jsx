@@ -3,7 +3,8 @@ import { useParams } from 'react-router-dom'
 import { eps } from '../../constants/constants'
 import TrackPlayer from '../TrackPlayer'
 import * as S from './styles'
-
+import blanco from '../../assets/blanco.png'
+// import Footer from '../Footer'
 const EpDetail = () => {
   const { epId } = useParams()
   const [selectedEp, setSelectedEp] = useState(null)
@@ -27,32 +28,59 @@ const EpDetail = () => {
   }
 
   return (
-    <S.EpDetailContainer backgroundImage={selectedEp.coverUrl}>
-      <S.EpContent>
-        <S.EpCover>
-          <img src={selectedEp.coverUrl} alt={selectedEp.title} />
-        </S.EpCover>
+    <>
+      <S.EpDetailContainer backgroundImage={selectedEp.coverUrl}>
+        <S.EpContent>
+          <S.EpCover>
+            <img src={selectedEp.coverUrl} alt={selectedEp.title} />
+            <S.TrackList>
+              {selectedEp.tracks.map((track) => (
+                <S.TrackItem
+                  key={track.id}
+                  onClick={() => handleTrackSelect(track.id)}
+                >
+                  {track.title}
+                </S.TrackItem>
+              ))}
+            </S.TrackList>
+          </S.EpCover>
 
-        <S.TrackList>
-          {selectedEp.tracks.map((track) => (
-            <S.TrackItem
-              key={track.id}
-              onClick={() => handleTrackSelect(track.id)}
-            >
-              {track.title}
-            </S.TrackItem>
-          ))}
-        </S.TrackList>
-      </S.EpContent>
-
-      <TrackPlayer
-        track={
-          selectedEp.tracks.find((track) => track.id === currentTrackId) || {}
-        }
-        currentTrackId={currentTrackId}
-        setCurrentTrackId={setCurrentTrackId}
-      />
-    </S.EpDetailContainer>
+          <S.Info href="">
+            <h2>{selectedEp.title}</h2>
+            <h3> {selectedEp.artist} </h3>
+          
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+            officia cupiditate culpa ullam animi suscipit ipsa, corporis, at eum
+            a fugit, dolorem omnis veritatis architecto error! Soluta facilis
+            labore perspiciatis. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. <br />
+            Facere officia cupiditate culpa ullam animi suscipit ipsa, corporis,
+            at eum a fugit, dolorem omnis veritatis architecto error! Soluta
+            facilis labore perspiciatis. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit.
+            <br /> Facere officia cupiditate culpa ullam animi
+            suscipit ipsa, corporis, at eum a fugit, dolorem omnis veritatis
+            architecto error! Soluta facilis labore perspiciatis. Lorem ipsum
+            dolor sit amet consectetur adipisicing elit. <br />
+            Facere officia cupiditate culpa ullam animi suscipit ipsa, corporis,
+            at eum a fugit, dolorem omnis veritatis architecto error! Soluta
+            facilis labore perspiciatis.
+          </S.Info>
+        </S.EpContent>
+        <S.PlayerContainer>
+          
+          <TrackPlayer
+            track={
+              selectedEp.tracks.find((track) => track.id === currentTrackId) ||
+              {}
+            }
+            currentTrackId={currentTrackId}
+            setCurrentTrackId={setCurrentTrackId}
+          />
+        </S.PlayerContainer>
+      </S.EpDetailContainer>
+      {/* <Footer /> */}
+    </>
   )
 }
 
