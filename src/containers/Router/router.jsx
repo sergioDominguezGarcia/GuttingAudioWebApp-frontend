@@ -17,10 +17,10 @@ const Router = () => {
     <BrowserRouter>
       <Header />
       <Routes>
-        <Route path="/*" element={<Releases />} />
+        <Route path="/*" element={<ReleasesDetails />} />
         <Route path="/releases" element={<Releases />} />
         <Route path="/releases/:epId" element={<ReleasesDetails eps={eps} />} />
-        
+
         <Route path="/artists" element={<Artists />} />
         <Route path="/artists/:slug" element={<Detail />} />
       </Routes>

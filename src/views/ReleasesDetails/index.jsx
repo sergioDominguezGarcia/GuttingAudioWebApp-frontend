@@ -1,15 +1,13 @@
 import { memo } from 'react';
 import * as S from './styles';
-
-import EpDetails from '../../components/EpDetails';
-
+import MusicPlayer from '../../components/MusicPlayer';
+import EpDetail from '../../components/EpDetails';
 
 const ReleasesDetail = () => {
   return (
     <S.Content>
-      <S.ReleaseDetails>
-        <EpDetails />
-      </S.ReleaseDetails>
+      <EpDetail />
+      {/* <MusicPlayer /> */}
     </S.Content>
   )
 };

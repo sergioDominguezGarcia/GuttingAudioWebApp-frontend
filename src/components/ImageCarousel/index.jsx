@@ -17,7 +17,8 @@ const CarouselContainer = styled.div`
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  /* filter: blur(10px); */
+
+  filter: saturate (3); 
 
   transition: background-image 1s ease-in-out;
   z-index: -1; 

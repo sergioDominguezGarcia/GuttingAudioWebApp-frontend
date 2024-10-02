@@ -4,7 +4,7 @@ export const Footer = styled.div`
   background-color: black;
   display: flex;
   position: static;
-  bottom: 0;
+  margin-bottom: 0px;
   color: #fff;
   flex-direction: row;
 

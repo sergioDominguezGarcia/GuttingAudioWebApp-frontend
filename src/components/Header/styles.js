@@ -46,11 +46,11 @@ export const Logo = styled.div`
 `
 
 export const NavBar = styled.div`
-  width: 80%;
+  width: 90%;
   font-size: 16px;
   color: white;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-end;
 
   @media (max-width: 768px) {
     width: 100%;
