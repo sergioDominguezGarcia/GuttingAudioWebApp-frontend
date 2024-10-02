@@ -4,13 +4,25 @@ import * as S from './styles'
 const TrackPlayer = ({ track, currentTrackId, setCurrentTrackId }) => {
   const audioRef = useRef(null)
   const [progress, setProgress] = useState(0)
-  const [volume, setVolume] = useState(1) // Rango de volumen (0 a 1)
+  const [volume, setVolume] = useState(1)
   const [currentTime, setCurrentTime] = useState(0)
   const [duration, setDuration] = useState(0)
 
-  const handlePlay = () => {
-    setCurrentTrackId(track.id)
+  useEffect(() => {
+    if (!track || !track.id) return
+
+    // Pausar y reiniciar el reproductor cuando cambie de track
     if (audioRef.current) {
+      audioRef.current.pause()
+      audioRef.current.currentTime = 0
+      audioRef.current.load() // Cargar el nuevo track
+      audioRef.current.play() // Reproducir el nuevo track
+    }
+  }, [track]) // Ejecutar cuando el track cambie
+
+  const handlePlay = () => {
+    if (track) {
+      setCurrentTrackId(track.id)
       audioRef.current.play()
     }
   }
@@ -36,18 +48,14 @@ const TrackPlayer = ({ track, currentTrackId, setCurrentTrackId }) => {
     audioRef.current.volume = newVolume
   }
 
-  useEffect(() => {
-    if (currentTrackId !== track.id && audioRef.current) {
-      audioRef.current.pause()
-      audioRef.current.currentTime = 0 // Reiniciar el tiempo si es otro track el que se está reproduciendo
-    }
-  }, [currentTrackId, track.id])
+  if (!track || !track.id) {
+    return <div>Selecciona una pista para reproducir.</div>
+  }
 
   return (
     <S.TrackPlayerContainer>
       <S.TrackTitle>{track.title}</S.TrackTitle>
 
-      {/* El elemento <audio> incluye el botón de Play/Pause */}
       <S.StyledAudio
         ref={audioRef}
         controls

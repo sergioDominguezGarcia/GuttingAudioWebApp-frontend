@@ -3,14 +3,12 @@ import styled from 'styled-components'
 // Contenedor de la cuadrícula para los EPs
 export const EpGrid = styled.div`
   display: flex;
-  flex-wrap: wrap; /* Permite que los elementos se ajusten en varias filas */
-  justify-content: center; /* Centra las tarjetas en la cuadrícula */
-  gap: 20px; /* Espacio entre las tarjetas */
+  flex-wrap: wrap; 
+  justify-content: center; 
+  gap: 20px;
   padding: 20px;
   width: 100%;
-  
-
-  box-sizing: border-box; /* Asegura que el padding esté incluido en el ancho total */
+  box-sizing: border-box; 
 `
 
 // Cada tarjeta de EP (card)

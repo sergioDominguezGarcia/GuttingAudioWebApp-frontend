@@ -6,13 +6,13 @@ export const EpDetailContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* Fondo con la coverUrl */
   background-image: url(${(props) => props.backgroundImage});
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  /* Capa de oscuridad para mejorar la legibilidad */
   position: relative;
+  box-sizing: border-box;
+  /* padding-bottom: 100px; */
   &::before {
     content: '';
     position: absolute;
@@ -24,15 +24,18 @@ export const EpDetailContainer = styled.div`
     background-size: cover;
     background-position: center;
     filter: blur(8px);
-     /* Aplicar desenfoque */
-    /* z-index: -1; Colocar detrás del contenido */
-    /* opacity: 0.7; Hacer que sea un poco transparente */
   }
 `
-
+export const TrackItem = styled.div`
+  cursor: pointer;
+  padding: 10px;
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+`
 export const Title = styled.h2`
-  margin-bottom: 20px;
-  color: white; /* Asegura que el título sea legible sobre el fondo */
+  /* margin-bottom: 20px; */
+  color: white; 
 `
 
 export const EpContent = styled.div`
@@ -60,5 +63,7 @@ export const TrackList = styled.div`
   display: flex;
   flex-direction: column;
   gap: 10px;
-  z-index: 1; /* Asegura que los tracks estén por encima del fondo */
+  z-index: 1;
+  flex-grow: 1; /* Para que el contenido principal ocupe el espacio restante */
+  overflow-y: auto;
 `

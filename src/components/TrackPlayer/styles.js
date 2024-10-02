@@ -4,15 +4,17 @@ export const TrackPlayerContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* background-color: #2d2d2d; */
-  
   border-radius: 8px;
   padding: 20px;
   margin-bottom: 20px;
-  width: 100%;
-  max-width: 700px;
+  width: 90%;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+
+  /* Limitar la altura máxima */
+  max-height: 400px; /* ajusta según sea necesario */
+  overflow-y: auto; /* habilitar desplazamiento si el contenido supera la altura */
 `
+
 
 export const TrackTitle = styled.h4`
   font-size: 18px;
@@ -36,7 +38,11 @@ export const StyledAudio = styled.audio`
   &::-webkit-media-controls-time-remaining-display {
     color: #fff;
   }
+
+  /* Asegurarse de que el audio no expanda el contenedor */
+  max-height: 50px;
 `
+
 
 export const ProgressBar = styled.input`
   width: 100%;
