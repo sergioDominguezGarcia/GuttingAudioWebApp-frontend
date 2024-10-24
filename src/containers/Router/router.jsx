@@ -8,6 +8,7 @@ import Detail from '../../views/ArtistDetail'
 import Header from '../../components/Header';
 import Footer from '../../components/Footer'
 import ReleasesDetails from '../../views/ReleasesDetails/index.jsx'
+import Home from '../../views/Home/home.jsx'
 
 const Router = () => {
   
@@ -16,14 +17,16 @@ const Router = () => {
   return (
     <BrowserRouter>
       <Header />
+
       <Routes>
-        <Route path="/*" element={<ReleasesDetails />} />
+        <Route path="/*" element={<Home />} />
         <Route path="/releases" element={<Releases />} />
         <Route path="/releases/:epId" element={<ReleasesDetails eps={eps} />} />
 
         <Route path="/artists" element={<Artists />} />
         <Route path="/artists/:slug" element={<Detail />} />
       </Routes>
+      
       <Footer />
     </BrowserRouter>
   )
