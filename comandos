@@ -5,8 +5,30 @@
 
 yarn run build                         # Generar una nueva versión de tu sitio
 
+git add .; git commit -m "name"; git push origin main
 
-git add .; git commit -m "Add view Home"; git push origin main
+
+
+
+
+# TRABAJO COMPARTIDO
+
+git pull origin main     # Mantén la rama principal (main) actualizada
+
+git checkout -b home    # Crear Ramas para Nuevas Funcionalidades o Cambios
+
+git add .; git commit -m "name"; git push origin home
+
+
+
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
 
 git add .                            # Preparar los cambios en local
 git commit -m "título del commit"     # Realiza un commit de los cambios
@@ -23,8 +45,6 @@ git pull                            # Actualizar git
 code .                              # Abrir visual code
 
 
-
-
 # CREAR NUEVA RAMA Y SUBIRLA A GIT
 git branch nombre_rama # Crear una rama localmente     
 git checkout -b nombre_rama # Crear una nueva rama y cambiar a ella al mismo tiempo 
@@ -33,6 +53,7 @@ git commit -m "título del commit"  # Confirmar los cambios y crear un mensaje d
 git push origin main  # Enviar los cambios de una rama local al repositorio remoto 
 Iniciar el "Pull Request" desde el enlace o Github
 Merge fusionar al MASTER! 
+
 
 # COMANDOS COMUNES 
 git branch # mostrar ramas locales y resaltar la rama actual
