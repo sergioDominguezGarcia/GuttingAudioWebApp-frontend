@@ -17,14 +17,7 @@ export const Content = styled.div`
   width: 100%;
   flex-direction: column;
   align-items: center;
-  background: darkgray;
-  background: linear-gradient(
-    90deg,
-    rgba(50, 50, 50, 1) 0%,
-    rgba(0, 0, 0, 1) 10%,
-    rgba(0, 0, 0, 1) 90%,
-    rgba(94, 94, 94, 1) 100%
-  );
+ 
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -51,6 +44,8 @@ export const NavBar = styled.div`
   color: white;
   display: flex;
   justify-content: flex-end;
+  position: absolute;
+  
 
   @media (max-width: 768px) {
     width: 100%;
@@ -61,14 +56,19 @@ export const NavBar = styled.div`
 `
 
 export const NavLink = styled.div`
-  margin-bottom: 24px;
+
   cursor: pointer;
 
   @media (max-width: 768px) {
-    margin-bottom: 10px;
+
   }
 `
 
 export const Link = styled.div`
-  /* Estilo adicional para los links si es necesario */
+ margin-left: 30px;
+ margin-top: 15px;
+
+
+
+
 `

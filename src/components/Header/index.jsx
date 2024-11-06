@@ -24,26 +24,26 @@ const Header = () => {
     navigate('/home')
   }, [navigate])
 
-  const controlHeaderVisibility = () => {
+  const controlHeaderVisibility = useCallback(() => {
     if (typeof window !== 'undefined') {
       if (window.scrollY > lastScrollY) {
-        setIsVisible(false) // Scroll hacia abajo: esconder el header
+        setIsVisible(false) 
       } else {
-        setIsVisible(true) // Scroll hacia arriba: mostrar el header
+        setIsVisible(true)
       }
       setLastScrollY(window.scrollY)
     }
-  }
+  }, [lastScrollY])
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
       window.addEventListener('scroll', controlHeaderVisibility)
-
+  
       return () => {
         window.removeEventListener('scroll', controlHeaderVisibility)
       }
     }
-  }, [lastScrollY])
+  }, [controlHeaderVisibility])
 
   return (
     <S.Header isVisible={isVisible}>

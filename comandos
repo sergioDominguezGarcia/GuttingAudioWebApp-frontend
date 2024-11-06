@@ -20,7 +20,7 @@ git checkout -b home    # Crear Ramas para Nuevas Funcionalidades o Cambios
 git add .; git commit -m "name"; git push origin home
 
 
-
+git branch  # mostrar ramas locales y resaltar la rama actual
 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
