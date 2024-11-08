@@ -12,6 +12,7 @@ const HomeCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isExiting, setIsExiting] = useState(false);
   const sliderRef = useRef(null);
+  
 
   const items = [
     {
@@ -44,11 +45,12 @@ const HomeCarousel = () => {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 1000,
+    speed: 800,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 4000,
+    
     pauseOnHover: false,
     pauseOnFocus: false,
     draggable: false,
@@ -204,7 +206,7 @@ const SlideTitle = styled.h3`
 
 const ArrowButtonContainer = styled.div`
   position: absolute;
-  bottom: 6vh;
+  bottom: 4vh;
   left: 56px;
 
   display: flex;
@@ -243,36 +245,51 @@ const ArrowStyle = styled.div`
 
 
 z-index: 10 !important;
-  width: 65px !important;
-  height: 45px !important;
+  width: 40px !important;
+  height: 40 auto !important;
   background-image: url(${(props) => props.arrowUrl}) !important;
   background-size: contain !important;
   background-repeat: no-repeat !important;
   cursor: pointer !important;
+  outline: none;
+  -webkit-tap-highlight-color: transparent; 
  
+;
 
 
   &.slick-prev {
-    transform:translateX(250px) translateY(-46%) rotate(180deg)  !important; 
+    transform:translateX(220px) translateY(-40%) rotate(180deg) scale(1.8)  !important; 
+   
   }
 
   &.slick-next {
-    transform:translateX(300px) translateY(-39%) !important; 
-    margin-left: 40px; 
+    
+    transform:translateX(240px) translateY(-39%) scale(1.8) !important; 
+   
+    
   }
 
+  &:focus {
+    outline: none; /* Asegura que el botón no tenga borde visible en foco */
+  }
 
   @media (max-width: 768px) {
-width: 35px !important;
+width: 39px !important;
 left: 50vw;
+padding: 0px 10px;
+
+
 &.slick-prev {
+ 
     margin-right: 40px; 
-    transform: translateX(-50%) translateY(-70%) rotate(180deg)  !important; 
+    transform: translateX(-50%) translateY(-30%) rotate(180deg) scale(1.3) !important; 
+    
+    
   }
 
   &.slick-next {
     margin-right: 40px; 
-    transform: translateX(140%) translateY(-20%) !important; 
+    transform: translateX(140%) translateY(-30%) scale(1.3) !important; 
   }
 
 
