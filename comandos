@@ -5,7 +5,7 @@
 
 yarn run build                         # Generar una nueva versión de tu sitio
 
-git add .; git commit -m "name"; git push origin main
+git add .; git commit -m "animation home carousel"; git push origin main
 
 
 
@@ -19,7 +19,7 @@ git pull origin main     # Mantén la rama principal (main) actualizada
 
 git checkout -b home    # Crear Ramas para Nuevas Funcionalidades o Cambios
 
-git add .; git commit -m "add container arrow "; git push origin home
+git add .; git commit -m "add speed 800"; git push origin home
 
 
 

@@ -12,6 +12,7 @@ const HomeCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isExiting, setIsExiting] = useState(false);
   const sliderRef = useRef(null);
+  
 
   const items = [
     {
@@ -44,11 +45,12 @@ const HomeCarousel = () => {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 1000,
+    speed: 700,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 4000,
+    
     pauseOnHover: false,
     pauseOnFocus: false,
     draggable: false,
@@ -75,6 +77,8 @@ const HomeCarousel = () => {
   }, []);
 
   return (
+  
+  <p>
     <CarouselContainer>
       <Slider ref={sliderRef} {...settings} key={windowWidth}>
         {items.map((item, index) => (
@@ -97,29 +101,39 @@ const HomeCarousel = () => {
         <ArrowStyle
           className="slick-prev"
           arrowUrl={arrowLeftUrl}
-          onClick={() => sliderRef.current && sliderRef.current.slickPrev()} // Verifica que sliderRef.current no sea null
+          onClick={() => sliderRef.current && sliderRef.current.slickPrev()} 
         />
         <ArrowStyle
           className="slick-next"
           arrowUrl={arrowRightUrl}
-          onClick={() => sliderRef.current && sliderRef.current.slickNext()} // Verifica que sliderRef.current no sea null
+          onClick={() => sliderRef.current && sliderRef.current.slickNext()} 
         />
       </ArrowButtonContainer>
-    </CarouselContainer>
+
+    <IndicatorContainer>
+        {items.map((_, index) => (
+          <IndicatorBar key={index} active={index === currentIndex} />
+        ))}
+      </IndicatorContainer>
+
+    </CarouselContainer> 
+    
+    
+ </p>
+
   );
 };
 
 export default memo(HomeCarousel);
 
 const CarouselContainer = styled.div`
-  width: calc(100% - 3vw);
+  width: calc(100% - 5vw);
   max-width: 100%;
-  height: calc(100vh - 12vh);
+  height: calc(93vh - 5vh);
   margin: 75px auto;
   color: #ff0000;
-  overflow: hidden;
   position: relative;
-
+  overflow: visible;
 
   .slick-prev:before,
   .slick-next:before {
@@ -131,15 +145,17 @@ const CarouselContainer = styled.div`
 `;
 
 const Slide = styled.div`
-  height: 100vh;
+  height: 87vh;
   width: 100%;
   background-image: url(${(props) => props.backgroundImage});
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   filter: brightness(0.6); 
+  @media (max-width: 768px) {
+    height: 75vh;
+  }
 `;
-
 const FixedTextContainer = styled.div`
   position: absolute;
   bottom: 14vh;
@@ -171,14 +187,14 @@ const Tag = styled.div`
   font-family: monospace;
   font-size: 1.0vw;
   color: #ffd700;
-  margin: 0 0 10px 30px;
+  margin: 0 0px 10px 33px;
   text-transform: uppercase;
   line-height: 1;
   animation: ${(props) => (props.isExiting ? slideDownOut : slideDownIn)} 0.8s ease forwards;
 
   @media (max-width: 768px) {
     margin-left: 10px;
-    font-size: 4vw;
+    font-size: 3.2vw;
   }
 `;
 
@@ -204,7 +220,7 @@ const SlideTitle = styled.h3`
 
 const ArrowButtonContainer = styled.div`
   position: absolute;
-  bottom: 6vh;
+  bottom: 4vh;
   left: 56px;
 
   display: flex;
@@ -243,38 +259,86 @@ const ArrowStyle = styled.div`
 
 
 z-index: 10 !important;
-  width: 65px !important;
-  height: 45px !important;
+  width: 40px !important;
+  height: 40 auto !important;
   background-image: url(${(props) => props.arrowUrl}) !important;
   background-size: contain !important;
   background-repeat: no-repeat !important;
   cursor: pointer !important;
+  outline: none;
+  -webkit-tap-highlight-color: transparent; 
  
+;
 
 
   &.slick-prev {
-    transform:translateX(250px) translateY(-46%) rotate(180deg)  !important; 
+    transform:translateX(220px) translateY(-40%) rotate(180deg) scale(1.8)  !important; 
+   
   }
 
   &.slick-next {
-    transform:translateX(300px) translateY(-39%) !important; 
-    margin-left: 40px; 
+    
+    transform:translateX(240px) translateY(-39%) scale(1.8) !important; 
+   
+    
   }
+
+  &:focus {
+    outline: none; /* Asegura que el botón no tenga borde visible en foco */
+  }
+
+  @media (max-width: 768px) {
+width: 39px !important;
+left: 50vw;
+padding: 0px 10px;
+
+
+&.slick-prev {
+ 
+    margin-right: 40px; 
+    transform: translateX(-50%) translateY(-30%) rotate(180deg) scale(1.3) !important; 
+    
+    
+  }
+
+  &.slick-next {
+    margin-right: 40px; 
+    transform: translateX(140%) translateY(-30%) scale(1.3) !important; 
+  }
+
+
+  }
+`;
+
+const IndicatorContainer = styled.div`
+  position: absolute;
+  z-index: 40;
+  bottom: -6px; /* Mueve el indicador 10px fuera del borde inferior */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  width: 100%;
+
+  @media (max-width: 768px) {
+    bottom: -13px; /* Ajuste para pantallas pequeñas también */
+  }
+`;
+
+
+const IndicatorBar = styled.div`
+
+  flex: 1;
+  height: 3px;
+  background-color: ${(props) => (props.active ? "#ffffff" : "#555")};
+  transition: background-color 0s ease, transform 0.7s ease;
+  transform-origin: bottom; 
+  transform: ${(props) => (props.active ? "scaleY(3)" : "scaleY(1)")}; 
+
 
 
   @media (max-width: 768px) {
-width: 35px !important;
-left: 50vw;
-&.slick-prev {
-    margin-right: 40px; 
-    transform: translateX(-50%) translateY(-70%) rotate(180deg)  !important; 
-  }
-
-  &.slick-next {
-    margin-right: 40px; 
-    transform: translateX(140%) translateY(-20%) !important; 
-  }
-
-
+    transform: ${(props) => (props.active ? "scaleY(2)" : "scaleY(1)")}; 
   }
 `;
