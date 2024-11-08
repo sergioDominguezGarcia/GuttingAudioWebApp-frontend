@@ -5,7 +5,7 @@
 
 yarn run build                         # Generar una nueva versión de tu sitio
 
-git add .; git commit -m "animation home carousel"; git push origin main
+git add .; git commit -m "add componet loading"; git push origin main
 
 
 

@@ -45,7 +45,7 @@ const HomeCarousel = () => {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 700,
+    speed: 800,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
@@ -331,7 +331,7 @@ const IndicatorBar = styled.div`
 
   flex: 1;
   height: 3px;
-  background-color: ${(props) => (props.active ? "#ffffff" : "#555")};
+  background-color: ${(props) => (props.active ? "#ffffff" : "#a3a3a3")};
   transition: background-color 0s ease, transform 0.7s ease;
   transform-origin: bottom; 
   transform: ${(props) => (props.active ? "scaleY(3)" : "scaleY(1)")}; 
@@ -340,5 +340,6 @@ const IndicatorBar = styled.div`
 
   @media (max-width: 768px) {
     transform: ${(props) => (props.active ? "scaleY(2)" : "scaleY(1)")}; 
+    background-color: ${(props) => (props.active ? "#ffffff" : "#5c5c5c")};
   }
 `;
