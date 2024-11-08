@@ -12,6 +12,7 @@ export const Header = styled.div`
   transition: top 0.3s ease-in-out; /* Transición suave */
 
 
+
 `
 
 export const Content = styled.div`
@@ -19,6 +20,7 @@ export const Content = styled.div`
   width: 100%;
   flex-direction: column;
   align-items: center;
+
 
 
 
@@ -30,17 +32,19 @@ export const Content = styled.div`
 `
 
 export const Logo = styled.div`
+z-index: 50;
   text-align: center;
-  margin-top: 12px;
+ 
+  cursor: pointer; // Hace que el cursor se muestre como un puntero en el logo
   img {
-    max-width: 150px;
-
+    max-width: 190px;
 
     @media (max-width: 768px) {
       max-width: 120px;
     }
   }
 `
+
 
 export const NavBar = styled.div`
   width: 100%;

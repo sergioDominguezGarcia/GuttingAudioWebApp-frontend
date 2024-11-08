@@ -1,11 +1,11 @@
 import { memo } from 'react'
 import styled from 'styled-components'
 import HomeCarousel from '../../components/HomeCarousel/homecarousel'
+import Loading from '../../components/Loading/loading'
 
 
 export const Home = styled.div`
-  max-width: 100%;
-  height: 100vh;
+
 `
 
 
@@ -16,6 +16,7 @@ const Artists = () => {
 
   return (
     <Home>
+<Loading />
 
 <HomeCarousel />
 
