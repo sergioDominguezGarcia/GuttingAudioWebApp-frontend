@@ -13,14 +13,14 @@ git add .; git commit -m "name"; git push origin main
 
 # TRABAJO COMPARTIDO
 
+git branch  # mostrar ramas locales y resaltar la rama actual
+
 git pull origin main     # Mantén la rama principal (main) actualizada
 
 git checkout -b home    # Crear Ramas para Nuevas Funcionalidades o Cambios
 
-git add .; git commit -m "name"; git push origin home
+git add .; git commit -m "add component homecarousel"; git push origin home
 
-
-git branch  # mostrar ramas locales y resaltar la rama actual
 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------

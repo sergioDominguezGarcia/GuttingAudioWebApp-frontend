@@ -8,7 +8,11 @@ import Detail from '../../views/ArtistDetail'
 import Header from '../../components/Header';
 import Footer from '../../components/Footer'
 import ReleasesDetails from '../../views/ReleasesDetails/index.jsx'
+
+
 import Home from '../../views/Home/home.jsx'
+import Radio from '../../views/Radio/radio' 
+
 
 const Router = () => {
   
@@ -25,6 +29,8 @@ const Router = () => {
 
         <Route path="/artists" element={<Artists />} />
         <Route path="/artists/:slug" element={<Detail />} />
+
+        <Route path="/radio" element={<Radio />} /> 
       </Routes>
       
       <Footer />
