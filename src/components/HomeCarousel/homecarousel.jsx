@@ -1,16 +1,15 @@
 import React, { memo, useState, useEffect } from "react";
 import Slider from "react-slick";
-import styled, { keyframes } from "styled-components"; // Importa keyframes
+import styled, { keyframes } from "styled-components";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const HomeCarousel = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-  const [currentIndex, setCurrentIndex] = useState(0); 
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [isExiting, setIsExiting] = useState(false);
 
-  
- 
   const items = [
     {
       text: "Hebra & Vandermou - Tribalero",
@@ -37,17 +36,19 @@ const HomeCarousel = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 4000, 
-    pauseOnHover: false,  
+    autoplaySpeed: 4000,
+    pauseOnHover: false,
     pauseOnFocus: false,
-    beforeChange: (oldIndex, newIndex) => setCurrentIndex(newIndex), // Actualiza el índice antes de cambiar de slide
-
-    
+    beforeChange: (oldIndex, newIndex) => {
+      setIsExiting(true); // Activa la salida
+      setTimeout(() => {
+        setCurrentIndex(newIndex); // Cambia el índice después de la salida
+        setIsExiting(false); // Desactiva la salida después de un tiempo
+      }, 200); // El tiempo debe coincidir con la duración de la animación de salida
+    },
   };
 
-
-   // Solo actualiza el ancho de la ventana cuando es necesario, sin reiniciar el carrusel
-   useEffect(() => {
+  useEffect(() => {
     const handleResize = () => {
       setWindowWidth(window.innerWidth);
     };
@@ -56,7 +57,6 @@ const HomeCarousel = () => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
-  
 
   return (
     <CarouselContainer>
@@ -66,8 +66,9 @@ const HomeCarousel = () => {
         ))}
       </Slider>
       <FixedTextContainer>
-      
-        <SlideTitle key={currentIndex}>{items[currentIndex].text}</SlideTitle>
+        <SlideTitle isExiting={isExiting} key={currentIndex}>
+          {items[currentIndex].text}
+        </SlideTitle>
       </FixedTextContainer>
     </CarouselContainer>
   );
@@ -75,31 +76,30 @@ const HomeCarousel = () => {
 
 export default memo(HomeCarousel);
 
-
-
 const CarouselContainer = styled.div`
-  width: calc(100% - 3vw);  
+  width: calc(100% - 3vw);
   max-width: 100%;
   height: calc(100vh - 12vh);
-  margin: 75px auto;       
+  margin: 75px auto;
   color: #ff0000;
   overflow: hidden;
   position: relative;
-  
+
+  @media (max-width: 768px) {
+    height: calc(100vh - 25vh);
+  }
 `;
 
 
 const Slide = styled.div`
-
-  height: 100vh;             
-  width: 100%;              
+  height: 100vh;
+  width: 100%;
   background-image: url(${(props) => props.backgroundImage});
-  background-size: cover;    
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
+  filter: brightness(0.7); 
 `;
-
 
 const FixedTextContainer = styled.div`
   position: absolute;
@@ -109,25 +109,24 @@ const FixedTextContainer = styled.div`
   max-width: 50%;
   width: 100%;
   box-sizing: border-box;
-  overflow: hidden;   
+  overflow: hidden;
 
   @media (max-width: 768px) {
-    max-width: 50%;
-    left: 10px;
+    max-width: 90%;
+    left: 0px;
+    bottom: 10vh;
   }
 `;
 
 
-// Define la animación de deslizamiento hacia abajo
-const slideDown = keyframes`
-  0% {
-    
-    transform: translateY(-200%);
-  }
-  100% {
-    
-    transform: translateY(0);
-  }
+const slideDownIn = keyframes`
+  0% { transform: translateY(-200%); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+`;
+
+const slideDownOut = keyframes`
+  0% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(200%); opacity: 0; }
 `;
 
 
@@ -140,14 +139,13 @@ const SlideTitle = styled.h3`
   z-index: 1;
   text-transform: uppercase;
   line-height: 0.8;
-  white-space: normal;         /* Permite ajustar el texto */
-  word-break: keep-all;        /* Evita que las palabras largas se dividan */
-     
-  
-  animation: ${slideDown} 0.8s ease forwards;
+  white-space: normal;
+  word-break: keep-all;
+
+  animation: ${(props) => (props.isExiting ? slideDownOut : slideDownIn)} 0.8s ease forwards;
 
   @media (max-width: 768px) {
     margin-left: 10px;
-    font-size: 12vw;
+    font-size: 15vw;
   }
 `;
