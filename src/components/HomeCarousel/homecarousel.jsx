@@ -1,24 +1,27 @@
 import React, { memo, useState, useEffect } from "react";
 import Slider from "react-slick";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components"; // Importa keyframes
+
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const HomeCarousel = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [currentIndex, setCurrentIndex] = useState(0); 
+
   
  
   const items = [
     {
-      text: "GTTNEP017 Hebra & Vandermou - Tribalero",
+      text: "Hebra & Vandermou - Tribalero",
       image: "/GTTNEP017.jpg",
     },
     {
-      text: "GTTNLP001 Bad Legs - Metamorphosis LP",
+      text: "Bad Legs - Metamorphosis LP",
       image: "/GTTNLP001.jpg",
     },
     {
-      text: "GTTNEP016 MV - Time to Fly EP",
+      text: "MV - Time to Fly EP",
       image: "/GTTNEP016.jpg",
     },
     {
@@ -37,6 +40,8 @@ const HomeCarousel = () => {
     autoplaySpeed: 4000, 
     pauseOnHover: false,  
     pauseOnFocus: false,
+    beforeChange: (oldIndex, newIndex) => setCurrentIndex(newIndex), // Actualiza el índice antes de cambiar de slide
+
     
   };
 
@@ -55,15 +60,15 @@ const HomeCarousel = () => {
 
   return (
     <CarouselContainer>
-   <Slider {...settings} key={windowWidth}> 
+      <Slider {...settings} key={windowWidth}>
         {items.map((item, index) => (
-          <Slide key={index} backgroundImage={item.image}>
-            <SlideContent>
-              <SlideTitle>{item.text}</SlideTitle>
-            </SlideContent>
-          </Slide>
+          <Slide key={index} backgroundImage={item.image} />
         ))}
       </Slider>
+      <FixedTextContainer>
+      
+        <SlideTitle key={currentIndex}>{items[currentIndex].text}</SlideTitle>
+      </FixedTextContainer>
     </CarouselContainer>
   );
 };
@@ -85,9 +90,7 @@ const CarouselContainer = styled.div`
 
 
 const Slide = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
   height: 100vh;             
   width: 100%;              
   background-image: url(${(props) => props.backgroundImage});
@@ -98,34 +101,53 @@ const Slide = styled.div`
 `;
 
 
-const SlideContent = styled.div`
-  padding: 20px;
-  border-radius: 5px;
-  text-align: left;
+const FixedTextContainer = styled.div`
   position: absolute;
-  bottom: 25vh;
-  justify-content: center;
-  align-items: flex-start;
-  max-width: 5%; /* Limita el ancho máximo del contenedor */
+  bottom: 14vh;
+  left: 20px;
+  z-index: 2;
+  max-width: 50%;
   width: 100%;
-  box-sizing: border-box; /* Incluye el padding en el ancho total */
+  box-sizing: border-box;
+  overflow: hidden;   
 
   @media (max-width: 768px) {
-    max-width: 9%; /* Ajusta el ancho máximo en pantallas pequeñas */
+    max-width: 50%;
+    left: 10px;
   }
 `;
 
+
+// Define la animación de deslizamiento hacia abajo
+const slideDown = keyframes`
+  0% {
+    
+    transform: translateY(-200%);
+  }
+  100% {
+    
+    transform: translateY(0);
+  }
+`;
+
+
 const SlideTitle = styled.h3`
-  font-size: 3vw;
+  font-family: kaneda-gothic-extrabold;
+  font-size: 8vw;
   color: #f5f5f5;
   margin: 0;
+  margin-left: 30px;
   z-index: 1;
   text-transform: uppercase;
-  line-height: 1.2;
-  overflow-wrap: break-word; /* Permite ajustar palabras largas al ancho del contenedor */
-  word-break: break-word; /* Divide palabras solo cuando es necesario */
+  line-height: 0.8;
+  white-space: normal;         /* Permite ajustar el texto */
+  word-break: keep-all;        /* Evita que las palabras largas se dividan */
+     
+  
+  animation: ${slideDown} 0.8s ease forwards;
 
   @media (max-width: 768px) {
-    font-size: 6vw; /* Ajusta el tamaño de la fuente para pantallas pequeñas */
+    margin-left: 10px;
+    font-size: 12vw;
   }
 `;
