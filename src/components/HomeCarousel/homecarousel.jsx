@@ -5,6 +5,10 @@ import styled, { keyframes } from "styled-components";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+const arrowLeftUrl = "https://cdn.prod.website-files.com/6447bca571fb2820e0a009be/645e620bc4bd79638317564c_right-arrow.png";
+const arrowRightUrl = "https://cdn.prod.website-files.com/6447bca571fb2820e0a009be/645e620bc4bd79638317564c_right-arrow.png";
+
+
 const HomeCarousel = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -39,12 +43,18 @@ const HomeCarousel = () => {
     autoplaySpeed: 4000,
     pauseOnHover: false,
     pauseOnFocus: false,
+    draggable: false,
+    swipe: false, // Desactiva swipe
+    touchMove: false, // Desactiva movimiento táctil
+    arrows: true,
+    prevArrow: <ArrowStyle className="slick-prev" arrowUrl={arrowLeftUrl} />,
+    nextArrow: <ArrowStyle className="slick-next" arrowUrl={arrowRightUrl} />,
     beforeChange: (oldIndex, newIndex) => {
-      setIsExiting(true); // Activa la salida
+      setIsExiting(true);
       setTimeout(() => {
-        setCurrentIndex(newIndex); // Cambia el índice después de la salida
-        setIsExiting(false); // Desactiva la salida después de un tiempo
-      }, 200); // El tiempo debe coincidir con la duración de la animación de salida
+        setCurrentIndex(newIndex);
+        setIsExiting(false);
+      }, 200);
     },
   };
 
@@ -85,6 +95,11 @@ const CarouselContainer = styled.div`
   overflow: hidden;
   position: relative;
 
+
+  .slick-prev:before,
+  .slick-next:before {
+    display: none !important;
+  }
   @media (max-width: 768px) {
     height: calc(100vh - 25vh);
   }
@@ -147,5 +162,53 @@ const SlideTitle = styled.h3`
   @media (max-width: 768px) {
     margin-left: 10px;
     font-size: 15vw;
+  }
+`;
+
+
+const ArrowStyle = styled.div`
+top: 80vh!important;
+left:400px !important;
+  position: absolute !important;
+
+
+  z-index: 10 !important;
+  width: 65px !important;
+  height: 45px !important;
+  background-image: url(${(props) => props.arrowUrl}) !important;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  cursor: pointer !important;
+
+  // Centraliza horizontalmente
+  left: 50%;
+  transform: translateX(-50%) !important;
+
+
+
+  &.slick-prev {
+    margin-right: 40px; // Espacio a la izquierda de la flecha derecha
+    transform: translateX(-150%) translateY(-7%) rotate(180deg)  !important; // Desplaza y rota la flecha izquierda
+  }
+
+  &.slick-next {
+    margin-left: 40px; // Espacio a la derecha de la flecha izquierda
+  }
+
+
+
+
+
+
+  @media (max-width: 768px) {
+    top: 68vh!important;
+left: 68vw !important;
+width: 45px !important;
+
+
+&.slick-prev {
+    margin-right: 40px; // Espacio a la izquierda de la flecha derecha
+    transform: translateX(-150%) translateY(-37%) rotate(180deg)  !important; // Desplaza y rota la flecha izquierda
+  }
   }
 `;
