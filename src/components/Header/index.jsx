@@ -49,7 +49,7 @@ const Header = () => {
     <S.Header isVisible={isVisible}>
       <S.Content>
         <S.Logo>
-          <img src={Gutting} width="200px" alt="" />
+          <img src={Gutting} width="200px" alt="Logo" />
         </S.Logo>
         <S.NavBar>
           <S.NavLink>

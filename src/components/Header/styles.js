@@ -10,6 +10,8 @@ export const Header = styled.div`
   top: ${(props) =>
     props.isVisible ? '0' : '-100px'}; /* Esconder y mostrar con scroll */
   transition: top 0.3s ease-in-out; /* Transición suave */
+
+
 `
 
 export const Content = styled.div`
@@ -17,20 +19,22 @@ export const Content = styled.div`
   width: 100%;
   flex-direction: column;
   align-items: center;
- 
+
+
 
   @media (max-width: 768px) {
-    flex-direction: column;
-    padding: 10px 0;
+   
+ 
   }
+
 `
 
 export const Logo = styled.div`
-  width: 100%;
   text-align: center;
+  margin-top: 12px;
   img {
     max-width: 150px;
-    height: auto;
+
 
     @media (max-width: 768px) {
       max-width: 120px;
@@ -39,19 +43,21 @@ export const Logo = styled.div`
 `
 
 export const NavBar = styled.div`
-  width: 90%;
+  width: 100%;
+  margin-right: 7vw;
   font-size: 16px;
   color: white;
   display: flex;
   justify-content: flex-end;
   position: absolute;
-  
+  font-size: 14px;
 
-  @media (max-width: 768px) {
+  @media (max-width: 968px) {
     width: 100%;
     flex-direction: column;
     align-items: center;
-    font-size: 14px;
+  
+    display: none;
   }
 `
 
@@ -65,8 +71,8 @@ export const NavLink = styled.div`
 `
 
 export const Link = styled.div`
- margin-left: 30px;
- margin-top: 15px;
+ margin-left: 25px;
+ margin-top: 30px;
 
 
 
