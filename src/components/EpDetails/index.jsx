@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import { eps } from '../../constants/constants'
 import TrackPlayer from '../TrackPlayer'
+import MusicPlayer from '../MusicPlayer'
 import * as S from './styles'
 import blanco from '../../assets/blanco.png'
 // import Footer from '../Footer'
@@ -31,7 +32,7 @@ const EpDetail = () => {
     <>
       <S.EpDetailContainer backgroundImage={selectedEp.coverUrl}>
         <S.EpContent>
-          <S.EpCover>
+          {/* <S.EpCover>
             <img src={selectedEp.coverUrl} alt={selectedEp.title} />
             <S.TrackList>
               {selectedEp.tracks.map((track) => (
@@ -48,7 +49,6 @@ const EpDetail = () => {
           <S.Info href="">
             <h2>{selectedEp.title}</h2>
             <h3> {selectedEp.artist} </h3>
-          
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
             officia cupiditate culpa ullam animi suscipit ipsa, corporis, at eum
             a fugit, dolorem omnis veritatis architecto error! Soluta facilis
@@ -58,17 +58,25 @@ const EpDetail = () => {
             at eum a fugit, dolorem omnis veritatis architecto error! Soluta
             facilis labore perspiciatis. Lorem ipsum dolor sit amet consectetur
             adipisicing elit.
-            <br /> Facere officia cupiditate culpa ullam animi
-            suscipit ipsa, corporis, at eum a fugit, dolorem omnis veritatis
-            architecto error! Soluta facilis labore perspiciatis. Lorem ipsum
-            dolor sit amet consectetur adipisicing elit. <br />
+            <br /> Facere officia cupiditate culpa ullam animi suscipit ipsa,
+            corporis, at eum a fugit, dolorem omnis veritatis architecto error!
+            Soluta facilis labore perspiciatis. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. <br />
             Facere officia cupiditate culpa ullam animi suscipit ipsa, corporis,
             at eum a fugit, dolorem omnis veritatis architecto error! Soluta
             facilis labore perspiciatis.
-          </S.Info>
+          </S.Info> */}
+          <MusicPlayer
+            track={
+              selectedEp.tracks.find((track) => track.id === currentTrackId) ||
+              {}
+            }
+            currentTrackId={currentTrackId}
+            setCurrentTrackId={setCurrentTrackId}
+            selectedEp={selectedEp}
+          />
         </S.EpContent>
-        <S.PlayerContainer>
-          
+        {/* <S.PlayerContainer>
           <TrackPlayer
             track={
               selectedEp.tracks.find((track) => track.id === currentTrackId) ||
@@ -77,7 +85,7 @@ const EpDetail = () => {
             currentTrackId={currentTrackId}
             setCurrentTrackId={setCurrentTrackId}
           />
-        </S.PlayerContainer>
+        </S.PlayerContainer> */}
       </S.EpDetailContainer>
       {/* <Footer /> */}
     </>

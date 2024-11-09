@@ -93,8 +93,8 @@ export const PlayerContainer = styled.div`
   /* border: 1px solid yellow; */
   width: 100%;
   background-color: black;
-  position: fixed;
-  bottom: 0px;
+  /* position: fixed; */
+  /* bottom: 0px; */
   padding: 15px;
   
   height: 100%;

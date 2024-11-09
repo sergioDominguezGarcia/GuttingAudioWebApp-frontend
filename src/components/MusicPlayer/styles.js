@@ -4,8 +4,9 @@ export const Container = styled.div`
   margin: 0 auto;
   background-color: darkgrey;
   padding: 1rem;
-  height: 450px;
-  width: 350px;
+  background-color: rgba(118, 118, 118, 0.75);
+  /* height: 450px; */
+  width: 500px;
   border-radius: 10px;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
   transition: all 0.5s ease;
@@ -14,10 +15,13 @@ export const Container = styled.div`
   }
 `
 export const Cover = styled.div`
+  display: flex;
+  padding: 16px;
+  justify-content: center;
   img {
     object-fit: cover;
-    height: 200px;
-    width: 200px;
+
+    width: 400px;
     border-radius: 25%;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
   }
@@ -85,4 +89,57 @@ export const Next = styled.i`
 export const Play = styled.i`
   font-size: 2rem;
 
+`
+export const H2 = styled.h2`
+  align-self: center;
+  font-size: 1.5rem;
+  color: #333;
+`
+export const TrackList = styled.div`
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.2);
+  /* border-top: 1px solid gray; */
+`
+export const TrackItem = styled.div`
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 8px;
+  &:hover {
+    background-color: #4f4f4f6c;
+  }
+`
+
+export const StyledAudio = styled.audio`
+  width: 100%;
+  margin-top: 10px;
+`
+export const VolumeControl = styled.input`
+  width: 100%;
+  margin-top: 5px;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #ccc;
+  height: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #333;
+  }
+
+  &::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #333;
+  }
 `

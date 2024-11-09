@@ -79,25 +79,6 @@ const TrackPlayer = ({ track, currentTrackId, setCurrentTrackId }) => {
           max="100"
           />
 
-      {/* <S.ProgressBar
-        type="range"
-        value={progress}
-        onChange={handleProgressChange}
-        min="0"
-        max="100"
-      /> */}
-
-      {/* <S.ControlContainer>
-        <S.TimeDisplay>
-          {Math.floor(currentTime / 60)}:
-          {('0' + Math.floor(currentTime % 60)).slice(-2)}
-        </S.TimeDisplay>
-
-        <S.TimeDisplay>
-          {Math.floor(duration / 60)}:
-          {('0' + Math.floor(duration % 60)).slice(-2)}
-        </S.TimeDisplay>
-      </S.ControlContainer> */}
     </S.TrackPlayerContainer>
   )
 }
