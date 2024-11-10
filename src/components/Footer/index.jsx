@@ -7,8 +7,8 @@ const Footer = () => {
     
     <S.Footer>
 
-    POWERED BY sergioDEV
-  </S.Footer>
+© 2024 GUTTING AUDIO. 
+All rights reserved.  </S.Footer>
   )
 };
 

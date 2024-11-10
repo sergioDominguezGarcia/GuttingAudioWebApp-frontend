@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-// Estilo para el header con transición de visibilidad
+
 export const Header = styled.div`
   background-color: black;
   z-index: 1000;
@@ -8,8 +8,8 @@ export const Header = styled.div`
   width: 100vw;
   position: fixed;
   top: ${(props) =>
-    props.isVisible ? '0' : '-100px'}; /* Esconder y mostrar con scroll */
-  transition: top 0.3s ease-in-out; /* Transición suave */
+    props.isVisible ? '0' : '-100px'}; 
+  transition: top 0.3s ease-in-out; 
 
 
 
@@ -17,11 +17,11 @@ export const Header = styled.div`
 
 export const Content = styled.div`
   display: flex;
-  width: 100%;
-  flex-direction: column;
+  width: 100vw;
+
   align-items: center;
 
-
+  justify-content: center; 
 
 
   @media (max-width: 768px) {
@@ -33,14 +33,16 @@ export const Content = styled.div`
 
 export const Logo = styled.div`
 z-index: 50;
-  text-align: center;
+  margin-top: 8px;
+  
  
-  cursor: pointer; // Hace que el cursor se muestre como un puntero en el logo
+  cursor: pointer; 
   img {
     max-width: 190px;
 
     @media (max-width: 768px) {
-      max-width: 120px;
+      margin-top: -2px;
+      max-width: 130px;
     }
   }
 `
@@ -48,24 +50,27 @@ z-index: 50;
 
 export const NavBar = styled.div`
   width: 100%;
-  margin-right: 7vw;
-  font-size: 16px;
+
   color: white;
   display: flex;
   justify-content: flex-end;
   position: absolute;
   font-size: 14px;
 
+
+
   @media (max-width: 968px) {
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
+   
+   
+    
   
-    display: none;
+   
   }
 `
 
 export const NavLink = styled.div`
+
+display: none;
 
   cursor: pointer;
 
@@ -75,7 +80,7 @@ export const NavLink = styled.div`
 `
 
 export const Link = styled.div`
- margin-left: 25px;
+
  margin-top: 30px;
 
 
