@@ -5,10 +5,10 @@ export const EpGrid = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
-  padding: 20px;
-  width: 100%;
-  height: 100vh;
+  gap: 40px;
+  margin-bottom:1rem;
+  width: 80%;
+  /* height: auto; */
   box-sizing: border-box;
 `
 
@@ -51,9 +51,9 @@ export const EpCard = styled.div`
   }
 
   width: 100%;
-  max-width: 450px;
   height: 100%;
-  max-height: 450px;
+  max-width: 400px;
+  max-height: 400px;
 `
 
 // Superposición (overlay) que oscurece la tarjeta y muestra el icono de play

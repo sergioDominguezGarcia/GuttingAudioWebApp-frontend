@@ -7,6 +7,8 @@ const Releases = () => {
   return (
     <S.Content>
       <ImageCarousel />
+
+        
       <S.Releases>
         <EpList />
       </S.Releases>
