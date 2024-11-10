@@ -148,15 +148,20 @@ const CarouselContainer = styled.div`
 const Slide = styled.div`
   height: 92vh;
   width: 100%;
-  background-image: url(${(props) => props.backgroundImage});
+  background-image: 
+    linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), 
+    url(${(props) => props.backgroundImage});
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  filter: brightness(0.6); 
+  /* filter: brightness(0.9);  */
   @media (max-width: 768px) {
     height: 85vh;
   }
 `;
+
+
+
 const FixedTextContainer = styled.div`
   position: absolute;
   bottom: 14vh;
@@ -191,7 +196,7 @@ const Tag = styled.div`
   margin: 0 0px 10px 33px;
   text-transform: uppercase;
   line-height: 1;
-  animation: ${(props) => (props.isExiting ? slideDownOut : slideDownIn)} 0.8s ease forwards;
+  animation: ${(props) => (props.isExiting ? slideDownOut : slideDownIn)} 0.6s ease forwards;
 
   @media (max-width: 768px) {
    margin-left: 10px;
@@ -211,7 +216,7 @@ const SlideTitle = styled.h3`
   white-space: normal;
   word-break: keep-all;
 
-  animation: ${(props) => (props.isExiting ? slideDownOut : slideDownIn)} 0.8s ease forwards;
+  animation: ${(props) => (props.isExiting ? slideDownOut : slideDownIn)} 0.7s ease forwards;
 
   @media (max-width: 768px) {
     margin-left: 10px;

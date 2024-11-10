@@ -12,7 +12,7 @@ const fadeOut = keyframes`
 const logoAnimation = keyframes`
   0% {
     opacity: 0;
-    transform: scale(1.5); 
+    transform: scale(1.2); 
   }
   50% {
     opacity: 1;
@@ -36,8 +36,8 @@ const Container = styled.div`
   align-items: center;
   justify-content: center;
   z-index: 9999;
-  animation: ${fadeOut} 0.4s ease-in-out forwards;
-  animation-delay: 2.0s;
+  animation: ${fadeOut} 0.2s ease-in-out forwards;
+  animation-delay: 1.6s;
 `;
 
 // Estilos del logo
@@ -58,7 +58,7 @@ const Loading = () => {
     // Después de 2.4 segundos (el tiempo de la animación de fadeOut + un poco más) ocultamos el contenedor
     const timer = setTimeout(() => {
       setIsVisible(false);
-    }, 2400);
+    }, 2000);
 
     return () => clearTimeout(timer); // Limpieza del timer al desmontar
   }, []);

@@ -1,10 +1,12 @@
 import React, { useState } from "react";
-import styled, { createGlobalStyle } from "styled-components"; 
+import styled, { createGlobalStyle, keyframes } from "styled-components"; 
 import { Link } from 'react-router-dom';
+import Gutting from '../../assets/Gutting.jpg'
+
+
+
 
 const Container = styled.header`
- 
-
   position: relative;
   z-index: 99999;
 `;
@@ -22,9 +24,8 @@ const BurgerButton = styled.button`
   box-sizing: border-box;
   position: absolute;
   right: 0px;
-
   margin-top: -16px;
-  margin-right: 5vw;
+  margin-right: 2.7vw;
   z-index: 99999999;
 
   &:focus {
@@ -42,112 +43,173 @@ const BurgerButton = styled.button`
     transform-origin: 1px;
   }
 
-  &.open span:nth-child(1) {
-    transform: rotate(45deg);
+  ${({ isOpen }) => isOpen && `
+    span:nth-child(1) {
+      transform: rotate(45deg);
+    }
+    span:nth-child(2) {
+      opacity: 0;
+      transform: translateX(20px);
+    }
+    span:nth-child(3) {
+      transform: rotate(-45deg);
+    }
+  `}
+
+  @media (max-width: 768px) {
+    margin-top: -16px;
+    margin-right: 3vw;
   }
-
-  &.open span:nth-child(2) {
-    opacity: 0;
-    transform: translateX(20px);
-  }
-
-  &.open span:nth-child(3) {
-    transform: rotate(-45deg);
-  }
-
-
- @media (max-width: 768px) {
-  margin-top: -16px;
-  margin-right: 7vw;
-  }
-
-
 `;
 
 const SiteNavigation = styled.div`
   height: 100%;
-  right: 0;
+left: 0;
   overflow: hidden;
   position: fixed;
   top: 0;
   width: 100%;
-  visibility: hidden;
+  visibility: ${({ isOpen }) => (isOpen ? 'visible' : 'hidden')};
   transition: visibility 0.3s ease;
+`;
 
-  &.menu__opend {
-    visibility: visible;
+const BgMenu = styled.div`
+  width: 100%;
+  height: 100%;
+  transform: ${({ isOpen }) => (isOpen ? 'translateY(0)' : 'translateY(-100%)')};
+  transition: 0.4s ease all;
+  background-color: #000000;
+`;
+
+const MenuWrapper = styled.div`
+  position: relative;
+  width: 100%;
+  height: 100%;
+`;
+
+const TheMenu = styled.ul`
+  top: 100px auto;
+  bottom: 100px auto;
+ 
+  padding: 5vw 3vw ; 
+  list-style: none; 
+  @media (max-width: 768px) {
+    padding: 47vw 4vw ;
   }
+`;
 
-  .bg__menu {
+const MenuItem = styled.li`
+ 
+`;
+
+const lineAnimation = keyframes`
+  from {
+    width: 0;
+  }
+  to {
     width: 100%;
-    height: 100%;
-    transform: translateY(-100%);
-    transition: 0.3s ease all;
-    background-color: #000000;
   }
+`;
 
-  &.menu__opend .bg__menu {
-    transform: translateY(0);
-  }
-
-  .menu__wrapper {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    
-  }
-
-  .the_menu {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    padding-left: 0;
-    text-align: right;
-    padding-bottom: 70px;
-
-    .menu_item {
-      text-align: right;
-
-      .menu-link {
-        color: #ffffff;
-        line-height: 0.8;
-        font-size: 11vw;
-        text-decoration: none;
-          font-family: kaneda-gothic-extrabold;
-        text-transform: uppercase;
-        display: block;
-        padding-right: 4vw;
-        margin: 15px 0;
-
-        @media (min-width: 768px) {
-          font-size: 48px;
-        }
-
-        &:hover {
-          color: var(--text-color-3);
-        }
-      }
-    }
-  }
-
-  .menu_footer {
-    bottom: 0;
-    color: #ffffff;
-    font-size: 11px;
-    font-family: 'Kanit-ExtraBold';
-    backdrop-filter: blur(10px); 
+const fadeIn = keyframes`
+  from {
     opacity: 0;
-    transition: opacity 0.8s ease;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    position: absolute;
-    width: 100%;
-    padding: 3px;
+  }
+  to {
+    opacity: 1;
+  }
+`;
+
+const MenuLink = styled(Link)`
+  color: #9b9b9b;
+  line-height: 1.2;
+  font-size: 18vw;
+  text-decoration: none;
+  font-family: kaneda-gothic-extrabold;
+  text-transform: uppercase;
+  display: block;
+  position: relative;
+  
+  opacity: 0;
+  animation: ${({ isOpen }) => (isOpen ? fadeIn : 'none')} 0.2s forwards 0.3s; 
+
+  color: #9b9b9b;
+  transition: color 0.2s ease;
+
+  &:hover {
+   
+    color: #ffffff;
+    transition: color 0.2s ease;  // Duración de 0,2 segundos al encender
   }
 
-  &.menu__opend .menu_footer {
-    opacity: 1;
+  &:not(:hover) {
+    // Vuelve a gris al quitar el hover
+    color: #9b9b9b;
+    transition: color 0.3s ease 0s;  // Duración de 0,3 segundos con 0,2s de retraso al apagar
+  }
+
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    background: #d8d8d8;
+ 
+    transition: width 0.3s ease;
+    animation: ${({ isOpen }) => (isOpen ? lineAnimation : 'none')} 0.6s forwards 0.4s; 
+  }
+
+  &:not(:last-child) {
+    padding-bottom: 10px;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 5vw;
+  }
+`;
+
+
+
+
+
+const MenuFooter = styled.div`
+  bottom: 0;
+  color: #ffffff;
+  font-size: 11px;
+  font-family: 'Kanit-ExtraBold';
+  backdrop-filter: blur(10px); 
+  opacity: ${({ isOpen }) => (isOpen ? '1' : '0')};
+  transition: opacity 0.8s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  width: 100%;
+  padding: 3px;
+`;
+
+
+
+const Logo = styled.div`
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 50;
+  cursor: pointer;
+
+
+  opacity: 0; 
+  animation: ${({ isOpen }) => (isOpen ? fadeIn : 'none')} 0.5s forwards 0.3s; 
+
+  img {
+    max-width: 190px;
+
+    @media (max-width: 768px) {
+      max-width: 130px;
+    }
   }
 `;
 
@@ -158,7 +220,6 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
-
 const Headermain = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isActive, setIsActive] = useState(false);
@@ -167,13 +228,11 @@ const Headermain = () => {
     setIsOpen(!isOpen);
 
     if (!isOpen) {
-     
       const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
       document.documentElement.style.setProperty('--scrollbar-width', `${scrollbarWidth}px`);
-      document.body.classList.add("ovhidden"); 
-
+      document.body.classList.add("ovhidden");
     } else {
-      document.body.classList.remove("ovhidden"); 
+      document.body.classList.remove("ovhidden");
     }
 
     setIsActive(true);
@@ -182,12 +241,12 @@ const Headermain = () => {
     }, 2000);
   };
 
-
   return (
     <Container>
       <GlobalStyle />
       <BurgerButton
-        className={`burger-button ${isOpen ? 'open' : ''} ${isActive ? 'active' : ''}`}
+        isOpen={isOpen}
+        className={`${isActive ? 'active' : ''}`}
         onClick={toggleMenu}
       >
         <span></span>
@@ -195,29 +254,39 @@ const Headermain = () => {
         <span></span>
       </BurgerButton>
 
-      <SiteNavigation className={`site__navigation ${isOpen ? "menu__opend" : ""}`}>
-        <div className="bg__menu">
-          <div className="menu__wrapper">
-            <ul className="the_menu">
-              <li className="menu_item">
-                <Link onClick={toggleMenu} to="/*" className="menu-link">HOME</Link>
-              </li>
-              <li className="menu_item">
-                <Link onClick={toggleMenu} to="/releases" className="menu-link">RELEASES</Link>
-              </li>
-              <li className="menu_item">
-                <Link onClick={toggleMenu} to="/artists" className="menu-link">ARTISTS</Link>
-              </li>
-              <li className="menu_item">
-                <Link onClick={toggleMenu} to="/radio" className="menu-link">GUTTING RADIO</Link>
-              </li>
-            </ul>
-          </div>
-        </div>
+      <SiteNavigation isOpen={isOpen}>
+        <BgMenu isOpen={isOpen}>
+          <MenuWrapper>
 
-        <div className={`menu_footer ${isOpen ? "menu__opend" : ""}`}>
+
+          <Logo isOpen={isOpen}>
+  <img src={Gutting} width="220px" alt="Logo" />
+        </Logo>
+
+        <TheMenu>
+  <MenuItem>
+    <MenuLink onClick={toggleMenu} to="/" isOpen={isOpen}>HOME</MenuLink>
+  </MenuItem>
+  <MenuItem>
+    <MenuLink onClick={toggleMenu} to="/releases" isOpen={isOpen}>RELEASES</MenuLink>
+  </MenuItem>
+  <MenuItem>
+    <MenuLink onClick={toggleMenu} to="/artists" isOpen={isOpen}>ARTISTS</MenuLink>
+  </MenuItem>
+  <MenuItem>
+    <MenuLink onClick={toggleMenu} to="/radio" isOpen={isOpen}>GUTTING RADIO</MenuLink>
+  </MenuItem>
+</TheMenu>
+
+
+
+
+          </MenuWrapper>
+        </BgMenu>
+
+        <MenuFooter isOpen={isOpen}>
           <p></p>
-        </div>
+        </MenuFooter>
       </SiteNavigation>
     </Container>
   );

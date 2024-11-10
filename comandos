@@ -13,7 +13,12 @@ git add .; git commit -m "add componet loading"; git push origin main
 
 # TRABAJO COMPARTIDO
 
+
 git branch  # mostrar ramas locales y resaltar la rama actual
+
+git checkout home      # Cambia de rama
+
+git add .; git commit -m "add component menu fx"; git push origin home
 
 
 
@@ -21,13 +26,10 @@ git pull origin home     # Mantén la rama actualizada
 
 
 
-git checkout -b home    # Crear Ramas para Nuevas Funcionalidades o Cambios
+git checkout -b home    # Crear Rama
 
-git checkout home      # Cambia de rama
+git merge main      # combinar (merge) los cambios de la rama nombrada a la rama en la que estas ahora
 
-
-
-git add .; git commit -m "add component menu"; git push origin home
 
 
 
