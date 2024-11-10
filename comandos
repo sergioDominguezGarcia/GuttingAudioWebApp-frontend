@@ -15,11 +15,19 @@ git add .; git commit -m "add componet loading"; git push origin main
 
 git branch  # mostrar ramas locales y resaltar la rama actual
 
-git pull origin main     # Mantén la rama principal (main) actualizada
+
+
+git pull origin home     # Mantén la rama actualizada
+
+
 
 git checkout -b home    # Crear Ramas para Nuevas Funcionalidades o Cambios
 
-git add .; git commit -m "add speed 800"; git push origin home
+git checkout home      # Cambia de rama
+
+
+
+git add .; git commit -m "add component menu"; git push origin home
 
 
 

@@ -16,6 +16,8 @@ const Artists = () => {
 
   return (
     <Home>
+
+      
 <Loading />
 
 <HomeCarousel />

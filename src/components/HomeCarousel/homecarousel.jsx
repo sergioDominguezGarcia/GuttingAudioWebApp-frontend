@@ -8,6 +8,7 @@ const arrowLeftUrl = "https://cdn.prod.website-files.com/6447bca571fb2820e0a009b
 const arrowRightUrl = "https://cdn.prod.website-files.com/6447bca571fb2820e0a009be/645e620bc4bd79638317564c_right-arrow.png";
 
 const HomeCarousel = () => {
+  
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isExiting, setIsExiting] = useState(false);
@@ -129,8 +130,8 @@ export default memo(HomeCarousel);
 const CarouselContainer = styled.div`
   width: calc(100% - 5vw);
   max-width: 100%;
-  height: calc(93vh - 5vh);
-  margin: 75px auto;
+  height: calc(98vh - 5vh);
+  margin:  auto;
   color: #ff0000;
   position: relative;
   overflow: visible;
@@ -140,12 +141,12 @@ const CarouselContainer = styled.div`
     display: none !important;
   }
   @media (max-width: 768px) {
-    height: calc(100vh - 25vh);
+    height: calc(100vh - 15vh);
   }
 `;
 
 const Slide = styled.div`
-  height: 87vh;
+  height: 92vh;
   width: 100%;
   background-image: url(${(props) => props.backgroundImage});
   background-size: cover;
@@ -153,7 +154,7 @@ const Slide = styled.div`
   background-repeat: no-repeat;
   filter: brightness(0.6); 
   @media (max-width: 768px) {
-    height: 75vh;
+    height: 85vh;
   }
 `;
 const FixedTextContainer = styled.div`
@@ -193,7 +194,7 @@ const Tag = styled.div`
   animation: ${(props) => (props.isExiting ? slideDownOut : slideDownIn)} 0.8s ease forwards;
 
   @media (max-width: 768px) {
-    margin-left: 10px;
+   margin-left: 10px;
     font-size: 3.2vw;
   }
 `;

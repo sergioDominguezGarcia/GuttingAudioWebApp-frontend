@@ -2,6 +2,7 @@ import { memo, useCallback, useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import * as S from './styles'
 import Gutting from '../../assets/Gutting.jpg'
+import Menu from '../Menu/menu'
 
 const Header = () => {
   const navigate = useNavigate()
@@ -47,11 +48,17 @@ const Header = () => {
 
   return (
     <S.Header isVisible={isVisible}>
+
       <S.Content>
       <S.Logo onClick={handleGoToHome}> 
-      <img src={Gutting} width="220px" alt="Logo" />
+  <img src={Gutting} width="220px" alt="Logo" />
         </S.Logo>
         <S.NavBar>
+
+
+        <Menu/>
+
+
           <S.NavLink>
             <S.Link onClick={handleGoToHome}>HOME</S.Link>
           </S.NavLink>
@@ -66,6 +73,7 @@ const Header = () => {
           </S.NavLink>
         </S.NavBar>
       </S.Content>
+
     </S.Header>
   )
 }
