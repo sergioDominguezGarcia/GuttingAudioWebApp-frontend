@@ -21,7 +21,7 @@ export const eps = [
   {
     id: '001',
     title: 'HIT ME DOWN EP',
-    artist: 'Maniatics',
+    artist: 'MANIATICS',
     coverUrl: GTTNEP001, // URL de la portada del EP
     tracks: [
       {
@@ -41,6 +41,7 @@ export const eps = [
   {
     id: '002',
     title: 'RAMPAGE EP',
+    artist: 'FEARLESS',
     coverUrl: GTTNEP002,
     tracks: [
       {
@@ -60,6 +61,7 @@ export const eps = [
   {
     id: '003',
     title: 'ASSAULT EP',
+    artist: 'SUSPECT',
     coverUrl: GTTNEP003,
     tracks: [
       {
@@ -79,6 +81,7 @@ export const eps = [
   {
     id: '004',
     title: 'STRONGER THINGS EP',
+    artist: 'QKHACK',
     coverUrl: GTTNEP004,
     tracks: [
       {
@@ -96,8 +99,9 @@ export const eps = [
     ],
   },
   {
-    id: 'GTTNEP005',
+    id: '005',
     title: 'BACKSPIN EP',
+    artist: 'MANCHA',
     coverUrl: GTTNEP005,
     tracks: [
       {
@@ -116,7 +120,8 @@ export const eps = [
   },
   {
     id: '006',
-    title: 'ASSAULT EP',
+    title: 'PUSH BUTTON',
+    artist: 'HEBRA',
     coverUrl: GTTNEP006,
     tracks: [
       {
@@ -136,6 +141,7 @@ export const eps = [
   {
     id: '007',
     title: 'ASSAULT EP',
+    artist: 'SUSPECT',
     coverUrl: GTTNEP007,
     tracks: [
       {
@@ -155,6 +161,7 @@ export const eps = [
   {
     id: '008',
     title: 'ASSAULT EP',
+    artist: 'Mancha',
     coverUrl: GTTNEP008,
     tracks: [
       {
@@ -175,6 +182,7 @@ export const eps = [
   {
     id: '009',
     title: 'ASSAULT EP',
+    artist: 'Mancha',
     coverUrl: GTTNEP009,
     tracks: [
       {
@@ -194,6 +202,7 @@ export const eps = [
   {
     id: '010',
     title: 'ASSAULT EP',
+    artist: 'Mancha',
     coverUrl: GTTNEP010,
     tracks: [
       {
@@ -213,6 +222,7 @@ export const eps = [
   {
     id: '011',
     title: 'ASSAULT EP',
+    artist: 'Mancha',
     coverUrl: GTTNEP011,
     tracks: [
       {
@@ -232,6 +242,7 @@ export const eps = [
   {
     id: '012',
     title: 'ASSAULT EP',
+    artist: 'Mancha',
     coverUrl: GTTNEP012,
     tracks: [
       {
@@ -251,6 +262,7 @@ export const eps = [
   {
     id: '013',
     title: 'ASSAULT EP',
+    artist: 'Mancha',
     coverUrl: GTTNEP013,
     tracks: [
       {
@@ -270,6 +282,7 @@ export const eps = [
   {
     id: '014',
     title: 'ASSAULT EP',
+    artist: 'Mancha',
     coverUrl: GTTNEP014,
     tracks: [
       {
@@ -289,6 +302,7 @@ export const eps = [
   {
     id: '015',
     title: 'ASSAULT EP',
+    artist: 'Mancha',
     coverUrl: GTTNEP015,
     tracks: [
       {
@@ -308,6 +322,7 @@ export const eps = [
   {
     id: '016',
     title: 'ASSAULT EP',
+    artist: 'Mancha',
     coverUrl: GTTNEP016,
     tracks: [
       {

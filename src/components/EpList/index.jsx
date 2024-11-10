@@ -13,8 +13,18 @@ const EpList = () => {
   return (
     <S.EpGrid>
       {eps.map((ep) => (
-        <S.EpCard key={ep.id} onClick={() => handleEpClick(ep.id)}>
-          <S.EpCover src={ep.coverUrl} alt={ep.title} />
+        <S.EpCard
+          key={ep.id}
+          coverUrl={ep.coverUrl}
+          onClick={() => handleEpClick(ep.id)}
+        >
+          <S.Overlay>
+            <S.PlayIcon>▶</S.PlayIcon>
+          </S.Overlay>
+          <S.EpInfo>
+            <h3>{ep.title}</h3>
+            <p>{ep.artist}</p>
+          </S.EpInfo>
         </S.EpCard>
       ))}
     </S.EpGrid>
