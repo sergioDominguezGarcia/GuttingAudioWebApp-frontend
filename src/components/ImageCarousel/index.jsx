@@ -26,26 +26,29 @@ import cover22 from './covers/cover22.png'
 
 
 const CarouselContainer = styled.div`
-  background: linear-gradient(
-    90deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(255, 255, 255, 0.5) 50%,
-    rgba(0, 0, 0, 1) 100%
-  );
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  transition: background-image 1s ease-in-out;
-  z-index: -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 `
 
-const ImageCarousel = () => {
-  const [currentIndex, setCurrentIndex] = useState(0)
+const CarouselImage = styled.div`
+  background-image: ${({ url }) => `url(${url})`};
+  background-size: cover;
+  filter:blur(5px);
+  background-position: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: ${({ isActive }) => (isActive ? 1 : 0)};
+  transition: opacity 1s ease-in-out;
+`
+
 const imageUrls = [
   cover1,
   cover2,
@@ -70,20 +73,27 @@ const imageUrls = [
   cover21,
   cover22,
 ]
-
+const ImageCarousel = () => {
+  const [currentIndex, setCurrentIndex] = useState(0)
 
   useEffect(() => {
     const intervalId = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % imageUrls.length)
-    }, 3000) // Cambia la imagen cada 3 segundos
+    }, 3000)
 
     return () => clearInterval(intervalId)
-  }, [imageUrls.length])
+  }, [])
 
   return (
-    <CarouselContainer
-      style={{ backgroundImage: `url(${imageUrls[currentIndex]})` }}
-    />
+    <CarouselContainer>
+      {imageUrls.map((url, index) => (
+        <CarouselImage
+          key={index}
+          url={url}
+          isActive={index === currentIndex}
+        />
+      ))}
+    </CarouselContainer>
   )
 }
 
