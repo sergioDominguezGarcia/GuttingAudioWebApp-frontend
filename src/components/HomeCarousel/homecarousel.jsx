@@ -16,31 +16,48 @@ const HomeCarousel = () => {
   
 
   const items = [
+
     {
       text: "Hebra & Vandermou - Tribalero",
       image: "/GTTNEP017.jpg",
-      tag: "Release",
+      tag: "Last release",
       link: "/releases/001",
 
     },
+
+
     {
       text: "Bad Legs - Metamorphosis LP",
       image: "/GTTNLP001.jpg",
-      tag: "Release",
+      tag: "Last release",
       link: "/releases/001",
     },
+
     {
-      text: "MV - Time to Fly EP",
-      image: "/GTTNEP016.jpg",
-      tag: "Release",
-      link: "/releases/001",
+      text: "ONLY NEUROFUNK",
+      image: "/ONLYNEUROFUNK.jpg",
+      tag: "Event",
+      link: "",
     },
+
+
+
+    {
+      text: "GTTNPOD011 - HACKWAVES",
+      image: "/GTTNPOD011HACKWAVES.jpg",
+      tag: "MIX",
+      link: "",
+    },
+
+
+
     {
       text: "Merchandising",
       image: "/merchandising.jpg",
       tag: "News",
-      link: "/releases/001",
+      link: "",
     },
+
   ];
 
   const settings = {
