@@ -24,6 +24,7 @@ const EpList = () => {
           <S.EpInfo>
             <h3>{ep.title}</h3>
             <p>{ep.artist}</p>
+            <p>{ep.gttn}</p>  
           </S.EpInfo>
         </S.EpCard>
       ))}
