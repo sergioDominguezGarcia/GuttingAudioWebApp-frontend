@@ -26,27 +26,31 @@ import cover22 from './covers/cover22.png'
 
 
 const CarouselContainer = styled.div`
-  position: absolute;
+  position: fixed; /* Cambiado de absolute a fixed */
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  z-index: -1;
+  
 `
 
 const CarouselImage = styled.div`
   background-image: ${({ url }) => `url(${url})`};
   background-size: cover;
-  filter:blur(5px);
+  filter: blur(5px) brightness(0.4);
   background-position: center;
   position: absolute;
   width: 100%;
   height: 100%;
   opacity: ${({ isActive }) => (isActive ? 1 : 0)};
   transition: opacity 1s ease-in-out;
+  width: calc(100% - 5vw);
+  margin: 75px auto;
 `
 
 const imageUrls = [

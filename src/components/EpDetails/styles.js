@@ -1,9 +1,10 @@
 import styled from 'styled-components'
 
 export const EpDetailContainer = styled.div`
-  /* padding: 20px; */
-  
-  width: 100vw;
+  /* width: 100vw; */
+  height: 100vh;
+  width: calc(100% - 5vw);
+  margin: 75px auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,7 +25,7 @@ export const EpDetailContainer = styled.div`
     background-image: url(${(props) => props.backgroundImage});
     background-size: cover;
     background-position: center;
-    filter: blur(8px);
+    filter: blur(5px) brightness(0.6);
   }
 `
 export const TrackItem = styled.div`

@@ -1,6 +1,6 @@
 import React, { useRef, useState, useEffect } from 'react'
 import * as S from './styles'
-import Black from '../../assets/Black.png'
+import { AiFillSound } from 'react-icons/ai'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faPlay,
@@ -17,6 +17,10 @@ const MusicPlayer = ({
 }) => {
   const audioRef = useRef(null)
   const [isPlaying, setIsPlaying] = useState(false)
+  const [volume, setVolume] = useState(1)
+  const [progress, setProgress] = useState(0)
+  const [currentTime, setCurrentTime] = useState(0)
+  const [duration, setDuration] = useState(0)
 
   const handlePlayPause = () => {
     if (isPlaying) {
@@ -48,16 +52,50 @@ const MusicPlayer = ({
   }
 
   useEffect(() => {
-    // Pausar y reiniciar el reproductor cuando cambie de track
     if (audioRef.current) {
       audioRef.current.pause()
       audioRef.current.currentTime = 0
-      setIsPlaying(false) // Evita el auto-play en el cambio de track
+      setIsPlaying(false)
     }
   }, [track])
 
+  useEffect(() => {
+    const updateProgress = () => {
+      const audio = audioRef.current
+      setCurrentTime(audio.currentTime)
+      setDuration(audio.duration || 0)
+      setProgress((audio.currentTime / audio.duration) * 100)
+    }
+
+    const audio = audioRef.current
+    audio.addEventListener('timeupdate', updateProgress)
+
+    return () => audio.removeEventListener('timeupdate', updateProgress)
+  }, [])
+
   const handleTrackSelect = (trackId) => {
     setCurrentTrackId(trackId)
+    if (!isPlaying) handlePlayPause() // Reproducir si no está ya sonando
+  }
+
+  const handleVolumeChange = (e) => {
+    const newVolume = e.target.value / 100
+    setVolume(newVolume)
+    audioRef.current.volume = newVolume
+  }
+
+  const formatTime = (time) => {
+    const minutes = Math.floor(time / 60)
+    const seconds = Math.floor(time % 60)
+    return `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`
+  }
+
+  const handleProgressClick = (e) => {
+    const progressBar = e.target
+    const clickPosition = e.nativeEvent.offsetX
+    const newTime = (clickPosition / progressBar.clientWidth) * duration
+    audioRef.current.currentTime = newTime
+    setCurrentTime(newTime)
   }
 
   return (
@@ -65,14 +103,16 @@ const MusicPlayer = ({
       <S.Cover>
         <img src={selectedEp.coverUrl} alt={selectedEp.title} />
       </S.Cover>
-      <S.Tittle>{track.title || 'TEST TITLE'}</S.Tittle>
-      <S.Artist>{track.artist || 'TEST ARTIST'}</S.Artist>
+      <S.Info>
+        <S.Tittle>{selectedEp.title || 'TEST TITLE'}</S.Tittle>
+        <S.Artist>{selectedEp.artist || 'TEST ARTIST'}</S.Artist>
+      </S.Info>
 
-      <S.PlayerProgress>
-        <S.ProgressBar></S.ProgressBar>
+      <S.PlayerProgress onClick={handleProgressClick}>
+        <S.ProgressBar style={{ width: `${progress}%` }}></S.ProgressBar>
         <S.MusicDuracion>
-          <S.CurrentTime>0:00</S.CurrentTime>
-          <S.Duration>0:00</S.Duration>
+          <S.CurrentTime>{formatTime(currentTime)}</S.CurrentTime>
+          <S.Duration>{formatTime(duration)}</S.Duration>
         </S.MusicDuracion>
       </S.PlayerProgress>
 
@@ -86,7 +126,15 @@ const MusicPlayer = ({
         <S.Next onClick={handleNextTrack}>
           <FontAwesomeIcon icon={faForward} />
         </S.Next>
+        <S.VolumeControl
+          type="range"
+          value={volume * 100}
+          onChange={handleVolumeChange}
+          min="0"
+          max="100"
+        />
       </S.Controls>
+
       <S.TrackList>
         <S.H2>TRACKLIST</S.H2>
         {selectedEp.tracks.map((track) => (
@@ -95,6 +143,9 @@ const MusicPlayer = ({
             onClick={() => handleTrackSelect(track.id)}
           >
             {track.title}
+            {isPlaying && currentTrackId === track.id && (
+              <AiFillSound style={{ marginLeft: '8px', color: 'green' }} />
+            )}
           </S.TrackItem>
         ))}
       </S.TrackList>
