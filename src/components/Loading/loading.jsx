@@ -40,7 +40,7 @@ const Container = styled.div`
   animation-delay: 1.6s;
 `;
 
-// Estilos del logo
+
 const Logo = styled.img`
   width: 620px; 
   animation: ${logoAnimation} 2.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
@@ -51,19 +51,19 @@ const Logo = styled.img`
 `;
 
 const Loading = () => {
-  // Estado para controlar si el loading está visible o no
+
   const [isVisible, setIsVisible] = useState(true);
 
   useEffect(() => {
-    // Después de 2.4 segundos (el tiempo de la animación de fadeOut + un poco más) ocultamos el contenedor
+  
     const timer = setTimeout(() => {
       setIsVisible(false);
     }, 2000);
 
-    return () => clearTimeout(timer); // Limpieza del timer al desmontar
+    return () => clearTimeout(timer); 
   }, []);
 
-  // Si isVisible es false, no renderiza el contenedor
+
   if (!isVisible) return null;
 
   return (
