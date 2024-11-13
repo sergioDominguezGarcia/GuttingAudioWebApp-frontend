@@ -103,53 +103,58 @@ const MusicPlayer = ({
       <S.Cover>
         <img src={selectedEp.coverUrl} alt={selectedEp.title} />
       </S.Cover>
-      <S.Info>
-        <S.Tittle>{selectedEp.title || 'TEST TITLE'}</S.Tittle>
-        <S.Artist>{selectedEp.artist || 'TEST ARTIST'}</S.Artist>
-      </S.Info>
-
-      <S.PlayerProgress onClick={handleProgressClick}>
-        <S.ProgressBar style={{ width: `${progress}%` }}></S.ProgressBar>
-        <S.MusicDuracion>
-          <S.CurrentTime>{formatTime(currentTime)}</S.CurrentTime>
-          <S.Duration>{formatTime(duration)}</S.Duration>
-        </S.MusicDuracion>
-      </S.PlayerProgress>
-
-      <S.Controls>
-        <S.Prev onClick={handlePreviousTrack}>
-          <FontAwesomeIcon icon={faBackward} />
-        </S.Prev>
-        <S.Play onClick={handlePlayPause}>
-          <FontAwesomeIcon icon={isPlaying ? faPause : faPlay} />
-        </S.Play>
-        <S.Next onClick={handleNextTrack}>
-          <FontAwesomeIcon icon={faForward} />
-        </S.Next>
-        <S.VolumeControl
-          type="range"
-          value={volume * 100}
-          onChange={handleVolumeChange}
-          min="0"
-          max="100"
-        />
-      </S.Controls>
-
-      <S.TrackList>
-        <S.H2>TRACKLIST</S.H2>
-        {selectedEp.tracks.map((track) => (
-          <S.TrackItem
-            key={track.id}
-            onClick={() => handleTrackSelect(track.id)}
-          >
-            {track.title}
-            {isPlaying && currentTrackId === track.id && (
-              <AiFillSound style={{ marginLeft: '8px', color: 'green' }} />
-            )}
-          </S.TrackItem>
-        ))}
-      </S.TrackList>
-      <S.StyledAudio ref={audioRef} src={track.audioUrl} />
+      <S.Contain>
+        <S.Info>
+          <S.Tittle>{selectedEp.title || 'TEST TITLE'}</S.Tittle>
+          <S.Artist>{selectedEp.artist || 'TEST ARTIST'}</S.Artist>
+        </S.Info>
+        <S.PlayerProgress onClick={handleProgressClick}>
+          <S.ProgressBar style={{ width: `${progress}%` }}></S.ProgressBar>
+          <S.MusicDuracion>
+            <S.CurrentTime>{formatTime(currentTime)}</S.CurrentTime>
+            <S.Duration>{formatTime(duration)}</S.Duration>
+          </S.MusicDuracion>
+        </S.PlayerProgress>
+        <S.Controls>
+          <S.Prev onClick={handlePreviousTrack}>
+            <FontAwesomeIcon icon={faBackward} />
+          </S.Prev>
+          <S.Play onClick={handlePlayPause}>
+            <FontAwesomeIcon icon={isPlaying ? faPause : faPlay} />
+          </S.Play>
+          <S.Next onClick={handleNextTrack}>
+            <FontAwesomeIcon icon={faForward} />
+          </S.Next>
+          <S.VolumeControl
+            type="range"
+            value={volume * 100}
+            onChange={handleVolumeChange}
+            min="0"
+            max="100"
+          />
+        </S.Controls>
+        <S.TrackList>
+          <S.H2>TRACKLIST</S.H2>
+          {selectedEp.tracks.map((track) => (
+            <S.TrackItem
+              key={track.id}
+              onClick={() => handleTrackSelect(track.id)}
+            >
+              {track.title}
+              {isPlaying && currentTrackId === track.id && (
+                <AiFillSound
+                  style={{
+                    marginTop: '4px',
+                    marginLeft: '8px',
+                    color: 'white',
+                  }}
+                />
+              )}
+            </S.TrackItem>
+          ))}
+        </S.TrackList>
+        <S.StyledAudio ref={audioRef} src={track.audioUrl} />
+      </S.Contain>
     </S.Container>
   )
 }

@@ -3,21 +3,29 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   margin: 0 auto;
+  gap: 70px;
+  display: flex;
   background-color: darkgrey;
-  padding: 1rem;
-  background-color: rgba(118, 118, 118, 0.75);
-  /* height: 450px; */
-  width: 500px;
-  border-radius: 10px;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 1px solid white;
+  border-radius: 16px;
+  width: auto;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
   transition: all 0.5s ease;
   &:hover {
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6);
   }
 `
+export const Contain = styled.div`
+  display: flex;
+  flex-direction: column;
+  
+`
+
 export const Cover = styled.div`
   display: flex;
-  padding: 16px 16px 0px 16px;
+  /* padding: 16px 16px 0px 16px; */
   justify-content: center;
   img {
     object-fit: cover;
@@ -32,11 +40,11 @@ export const Info = styled.div`
   flex-direction: column;  
 `
 
-export const Tittle = styled.h2`
+export const Tittle = styled.h1`
   font-size: 1.7rem;
   display: flex;
   justify-content: center;
-
+  color: rgb(221, 221, 221);
 
 `
 export const Artist = styled.a`
@@ -44,7 +52,7 @@ export const Artist = styled.a`
   font-weight: 700;
   display: flex;
   justify-content: center;
-
+  color: rgb(221, 221, 221);
 `
 export const PlayerProgress = styled.div`
   background-color: #f0f0f0;
@@ -69,8 +77,10 @@ export const MusicDuracion = styled.div`
 
 
 `
-export const CurrentTime = styled.span``
-export const Duration = styled.span``
+export const CurrentTime = styled.span`
+color: rgb(221, 221, 221);`
+export const Duration = styled.span`
+color: rgb(221, 221, 221);`
 
 
 export const Controls = styled.div`
@@ -78,43 +88,55 @@ export const Controls = styled.div`
   top: -20px;
   display: flex;
   align-items: center;
+
+  padding: 0px 15px;
   justify-content: center;
-  gap: 20px;
+  gap: 15px;
   font-size: 1.5rem;
   color: #0009;
   cursor: pointer;
   user-select: none;
   transition: all 0.3s ease;
-  &:hover {
+
+`
+export const Prev = styled.i`
+  color: rgb(221, 221, 221);
+    &:hover {
     filter: brightness(40%);
   }
 `
-export const Prev = styled.i`
-
-`
 export const Next = styled.i`
-
+  color: rgb(221, 221, 221);
+    &:hover {
+    filter: brightness(40%);
+  }
 `
 export const Play = styled.i`
-  /* font-size: 2rem; */
-
+  
+  color: rgb(221, 221, 221);
+    &:hover {
+    filter: brightness(40%);
+  }
 `
 export const VolumeControl = styled.input`
   width: 100px;
-  margin-top: 10px;
+
   appearance: none;
-  background: #444;
+  background-color: rgb(221, 221, 221);
   height: 8px;
-  margin-left: 46px;
+  
   position: relative;
-  align-self: start;
+
   border-radius: 5px;
+    &:hover {
+    filter: brightness(40%);
+  }
 `
 
 export const H2 = styled.h2`
   align-self: center;
-  font-size: 1.5rem;
-  color: #333;
+  font-size: 1rem;
+  color: rgb(221, 221, 221);
 `
 export const TrackList = styled.div`
   display: flex;
@@ -127,10 +149,13 @@ export const TrackList = styled.div`
 `
 export const TrackItem = styled.div`
   cursor: pointer;
+  color: rgb(221, 221, 221);
   padding: 10px;
   border-radius: 8px;
+  display: flex;
+  align-items: center;
   &:hover {
-    background-color: #4f4f4f6c;
+    background-color: rgba(186, 186, 186, 0.5);
   }
 `
 
