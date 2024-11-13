@@ -18,9 +18,19 @@ const HomeCarousel = () => {
   const items = [
 
     {
+      text: "GTTNVA004 THE TAVERN VA (OUT NOW)",
+      image: "/GTTNVA004.jpg",
+      tag: "release",
+      link: "/releases/001",
+
+    },
+
+
+
+    {
       text: "Hebra & Vandermou - Tribalero",
       image: "/GTTNEP017.jpg",
-      tag: "Last release",
+      tag: "release",
       link: "/releases/001",
 
     },
@@ -29,12 +39,13 @@ const HomeCarousel = () => {
     {
       text: "Bad Legs - Metamorphosis LP",
       image: "/GTTNLP001.jpg",
-      tag: "Last release",
+      tag: "release",
       link: "/releases/001",
     },
 
     {
       text: "ONLY NEUROFUNK",
+      overlayImage: "/ONLYNEUROFUNK.jpg", 
       image: "/ONLYNEUROFUNK.jpg",
       tag: "Event",
       link: "",
@@ -45,7 +56,7 @@ const HomeCarousel = () => {
     {
       text: "GTTNPOD011 - HACKWAVES",
       image: "/GTTNPOD011HACKWAVES.jpg",
-      tag: "MIX",
+      tag: "Newest Mix",
       link: "",
     },
 
@@ -98,11 +109,23 @@ const HomeCarousel = () => {
   
   <p>
     <CarouselContainer>
-      <Slider ref={sliderRef} {...settings} key={windowWidth}>
-        {items.map((item, index) => (
-          <Slide key={index} backgroundImage={item.image} />
-        ))}
-      </Slider>
+
+
+    <Slider ref={sliderRef} {...settings} key={windowWidth}>
+  {items.map((item, index) => (
+    <Slide key={index} backgroundImage={item.image}>
+      {item.overlayImage && (
+        <VerticalImageOverlay>
+          <img src={item.overlayImage} alt="" />
+        </VerticalImageOverlay>
+      )}
+    </Slide>
+  ))}
+</Slider>
+
+
+
+
       <FixedTextContainer>
         <Tag isExiting={isExiting} key={`tag-${currentIndex}`}>
           {items[currentIndex].tag}
@@ -171,9 +194,39 @@ const Slide = styled.div`
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  position: relative; /* Necesario para que VerticalImageOverlay se posicione correctamente */
+  z-index: 0;
 
   @media (max-width: 768px) {
     height: 85vh;
+  }
+`;
+
+const VerticalImageOverlay = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1; /* Ajusta la opacidad para que se mezcle con el fondo */
+
+  img {
+    max-width: 60%; /* Ajusta el ancho de la imagen superpuesta */
+    max-height: 90%; /* Ajusta la altura de la imagen superpuesta */
+    object-fit: contain;
+    box-shadow: 0px 10px 160px rgba(0, 0, 0, 0.9); /* Sombra más intensa y difusa */
+    border-radius: 10px; /* Opcional: redondea los bordes de la imagen */
+  }
+
+  @media (max-width: 768px) {
+    img {
+    max-width: 85%; /* Ajusta el ancho de la imagen superpuesta */
+   
+  }
   }
 `;
 
