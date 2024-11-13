@@ -149,12 +149,12 @@ const Slide = styled.div`
   height: 92vh;
   width: 100%;
   background-image: 
-    linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), 
+    linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)), 
     url(${(props) => props.backgroundImage});
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  /* filter: brightness(0.9);  */
+
   @media (max-width: 768px) {
     height: 85vh;
   }
