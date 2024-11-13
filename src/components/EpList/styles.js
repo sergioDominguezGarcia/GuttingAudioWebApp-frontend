@@ -41,6 +41,10 @@ export const EpCard = styled.div`
   background-image: url(${(props) => props.coverUrl});
   background-size: cover;
   background-position: center;
+  width: 100%;
+  height: 100%;
+  max-width: 400px;
+  max-height: 400px;
 
   &:hover {
     transform: translateY(-10px);
@@ -50,11 +54,22 @@ export const EpCard = styled.div`
   &:hover ${Overlay} {
     opacity: 1; /* Hacemos visible el overlay al hacer hover */
   }
+  /* Ajustes responsivos */
 
-  width: 100%;
-  height: 100%;
-  max-width: 400px;
-  max-height: 400px;
+  @media (max-width: 1024px) {
+    max-width: 250px; /* Reducimos el tamaño en pantallas medianas */
+    max-height: 250px;
+  }
+  @media (max-width: 768px) {
+    max-width: 200px; /* Reducimos el tamaño en pantallas medianas */
+    max-height: 200px;
+  }
+
+  @media (max-width: 480px) {
+    max-width: 165px; /* Reducimos el tamaño en pantallas medianas */
+    max-height: 165px;
+    border-radius: 4px; /* Redondeo menor en dispositivos pequeños */
+  }
 `
 
 // Superposición (overlay) que oscurece la tarjeta y muestra el icono de play
@@ -87,5 +102,40 @@ export const EpInfo = styled.div`
   p {
     margin: 5px 0 0;
     font-size: 0.9em;
+  }
+
+  @media (max-width: 1024px) {
+    h3 {
+      margin: 0;
+      font-size: 1em;
+    }
+
+    p {
+      margin: 5px 0 0;
+      font-size: 0.8em;
+    }
+  }
+  @media (max-width: 768px) {
+    h3 {
+      margin: 0;
+      font-size: 0.8em;
+    }
+
+    p {
+      margin: 5px 0 0;
+      font-size: 0.7em;
+    }
+  }
+
+  @media (max-width: 480px) {
+    h3 {
+      margin: 0;
+      font-size: 0.8em;
+    }
+
+    p {
+      margin: 5px 0 0;
+      font-size: 0.7em;
+    } 
   }
 `
