@@ -20,6 +20,7 @@ import GTTNEP016 from '../components/EpList/Portadas/GTTNEP016.png'
 export const eps = [
   {
     id: '001',
+    gttn: 'GTTNEP001',
     title: 'HIT ME DOWN EP',
     artist: 'MANIATICS',
     coverUrl: GTTNEP001, // URL de la portada del EP
@@ -40,6 +41,7 @@ export const eps = [
   },
   {
     id: '002',
+    gttn: 'GTTNEP002',
     title: 'RAMPAGE EP',
     artist: 'FEARLESS',
     coverUrl: GTTNEP002,
@@ -60,6 +62,7 @@ export const eps = [
   },
   {
     id: '003',
+    gttn: 'GTTNEP003',
     title: 'ASSAULT EP',
     artist: 'SUSPECT',
     coverUrl: GTTNEP003,
@@ -80,6 +83,7 @@ export const eps = [
   },
   {
     id: '004',
+    gttn: 'GTTNEP004',
     title: 'STRONGER THINGS EP',
     artist: 'QKHACK',
     coverUrl: GTTNEP004,
@@ -100,6 +104,7 @@ export const eps = [
   },
   {
     id: '005',
+    gttn: 'GTTNEP005',
     title: 'BACKSPIN EP',
     artist: 'MANCHA',
     coverUrl: GTTNEP005,
