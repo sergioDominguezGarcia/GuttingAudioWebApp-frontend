@@ -7,7 +7,6 @@ export const Footer = styled.div`
   bottom: 0;
   width: 100%;
   color: #fff;
- 
   font-size: 0.5vw;
   justify-content: center; /* Cambiado a 'center' */
  

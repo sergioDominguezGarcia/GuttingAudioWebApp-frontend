@@ -6,6 +6,8 @@ import EpList from '../../components/EpList'; // No necesitas recibir 'eps'
 const Releases = () => {
   return (
     <S.Content>
+      {/* <S.Img>
+      </S.Img> */}
       <ImageCarousel />
 
         

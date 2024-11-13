@@ -65,7 +65,7 @@ export const eps = [
     coverUrl: GTTNEP003,
     tracks: [
       {
-        id: 'track3',
+        id: '005',
         title: 'Assault',
         audioUrl:
           'https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/Suspect%20-%20Assault.mp3?alt=media&token=fa68bba9-3729-4e78-b5e5-fbe820b934b2',
@@ -165,7 +165,7 @@ export const eps = [
     coverUrl: GTTNEP008,
     tracks: [
       {
-        artist: 'track3',
+        artist: 'SUSPECT',
         title: 'Assault',
         audioUrl:
           'https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/Suspect%20-%20Assault.mp3?alt=media&token=fa68bba9-3729-4e78-b5e5-fbe820b934b2',

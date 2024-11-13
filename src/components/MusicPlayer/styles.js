@@ -1,5 +1,6 @@
 import styled from 'styled-components'
-import Black from '../../assets/Black.png'
+
+
 export const Container = styled.div`
   margin: 0 auto;
   background-color: darkgrey;
@@ -16,37 +17,45 @@ export const Container = styled.div`
 `
 export const Cover = styled.div`
   display: flex;
-  padding: 16px;
+  padding: 16px 16px 0px 16px;
   justify-content: center;
   img {
     object-fit: cover;
 
     width: 400px;
-    border-radius: 25%;
+    border-radius: 6%;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
   }
 `
-
-
+export const Info = styled.div`
+  display: flex;
+  flex-direction: column;  
+`
 
 export const Tittle = styled.h2`
-  font-size: 1.5rem;
+  font-size: 1.7rem;
+  display: flex;
+  justify-content: center;
+
+
 `
-export const Artist = styled.h3`
-  font-size: 1rem;
+export const Artist = styled.a`
+  font-size: 1.2rem;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+
 `
 export const PlayerProgress = styled.div`
-  background-color: #fff;
+  background-color: #f0f0f0;
   border-radius: 5px;
   cursor: pointer;
   margin: 40px 20px 35px;
-  width:90%;
+  width: 90%;
   height: 5px;
-
-
 `
 export const ProgressBar = styled.div`
-  background-color: #212121;
+  background-color: #444;
   border-radius: 5px;
   width: 0%;
   height: 100%;
@@ -87,9 +96,21 @@ export const Next = styled.i`
 
 `
 export const Play = styled.i`
-  font-size: 2rem;
+  /* font-size: 2rem; */
 
 `
+export const VolumeControl = styled.input`
+  width: 100px;
+  margin-top: 10px;
+  appearance: none;
+  background: #444;
+  height: 8px;
+  margin-left: 46px;
+  position: relative;
+  align-self: start;
+  border-radius: 5px;
+`
+
 export const H2 = styled.h2`
   align-self: center;
   font-size: 1.5rem;
@@ -99,7 +120,7 @@ export const TrackList = styled.div`
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  padding: 10px;
+  padding: 0px 10px 10px 10px ;
   border-radius: 8px;
   background-color: rgba(255, 255, 255, 0.2);
   /* border-top: 1px solid gray; */
@@ -116,30 +137,21 @@ export const TrackItem = styled.div`
 export const StyledAudio = styled.audio`
   width: 100%;
   margin-top: 10px;
-`
-export const VolumeControl = styled.input`
-  width: 100%;
-  margin-top: 5px;
-  -webkit-appearance: none;
-  appearance: none;
-  background-color: #ccc;
-  height: 5px;
-  border-radius: 5px;
-  cursor: pointer;
-
-  &::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    background-color: #333;
+  &::-webkit-media-controls-panel {
+    background-color: rgba(0, 0, 0, 0.3);
+    border: none;
   }
-
-  &::-moz-range-thumb {
-    width: 15px;
-    height: 15px;
+  &::-webkit-media-controls-play-button {
+    background-color: rgba(0, 0, 0, 0.3);
     border-radius: 50%;
-    background-color: #333;
+    margin-left: 40px;
+    margin-right: 20px;
+    width: 100%;
+  }
+  &::-webkit-media-controls-current-time-display,
+  &::-webkit-media-controls-time-remaining-display {
+    color: #f0f0f0;
+    font-size: 16px;
   }
 `
+
