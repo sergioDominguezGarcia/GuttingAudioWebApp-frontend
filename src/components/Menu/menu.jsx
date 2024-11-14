@@ -271,9 +271,9 @@ const Headermain = () => {
   <MenuItem>
     <MenuLink onClick={toggleMenu} to="/releases" isOpen={isOpen}>RELEASES</MenuLink>
   </MenuItem>
-  <MenuItem>
+  {/* <MenuItem>
     <MenuLink onClick={toggleMenu} to="/artists" isOpen={isOpen}>ARTISTS</MenuLink>
-  </MenuItem>
+  </MenuItem> */}
   <MenuItem>
     <MenuLink onClick={toggleMenu} to="/radio" isOpen={isOpen}>GUTTING RADIO</MenuLink>
   </MenuItem>
