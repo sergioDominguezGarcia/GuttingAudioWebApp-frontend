@@ -18,9 +18,9 @@ const HomeCarousel = () => {
   const items = [
 
     {
-      text: "GTTNVA004 THE TAVERN VA (OUT NOW)",
+      text: "THE TAVERN VA",
       image: "/GTTNVA004.jpg",
-      tag: "release",
+      tag: "new release",
       link: "/releases/001",
 
     },
@@ -194,7 +194,7 @@ const Slide = styled.div`
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  position: relative; /* Necesario para que VerticalImageOverlay se posicione correctamente */
+  position: relative; 
   z-index: 0;
 
   @media (max-width: 768px) {
@@ -212,19 +212,19 @@ const VerticalImageOverlay = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  opacity: 1; /* Ajusta la opacidad para que se mezcle con el fondo */
+  opacity: 1; 
 
   img {
-    max-width: 60%; /* Ajusta el ancho de la imagen superpuesta */
-    max-height: 90%; /* Ajusta la altura de la imagen superpuesta */
+    max-width: 60%; 
+    max-height: 90%;
     object-fit: contain;
-    box-shadow: 0px 10px 160px rgba(0, 0, 0, 0.9); /* Sombra más intensa y difusa */
-    border-radius: 10px; /* Opcional: redondea los bordes de la imagen */
+    box-shadow: 0px 10px 160px rgba(0, 0, 0, 0.9); 
+    border-radius: 10px; 
   }
 
   @media (max-width: 768px) {
     img {
-    max-width: 85%; /* Ajusta el ancho de la imagen superpuesta */
+    max-width: 85%; 
    
   }
   }
@@ -360,7 +360,7 @@ z-index: 10 !important;
   }
 
   &:focus {
-    outline: none; /* Asegura que el botón no tenga borde visible en foco */
+    outline: none; 
   }
 
   @media (max-width: 768px) {
@@ -389,7 +389,7 @@ padding: 0px 10px;
 const IndicatorContainer = styled.div`
   position: absolute;
   z-index: 40;
-  bottom: -6px; /* Mueve el indicador 10px fuera del borde inferior */
+  bottom: -6px; 
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -398,7 +398,7 @@ const IndicatorContainer = styled.div`
   width: 100%;
 
   @media (max-width: 768px) {
-    bottom: -13px; /* Ajuste para pantallas pequeñas también */
+    bottom: -13px; 
   }
 `;
 

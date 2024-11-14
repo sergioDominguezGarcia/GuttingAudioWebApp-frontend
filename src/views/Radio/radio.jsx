@@ -66,6 +66,20 @@ const LineSeparator = styled.div`
   margin: 30px 0px 10px 0px;
 `;
 
+
+const Iframe = styled.iframe`
+  width: 100%;
+  height: 166px;
+
+ 
+  @media (max-width: 768px) {
+    height: 120px; // Puedes ajustar esta altura según necesites
+  }
+`;
+
+
+
+
 const sessions = [
   { name: "GTTNPOD001 - DAVID SYNTH", year: 2020, audioSrc: "https://api.soundcloud.com/tracks/799891507" },
   { name: "GTTNPOD002 - VANDERMOU", year: 2020, audioSrc: "https://api.soundcloud.com/tracks/823603141" },
@@ -98,14 +112,17 @@ const Radio = () => {
           <Year>
             {session.year}
           </Year>
-          <iframe
-            width="100%"
-            height="166"
-            scrolling="no"
-            frameBorder="no"
-            allow="autoplay"
-            src={`https://w.soundcloud.com/player/?url=${encodeURIComponent(session.audioSrc)}&color=%23000000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true`}
-            ></iframe>
+
+
+          <Iframe
+  className="soundcloud-player"
+  scrolling="no"
+  frameBorder="no"
+  allow="autoplay"
+  src={`https://w.soundcloud.com/player/?url=${encodeURIComponent(session.audioSrc)}&color=%23000000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=false`}
+></Iframe>
+
+
           {index < sortedSessions.length - 1 && <LineSeparator />}
         </div>
       ))}
