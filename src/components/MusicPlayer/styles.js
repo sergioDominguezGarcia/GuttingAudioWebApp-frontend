@@ -2,17 +2,17 @@ import styled from 'styled-components'
 
 
 export const Container = styled.div`
-  margin: 0 auto;
-  gap: 70px;
-  display: flex;
-  background-color: darkgrey;
-  padding: 2rem;
   background-color: rgba(0, 0, 0, 0.5);
   border: 1px solid white;
   border-radius: 16px;
-  width: auto;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  display: flex;
+  gap: 70px;
+  margin: 0 auto;
+  padding: 2rem;
   transition: all 0.5s ease;
+  width: auto;
+  max-width: 75%;
   &:hover {
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6);
   }
@@ -25,6 +25,8 @@ export const Contain = styled.div`
 
 export const Cover = styled.div`
   display: flex;
+  gap: 20px;
+  flex-direction: column;
   /* padding: 16px 16px 0px 16px; */
   justify-content: center;
   img {
@@ -54,6 +56,16 @@ export const Artist = styled.a`
   justify-content: center;
   color: rgb(221, 221, 221);
 `
+export const ReleaseInfo = styled.div`
+height: 100%;
+padding-top: 2rem;
+text-align: justify;
+line-height: 1.5;
+width: 100%;
+font-size: 1.4em;
+color: rgb(221, 221, 221, 0.8);
+`
+
 export const PlayerProgress = styled.div`
   background-color: #f0f0f0;
   border-radius: 5px;
@@ -61,6 +73,7 @@ export const PlayerProgress = styled.div`
   margin: 40px 20px 35px;
   width: 90%;
   height: 5px;
+
 `
 export const ProgressBar = styled.div`
   background-color: #444;
@@ -68,6 +81,7 @@ export const ProgressBar = styled.div`
   width: 0%;
   height: 100%;
   transition: width 0.1s linear;
+
 `
 export const MusicDuracion = styled.div`
   position: relative;
@@ -75,22 +89,27 @@ export const MusicDuracion = styled.div`
   display: flex;
   justify-content: space-between;
 
-
 `
 export const CurrentTime = styled.span`
 color: rgb(221, 221, 221);`
 export const Duration = styled.span`
 color: rgb(221, 221, 221);`
 
+export const ControlsContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+`
 
 export const Controls = styled.div`
   position: relative;
   top: -20px;
   display: flex;
   align-items: center;
-
   padding: 0px 15px;
   justify-content: center;
+  /* align-items: center; */
   gap: 15px;
   font-size: 1.5rem;
   color: #0009;
@@ -149,6 +168,7 @@ export const TrackList = styled.div`
 `
 export const TrackItem = styled.div`
   cursor: pointer;
+  gap: 6px;
   color: rgb(221, 221, 221);
   padding: 10px;
   border-radius: 8px;

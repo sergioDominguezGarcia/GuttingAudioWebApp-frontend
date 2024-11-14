@@ -102,37 +102,49 @@ const MusicPlayer = ({
     <S.Container>
       <S.Cover>
         <img src={selectedEp.coverUrl} alt={selectedEp.title} />
+        <S.ControlsContainer>
+          <S.PlayerProgress onClick={handleProgressClick}>
+            <S.ProgressBar style={{ width: `${progress}%` }}></S.ProgressBar>
+            <S.MusicDuracion>
+              <S.CurrentTime>{formatTime(currentTime)}</S.CurrentTime>
+              <S.Duration>{formatTime(duration)}</S.Duration>
+            </S.MusicDuracion>
+          </S.PlayerProgress>
+          <S.Controls>
+            <S.Prev onClick={handlePreviousTrack}>
+              <FontAwesomeIcon icon={faBackward} />
+            </S.Prev>
+            <S.Play onClick={handlePlayPause}>
+              <FontAwesomeIcon icon={isPlaying ? faPause : faPlay} />
+            </S.Play>
+            <S.Next onClick={handleNextTrack}>
+              <FontAwesomeIcon icon={faForward} />
+            </S.Next>
+            <S.VolumeControl
+              type="range"
+              value={volume * 100}
+              onChange={handleVolumeChange}
+              min="0"
+              max="100"
+            />
+          </S.Controls>
+        </S.ControlsContainer>
       </S.Cover>
       <S.Contain>
         <S.Info>
           <S.Tittle>{selectedEp.title || 'TEST TITLE'}</S.Tittle>
           <S.Artist>{selectedEp.artist || 'TEST ARTIST'}</S.Artist>
         </S.Info>
-        <S.PlayerProgress onClick={handleProgressClick}>
-          <S.ProgressBar style={{ width: `${progress}%` }}></S.ProgressBar>
-          <S.MusicDuracion>
-            <S.CurrentTime>{formatTime(currentTime)}</S.CurrentTime>
-            <S.Duration>{formatTime(duration)}</S.Duration>
-          </S.MusicDuracion>
-        </S.PlayerProgress>
-        <S.Controls>
-          <S.Prev onClick={handlePreviousTrack}>
-            <FontAwesomeIcon icon={faBackward} />
-          </S.Prev>
-          <S.Play onClick={handlePlayPause}>
-            <FontAwesomeIcon icon={isPlaying ? faPause : faPlay} />
-          </S.Play>
-          <S.Next onClick={handleNextTrack}>
-            <FontAwesomeIcon icon={faForward} />
-          </S.Next>
-          <S.VolumeControl
-            type="range"
-            value={volume * 100}
-            onChange={handleVolumeChange}
-            min="0"
-            max="100"
-          />
-        </S.Controls>
+        <S.ReleaseInfo>
+          <a>
+            Let's pick up the pace again! Here is our new reference produced by
+            another newcomer in our family, Moderate Hate. He presents us with
+            two completely different tracks, showing us his great repertoire of
+            ideas. Gate delves into the fusion with psy styles creating an
+            incredible atmosphere and rhythm and 4AM shows us his best known
+            side in the world of Drum & Bass.
+          </a>
+        </S.ReleaseInfo>
         <S.TrackList>
           <S.H2>TRACKLIST</S.H2>
           {selectedEp.tracks.map((track) => (
@@ -140,6 +152,9 @@ const MusicPlayer = ({
               key={track.id}
               onClick={() => handleTrackSelect(track.id)}
             >
+              <S.Play onClick={handlePlayPause}>
+                <FontAwesomeIcon icon={isPlaying ? faPause : faPlay} />
+              </S.Play>
               {track.title}
               {isPlaying && currentTrackId === track.id && (
                 <AiFillSound
@@ -153,6 +168,7 @@ const MusicPlayer = ({
             </S.TrackItem>
           ))}
         </S.TrackList>
+
         <S.StyledAudio ref={audioRef} src={track.audioUrl} />
       </S.Contain>
     </S.Container>

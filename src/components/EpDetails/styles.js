@@ -25,7 +25,7 @@ export const EpDetailContainer = styled.div`
     background-image: url(${(props) => props.backgroundImage});
     background-size: cover;
     background-position: center;
-    filter: blur(5px) brightness(0.6);
+    filter: blur(5px) brightness(0.2);
   }
 `
 export const TrackItem = styled.div`
