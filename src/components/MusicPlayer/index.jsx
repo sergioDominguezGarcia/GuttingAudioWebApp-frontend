@@ -143,6 +143,7 @@ const MusicPlayer = ({
             ideas. Gate delves into the fusion with psy styles creating an
             incredible atmosphere and rhythm and 4AM shows us his best known
             side in the world of Drum & Bass.
+            
           </a>
         </S.ReleaseInfo>
         <S.TrackList>

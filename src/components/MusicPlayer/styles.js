@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   background-color: rgba(0, 0, 0, 0.5);
-  border: 1px solid white;
+  border: 1px solid rgb(221, 221, 221, 0.5);
   border-radius: 16px;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
   display: flex;
@@ -13,9 +13,6 @@ export const Container = styled.div`
   transition: all 0.5s ease;
   width: auto;
   max-width: 75%;
-  &:hover {
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6);
-  }
 `
 export const Contain = styled.div`
   display: flex;
@@ -33,8 +30,8 @@ export const Cover = styled.div`
     object-fit: cover;
 
     width: 400px;
-    border-radius: 6%;
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    border-radius: 16px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
   }
 `
 export const Info = styled.div`
@@ -58,12 +55,13 @@ export const Artist = styled.a`
 `
 export const ReleaseInfo = styled.div`
 height: 100%;
-padding-top: 2rem;
+padding-top: 1.7rem;
+padding-bottom: 1rem;
 text-align: justify;
 line-height: 1.5;
 width: 100%;
-font-size: 1.4em;
-color: rgb(221, 221, 221, 0.8);
+font-size: 1.2em;
+color: rgb(221, 221, 221, 0.9);
 `
 
 export const PlayerProgress = styled.div`

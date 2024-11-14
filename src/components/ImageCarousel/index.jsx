@@ -46,11 +46,10 @@ const CarouselImage = styled.div`
   background-position: center;
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   opacity: ${({ isActive }) => (isActive ? 1 : 0)};
   transition: opacity 1s ease-in-out;
-  width: calc(100% - 5vw);
-  margin: 75px auto;
+
 `
 
 const imageUrls = [
