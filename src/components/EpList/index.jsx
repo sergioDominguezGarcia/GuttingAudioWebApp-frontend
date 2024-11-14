@@ -18,13 +18,15 @@ const EpList = () => {
           coverUrl={ep.coverUrl}
           onClick={() => handleEpClick(ep.id)}
         >
+          <S.EpInfo2>
+            <p>{ep.gttn}</p>
+          </S.EpInfo2>
           <S.Overlay>
             <S.PlayIcon>▶</S.PlayIcon>
           </S.Overlay>
           <S.EpInfo>
-            <h3>{ep.title} {ep.gttn}</h3>
             <p>{ep.artist}</p>
-            
+            <h3>{ep.title}</h3>
           </S.EpInfo>
         </S.EpCard>
       ))}

@@ -137,7 +137,7 @@ import GTTNEP016 from '../components/EpList/Portadas/GTTNEP016.png'
     {
       id: '006',
       gttn: 'GTTNEP006',
-      title: 'PUSH BUTTON',
+      title: 'PUSH BUTTON EP',
       artist: 'HEBRA',
       coverUrl: GTTNEP006,
       tracks: [

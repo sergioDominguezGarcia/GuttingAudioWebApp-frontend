@@ -8,8 +8,8 @@ export const Content = styled.div`
   justify-content: flex-start;
   min-height: 100vh;
   height: 100%;
-  /* width: calc(100% - 5vw);
-  margin: 75px auto; */
+  width: calc(100% - 5vw);
+  margin: auto;
   z-index: 1; /* Mantén un z-index mayor para que esté encima del carrusel */
   /* overflow: hidden; */
 `

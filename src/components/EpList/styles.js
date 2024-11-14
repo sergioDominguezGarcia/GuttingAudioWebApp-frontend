@@ -5,12 +5,12 @@ export const EpGrid = styled.div`
   display: flex;  
   flex-wrap: wrap;
   justify-content: center;
-  gap: 40px;
+  align-content: flex-start;
+  gap: 0.9vw;
   margin-bottom:1rem;
-  width: 80%;
+  width: 100%;
   box-sizing: border-box;
 `
-
 export const Overlay = styled.div`
   position: absolute;
   top: 0;
@@ -26,7 +26,7 @@ export const Overlay = styled.div`
 `
 // Cada tarjeta de EP (card)
 export const EpCard = styled.div`
-  position: relative; /* Aseguramos que el Overlay se posicione sobre esta tarjeta */
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -38,46 +38,32 @@ export const EpCard = styled.div`
   background-image: url(${(props) => props.coverUrl});
   background-size: cover;
   background-position: center;
-  width: 100%;
-  height: 100%;
-  max-width: 400px;
-  max-height: 400px;
+  width: 23vw;
+  height: 23vw;
   transition: transform 0.5s ease, box-shadow 0.3s ease;
-
   &:hover {
     transform: translateY(-10px);
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
   }
-
   &:hover ${Overlay} {
-    opacity: 1; /* Hacemos visible el overlay al hacer hover */
+    opacity: 1;
   }
-  /* Ajustes responsivos */
-
-  @media (max-width: 1024px) {
-    max-width: 250px; /* Reducimos el tamaño en pantallas medianas */
-    max-height: 250px;
+  @media (max-width: 1200px) {
+    width: 29vw;
+    height: 29vw;
+    border-radius: 4px;
   }
-  @media (max-width: 768px) {
-    max-width: 200px; /* Reducimos el tamaño en pantallas medianas */
-    max-height: 200px;
-  }
-
-  @media (max-width: 480px) {
-    max-width: 165px; /* Reducimos el tamaño en pantallas medianas */
-    max-height: 165px;
-    border-radius: 4px; /* Redondeo menor en dispositivos pequeños */
+  @media (max-width: 932px) {
+    width: 45vw;
+    height: 45vw;
+    border-radius: 4px;
   }
 `
-
-// Superposición (overlay) que oscurece la tarjeta y muestra el icono de play
-
 // Icono de play
 export const PlayIcon = styled.div`
   font-size: 6em;
   color: rgba(255, 255, 255, 0.772);
 `
-
 // Contenedor para el título y el artista
 export const EpInfo = styled.div`
   width: 100%;
@@ -91,53 +77,79 @@ export const EpInfo = styled.div`
   color: white;
   text-align: center;
   padding: 10px;
-
   h3 {
     font-family: kaneda-gothic-extrabold;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.09em;
     margin: 0;
-    font-size: 1.4em;
+    font-size: 1.3vw;
     gap: 2.5em;
+    text-shadow: 1px 1px 2px black;
   }
-
   p {
-    
-    margin: 5px 0 0;
-    font-size: 0.9em;
+    font-family: 'kaneda-gothic-light';
+    margin: 0;
+    font-size: 1.1vw;
+    letter-spacing: 0.13em;
+    text-shadow: 1px 1px 2px black;
   }
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1200px) {
     h3 {
+      font-family: kaneda-gothic-extrabold;
+      letter-spacing: 0.09em;
       margin: 0;
-      font-size: 1em;
+      font-size: 1.7vw;
+      gap: 2.5em;
+      text-shadow: 1px 1px 2px black;
     }
-
     p {
-      margin: 5px 0 0;
-      font-size: 0.8em;
+      font-family: 'kaneda-gothic-light';
+      margin: 0;
+      font-size: 1.3vw;
+      letter-spacing: 0.13em;
+      text-shadow: 1px 1px 2px black;
     }
   }
-  @media (max-width: 768px) {
+  @media (max-width: 834px) {
     h3 {
+      font-family: kaneda-gothic-extrabold;
+      letter-spacing: 0.09em;
       margin: 0;
-      font-size: 0.8em;
+      font-size: 3.4vw;
+      gap: 2.5em;
+      text-shadow: 1px 1px 2px black;
     }
-
     p {
-      margin: 5px 0 0;
-      font-size: 0.7em;
+      font-family: 'kaneda-gothic-light';
+      margin: 0;
+      font-size: 2.6vw;
+      letter-spacing: 0.13em;
+      text-shadow: 1px 1px 2px black;
     }
   }
+`
+export const EpInfo2 = styled.div`
+  display: flex;
+  top: -0.7vw;
+  right: 0.3vw;
 
-  @media (max-width: 480px) {
-    h3 {
-      margin: 0;
-      font-size: 0.8em;
-    }
+  text-shadow: 1px 1px 2px black;
+  position: absolute;
+  /* font-size: 1.35em; */
+  font-size: 0.9vw;
+  letter-spacing: 0.1em;
+  width: 100%;
+  height: 1em;
+  font-family: 'kaneda-gothic-extrabold';
 
-    p {
-      margin: 5px 0 0;
-      font-size: 0.7em;
-    }
+  justify-content: flex-end;
+
+  @media (max-width: 1200px) {
+    font-size: 1vw;
+  }
+  @media (max-width: 834px) {
+    font-size: 2vw;
+    top: -1.7vw;
+    right: 0.6vw;
   }
 `

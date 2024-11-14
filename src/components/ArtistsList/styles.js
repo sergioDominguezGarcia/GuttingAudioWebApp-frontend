@@ -35,6 +35,7 @@ export const ArtistName = styled.a`
   letter-spacing: 0.07em;
   text-transform: uppercase;
   font-size: 1.7em;
+
   background-color: rgba(0, 0, 0, 0.8);
   color: rgb(221, 221, 221, 0.9);
   text-align: center;
