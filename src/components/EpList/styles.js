@@ -2,14 +2,12 @@ import styled from 'styled-components'
 
 // Contenedor de la cuadrícula para los EPs
 export const EpGrid = styled.div`
-  display: flex;
-    
+  display: flex;  
   flex-wrap: wrap;
   justify-content: center;
   gap: 40px;
   margin-bottom:1rem;
   width: 80%;
-  /* height: auto; */
   box-sizing: border-box;
 `
 
@@ -37,7 +35,6 @@ export const EpCard = styled.div`
   overflow: hidden;
   cursor: pointer;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.5s ease, box-shadow 0.3s ease;
   background-image: url(${(props) => props.coverUrl});
   background-size: cover;
   background-position: center;
@@ -45,6 +42,7 @@ export const EpCard = styled.div`
   height: 100%;
   max-width: 400px;
   max-height: 400px;
+  transition: transform 0.5s ease, box-shadow 0.3s ease;
 
   &:hover {
     transform: translateY(-10px);

@@ -7,9 +7,8 @@ const Artists = () => {
 
 
   return (
-    <S.Home>
-
-      <S.Content background={back}>
+    <S.Home background={back}>
+      <S.Content>
         <S.Artists>
           <ArtistsList />
         </S.Artists>
