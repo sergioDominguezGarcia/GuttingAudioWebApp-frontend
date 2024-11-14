@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom'
 import { eps } from '../../constants/constants'
 import MusicPlayer from '../MusicPlayer'
 import * as S from './styles'
-import blanco from '../../assets/blanco.png'
+
 // import Footer from '../Footer'
 const EpDetail = () => {
   const { epId } = useParams()
@@ -23,9 +23,9 @@ const EpDetail = () => {
 
   if (!selectedEp) return <div>Loading...</div>
 
-  const handleTrackSelect = (trackId) => {
-    setCurrentTrackId(trackId)
-  }
+  // const handleTrackSelect = (trackId) => {
+  //   setCurrentTrackId(trackId)
+  // }
 
   return (
     <>
