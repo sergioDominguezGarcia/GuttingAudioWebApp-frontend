@@ -93,11 +93,15 @@ export const EpInfo = styled.div`
   padding: 10px;
 
   h3 {
+    font-family: kaneda-gothic-extrabold;
+    letter-spacing: 0.08em;
     margin: 0;
-    font-size: 1.2em;
+    font-size: 1.4em;
+    gap: 2.5em;
   }
 
   p {
+    
     margin: 5px 0 0;
     font-size: 0.9em;
   }
@@ -134,6 +138,6 @@ export const EpInfo = styled.div`
     p {
       margin: 5px 0 0;
       font-size: 0.7em;
-    } 
+    }
   }
 `

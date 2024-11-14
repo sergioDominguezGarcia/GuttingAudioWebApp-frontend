@@ -22,9 +22,9 @@ const EpList = () => {
             <S.PlayIcon>▶</S.PlayIcon>
           </S.Overlay>
           <S.EpInfo>
-            <h3>{ep.title}</h3>
+            <h3>{ep.title} {ep.gttn}</h3>
             <p>{ep.artist}</p>
-            <p>{ep.gttn}</p>  
+            
           </S.EpInfo>
         </S.EpCard>
       ))}

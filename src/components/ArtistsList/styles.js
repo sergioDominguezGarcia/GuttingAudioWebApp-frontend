@@ -30,11 +30,11 @@ export const ArtistImage = styled.img`
 
 export const ArtistName = styled.a`
   cursor: pointer;
-
+  font-family: kaneda-gothic-extrabold;
   padding: 6px;
-
-  /* height:100%; */
-  font-size: 0.8em;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  font-size: 1.7em;
   background-color: rgba(0, 0, 0, 0.8);
   color: rgb(221, 221, 221, 0.9);
   text-align: center;
