@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const Home = styled.div`
-  height: 100vh;
+  min-height: 100vh;
   width: calc(100% - 5vw);
   margin: 75px auto;
   display: flex;
@@ -28,30 +28,22 @@ export const Home = styled.div`
 `
 
 export const Content = styled.div`
-  
   background-position: center;
   display: flex;
   background-attachment: scroll;
   background-size: center;
   justify-content: center;
-  /* height: 100%; */
+  height: 100vh;
   z-index: 1;
-  width: 100%;
+  width: 100vw;
+  overflow-y: auto;
 `
 
 export const Artists = styled.div`
   display: flex;
   flex-wrap: wrap;
-
-  flex-direction: row;
-
   color: white;
-  padding: 4rem;
-
-  justify-content: space-around;
-  /* align-items: center; */
-  width: 85%;
+  width: 100%;
   height: 100%;
-
   box-sizing: border-box;
 `

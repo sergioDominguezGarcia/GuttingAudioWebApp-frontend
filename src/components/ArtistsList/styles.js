@@ -7,25 +7,43 @@ export const ArtistsList = styled.div`
   flex-direction: row;
   justify-content: center;
   height: 100%;
-  gap: 0.3em;
-  /* box-sizing: border-box; */
+  gap: 0.6em;
+  box-sizing: border-box;
+  margin-top: 1rem;
+  @media (max-width: 1200) {
+    gap: 0.2em;
+  }
+  /* gap: 1em; */
 `
 
 export const ArtistCard = styled.div`
   display: flex;
   text-align: center;
   justify-content: center;
-  
-  /* position: relative; */
-  /* width: 100%; */
+  /* border: 1px solid white; */
   box-sizing: border-box;
+  width: 20vw;
+  height: 20vw;
+  max-height: 24vw;
+  img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+  }
+  @media (max-width: 1200px) {
+    width: 40vw;
+    max-width: 40vw;
+    height: 40vw;
+    max-height: 40vw;
+  }
 `
+  // border: 1px solid white;
 
 export const ArtistImage = styled.img`
-  min-height: 333px;
-  min-width: 330px;
-  object-fit: cover;
-  display: flex;
+  /* max-height: 20vw; */
+  width: 100%;
+  height: 100%;
 `
 
 export const ArtistName = styled.a`
@@ -35,22 +53,22 @@ export const ArtistName = styled.a`
   letter-spacing: 0.07em;
   text-transform: uppercase;
   font-size: 1.7em;
-
   background-color: rgba(0, 0, 0, 0.8);
   color: rgb(221, 221, 221, 0.9);
   text-align: center;
-  /* Hace coincidir las esquinas redondeadas */
+  @media (max-width: 1200px) {
+    font-size: 1.7em;
+  }
+  @media (max-width: 834px) {
+    font-size: 1.2em;
+  }
 `
 export const StyledLink = styled(Link)`
   box-sizing: border-box;
   text-decoration: none;
-  /* border: 1px solid rgb(221, 221, 221, 0.2); */
-
   display: flex;
   flex-direction: column;
   transition: transform 0.5s ease, box-shadow 0.3s ease;
-  width: 330px;
-  min-height: 333px;
   &:hover {
     transform: translateY(-7px);
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);

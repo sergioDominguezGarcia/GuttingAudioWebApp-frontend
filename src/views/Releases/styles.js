@@ -31,6 +31,9 @@ export const Releases = styled.div`
   min-height: 100vh;
   box-sizing: border-box;
   justify-content: space-around;
-  padding-top: 10rem;
+  padding-top: 8rem;
+  @media(max-width:720px) {
+   padding-top: 5rem;
+  }
 `
 
