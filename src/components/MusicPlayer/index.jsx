@@ -33,31 +33,44 @@ const MusicPlayer = ({
     setIsPlaying(!isPlaying)
   }
 
-  const handlePreviousTrack = () => {
-    const currentIndex = selectedEp.tracks.findIndex(
-      (t) => t.id === currentTrackId
-    )
-    if (currentIndex > 0) {
-      setCurrentTrackId(selectedEp.tracks[currentIndex - 1].id)
+const handlePreviousTrack = () => {
+  const currentIndex = selectedEp.tracks.findIndex(
+    (t) => t.id === currentTrackId
+  )
+  if (currentIndex > 0) {
+    const previousTrackId = selectedEp.tracks[currentIndex - 1].id
+    setCurrentTrackId(previousTrackId)
+    setIsPlaying(true) // Iniciar reproducción automáticamente
+  }
+}
+
+const handleNextTrack = () => {
+  const currentIndex = selectedEp.tracks.findIndex(
+    (t) => t.id === currentTrackId
+  )
+  if (currentIndex < selectedEp.tracks.length - 1) {
+    const nextTrackId = selectedEp.tracks[currentIndex + 1].id
+    setCurrentTrackId(nextTrackId)
+    setIsPlaying(true) // Iniciar reproducción automáticamente
+  }
+}
+
+const handleTrackSelect = (trackId) => {
+  setCurrentTrackId(trackId)
+  setIsPlaying(true) // Asegurarse de que el track seleccionado se reproduce automáticamente
+}
+
+useEffect(() => {
+  if (audioRef.current) {
+    audioRef.current.pause()
+    audioRef.current.currentTime = 0
+    if (isPlaying) {
+      audioRef.current.play().catch((error) => {
+        console.error('Error playing audio:', error)
+      })
     }
   }
-
-  const handleNextTrack = () => {
-    const currentIndex = selectedEp.tracks.findIndex(
-      (t) => t.id === currentTrackId
-    )
-    if (currentIndex < selectedEp.tracks.length - 1) {
-      setCurrentTrackId(selectedEp.tracks[currentIndex + 1].id)
-    }
-  }
-
-  useEffect(() => {
-    if (audioRef.current) {
-      audioRef.current.pause()
-      audioRef.current.currentTime = 0
-      setIsPlaying(false)
-    }
-  }, [track])
+}, [currentTrackId, isPlaying])
 
   useEffect(() => {
     const updateProgress = () => {
@@ -73,10 +86,6 @@ const MusicPlayer = ({
     return () => audio.removeEventListener('timeupdate', updateProgress)
   }, [])
 
-  const handleTrackSelect = (trackId) => {
-    setCurrentTrackId(trackId)
-    if (!isPlaying) handlePlayPause() // Reproducir si no está ya sonando
-  }
 
   const handleVolumeChange = (e) => {
     const newVolume = e.target.value / 100

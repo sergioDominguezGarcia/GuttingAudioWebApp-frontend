@@ -7,16 +7,21 @@ export const Container = styled.div`
   border-radius: 16px;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
   display: flex;
+  justify-content: center;
   gap: 70px;
   margin: 0 auto;
   padding: 2rem;
   transition: all 0.5s ease;
   width: auto;
-  max-width: 75%;
-    @media (max-width: 1200px) {
-    flex-direction: column-reverse;
-    gap: 0;
-
+  /* max-width: 75%; */
+  @media (max-width: 1200px) {
+    flex-direction: column;
+    gap: 0px;
+    width: 100vw;
+    height: 100vh;
+    padding: 1rem;
+    border:none;
+    top: 0;
   }
 `
 export const Contain = styled.div`
@@ -24,8 +29,23 @@ export const Contain = styled.div`
   flex-direction: column;
   /* border: 1px solid white; */
   @media (max-width: 1200px) {
-    width: auto;
-  } 
+    width: 100%;
+    height: 100%;
+    align-self: center;
+    
+  }
+  /* Reorganiza el orden de los elementos en esta resolución */
+  & > div:nth-child(1) {
+    order: 1; /* <S.ReleaseInfo> en tercer lugar */
+  }
+
+  & > div:nth-child(2) {
+    order: 2; /* <S.TrackList> en segundo lugar */
+  }
+
+  & > div:nth-child(3) {
+    order: 1; /* <S.Info> en primer lugar */
+  }
 `
 
 export const Cover = styled.div`
@@ -34,28 +54,31 @@ export const Cover = styled.div`
   flex-direction: column;
   /* border: 1px solid white; */
   justify-content: center;
+ 
   img {
     object-fit: cover;
-
     width: 400px;
     border-radius: 16px;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
   }
   @media (max-width: 1200px) {
-    height: 40%;
+    /* height: 40%; */
     align-items: center;
     gap: 0px;
-    flex-direction: column-reverse;
+    flex-direction: column;
+    
     img {
-      width: 330px;
-      height: 200px;
+      width: 95%;
+      max-height: 250px;
     }
   }
 `
 export const Info = styled.div`
   display: flex;
   flex-direction: column;  
-  
+   @media (max-width: 1200px){
+    margin-bottom: 2vh;
+   }
 `
 
 export const Tittle = styled.h1`
@@ -68,8 +91,8 @@ export const Tittle = styled.h1`
   letter-spacing: 0.09em;
   font-size: 1.6vw;
     @media (max-width: 1200px) {
-    font-size: 1.4em;
-    line-height: 1.2;
+    font-size: 1.8em;
+    line-height: 1.3;
     padding-top: 0rem;
   }
 `
@@ -82,7 +105,7 @@ export const Artist = styled.a`
   font-family: kaneda-gothic-light;
   letter-spacing: 0.3em;
     @media (max-width: 1200px) {
-    font-size: 1em;
+    font-size: 1.5em;
     line-height: 1;
     
   }
@@ -104,9 +127,11 @@ export const ReleaseInfo = styled.div`
     padding-top: 0rem;
   }
     @media (max-width: 480px) {
-    font-size: 1em;
-    line-height: 1.2em;
+    font-size: 1.4em;
+    line-height: 1em;
     padding-top: 0rem;
+    align-self: center;
+    width: 95%;
   }
 `
 
@@ -117,7 +142,9 @@ export const PlayerProgress = styled.div`
   margin: 40px 20px 35px;
   width: 90%;
   height: 5px;
-
+      @media (max-width: 480px) {
+  margin: 25px 20px 15px;
+  }
 `
 export const ProgressBar = styled.div`
   background-color: #444;
@@ -132,7 +159,7 @@ export const MusicDuracion = styled.div`
   top: -30px;
   display: flex;
   justify-content: space-between;
-
+  font-size: 1rem;
 `
 export const CurrentTime = styled.span`
 color: rgb(221, 221, 221);`
@@ -144,6 +171,10 @@ export const ControlsContainer = styled.div`
   flex-direction: column;
   width: 100%;
   justify-content: center;
+
+    @media (max-width: 1200px){
+      flex-direction: column-reverse;
+    }
 `
 
 export const Controls = styled.div`
@@ -155,43 +186,47 @@ export const Controls = styled.div`
   justify-content: center;
   /* align-items: center; */
   gap: 15px;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   color: #0009;
   cursor: pointer;
   user-select: none;
   transition: all 0.3s ease;
-
+@media (max-width: 1200px){
+      top: 16px;
+    }
 `
 export const Prev = styled.i`
   color: rgb(221, 221, 221);
-    &:hover {
+  &:active {
     filter: brightness(40%);
   }
 `
 export const Next = styled.i`
   color: rgb(221, 221, 221);
-    &:hover {
+  &:active {
     filter: brightness(40%);
   }
 `
 export const Play = styled.i`
-  
   color: rgb(221, 221, 221);
-    &:hover {
+  &:active {
     filter: brightness(40%);
   }
 `
 export const VolumeControl = styled.input`
   width: 100px;
-
   appearance: none;
   background-color: rgb(221, 221, 221);
   height: 8px;
-  
   position: relative;
-
   border-radius: 5px;
-    &:hover {
+
+  @media (max-width: 1200px) {
+    height: 4px;
+    display: none;
+  }
+
+  &:hover {
     filter: brightness(40%);
   }
 `
@@ -204,9 +239,8 @@ export const H2 = styled.a`
   letter-spacing: 0.3rem;
   color: rgb(221, 221, 221);
   @media (max-width: 1200px) {
-    
-    font-size: 1.3em;
-    
+    padding: 0.5rem;
+    font-size: 1.4em;
   }
 `
 export const TrackList = styled.div`
@@ -219,8 +253,8 @@ export const TrackList = styled.div`
   @media (max-width: 1200px) {
     width: 100%;
     font-size: 0.8em;
-    width: 100%;
     padding: 0px;
+    height: 40%;
   }
   /* border-top: 1px solid gray; */
 `
@@ -229,16 +263,17 @@ export const TrackItem = styled.div`
   gap: 6px;
   color: rgb(221, 221, 221);
   padding: 10px;
-  gap:1rem;
+  gap: 1rem;
   border-radius: 8px;
   display: flex;
   align-items: center;
   font-family: kaneda-gothic-light;
   font-size: 1.6em;
   letter-spacing: 0.1em;
-  &:hover {
+  &:active {
     background-color: rgba(186, 186, 186, 0.5);
   }
+
 `
 
 export const StyledAudio = styled.audio`
