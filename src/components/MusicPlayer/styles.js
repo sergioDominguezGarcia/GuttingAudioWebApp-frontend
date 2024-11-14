@@ -37,21 +37,27 @@ export const Cover = styled.div`
 export const Info = styled.div`
   display: flex;
   flex-direction: column;  
+  
 `
 
 export const Tittle = styled.h1`
   font-size: 1.7rem;
   display: flex;
   justify-content: center;
+  margin: 0;
   color: rgb(221, 221, 221);
-
+  font-family: kaneda-gothic-extrabold;
+  letter-spacing: 0.09em;
+  font-size: 1.6vw;
 `
 export const Artist = styled.a`
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: 700;
   display: flex;
   justify-content: center;
   color: rgb(221, 221, 221);
+  font-family: kaneda-gothic-light;
+  letter-spacing: 0.3em;
 `
 export const ReleaseInfo = styled.div`
 height: 100%;
@@ -60,8 +66,10 @@ padding-bottom: 1rem;
 text-align: justify;
 line-height: 1.5;
 width: 100%;
-font-size: 1.2em;
+font-size: 1.8em;
+letter-spacing: 0.06em;
 color: rgb(221, 221, 221, 0.9);
+font-family: kaneda-gothic-light;
 `
 
 export const PlayerProgress = styled.div`
@@ -150,18 +158,22 @@ export const VolumeControl = styled.input`
   }
 `
 
-export const H2 = styled.h2`
+export const H2 = styled.a`
+  padding: 1rem;
   align-self: center;
-  font-size: 1rem;
+  font-family: kaneda-gothic-extrabold;
+  font-size: 1.8rem;
+  letter-spacing: 0.3rem;
   color: rgb(221, 221, 221);
 `
 export const TrackList = styled.div`
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  padding: 0px 10px 10px 10px ;
+  padding: 0px 10px 10px 10px;
   border-radius: 8px;
   background-color: rgba(255, 255, 255, 0.2);
+
   /* border-top: 1px solid gray; */
 `
 export const TrackItem = styled.div`
@@ -169,9 +181,13 @@ export const TrackItem = styled.div`
   gap: 6px;
   color: rgb(221, 221, 221);
   padding: 10px;
+  gap:1rem;
   border-radius: 8px;
   display: flex;
   align-items: center;
+  font-family: kaneda-gothic-light;
+  font-size: 1.6em;
+  letter-spacing: 0.1em;
   &:hover {
     background-color: rgba(186, 186, 186, 0.5);
   }
