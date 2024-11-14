@@ -4,47 +4,54 @@ import { Link } from 'react-router-dom'
 export const ArtistsList = styled.div`
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
-  justify-content: space-around;
-  width: 80%;
+  flex-direction: row;
+  justify-content: center;
+  height: 100%;
+  gap: 0.3em;
+  /* box-sizing: border-box; */
 `
 
 export const ArtistCard = styled.div`
-  
+  display: flex;
   text-align: center;
-
-  position: relative;
+  justify-content: center;
+  
+  /* position: relative; */
+  /* width: 100%; */
+  box-sizing: border-box;
 `
 
 export const ArtistImage = styled.img`
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
+  min-height: 333px;
+  min-width: 330px;
   object-fit: cover;
+  display: flex;
 `
 
-export const ArtistName = styled.h3`
-  position: absolute;
-  bottom: 0;
+export const ArtistName = styled.a`
   cursor: pointer;
-  left: 0;
-  height: 12%;
-  width: 100%;
-  margin: 0; /* Elimina márgenes */
-  /* padding: 6px; */
-  font-size: 12px;
-  background-color: rgba(0, 0, 0, 0.6);
-  color: white;
+
+  padding: 6px;
+
+  /* height:100%; */
+  font-size: 0.8em;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: rgb(221, 221, 221, 0.9);
   text-align: center;
-  padding: 7px 0px 2px 0px;
-  border-bottom-left-radius: 10px; /* Hace coincidir las esquinas redondeadas */
-  border-bottom-right-radius: 10px;
+  /* Hace coincidir las esquinas redondeadas */
 `
 export const StyledLink = styled(Link)`
+  box-sizing: border-box;
   text-decoration: none;
-  display: block;
-  position: relative;
-  /* border: 1px solid yellow; */
-  height: 200px;
-  width: 200px;
+  /* border: 1px solid rgb(221, 221, 221, 0.2); */
+
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.5s ease, box-shadow 0.3s ease;
+  width: 330px;
+  min-height: 333px;
+  &:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+  }
 `

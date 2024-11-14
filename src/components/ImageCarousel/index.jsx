@@ -12,7 +12,6 @@ import cover9 from './covers/cover9.png'
 import cover10 from './covers/cover10.png'
 import cover11 from './covers/cover11.png'
 import cover12 from './covers/cover12.png'
-import cover13 from './covers/cover13.png'
 import cover14 from './covers/cover14.png'
 import cover15 from './covers/cover15.png'
 import cover16 from './covers/cover16.png'
@@ -65,7 +64,6 @@ const imageUrls = [
   cover10,
   cover11,
   cover12,
-  cover13,
   cover14,
   cover15,
   cover16,
