@@ -1,20 +1,16 @@
 import styled from 'styled-components'
 
 export const EpDetailContainer = styled.div`
-  /* width: 100vw; */
   height: 100vh;
   width: calc(100% - 5vw);
   margin: 75px auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url(${(props) => props.backgroundImage});
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   position: relative;
+  overflow: hidden;
   box-sizing: border-box;
-  /* padding-bottom: 100px; */
+
   &::before {
     content: '';
     position: absolute;
@@ -25,7 +21,24 @@ export const EpDetailContainer = styled.div`
     background-image: url(${(props) => props.backgroundImage});
     background-size: cover;
     background-position: center;
-    filter: blur(5px) brightness(0.2);
+    filter: blur(5px) brightness(0.5);
+    z-index: -2;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(
+      0,
+      0,
+      0,
+      0.6
+    ); /* Cambia el color y la opacidad según prefieras */
+    z-index: -1;
   }
 `
 export const TrackItem = styled.div`

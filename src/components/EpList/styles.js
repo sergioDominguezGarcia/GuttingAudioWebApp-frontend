@@ -3,7 +3,7 @@ import styled from 'styled-components'
 // Contenedor de la cuadrícula para los EPs
 export const EpGrid = styled.div`
   display: flex;
-  
+    
   flex-wrap: wrap;
   justify-content: center;
   gap: 40px;
