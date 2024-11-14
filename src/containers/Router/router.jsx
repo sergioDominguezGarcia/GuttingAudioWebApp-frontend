@@ -3,10 +3,10 @@ import { BrowserRouter, Routes, Route} from 'react-router-dom'
 import Releases from '../../views/Releases'
 import {eps} from '../../constants/constants.js'
 
-import Artists from '../../views/Artists';
+import Artists from '../../views/Artists'
 import Detail from '../../views/ArtistDetail'
-import Header from '../../components/Header';
-import Footer from '../../components/Footer'
+import Header from '../../components/Header'
+import Footer from '../../components/Footer/Footer.jsx'
 import ReleasesDetails from '../../views/ReleasesDetails/index.jsx'
 
 

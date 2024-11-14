@@ -176,6 +176,8 @@ const CarouselContainer = styled.div`
   position: relative;
   overflow: visible;
 
+  
+
   .slick-prev:before,
   .slick-next:before {
     display: none !important;

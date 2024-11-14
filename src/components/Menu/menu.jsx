@@ -139,13 +139,13 @@ const MenuLink = styled(Link)`
   &:hover {
    
     color: #ffffff;
-    transition: color 0.2s ease;  // Duración de 0,2 segundos al encender
+    transition: color 0.2s ease; 
   }
 
   &:not(:hover) {
-    // Vuelve a gris al quitar el hover
+   
     color: #9b9b9b;
-    transition: color 0.3s ease 0s;  // Duración de 0,3 segundos con 0,2s de retraso al apagar
+    transition: color 0.3s ease 0s;  
   }
 
   &:after {
@@ -166,7 +166,8 @@ const MenuLink = styled(Link)`
   }
 
   @media (min-width: 768px) {
-    font-size: 5vw;
+    font-size: 4.5vw;
+    line-height: 1.5;
   }
 `;
 
