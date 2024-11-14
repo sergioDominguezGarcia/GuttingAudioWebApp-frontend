@@ -70,6 +70,7 @@ const LineSeparator = styled.div`
 const Iframe = styled.iframe`
   width: 100%;
   height: 166px;
+  
 
  
   @media (max-width: 768px) {
