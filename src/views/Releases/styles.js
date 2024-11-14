@@ -21,7 +21,7 @@ export const Releases = styled.div`
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  
+
   /* backdrop-filter: blur(10px);
   opacity: 0.95; */
   color: white;
@@ -32,8 +32,7 @@ export const Releases = styled.div`
   box-sizing: border-box;
   justify-content: space-around;
   padding-top: 8rem;
-  @media(max-width:720px) {
-   padding-top: 5rem;
+  @media (max-width: 720px) {
+    padding-top: 5rem;
   }
 `
-
