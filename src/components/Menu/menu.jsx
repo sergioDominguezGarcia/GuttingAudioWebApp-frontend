@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styled, { createGlobalStyle, keyframes } from "styled-components"; 
+import styled, { createGlobalStyle, keyframes } from "styled-components";
 import { Link } from 'react-router-dom';
 import Gutting from '../../assets/Gutting.jpg'
 
@@ -129,23 +129,12 @@ const MenuLink = styled(Link)`
   text-transform: uppercase;
   display: block;
   position: relative;
-  
   opacity: 0;
-  animation: ${({ isOpen }) => (isOpen ? fadeIn : 'none')} 0.2s forwards 0.3s; 
-
-  color: #9b9b9b;
+  animation: ${({ isOpen }) => (isOpen ? fadeIn : 'none')} 0.2s forwards 0.3s;
   transition: color 0.2s ease;
 
   &:hover {
-   
     color: #ffffff;
-    transition: color 0.2s ease; 
-  }
-
-  &:not(:hover) {
-   
-    color: #9b9b9b;
-    transition: color 0.3s ease 0s;  
   }
 
   &:after {
@@ -156,43 +145,45 @@ const MenuLink = styled(Link)`
     left: 0;
     height: 1px;
     background: #d8d8d8;
- 
+    width: 100%;
     transition: width 0.3s ease;
-    animation: ${({ isOpen }) => (isOpen ? lineAnimation : 'none')} 0.6s forwards 0.4s; 
-  }
-
-  &:not(:last-child) {
-    padding-bottom: 10px;
+    animation: ${({ isOpen }) => (isOpen ? lineAnimation : 'none')} 0.6s forwards 0.4s;
   }
 
   @media (min-width: 768px) {
     font-size: 4.5vw;
     line-height: 1.5;
+
+    &:hover {
+      color: #ffffff;
+    }
+  }
+
+  @media (max-width: 768px) {
+    color: #ffffff; /* For mobile, links stay white */
+    &:hover {
+      color: #ffffff; /* Hover does not change color */
+    }
   }
 `;
 
-
-
-
-
 const MenuFooter = styled.div`
+  position: absolute;
   bottom: 0;
+  width: 100%;
+  padding: 3px;
   color: #ffffff;
   font-size: 11px;
   font-family: 'Kanit-ExtraBold';
   backdrop-filter: blur(10px); 
-  opacity: ${({ isOpen }) => (isOpen ? '1' : '0')};
-  transition: opacity 0.8s ease;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  position: absolute;
-  width: 100%;
-  padding: 3px;
+
+  transform: ${({ isOpen }) => (isOpen ? 'translateY(0)' : 'translateY(100%)')};
+  opacity: ${({ isOpen }) => (isOpen ? '1' : '0')};
+  transition: transform 0.6s ease, opacity 0.6s ease;
 `;
-
-
-
 const Logo = styled.div`
   position: absolute;
   top: -8px;
@@ -220,6 +211,43 @@ const GlobalStyle = createGlobalStyle`
     padding-right: var(--scrollbar-width);
   }
 `;
+
+const RedesSocialesContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2vw 3vw; 
+`;
+
+const EnlaceRedSocial = styled.a`
+  font-family: 'kaneda-gothic-LIGHT';
+  color: #9b9b9b;
+  font-size: 5vw;
+  text-decoration: none;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: #ffffff;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 1.8vw;
+    color: #9b9b9b;
+
+    &:hover {
+      color: #ffffff; /* Hover effect for PC */
+    }
+  }
+
+  @media (max-width: 768px) {
+    color: #ffffff; /* Always white on mobile */
+
+    &:hover {
+      color: #ffffff; /* No hover effect on mobile */
+    }
+  }
+`;
+
 
 const Headermain = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -260,34 +288,43 @@ const Headermain = () => {
           <MenuWrapper>
 
 
-          <Logo isOpen={isOpen}>
-  <img src={Gutting} width="220px" alt="Logo" />
-        </Logo>
+            <Logo isOpen={isOpen}>
+              <img src={Gutting} width="220px" alt="Logo" />
+            </Logo>
 
-        <TheMenu>
-  <MenuItem>
-    <MenuLink onClick={toggleMenu} to="/" isOpen={isOpen}>HOME</MenuLink>
-  </MenuItem>
-  <MenuItem>
-    <MenuLink onClick={toggleMenu} to="/releases" isOpen={isOpen}>RELEASES</MenuLink>
-  </MenuItem>
-  <MenuItem>
-    <MenuLink onClick={toggleMenu} to="/artists" isOpen={isOpen}>ARTISTS</MenuLink>
-  </MenuItem>
-  <MenuItem>
-    <MenuLink onClick={toggleMenu} to="/radio" isOpen={isOpen}>GUTTING RADIO</MenuLink>
-  </MenuItem>
-</TheMenu>
-
-
+            <TheMenu>
+              <MenuItem>
+                <MenuLink onClick={toggleMenu} to="/" isOpen={isOpen}>HOME</MenuLink>
+              </MenuItem>
+              <MenuItem>
+                <MenuLink onClick={toggleMenu} to="/releases" isOpen={isOpen}>RELEASES</MenuLink>
+              </MenuItem>
+              <MenuItem>
+                <MenuLink onClick={toggleMenu} to="/artists" isOpen={isOpen}>ARTISTS</MenuLink>
+              </MenuItem>
+              <MenuItem>
+                <MenuLink onClick={toggleMenu} to="/radio" isOpen={isOpen}>GUTTING RADIO</MenuLink>
+              </MenuItem>
+            </TheMenu>
 
 
           </MenuWrapper>
         </BgMenu>
 
         <MenuFooter isOpen={isOpen}>
-          <p></p>
+          <RedesSocialesContainer>
+            <EnlaceRedSocial href="https://www.instagram.com/gttnaudio/" target="_blank" rel="noopener noreferrer">
+              + INSTAGRAM
+            </EnlaceRedSocial>
+            <EnlaceRedSocial href="https://soundcloud.com/gutting-audio" target="_blank" rel="noopener noreferrer">
+              + SOUNDCLOUD
+            </EnlaceRedSocial>
+            <EnlaceRedSocial href="https://www.beatport.com/label/gutting-audio/85715?srsltid=AfmBOopuZ8oplwdX91tEwFdH9OwRqFDm03NuZoN9fVoXxqZm34SkkPRk" target="_blank" rel="noopener noreferrer">
+              + BEATPORT
+            </EnlaceRedSocial>
+          </RedesSocialesContainer>
         </MenuFooter>
+
       </SiteNavigation>
     </Container>
   );

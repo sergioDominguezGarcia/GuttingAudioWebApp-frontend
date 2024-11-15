@@ -2,7 +2,7 @@ import React from 'react';
 import styled, { keyframes, css } from 'styled-components';
 import { Link } from 'react-router-dom';
 
-// Animación de deslizamiento
+
 const slideInFromBelow = keyframes`
   0% {
     transform: translateY(100%);
@@ -73,7 +73,7 @@ const FooterLink = styled(Link)`
   text-decoration: none;
   transition: color 0.2s ease;
 
-  // Color blanco en móviles
+
   @media (max-width: 768px) {
     color: #ffffff;
     font-size: 8vw;
@@ -112,7 +112,7 @@ const RedesSociales = styled.p`
   position: relative;
   transition: color 0.2s ease;
 
-  // Color blanco en móviles
+
   @media (max-width: 768px) {
     color: #ffffff;
     font-size: 5vw;
