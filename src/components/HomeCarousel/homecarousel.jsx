@@ -19,7 +19,7 @@ const HomeCarousel = () => {
 
     {
       text: "THE TAVERN VA",
-      image: "/GTTNVA004.jpg",
+      image: "Home/GTTNVA004.jpg",
       tag: "new release",
       link: "/releases/001",
 
@@ -29,7 +29,7 @@ const HomeCarousel = () => {
 
     {
       text: "Hebra & Vandermou - Tribalero",
-      image: "/GTTNEP017.jpg",
+      image: "Home/GTTNEP017.jpg",
       tag: "release",
       link: "/releases/001",
 
@@ -38,14 +38,14 @@ const HomeCarousel = () => {
 
     {
       text: "Bad Legs - Metamorphosis LP",
-      image: "/GTTNLP001.jpg",
+      image: "Home/GTTNLP001.jpg",
       tag: "release",
       link: "/releases/001",
     },
 
     {
       text: "ONLY NEUROFUNK",
-      overlayImage: "/ONLYNEUROFUNK.jpg", 
+      overlayImage: "Home/ONLYNEUROFUNK.jpg", 
       image: "/ONLYNEUROFUNK.jpg",
       tag: "Event",
       link: "",
@@ -55,7 +55,7 @@ const HomeCarousel = () => {
 
     {
       text: "GTTNPOD011 - HACKWAVES",
-      image: "/GTTNPOD011HACKWAVES.jpg",
+      image: "Home/GTTNPOD011HACKWAVES.jpg",
       tag: "Newest Mix",
       link: "",
     },
@@ -64,7 +64,7 @@ const HomeCarousel = () => {
 
     {
       text: "Merchandising",
-      image: "/merchandising.jpg",
+      image: "Home/merchandising.jpg",
       tag: "News",
       link: "",
     },

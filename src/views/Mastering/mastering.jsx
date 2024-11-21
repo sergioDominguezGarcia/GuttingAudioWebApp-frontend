@@ -2,15 +2,37 @@ import { memo } from 'react';
 import styled from 'styled-components';
 
 const Container = styled.div`
+ 
+
   margin-top: 8vh;
   display: flex;
   flex-direction: column;
   padding: 2vw 2.6vw;
+  height: 100%;
+
+
+
 
   @media (max-width: 768px) {
     padding: 4vw 4vw 4vw 4vw;
   }
+
 `;
+
+const Background = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100vh - 1px); /* Ajusta con un pequeño margen */
+
+  background-image: url('Mastering/4.jpg');
+  background-size: cover;
+  background-position: center;
+  filter: opacity(0.3);
+  z-index: -1;
+`;
+
 
 const Title = styled.h1`
   color: #ffffff; 
@@ -27,8 +49,11 @@ const Title = styled.h1`
     margin: 0vw 0vw 0vw 0vw;
     font-size: 9vw;
    
-
   }
+
+
+
+  
 `;
 
 
@@ -83,6 +108,7 @@ color: #ffffff;
 
 font-size: 1.5rem;
  margin: 1vw 0vw 0vw 0vw;
+
 }
 
 `;
@@ -162,6 +188,8 @@ const LineSeparator = styled.div`
 
 const Mastering = () => {
   return (
+    <>
+    <Background />
     <Container>
       <Title>Mixing Mastering Service</Title>
   
@@ -219,6 +247,7 @@ const Mastering = () => {
         Si buscas un sonido profesional y una atención personalizada, Gutting Audio es tu opción. ¡Hablemos de tu proyecto y llevémoslo al siguiente nivel!
       </SectionTitle2>
     </Container>
+    </>
   );
 };
 
