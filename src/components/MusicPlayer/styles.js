@@ -44,8 +44,10 @@ export const Contain = styled.div`
   & > div:nth-child(3) {
     order: 1; /* <S.Info> en primer lugar */
   }
+    & > div:nth-child(4) {
+    order: 1; /* <S.Icons> en segundo lugar */
+  }
 `
-
 export const Cover = styled.div`
   display: flex;
   gap: 20px;
@@ -78,7 +80,6 @@ export const Info = styled.div`
     margin-bottom: 2vh;
   }
 `
-
 export const Tittle = styled.h1`
   font-size: 1.7rem;
   display: flex;
@@ -107,31 +108,6 @@ export const Artist = styled.a`
     line-height: 1;
   }
 `
-export const ReleaseInfo = styled.div`
-  height: 100%;
-  padding-top: 1.7rem;
-  padding-bottom: 1rem;
-  text-align: justify;
-  line-height: 1.5;
-  width: 100%;
-  font-size: 1.8em;
-  letter-spacing: 0.06em;
-  color: rgb(221, 221, 221, 0.9);
-  font-family: kaneda-gothic-light;
-  @media (max-width: 1200px) {
-    font-size: 1.4em;
-    line-height: 1.2;
-    padding-top: 0rem;
-  }
-  @media (max-width: 480px) {
-    font-size: 1.4em;
-    line-height: 1em;
-    padding-top: 0rem;
-    align-self: center;
-    width: 95%;
-  }
-`
-
 export const PlayerProgress = styled.div`
   background-color: #f0f0f0;
   border-radius: 5px;
@@ -163,7 +139,6 @@ export const CurrentTime = styled.span`
 export const Duration = styled.span`
   color: rgb(221, 221, 221);
 `
-
 export const ControlsContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -174,7 +149,6 @@ export const ControlsContainer = styled.div`
     flex-direction: column-reverse;
   }
 `
-
 export const Controls = styled.div`
   position: relative;
   top: -20px;
@@ -228,7 +202,30 @@ export const VolumeControl = styled.input`
     filter: brightness(40%);
   }
 `
-
+export const ReleaseInfo = styled.div`
+  height: 100%;
+  padding-top: 0rem;
+  padding-bottom: 1rem;
+  text-align: justify;
+  line-height: 1.5;
+  width: 100%;
+  font-size: 1.8em;
+  letter-spacing: 0.06em;
+  color: rgb(221, 221, 221, 0.9);
+  font-family: kaneda-gothic-light;
+  @media (max-width: 1200px) {
+    font-size: 1.4em;
+    line-height: 1.2;
+    padding-top: 0rem;
+  }
+  @media (max-width: 480px) {
+    font-size: 1.4em;
+    line-height: 1em;
+    padding-top: 0rem;
+    align-self: center;
+    width: 95%;
+  }
+`
 export const TrackList = styled.div`
   display: flex;
   flex-direction: column;
@@ -259,6 +256,15 @@ export const TrackItem = styled.div`
   &:active {
     background-color: rgba(186, 186, 186, 0.5);
   }
+`
+
+export const Icons = styled.div`
+  padding: 10px;
+  display: flex;
+  /* flex-direction: start; */
+  justify-content: flex-start;
+  gap: 10px;
+  /* border: 1px solid gray; */
 `
 
 export const StyledAudio = styled.audio`
