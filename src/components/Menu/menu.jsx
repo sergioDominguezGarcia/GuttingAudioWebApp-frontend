@@ -30,6 +30,8 @@ const BurgerButton = styled.button`
 
   &:focus {
     outline: none;
+    -webkit-tap-highlight-color: transparent; 
+
   }
 
   span {
@@ -94,7 +96,7 @@ const TheMenu = styled.ul`
   padding: 5vw 3vw ; 
   list-style: none; 
   @media (max-width: 768px) {
-    padding: 47vw 4vw ;
+    padding: 25vw 4vw ;
   }
 `;
 
@@ -123,7 +125,7 @@ const fadeIn = keyframes`
 const MenuLink = styled(Link)`
   color: #9b9b9b;
   line-height: 1.2;
-  font-size: 18vw;
+  font-size: 16vw;
   text-decoration: none;
   font-family: kaneda-gothic-extrabold;
   text-transform: uppercase;
@@ -217,6 +219,12 @@ const RedesSocialesContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: 2vw 3vw; 
+
+  @media (max-width: 768px) {
+    padding: 2vw 6vw; 
+    }
+
+
 `;
 
 const EnlaceRedSocial = styled.a`
@@ -296,15 +304,24 @@ const Headermain = () => {
               <MenuItem>
                 <MenuLink onClick={toggleMenu} to="/" isOpen={isOpen}>HOME</MenuLink>
               </MenuItem>
+
               <MenuItem>
                 <MenuLink onClick={toggleMenu} to="/releases" isOpen={isOpen}>RELEASES</MenuLink>
               </MenuItem>
+
               <MenuItem>
                 <MenuLink onClick={toggleMenu} to="/artists" isOpen={isOpen}>ARTISTS</MenuLink>
               </MenuItem>
+
               <MenuItem>
                 <MenuLink onClick={toggleMenu} to="/radio" isOpen={isOpen}>GUTTING RADIO</MenuLink>
               </MenuItem>
+
+              <MenuItem>
+                <MenuLink onClick={toggleMenu} to="/mixingmastering" isOpen={isOpen}>MIXING MASTERING</MenuLink>
+              </MenuItem>
+
+
             </TheMenu>
 
 

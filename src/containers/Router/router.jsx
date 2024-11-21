@@ -11,6 +11,11 @@ import ReleasesDetails from '../../views/ReleasesDetails/index.jsx';
 
 import Home from '../../views/Home/home.jsx';
 import Radio from '../../views/Radio/radio';
+import Mastering from '../../views/Mastering/mastering';
+
+
+
+
 
 const ScrollToTop = () => {
     const { pathname } = useLocation();
@@ -35,6 +40,7 @@ const Router = () => {
                 <Route path="/artists" element={<Artists />} />
                 <Route path="/artists/:slug" element={<Detail />} />
                 <Route path="/radio" element={<Radio />} />
+                <Route path="/mixingmastering" element={<Mastering />} />
             </Routes>
 
             <Footer />

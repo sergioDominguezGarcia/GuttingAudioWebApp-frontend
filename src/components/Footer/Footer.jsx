@@ -51,6 +51,7 @@ const ColumnaDerecha = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+ 
 `;
 
 const lineAnimation = keyframes`
@@ -76,9 +77,9 @@ const FooterLink = styled(Link)`
 
   @media (max-width: 768px) {
     color: #ffffff;
-    font-size: 8vw;
+    font-size: 7vw;
     margin-top: 5px;
-    line-height: 0.7;
+    line-height: 0.8;
   }
 
   &:hover {
@@ -111,6 +112,7 @@ const RedesSociales = styled.p`
   font-size: 1.5vw;
   position: relative;
   transition: color 0.2s ease;
+  line-height: 1.6;
 
 
   @media (max-width: 768px) {
@@ -149,7 +151,7 @@ const Copyright = styled.div`
   font-family: 'kaneda-gothic-LIGHT';
   font-size: 0.7vw;
   position: absolute;
-  bottom: 2vw;
+  bottom: 1vw;
   left: 2.5vw;
   letter-spacing: 0.1vw; 
   color: #ffffff;
@@ -167,13 +169,22 @@ const TituloPrincipal = () => {
       <InfoColumnPie>
         <Columna>
           <FooterLink to="/">HOME</FooterLink>
-          <FooterLink to="/releases">RELEASES</FooterLink>
+          <FooterLink to="/radio">GUTTING RADIO</FooterLink>
+          <FooterLink to="/mixingmastering">MIXING MASTERING</FooterLink>
+       
         </Columna>
 
         <Columna>
-          <FooterLink to="/artists">ARTISTS</FooterLink>
-          <FooterLink to="/radio">GUTTING RADIO</FooterLink>
+
+        <FooterLink to="/releases">RELEASES</FooterLink>
+        <FooterLink to="/artists">ARTISTS</FooterLink>
+        
+       
         </Columna>
+
+
+      
+
 
         <ColumnaDerecha>
           <Enlace href="https://www.instagram.com/gttnaudio/" target="_blank" rel="noopener noreferrer">
