@@ -51,12 +51,12 @@ export const EpCard = styled.div`
   @media (max-width: 1200px) {
     width: 29vw;
     height: 29vw;
-    border-radius: 4px;
+    /* border-radius: 4px; */
   }
   @media (max-width: 932px) {
     width: 45vw;
     height: 45vw;
-    border-radius: 4px;
+    /* border-radius: 4px; */
   }
 `
 // Icono de play
