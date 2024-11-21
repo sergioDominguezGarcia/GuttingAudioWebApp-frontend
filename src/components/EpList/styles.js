@@ -31,7 +31,7 @@ export const EpCard = styled.div`
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  border-radius: 8px;
+  /* border-radius: 8px; */
   overflow: hidden;
   cursor: pointer;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);

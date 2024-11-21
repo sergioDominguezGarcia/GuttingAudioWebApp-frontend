@@ -22,8 +22,8 @@ export const ArtistCard = styled.div`
   justify-content: center;
   /* border: 1px solid white; */
   box-sizing: border-box;
-  width: 20vw;
-  height: 20vw;
+  width: 23vw;
+  height: 23vw;
   max-height: 24vw;
   img {
     width: 100%;
@@ -53,7 +53,7 @@ export const ArtistName = styled.a`
   letter-spacing: 0.07em;
   text-transform: uppercase;
   font-size: 1.7em;
-  background-color: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.6);
   color: rgb(221, 221, 221, 0.9);
   text-align: center;
   @media (max-width: 1200px) {
