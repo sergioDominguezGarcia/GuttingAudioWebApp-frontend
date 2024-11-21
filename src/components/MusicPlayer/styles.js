@@ -243,7 +243,7 @@ export const TrackList = styled.div`
     width: 100%;
     font-size: 0.8em;
     padding: 0px;
-    height: 40%;
+    /* height: 40%; */
   }
   /* border-top: 1px solid gray; */
 `
