@@ -1,6 +1,5 @@
 import styled from 'styled-components'
 
-
 export const Container = styled.div`
   background-color: rgba(0, 0, 0, 0.5);
   border: 1px solid rgb(221, 221, 221, 0.5);
@@ -20,7 +19,7 @@ export const Container = styled.div`
     width: 100vw;
     /* height: 100vh; */
     padding: 1rem;
-    border:none;
+    border: none;
     top: 0;
   }
 `
@@ -32,7 +31,6 @@ export const Contain = styled.div`
     width: 100%;
     height: 100%;
     align-self: center;
-    
   }
   /* Reorganiza el orden de los elementos en esta resolución */
   & > div:nth-child(1) {
@@ -54,7 +52,6 @@ export const Cover = styled.div`
   flex-direction: column;
   /* border: 1px solid white; */
   justify-content: center;
- 
   img {
     object-fit: cover;
     width: 400px;
@@ -66,7 +63,7 @@ export const Cover = styled.div`
     align-items: center;
     gap: 0px;
     flex-direction: column;
-    
+
     img {
       width: 95%;
       max-height: 250px;
@@ -75,11 +72,11 @@ export const Cover = styled.div`
 `
 export const Info = styled.div`
   display: flex;
-  flex-direction: column;  
+  flex-direction: column;
   margin-bottom: 2vh;
-   @media (max-width: 1200px){
+  @media (max-width: 1200px) {
     margin-bottom: 2vh;
-   }
+  }
 `
 
 export const Tittle = styled.h1`
@@ -91,7 +88,7 @@ export const Tittle = styled.h1`
   font-family: kaneda-gothic-extrabold;
   letter-spacing: 0.09em;
   font-size: 1.6vw;
-    @media (max-width: 1200px) {
+  @media (max-width: 1200px) {
     font-size: 1.8em;
     line-height: 1.3;
     padding-top: 0rem;
@@ -105,10 +102,9 @@ export const Artist = styled.a`
   color: rgb(221, 221, 221);
   font-family: kaneda-gothic-light;
   letter-spacing: 0.3em;
-    @media (max-width: 1200px) {
+  @media (max-width: 1200px) {
     font-size: 1.5em;
     line-height: 1;
-    
   }
 `
 export const ReleaseInfo = styled.div`
@@ -127,7 +123,7 @@ export const ReleaseInfo = styled.div`
     line-height: 1.2;
     padding-top: 0rem;
   }
-    @media (max-width: 480px) {
+  @media (max-width: 480px) {
     font-size: 1.4em;
     line-height: 1em;
     padding-top: 0rem;
@@ -143,8 +139,8 @@ export const PlayerProgress = styled.div`
   margin: 40px 20px 35px;
   width: 90%;
   height: 5px;
-      @media (max-width: 480px) {
-  margin: 25px 20px 15px;
+  @media (max-width: 480px) {
+    margin: 25px 20px 15px;
   }
 `
 export const ProgressBar = styled.div`
@@ -153,7 +149,6 @@ export const ProgressBar = styled.div`
   width: 0%;
   height: 100%;
   transition: width 0.1s linear;
-
 `
 export const MusicDuracion = styled.div`
   position: relative;
@@ -163,9 +158,11 @@ export const MusicDuracion = styled.div`
   font-size: 1rem;
 `
 export const CurrentTime = styled.span`
-color: rgb(221, 221, 221);`
+  color: rgb(221, 221, 221);
+`
 export const Duration = styled.span`
-color: rgb(221, 221, 221);`
+  color: rgb(221, 221, 221);
+`
 
 export const ControlsContainer = styled.div`
   display: flex;
@@ -173,9 +170,9 @@ export const ControlsContainer = styled.div`
   width: 100%;
   justify-content: center;
 
-    @media (max-width: 1200px){
-      flex-direction: column-reverse;
-    }
+  @media (max-width: 1200px) {
+    flex-direction: column-reverse;
+  }
 `
 
 export const Controls = styled.div`
@@ -192,9 +189,9 @@ export const Controls = styled.div`
   cursor: pointer;
   user-select: none;
   transition: all 0.3s ease;
-@media (max-width: 1200px){
-      top: 16px;
-    }
+  @media (max-width: 1200px) {
+    top: 16px;
+  }
 `
 export const Prev = styled.i`
   color: rgb(221, 221, 221);
@@ -262,7 +259,6 @@ export const TrackItem = styled.div`
   &:active {
     background-color: rgba(186, 186, 186, 0.5);
   }
-
 `
 
 export const StyledAudio = styled.audio`
@@ -285,4 +281,3 @@ export const StyledAudio = styled.audio`
     font-size: 16px;
   }
 `
-

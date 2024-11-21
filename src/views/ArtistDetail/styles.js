@@ -25,9 +25,12 @@ export const Artists = styled.div`
   flex-direction: row;
   background: #000000b6;
   color: white;
-  padding: 7rem;
+  padding: 6rem;
   justify-content: center;
-  width: 80%;
+  /* width: 80%; */
   height: 100%;
   box-sizing: border-box;
+  @media (max-width: 834px) {
+    padding: 2rem;
+  }
 `
