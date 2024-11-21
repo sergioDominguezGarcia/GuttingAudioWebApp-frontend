@@ -155,7 +155,7 @@ useEffect(() => {
           </p>
         </S.ReleaseInfo>
         <S.TrackList>
-          <S.H2>TRACKLIST</S.H2>
+        
           {selectedEp.tracks.map((track) => (
             <S.TrackItem
               key={track.id}

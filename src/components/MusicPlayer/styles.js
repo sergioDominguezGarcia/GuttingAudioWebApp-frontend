@@ -76,6 +76,7 @@ export const Cover = styled.div`
 export const Info = styled.div`
   display: flex;
   flex-direction: column;  
+  margin-bottom: 2vh;
    @media (max-width: 1200px){
     margin-bottom: 2vh;
    }
@@ -231,23 +232,11 @@ export const VolumeControl = styled.input`
   }
 `
 
-export const H2 = styled.a`
-  padding: 1rem;
-  align-self: center;
-  font-family: kaneda-gothic-extrabold;
-  font-size: 1.8rem;
-  letter-spacing: 0.3rem;
-  color: rgb(221, 221, 221);
-  @media (max-width: 1200px) {
-    padding: 0.5rem;
-    font-size: 1.4em;
-  }
-`
 export const TrackList = styled.div`
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  padding: 0px 10px 10px 10px;
+  padding: 10px;
   border-radius: 8px;
   background-color: rgba(255, 255, 255, 0.2);
   @media (max-width: 1200px) {

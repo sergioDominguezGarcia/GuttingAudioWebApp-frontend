@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const EpDetailContainer = styled.div`
   height: 100vh;
   width: calc(100% - 5vw);
-  margin: 75px auto;
+  margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -53,10 +53,10 @@ export const EpDetailContainer = styled.div`
 export const EpContent = styled.div`
   display: flex;
   gap: 20px;
-  margin-top: 8%;
+  /* margin-top: 8%; */
 
   /* position: relative; */
-  width: 100vw;
+  width: 80vw;
   height: 100%;
   align-items: center;
   justify-content: space-around;
