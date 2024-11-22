@@ -1,17 +1,14 @@
-import { memo } from 'react';
+import { useEffect, useState, memo } from 'react';
 import styled from 'styled-components';
 
 const Container = styled.div`
- 
-
   margin-top: 8vh;
   display: flex;
   flex-direction: column;
   padding: 2vw 2.6vw;
   height: 100%;
 
-
-
+  
 
   @media (max-width: 768px) {
     padding: 4vw 4vw 4vw 4vw;
@@ -19,18 +16,88 @@ const Container = styled.div`
 
 `;
 
+
+const CarouselContainer = styled.div`
+position: absolute;;
+  display: flex;
+  justify-content: flex-end; /* Alínea el carrusel a la derecha */
+  width: 100%;
+  height: ${({ height }) => height || 'auto'}; /* Permite definir la altura desde las props */
+
+  @media (max-width: 1200px) {
+    display: none; /* Oculta el carrusel en dispositivos menores a 1200px */
+  }
+`;
+
+const Carousel = styled.div`
+margin-top: 9%;
+margin-right: 5%;
+  width: 48%; /* Tamaño del carrusel */
+  height: 100%;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+`;
+
+const CarouselItem = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+
+  &.active {
+    opacity: 1;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+`;
+
+const ContainerHalf = styled.div`
+ 
+ width: 47%;
+  @media (max-width: 1200px) {
+    width: 100%;
+  }
+
+`;
+
+
 const Background = styled.div`
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: calc(100vh - 1px); /* Ajusta con un pequeño margen */
+  height: calc(100vh - 1px); 
 
   background-image: url('Mastering/4.jpg');
   background-size: cover;
   background-position: center;
-  filter: opacity(0.3);
+  filter: opacity(0.1);
   z-index: -1;
+`;
+
+const StyledImage = styled.img`
+  display: none; /* Ocultar por defecto */
+
+  @media (max-width: 1200px) {
+    display: block; /* Mostrar solo en dispositivos móviles */
+    width: 100%;
+    height: auto;
+    margin: 2vw 0vw 8vw 0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  }
 `;
 
 
@@ -56,7 +123,6 @@ const Title = styled.h1`
   
 `;
 
-
 const Description = styled.p`
  font-size: 2.0rem;
 
@@ -71,7 +137,6 @@ const Description = styled.p`
 
 }
 `;
-
 
 const Section = styled.div`
   margin: 0vw 0;
@@ -94,7 +159,6 @@ font-size: 1.8rem;
 
 `;
 
-
 const SectionTitle2 = styled.h3`
 font-family: 'kaneda-gothic-extrabold';
 color: #ffffff;
@@ -113,8 +177,6 @@ font-size: 1.5rem;
 
 `;
 
-
-
 const List = styled.ul`
   list-style: none;
   padding: 0;
@@ -130,10 +192,6 @@ const List = styled.ul`
 
 `;
 
-
-
-
-
 const ListItem = styled.li`
 
   font-size: 2.0rem;
@@ -141,6 +199,7 @@ const ListItem = styled.li`
   font-family: 'kaneda-gothic-light';
   line-height: 1.2; 
   list-style: none;
+  
 
 
   span {
@@ -155,9 +214,6 @@ const ListItem = styled.li`
 }
 
 `;
-
-
-
 
 const EquipmentList = styled.div`
   display: grid;
@@ -186,67 +242,133 @@ const LineSeparator = styled.div`
  
 `;
 
+const ImageCarousel = memo(({ images, height }) => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 4000);
+
+    return () => clearInterval(interval);
+  }, [images]);
+
+
+  return (
+    <CarouselContainer height={height}>
+      <Carousel>
+        {images.map((src, index) => (
+          <CarouselItem
+            key={index}
+            className={index === currentIndex ? 'active' : ''}
+          >
+            <img src={src} alt={`Imagen ${index + 1}`} />
+          </CarouselItem>
+        ))}
+      </Carousel>
+    </CarouselContainer>
+  );
+});
+
 const Mastering = () => {
+
+
+  const carouselImages = [
+    'Mastering/1.jpg',
+    'Mastering/2.jpg',
+    'Mastering/3.jpg',
+    'Mastering/5.jpg',
+  ];
+
+
   return (
     <>
-    <Background />
-    <Container>
-      <Title>Mixing Mastering Service</Title>
-  
-      <LineSeparator />
+      <Background />
+      <Container>
 
-      <Description>
-        En Gutting Audio, ofrecemos servicios de mezcla y mastering de alta calidad respaldados por más de 10 años de experiencia en la industria musical. Nuestro enfoque es transformar tu proyecto y llevarlo al siguiente nivel, ya sea a través de un proceso de mixing, mastering o ajustes de producción específicos.
-      </Description>
+        <ImageCarousel images={carouselImages} height="700px" />
 
-      <Section>
-        <SectionTitle>¿Por qué elegirnos?</SectionTitle>
-        <Description>
-          Nuestro compromiso es ofrecer un servicio personalizado desde el primer momento. Cada cliente tiene una conexión directa con el profesional encargado del proyecto, garantizando que la visión del artista o productor sea siempre la prioridad. Nuestro equipo, con experiencia trabajando con artistas de renombre como <strong>Mala Rodríguez</strong>, <strong>Yung Beef</strong> o <strong>Kidd Keo</strong>, asegura un trabajo de calidad adaptado a tus necesidades.
-        </Description>
-      </Section>
+        <Title>Mixing Mastering Service</Title>
 
-      <Section>
-        <SectionTitle>Servicios disponibles</SectionTitle>
-        <List>
-          <ListItem>Mastering de matriz Stereo – <span>40 €</span></ListItem>
-          <ListItem>Mastering por Stems (hasta 6 stems) – <span>65 €</span></ListItem>
-          <ListItem>Mezcla (hasta 20 pistas) – <span>150 €</span> (pistas adicionales: <strong>5 €</strong>)/pista</ListItem>
-          <ListItem>Arreglo de Voces (afinación + edición) – <span>30 €</span> por pista</ListItem>
-          <ListItem>Arreglos de Producción – <span>20 €</span> por edición</ListItem>
-          <ListItem>Arreglos de Proyectos (hasta 20 pistas) – <span>130 €</span></ListItem>
-          <ListItem>Mezcla + Mastering (hasta 20 pistas) – <span>180 €</span></ListItem>
-          <ListItem>Arreglo de Conjunto Vocal – <span>80 €</span></ListItem>
-          <ListItem>Mastering y Leveling de DJ Set - <span>40 €</span></ListItem>
-        </List>
-      </Section>
+        <LineSeparator />
 
-      <Section>
-        <SectionTitle>Equipos de alta gama</SectionTitle>
-        <EquipmentList>
-          <EquipmentItem>
-            <SectionTitle2>Workstation:</SectionTitle2>
-            <ListItem>Mac Studio M1 Max, OS Ventura, Avid Pro Tools 2024, Ableton Live 12, iZotope RX 11</ListItem>
-          </EquipmentItem>
-          <EquipmentItem>
-            <SectionTitle2>Outboard:</SectionTitle2>
-            <ListItem>CAPI LP-28 (Litz Mod), AML EZ-1073-500, Tech 21 NYC SansAmp RBI, Furman Lx10</ListItem>
-          </EquipmentItem>
-          <EquipmentItem>
-            <SectionTitle2>Monitoreo:</SectionTitle2>
-            <ListItem>Lynx Aurora 8, Presonus Quantum 2626, Adam A77X, Avantone MixCubes Active, AKG K 702, Audeze MM - 100</ListItem>
-          </EquipmentItem>
-          <EquipmentItem>
-            <SectionTitle2>Plugins:</SectionTitle2>
-            <ListItem>Plugin Alliance All, NewFangled Elevate, Waves All, Soundtoys All, iZotope All, Antares Autotune, Celemony Melodyne 5, FabFilter All, McDSP</ListItem>
-          </EquipmentItem>
-        </EquipmentList>
-      </Section>
+        <ContainerHalf>
 
-      <SectionTitle2>
-        Si buscas un sonido profesional y una atención personalizada, Gutting Audio es tu opción. ¡Hablemos de tu proyecto y llevémoslo al siguiente nivel!
-      </SectionTitle2>
-    </Container>
+          <Description>
+            En Gutting Audio, ofrecemos servicios de mezcla y mastering de alta calidad respaldados por más de 10 años de experiencia en la industria musical. Nuestro enfoque es transformar tu proyecto y llevarlo al siguiente nivel, ya sea a través de un proceso de mixing, mastering o ajustes de producción específicos.
+          </Description>
+
+          <StyledImage src="Mastering/5.jpg" alt="Imagen de servicios de mastering" />
+
+
+          <Section>
+            <SectionTitle>¿Por qué elegirnos?</SectionTitle>
+            <Description>
+              Nuestro compromiso es ofrecer un servicio personalizado desde el primer momento. Cada cliente tiene una conexión directa con el profesional encargado del proyecto, garantizando que la visión del artista o productor sea siempre la prioridad. Nuestro equipo, con experiencia trabajando con artistas de renombre como <strong>Mala Rodríguez</strong>, <strong>Yung Beef</strong> o <strong>Kidd Keo</strong>, asegura un trabajo de calidad adaptado a tus necesidades.
+            </Description>
+
+            <StyledImage src="Mastering/2.jpg" alt="Imagen de servicios de mastering" />
+
+          </Section>
+
+          <Section>
+            <SectionTitle>Servicios disponibles</SectionTitle>
+            <List>
+              <ListItem>Mastering de matriz Stereo – <span>40 €</span></ListItem>
+              <ListItem>Mastering por Stems (hasta 6 stems) – <span>65 €</span></ListItem>
+              <ListItem>Mezcla (hasta 20 pistas) – <span>150 €</span> (pistas adicionales: <strong>5 €</strong>)/pista</ListItem>
+              <ListItem>Arreglo de Voces (afinación + edición) – <span>30 €</span> por pista</ListItem>
+              <ListItem>Arreglos de Producción – <span>20 €</span> por edición</ListItem>
+              <ListItem>Arreglos de Proyectos (hasta 20 pistas) – <span>130 €</span></ListItem>
+              <ListItem>Mezcla + Mastering (hasta 20 pistas) – <span>180 €</span></ListItem>
+              <ListItem>Arreglo de Conjunto Vocal – <span>80 €</span></ListItem>
+              <ListItem>Mastering y Leveling de DJ Set - <span>40 €</span></ListItem>
+            </List>
+          </Section>
+
+          <Description>
+          Si necesitas algo más específico que no encuentras en esta lista, no dudes en contactarnos. Estamos aquí para ayudarte a conseguir el sonido que buscas.          
+          </Description>
+
+          <StyledImage src="Mastering/3.jpg" alt="Imagen de servicios de mastering" />
+
+        </ContainerHalf>
+
+        <Section>
+          <SectionTitle>Equipos de alta gama</SectionTitle>
+
+
+          <SectionTitle2>
+            Contamos con las mejores herramientas para asegurar que cada detalle de tu proyecto se escuche con la mejor calidad posible.
+          </SectionTitle2>
+
+          <EquipmentList>
+            <EquipmentItem>
+              <SectionTitle2>Workstation:</SectionTitle2>
+              <ListItem>Mac Studio M1 Max, OS Ventura, Avid Pro Tools 2024, Ableton Live 12, iZotope RX 11</ListItem>
+            </EquipmentItem>
+            <EquipmentItem>
+              <SectionTitle2>Outboard:</SectionTitle2>
+              <ListItem>CAPI LP-28 (Litz Mod), AML EZ-1073-500, Tech 21 NYC SansAmp RBI, Furman Lx10</ListItem>
+            </EquipmentItem>
+            <EquipmentItem>
+              <SectionTitle2>Monitoreo:</SectionTitle2>
+              <ListItem>Lynx Aurora 8, Presonus Quantum 2626, Adam A77X, Avantone MixCubes Active, AKG K 702, Audeze MM - 100, Tratamiento Acústico</ListItem>
+            </EquipmentItem>
+            <EquipmentItem>
+              <SectionTitle2>Plugins:</SectionTitle2>
+              <ListItem>Plugin Alliance All, NewFangled Elevate, Waves All, Soundtoys All, iZotope All, Antares Autotune, Celemony Melodyne 5, FabFilter All, McDSP</ListItem>
+            </EquipmentItem>
+          </EquipmentList>
+        </Section>
+
+        <StyledImage src="Mastering/1.jpg" alt="Imagen de servicios de mastering" />
+
+        <SectionTitle2>
+          Si buscas un sonido profesional y una atención personalizada, Gutting Audio es tu opción. ¡Hablemos de tu proyecto y llevémoslo al siguiente nivel!
+        </SectionTitle2>
+
+      </Container>
     </>
   );
 };
