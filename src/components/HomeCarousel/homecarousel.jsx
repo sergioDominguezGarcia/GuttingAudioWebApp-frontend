@@ -46,7 +46,7 @@ const HomeCarousel = () => {
     {
       text: "ONLY NEUROFUNK",
       overlayImage: "Home/ONLYNEUROFUNK.jpg", 
-      image: "/ONLYNEUROFUNK.jpg",
+      image: "Home/ONLYNEUROFUNK.jpg",
       tag: "Event",
       link: "",
     },
