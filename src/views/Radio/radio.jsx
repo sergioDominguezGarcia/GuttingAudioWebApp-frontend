@@ -1,16 +1,20 @@
 import { memo } from 'react';
 import styled from 'styled-components';
+import Texto from '../../components/TextoInfinitoVertical/textoinfinitovertical'
 
 const Container = styled.div`
   margin-top: 8vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   padding: 2vw 3vw;
+  width: 85%;
+  align-content: center;
 
   @media (max-width: 768px) {
     padding: 5vw 1vw;
+     width: 97%;
     margin-bottom: 3vh;
+    align-content: center;
   }
 `;
 
@@ -105,6 +109,9 @@ const sortedSessions = sessions.sort((a, b) => {
 const Radio = () => {
   return (
     <Container>
+   <Texto/>
+
+
       {sortedSessions.map((session, index) => (
         <div key={index}>
           <Name>

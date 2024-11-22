@@ -16,7 +16,6 @@ const Container = styled.div`
 
 `;
 
-
 const CarouselContainer = styled.div`
 position: absolute;;
   display: flex;
@@ -84,7 +83,7 @@ const Background = styled.div`
   background-image: url('Mastering/4.jpg');
   background-size: cover;
   background-position: center;
-  filter: opacity(0.1);
+  filter: opacity(0.2);
   z-index: -1;
 `;
 
@@ -99,7 +98,6 @@ const StyledImage = styled.img`
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
   }
 `;
-
 
 const Title = styled.h1`
   color: #ffffff; 
@@ -164,14 +162,14 @@ font-family: 'kaneda-gothic-extrabold';
 color: #ffffff;
   font-size: 2.8rem;
   text-transform: uppercase;
- 
+  line-height: 1.0; 
 
   margin: 1vw 0vw 0vw 0vw;
 
   @media (max-width: 768px) {
 
-font-size: 1.5rem;
- margin: 1vw 0vw 0vw 0vw;
+font-size: 1.3rem;
+ margin: 3vw 0vw 0vw 0vw;
 
 }
 
@@ -272,14 +270,12 @@ const ImageCarousel = memo(({ images, height }) => {
 
 const Mastering = () => {
 
-
   const carouselImages = [
     'Mastering/1.jpg',
     'Mastering/2.jpg',
     'Mastering/3.jpg',
     'Mastering/5.jpg',
   ];
-
 
   return (
     <>
@@ -300,7 +296,6 @@ const Mastering = () => {
 
           <StyledImage src="Mastering/5.jpg" alt="Imagen de servicios de mastering" />
 
-
           <Section>
             <SectionTitle>¿Por qué elegirnos?</SectionTitle>
             <Description>
@@ -314,20 +309,22 @@ const Mastering = () => {
           <Section>
             <SectionTitle>Servicios disponibles</SectionTitle>
             <List>
-              <ListItem>Mastering de matriz Stereo – <span>40 €</span></ListItem>
-              <ListItem>Mastering por Stems (hasta 6 stems) – <span>65 €</span></ListItem>
-              <ListItem>Mezcla (hasta 20 pistas) – <span>150 €</span> (pistas adicionales: <strong>5 €</strong>)/pista</ListItem>
-              <ListItem>Arreglo de Voces (afinación + edición) – <span>30 €</span> por pista</ListItem>
-              <ListItem>Arreglos de Producción – <span>20 €</span> por edición</ListItem>
-              <ListItem>Arreglos de Proyectos (hasta 20 pistas) – <span>130 €</span></ListItem>
-              <ListItem>Mezcla + Mastering (hasta 20 pistas) – <span>180 €</span></ListItem>
-              <ListItem>Arreglo de Conjunto Vocal – <span>80 €</span></ListItem>
-              <ListItem>Mastering y Leveling de DJ Set - <span>40 €</span></ListItem>
+
+            <ListItem><strong>Mastering de matriz Stereo</strong> – 40 €</ListItem>
+<ListItem><strong>Mastering por Stems (hasta 6 stems)</strong> – 65 €</ListItem>
+<ListItem><strong>Mezcla (hasta 20 pistas)</strong> – 150 € (pistas adicionales: 5 €/pista)</ListItem>
+<ListItem><strong>Arreglo de Voces (afinación + edición)</strong> – 30 € por pista</ListItem>
+<ListItem><strong>Arreglos de Producción</strong> – 20 € por edición</ListItem>
+<ListItem><strong>Arreglos de Proyectos (hasta 20 pistas)</strong> – 130 €</ListItem>
+<ListItem><strong>Mezcla + Mastering (hasta 20 pistas)</strong> – 180 €</ListItem>
+<ListItem><strong>Arreglo de Conjunto Vocal</strong> – 80 €</ListItem>
+<ListItem><strong>Mastering y Leveling de DJ Set</strong> – 40 €</ListItem>
+
             </List>
           </Section>
 
           <Description>
-          Si necesitas algo más específico que no encuentras en esta lista, no dudes en contactarnos. Estamos aquí para ayudarte a conseguir el sonido que buscas.          
+          <strong> Si necesitas algo más específico que no encuentras en esta lista, no dudes en contactarnos. Estamos aquí para ayudarte a conseguir el sonido que buscas.   </strong>       
           </Description>
 
           <StyledImage src="Mastering/3.jpg" alt="Imagen de servicios de mastering" />

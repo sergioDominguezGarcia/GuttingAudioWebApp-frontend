@@ -22,6 +22,8 @@ const InfoContainer = styled.div`
   z-index: 10;
   box-sizing: border-box;
   overflow: hidden;
+  background-color: black;
+  z-index: 3000;
 `;
 
 const InfoColumnPie = styled.div.withConfig({
