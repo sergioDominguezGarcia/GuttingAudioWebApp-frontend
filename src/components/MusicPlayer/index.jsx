@@ -195,32 +195,31 @@ const MusicPlayer = ({
                   }}
                 />
               )}
-
-              {/* Purchase icon */}
             </S.TrackItem>
           ))}
-      <S.Icons>
-        <FontAwesomeIcon
-          icon={faCartShopping}
-          style={{
-            cursor: 'pointer',
-            color: '#ddd',
-          }}
-          onClick={() => handlePurchase(track)}
-        />
-        <FontAwesomeIcon
-          icon={faShare}
-          style={{  
-            cursor: 'pointer',
-            color: '#ddd',
-          }}
-          onClick={() => handleShare(track)}
-        />
-      </S.Icons>
+          <S.Icons>
+            <FontAwesomeIcon
+              icon={faCartShopping}
+              style={{
+                cursor: 'pointer',
+                color: '#ddd',
+                height: '1.3em',
+              }}
+              onClick={() => handlePurchase(track)}
+            />
+            <FontAwesomeIcon
+              icon={faShare}
+              style={{
+                cursor: 'pointer',
+                color: '#ddd',
+                height: '1.3em',
+              }}
+              onClick={() => handleShare(track)}
+            />
+          </S.Icons>
         </S.TrackList>
-          <S.StyledAudio ref={audioRef} src={track.audioUrl} />
+        <S.StyledAudio ref={audioRef} src={track.audioUrl} />
       </S.Contain>
-
     </S.Container>
   )
 }

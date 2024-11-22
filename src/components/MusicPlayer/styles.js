@@ -259,11 +259,13 @@ export const TrackItem = styled.div`
 `
 
 export const Icons = styled.div`
-  padding: 10px;
+  border-top: 1px solid rgb(221, 221, 221, 0.3);
+  padding: 6px;
+  padding-top: 16px;
   display: flex;
   /* flex-direction: start; */
   justify-content: flex-start;
-  gap: 10px;
+  gap: 18px;
   /* border: 1px solid gray; */
 `
 
