@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import Releases from '../../views/Releases';
-import { eps } from '../../constants/constants.js';
+import { eps } from '../../data/data.js';
 
 import Artists from '../../views/Artists';
 import Detail from '../../views/ArtistDetail';

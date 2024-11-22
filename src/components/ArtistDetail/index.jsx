@@ -1,7 +1,7 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
 import * as S from './styles' // Estilos para la vista de artistas
-import { artistsData } from './constants'
+import { artistsData } from './constants' // Estilos para
 
 
 const ArtistDetail = () => {

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
-import { eps } from '../../constants/constants'
+import { eps } from '../../data/data'
 import MusicPlayer from '../MusicPlayer'
 import * as S from './styles'
 
