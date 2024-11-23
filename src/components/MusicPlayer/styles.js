@@ -203,12 +203,12 @@ export const VolumeControl = styled.input`
   }
 `
 export const ReleaseInfo = styled.div`
+  width: 100%;
   height: 100%;
   padding-top: 0rem;
   padding-bottom: 1rem;
   text-align: justify;
   line-height: 1.5;
-  width: 100%;
   font-size: 1.8em;
   letter-spacing: 0.06em;
   color: rgb(221, 221, 221, 0.9);

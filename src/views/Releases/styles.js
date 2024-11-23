@@ -21,9 +21,6 @@ export const Releases = styled.div`
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-
-  /* backdrop-filter: blur(10px);
-  opacity: 0.95; */
   color: white;
   justify-content: center;
   width: 100%;

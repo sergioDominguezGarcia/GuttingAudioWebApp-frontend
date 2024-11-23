@@ -74,12 +74,13 @@ export const EpInfo = styled.div`
     0,
     0.6
   ); /* Fondo semitransparente para destacar el texto */
-  color: white;
+  color: rgba(255, 255, 255, 0.8);
   text-align: center;
   padding: 10px;
   h3 {
     font-family: kaneda-gothic-extrabold;
     letter-spacing: 0.09em;
+    color: rgba(255, 255, 255, 0.8);
     margin: 0;
     font-size: 1.3vw;
     gap: 2.5em;

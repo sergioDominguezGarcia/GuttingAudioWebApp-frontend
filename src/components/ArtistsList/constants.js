@@ -7,13 +7,13 @@ import suspect from './img/suspect.jpg'
 
 export const artists = [
   {
-    id: 'davidSynth',
+    id: 'DavidSynth',
     name: 'David Synth',
     image: david,
     slug: 'DavidSynth',
   },
   {
-    id: 'hebra',
+    id: 'Hebra',
     name: 'Hebra',
     image: hebra,
     slug: 'Hebra',
@@ -49,7 +49,7 @@ export const artists = [
     slug: 'DavidSynth',
   },
   {
-    id: 'hebra',
+    id: 'Hebra',
     name: 'Hebra',
     image: hebra,
     slug: 'Hebra',

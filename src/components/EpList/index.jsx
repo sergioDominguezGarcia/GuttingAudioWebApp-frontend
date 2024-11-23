@@ -1,7 +1,8 @@
 import React from 'react'
 import * as S from './styles'
 import { useNavigate } from 'react-router-dom'
-import { eps } from '../../data/data' // Importa el array aquí
+import eps  from '../../data/eps.json' 
+
 
 const EpList = () => {
   const navigate = useNavigate()
