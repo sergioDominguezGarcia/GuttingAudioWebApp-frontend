@@ -335,9 +335,9 @@ const Mastering = () => {
           <SectionTitle>Equipos de alta gama</SectionTitle>
 
 
-          <SectionTitle2>
-            Contamos con las mejores herramientas para asegurar que cada detalle de tu proyecto se escuche con la mejor calidad posible.
-          </SectionTitle2>
+          <Description>
+          <strong> Contamos con las mejores herramientas para asegurar que cada detalle de tu proyecto se escuche con la mejor calidad posible.</strong>   
+          </Description>
 
           <EquipmentList>
             <EquipmentItem>
@@ -361,9 +361,9 @@ const Mastering = () => {
 
         <StyledImage src="Mastering/1.jpg" alt="Imagen de servicios de mastering" />
 
-        <SectionTitle2>
-          Si buscas un sonido profesional y una atención personalizada, Gutting Audio es tu opción. ¡Hablemos de tu proyecto y llevémoslo al siguiente nivel!
-        </SectionTitle2>
+        <Description>
+        <strong>   Si buscas un sonido profesional y una atención personalizada, Gutting Audio es tu opción. ¡Hablemos de tu proyecto y llevémoslo al siguiente nivel!</strong>   
+        </Description>
 
       </Container>
     </>
