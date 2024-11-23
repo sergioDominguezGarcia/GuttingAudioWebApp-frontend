@@ -23,7 +23,7 @@ const InfoContainer = styled.div`
   box-sizing: border-box;
   overflow: hidden;
   background-color: black;
-  z-index: 3000;
+  z-index: 10;
 `;
 
 const InfoColumnPie = styled.div.withConfig({
@@ -39,7 +39,7 @@ const InfoColumnPie = styled.div.withConfig({
     `}
 
   @media (max-width: 768px) {
-    padding: 6vw 2.5vw 4vw 2.5vw;
+    padding: 4vw 2.5vw 4vw 2.5vw;
   }
 `;
 

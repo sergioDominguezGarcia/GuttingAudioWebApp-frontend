@@ -8,12 +8,12 @@ const arrowLeftUrl = "https://cdn.prod.website-files.com/6447bca571fb2820e0a009b
 const arrowRightUrl = "https://cdn.prod.website-files.com/6447bca571fb2820e0a009be/645e620bc4bd79638317564c_right-arrow.png";
 
 const HomeCarousel = () => {
-  
+
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isExiting, setIsExiting] = useState(false);
   const sliderRef = useRef(null);
-  
+
 
   const items = [
 
@@ -45,7 +45,7 @@ const HomeCarousel = () => {
 
     {
       text: "ONLY NEUROFUNK",
-      overlayImage: "Home/ONLYNEUROFUNK.jpg", 
+      overlayImage: "Home/ONLYNEUROFUNK.jpg",
       image: "Home/ONLYNEUROFUNK.jpg",
       tag: "Event",
       link: "",
@@ -79,13 +79,13 @@ const HomeCarousel = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 4000,
-    
+
     pauseOnHover: false,
     pauseOnFocus: false,
     draggable: false,
     swipe: false,
     touchMove: false,
-    arrows: false, 
+    arrows: false,
     beforeChange: (oldIndex, newIndex) => {
       setIsExiting(true);
       setTimeout(() => {
@@ -105,62 +105,68 @@ const HomeCarousel = () => {
     };
   }, []);
 
+
+
+
+
+
+
   return (
-  
-  <p>
-    <CarouselContainer>
+
+    <StyledDiv>
+      <CarouselContainer>
 
 
-    <Slider ref={sliderRef} {...settings} key={windowWidth}>
-  {items.map((item, index) => (
+        <Slider ref={sliderRef} {...settings} key={windowWidth}>
+          {items.map((item, index) => (
     <Slide key={index} backgroundImage={item.image}>
-      {item.overlayImage && (
-        <VerticalImageOverlay>
-          <img src={item.overlayImage} alt="" />
-        </VerticalImageOverlay>
-      )}
-    </Slide>
-  ))}
-</Slider>
+              {item.overlayImage && (
+                <VerticalImageOverlay>
+                  <img src={item.overlayImage} alt="" />
+                </VerticalImageOverlay>
+              )}
+            </Slide>
+          ))}
+        </Slider>
 
 
 
 
-      <FixedTextContainer>
-        <Tag isExiting={isExiting} key={`tag-${currentIndex}`}>
-          {items[currentIndex].tag}
-        </Tag>
-        <SlideTitle isExiting={isExiting} key={currentIndex}>
-          {items[currentIndex].text}
-        </SlideTitle>
-      </FixedTextContainer>
+        <FixedTextContainer>
+          <Tag isExiting={isExiting} key={`tag-${currentIndex}`}>
+            {items[currentIndex].tag}
+          </Tag>
+          <SlideTitle isExiting={isExiting} key={currentIndex}>
+            {items[currentIndex].text}
+          </SlideTitle>
+        </FixedTextContainer>
 
-      <ArrowButtonContainer>
-        <MoreInfoButton href={items[currentIndex].link} target="_blank" rel="noopener noreferrer">
-          More Info
-        </MoreInfoButton>
-        <ArrowStyle
-          className="slick-prev"
-          arrowUrl={arrowLeftUrl}
-          onClick={() => sliderRef.current && sliderRef.current.slickPrev()} 
-        />
-        <ArrowStyle
-          className="slick-next"
-          arrowUrl={arrowRightUrl}
-          onClick={() => sliderRef.current && sliderRef.current.slickNext()} 
-        />
-      </ArrowButtonContainer>
+        <ArrowButtonContainer>
+          <MoreInfoButton href={items[currentIndex].link} target="_blank" rel="noopener noreferrer">
+            More Info
+          </MoreInfoButton>
+          <ArrowStyle
+            className="slick-prev"
+            arrowUrl={arrowLeftUrl}
+            onClick={() => sliderRef.current && sliderRef.current.slickPrev()}
+          />
+          <ArrowStyle
+            className="slick-next"
+            arrowUrl={arrowRightUrl}
+            onClick={() => sliderRef.current && sliderRef.current.slickNext()}
+          />
+        </ArrowButtonContainer>
 
-    <IndicatorContainer>
-        {items.map((_, index) => (
+        <IndicatorContainer>
+          {items.map((_, index) => (
           <IndicatorBar key={index} active={index === currentIndex} />
         ))}
-      </IndicatorContainer>
+        </IndicatorContainer>
 
-    </CarouselContainer> 
-    
-    
- </p>
+      </CarouselContainer>
+
+
+    </StyledDiv>
 
   );
 };
@@ -183,7 +189,7 @@ const CarouselContainer = styled.div`
     display: none !important;
   }
   @media (max-width: 768px) {
-    height: calc(100vh - 15vh);
+    height: calc(100vh - 14vh);
   }
 `;
 
@@ -202,6 +208,14 @@ const Slide = styled.div`
   @media (max-width: 768px) {
     height: 85vh;
   }
+`;
+
+
+
+const StyledDiv = styled.div`
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  line-height: 1.5;
 `;
 
 const VerticalImageOverlay = styled.div`
@@ -261,7 +275,10 @@ const slideDownOut = keyframes`
   100% { transform: translateY(200%);  }
 `;
 
-const Tag = styled.div`
+const Tag = styled.div.attrs(() => ({
+  isExiting: undefined,
+}))`
+
   font-family: monospace;
   font-size: 1.0vw;
   color: #ffd700;
@@ -276,7 +293,10 @@ const Tag = styled.div`
   }
 `;
 
-const SlideTitle = styled.h3`
+const SlideTitle = styled.h3.attrs(() => ({
+  isExiting: undefined,
+}))`
+
   font-family: kaneda-gothic-extrabold;
   font-size: 8vw;
   color: #f5f5f5;
@@ -333,60 +353,54 @@ const MoreInfoButton = styled.a`
   }
 `;
 
-const ArrowStyle = styled.div`
 
 
-z-index: 10 !important;
+
+
+const ArrowStyle = styled.div.attrs(({ arrowUrl }) => ({
+  style: {
+    backgroundImage: `url(${arrowUrl})`, // Se usa solo en los estilos
+  },
+  arrowUrl: undefined, // Elimina arrowUrl antes de pasar las props al DOM
+}))`
+  z-index: 10 !important;
   width: 40px !important;
   height: 40 auto !important;
-  background-image: url(${(props) => props.arrowUrl}) !important;
   background-size: contain !important;
   background-repeat: no-repeat !important;
   cursor: pointer !important;
   outline: none;
-  -webkit-tap-highlight-color: transparent; 
- 
-;
-
+  -webkit-tap-highlight-color: transparent;
 
   &.slick-prev {
-    transform:translateX(220px) translateY(-40%) rotate(180deg) scale(1.8)  !important; 
-   
+    transform: translateX(220px) translateY(-40%) rotate(180deg) scale(1.8) !important;
   }
 
   &.slick-next {
-    
-    transform:translateX(240px) translateY(-39%) scale(1.8) !important; 
-   
-    
+    transform: translateX(240px) translateY(-39%) scale(1.8) !important;
   }
 
   &:focus {
-    outline: none; 
+    outline: none;
   }
 
   @media (max-width: 768px) {
-width: 39px !important;
-left: 50vw;
-padding: 0px 10px;
+    width: 39px !important;
+    left: 50vw;
+    padding: 0px 10px;
 
+    &.slick-prev {
+      margin-right: 40px;
+      transform: translateX(-50%) translateY(-30%) rotate(180deg) scale(1.3) !important;
+    }
 
-&.slick-prev {
- 
-    margin-right: 40px; 
-    transform: translateX(-50%) translateY(-30%) rotate(180deg) scale(1.3) !important; 
-    
-    
-  }
-
-  &.slick-next {
-    margin-right: 40px; 
-    transform: translateX(140%) translateY(-30%) scale(1.3) !important; 
-  }
-
-
+    &.slick-next {
+      margin-right: 40px;
+      transform: translateX(140%) translateY(-30%) scale(1.3) !important;
+    }
   }
 `;
+
 
 const IndicatorContainer = styled.div`
   position: absolute;
@@ -405,8 +419,9 @@ const IndicatorContainer = styled.div`
 `;
 
 
-const IndicatorBar = styled.div`
-
+const IndicatorBar = styled.div.attrs(() => ({
+  isActive: undefined,
+}))`
   flex: 1;
   height: 3px;
   background-color: ${(props) => (props.active ? "#ffffff" : "#a3a3a3")};

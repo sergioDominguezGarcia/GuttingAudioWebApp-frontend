@@ -13,7 +13,7 @@ const InfoContainer = styled.div`
   position: fixed;
   top: 0;
   right: 0;
-  z-index: 900;
+  z-index: 9;
   height: 100vh;
   width: 8vw;
 
