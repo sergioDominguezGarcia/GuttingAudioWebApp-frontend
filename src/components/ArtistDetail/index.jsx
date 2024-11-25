@@ -1,5 +1,5 @@
 import React from 'react'
-import { useNavigate, useParams } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import * as S from './styles'
 import { artistsData } from './constants' 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -8,7 +8,7 @@ import eps from "../../data/eps.json"
 
 
 const ArtistDetail = () => {
-  const navigate = useNavigate()
+
   
   const openLink = (url) => {
     window.open(url, '_blank', 'noopener,noreferrer')
