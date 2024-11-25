@@ -18,7 +18,7 @@ git branch  # mostrar ramas locales y resaltar la rama actual
 
 git checkout home      # Cambia de rama
 
-git add .; git commit -m "fix warning"; git push origin main
+git add .; git commit -m "adaptative view details relase"; git push origin main
 
 
 
