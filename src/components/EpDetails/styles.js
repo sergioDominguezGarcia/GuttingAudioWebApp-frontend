@@ -42,11 +42,19 @@ export const EpDetailContainer = styled.div`
   }
   @media (max-width: 834px) {
     width: 100vw;
-    margin: auto;   
+    margin: auto;
     /* padding: 0 10px; */
     justify-content: flex-start;
     /* border: 1px solid white; */
-  
+    &::after {
+      background-color: rgba(
+        0,
+        0,
+        0,
+        0.2
+      ); /* Cambia el color y la opacidad según prefieras */
+
+    }
   }
 `
 
@@ -63,10 +71,10 @@ export const EpContent = styled.div`
   z-index: 1; /* Asegura que el contenido esté por encima del fondo */
 
   @media (max-width: 834px) {
-    /* border: 1px solid white; */
-    margin-top: 6vh;
+    width: 100vw;
+    margin-top: 8vh;
     /* padding: 0 10px; */
-    
+
     align-items: flex-start;
     /* border: 1px solid white; */
   }

@@ -21,7 +21,7 @@ export const Home = styled.div`
     background-image: url(${(props) => props.background});
     background-size: cover;
     background-position: center;
-    filter: blur(8px) brightness(0.5);
+    filter: brightness(0.9);
     z-index: -2;
   }
 `

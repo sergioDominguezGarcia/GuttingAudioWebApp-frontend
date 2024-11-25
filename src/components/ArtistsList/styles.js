@@ -10,6 +10,9 @@ export const ArtistsList = styled.div`
   margin-bottom: 1rem;
   width: 100%;
   box-sizing: border-box;
+  @media (max-width: 834px) {
+    gap: 3.5vw;
+  }
 `
 
 export const ArtistCard = styled.div`
