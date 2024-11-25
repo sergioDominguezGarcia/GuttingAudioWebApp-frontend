@@ -34,7 +34,7 @@ const ArtistDetail = () => {
                 <img
                   src={ep.coverUrl}
                   alt={`Portada de ${ep.title}`}
-                  style={{ width: '25%', height: 'auto', borderRadius: '8px' }}
+                  style={{ width: '25%', height: 'auto'}}
                 />
               <h3>{ep.title}</h3>
               </S.EpCover>

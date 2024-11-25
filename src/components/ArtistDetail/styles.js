@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const ArtistDetail = styled.div`
   background-color: rgba(0, 0, 0, 0.4);
   border: 1px solid rgb(221, 221, 221, 0.5);
-  border-radius: 16px;
+  /* border-radius: 16px; */
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
   display: flex;
   margin: auto;
@@ -25,7 +25,7 @@ export const ArtistDetail = styled.div`
 
 export const ArtistImage = styled.img`
   width: 25vw;
-  border-radius: 8px;
+  /* border-radius: 8px; */
   @media (max-width: 834px) {
     width: 100%;
     height: auto;
