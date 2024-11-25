@@ -8,7 +8,15 @@ const Artists = () => {
 
   return (
     <S.Home background={back}>
+
+
+      
       <S.Content>
+
+
+<S.Title>Artists</S.Title>
+<S.LineSeparator></S.LineSeparator>
+
         <S.Artists>
           <ArtistsList />
         </S.Artists>

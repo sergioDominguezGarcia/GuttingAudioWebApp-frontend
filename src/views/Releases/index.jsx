@@ -9,11 +9,8 @@ const Releases = () => {
 
 
 
-<S.Title>Mixing Mastering Service</S.Title>
-
-<S.LineSeparator>
-
-</S.LineSeparator>
+<S.Title>Releases</S.Title>
+<S.LineSeparator></S.LineSeparator>
 
 
       {/* <S.Img>

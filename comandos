@@ -5,7 +5,7 @@
 
 yarn run build                         # Generar una nueva versión de tu sitio
 
-git add .; git commit -m "siempre visible header en iphone"; git push origin main
+git add .; git commit -m "añado los titulos a las vistas"; git push origin main
 
 
 

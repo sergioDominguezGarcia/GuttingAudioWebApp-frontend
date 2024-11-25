@@ -38,11 +38,11 @@ z-index: 50;
  
   cursor: pointer; 
   img {
-    max-width: 190px;
+    max-width: 9vw;
 
     @media (max-width: 768px) {
       margin-top: -2px;
-      max-width: 130px;
+      max-width: 32vw;
     }
   }
 `

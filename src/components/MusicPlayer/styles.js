@@ -22,6 +22,7 @@ export const Container = styled.div`
     padding: 1rem;
     border: none;
     top: 0;
+    height: 150vh;
   }
 `
 export const Contain = styled.div`
