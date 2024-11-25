@@ -27,21 +27,18 @@ const ArtistDetail = () => {
     <S.ArtistDetail>
       <S.LefttBox>
         <S.ArtistImage src={artist.image} alt={artist.name} />
-        <S.Releases>
-          {' '}
-          <S.Releases>
+        <S.Releases>          
             <h3>Releases:</h3>
             {filteredEps.map((ep) => (
               <S.EpCover key={ep.id}>
                 <img
                   src={ep.coverUrl}
                   alt={`Portada de ${ep.title}`}
-                  style={{ width: '10vw', height: 'auto', borderRadius: '8px' }}
+                  style={{ width: '25%', height: 'auto', borderRadius: '8px' }}
                 />
               <h3>{ep.title}</h3>
               </S.EpCover>
             ))}
-          </S.Releases>
         </S.Releases>
       </S.LefttBox>
       <S.RightBox>

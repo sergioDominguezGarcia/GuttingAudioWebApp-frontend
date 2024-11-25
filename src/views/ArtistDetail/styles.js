@@ -25,7 +25,7 @@ export const Artists = styled.div`
   justify-content: 
   center;
   align-items: center;
-  border: 1px solid rgb(221, 221, 221, 0.5);
+  /* border: 1px solid rgb(221, 221, 221, 0.5); */
   width: 100vw;
   height: 100%;
   @media (max-width: 834px) {
