@@ -13,11 +13,12 @@ export const Container = styled.div`
   transition: all 0.5s ease;
   width: auto;
   /* max-width: 75%; */
+  border: 1px solid white;
   @media (max-width: 1200px) {
     flex-direction: column;
     gap: 0px;
     width: 100vw;
-    /* height: 100vh; */
+    background-color: rgba(0, 0, 0, 0);
     padding: 1rem;
     border: none;
     top: 0;
@@ -44,7 +45,7 @@ export const Contain = styled.div`
   & > div:nth-child(3) {
     order: 1; /* <S.Info> en primer lugar */
   }
-    & > div:nth-child(4) {
+  & > div:nth-child(4) {
     order: 1; /* <S.Icons> en segundo lugar */
   }
 `
@@ -57,7 +58,7 @@ export const Cover = styled.div`
   img {
     object-fit: cover;
     width: 400px;
-    border-radius: 16px;
+    /* border-radius: 16px; */
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
   }
   @media (max-width: 1200px) {
@@ -67,7 +68,7 @@ export const Cover = styled.div`
     flex-direction: column;
 
     img {
-      width: 95%;
+      width: 100%;
       max-height: 250px;
     }
   }
@@ -223,7 +224,7 @@ export const ReleaseInfo = styled.div`
     line-height: 1em;
     padding-top: 0rem;
     align-self: center;
-    width: 95%;
+    width: 100%;
   }
 `
 export const TrackList = styled.div`
@@ -231,7 +232,7 @@ export const TrackList = styled.div`
   flex-direction: column;
   flex-grow: 1;
   padding: 10px;
-  border-radius: 8px;
+  /* border-radius: 8px; */
   background-color: rgba(255, 255, 255, 0.2);
   @media (max-width: 1200px) {
     width: 100%;
@@ -260,8 +261,7 @@ export const TrackItem = styled.div`
 
 export const Icons = styled.div`
   border-top: 1px solid rgb(221, 221, 221, 0.3);
-  padding: 6px;
-  padding-top: 16px;
+  padding: 16px 8px;
   display: flex;
   /* flex-direction: start; */
   justify-content: flex-start;

@@ -10,6 +10,9 @@ export const EpGrid = styled.div`
   margin-bottom:1rem;
   width: 100%;
   box-sizing: border-box;
+  @media (max-width: 834px) {
+    gap: 3.5vw;
+  }
 `
 export const Overlay = styled.div`
   position: absolute;
@@ -23,6 +26,9 @@ export const Overlay = styled.div`
   justify-content: center;
   opacity: 0;
   transition: opacity 0.3s ease;
+  @media (max-width: 1200px) {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
 `
 // Cada tarjeta de EP (card)
 export const EpCard = styled.div`
@@ -51,6 +57,10 @@ export const EpCard = styled.div`
   @media (max-width: 1200px) {
     width: 29vw;
     height: 29vw;
+    &:hover {
+      transform: none; /* Desactiva el movimiento */
+      box-shadow: none; /* Elimina la sombra */
+    }
     /* border-radius: 4px; */
   }
   @media (max-width: 932px) {
@@ -59,10 +69,15 @@ export const EpCard = styled.div`
     /* border-radius: 4px; */
   }
 `
+
+
 // Icono de play
 export const PlayIcon = styled.div`
   font-size: 6em;
   color: rgba(255, 255, 255, 0.772);
+  @media (max-width: 932px){
+    font-size: 3em;
+  };
 `
 // Contenedor para el título y el artista
 export const EpInfo = styled.div`

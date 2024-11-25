@@ -13,7 +13,6 @@ export const ArtistDetail = styled.div`
   width: 90%;
   /* height: 60vh; */
   @media (max-width: 834px) {
-    
     width: 100%;
     height: auto;
     flex-direction: column;
@@ -21,7 +20,7 @@ export const ArtistDetail = styled.div`
     padding: 16px;
     padding-top: 70px;
     flex-wrap: nowrap;
-  }
+    }
 `
 
 export const ArtistImage = styled.img`
@@ -46,22 +45,22 @@ export const Releases = styled.div`
     border-bottom: 0.2 px solid rgb(221, 221, 221, 0.5);
     width: 75%;
   }
-   @media (max-width: 834px){
+  @media (max-width: 834px) {
     visibility: hidden;
     position: absolute;
-    h3{
+    h3 {
       font-size: 1.5rem;
     }
-   }
+  }
 `
 export const EpCover = styled.div`
   padding: 4rem 0rem;
-  justify-content:center ;
-   @media (max-width: 834px){
-    img{
+  justify-content: center;
+  @media (max-width: 834px) {
+    img {
       width: 50%;
     }
-   }
+  }
 `
 
 export const ArtistName = styled.div`
@@ -80,12 +79,12 @@ export const ArtistName = styled.div`
     gap: 2.5em;
     text-shadow: 1px 1px 2px black;
   }
-  @media (max-width: 834px){
+  @media (max-width: 834px) {
     height: 40px;
-    h3{
+    h3 {
       font-size: 1.5em;
     }
-  };
+  }
 `
 
 export const ArtistBio = styled.div`
@@ -101,7 +100,7 @@ export const ArtistBio = styled.div`
     letter-spacing: 1.2px;
     text-shadow: 1px 1px 2px black;
   }
-  @media (max-width: 834px){
+  @media (max-width: 834px) {
     p {
       line-height: 1;
       font-size: 1.5em;
