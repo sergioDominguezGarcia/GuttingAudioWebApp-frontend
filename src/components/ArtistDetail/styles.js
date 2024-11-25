@@ -46,8 +46,7 @@ export const Releases = styled.div`
     width: 75%;
   }
   @media (max-width: 834px) {
-    visibility: hidden;
-    position: absolute;
+    display: none;
     h3 {
       font-size: 1.5rem;
     }

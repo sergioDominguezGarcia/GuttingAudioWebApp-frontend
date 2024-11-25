@@ -46,8 +46,8 @@ export const artistsData = {
     image: suspect,
     bio: 'Mario Cotorruelo, aka Suspect es un productor y DJ sevillano. Entró en el mundo del Drum & Bass en 2013 y desde entonces dedica su tiempo libre a la producción de Drum and Bass, más específicamente neurofunk, pero sin fijarse en un sólo subgenero. Todas sus creciones tienen en común un elemento, el ritmo y el groove del funk. Desde que produce ha sacado en sellos internacionales como Raving Panda Records (Alemania) y Stagma Records (Irlanda). Sus sets se caracterizan por la variedad de subgéneros, con un énfasis en el neurofunk, old school y deep/rolling. Desde 2015 lleva pinchando esporádicamente en salas pero sobre todo en raves, aunque su pasión principal es la producción musical también es un amante de los platos y de hacer bailar a las masas en directo.',
     socialLinks: {
-      instagram: 'https://instagram.com/artista1',
-      soundcloud: 'https://soundcloud.com/artista1',
+      instagram: 'https://www.instagram.com/svspectdnb/',
+      soundcloud: 'https://soundcloud.com/svspectdnb',
     },
   },
   Vandermou: {
@@ -55,8 +55,8 @@ export const artistsData = {
     image: vandermou,
     bio: '(ES) Dj/Productor de Sevilla (España). Desde muy pequeño empezó a sentirse atraido por la música electrónica observando a su tío, Interagent (Berlín), mezclar sus vinilos. Su primera experiencia fué con el grupo Diversity en 2010 dedicado al sonido Breakbeat. Tras varios años de evolución y aprendizaje decide dedicarse en exclusiva al genero Drum & Bass, creando en 2014 la promotora Jack The Ripper Events, con la que lleva más de 8 años trayendo artistas de primer nivel a su ciudad, y formando el grupo Aimlessly Team. Pero es en Mayo de 2016 cuando decide iniciar su carrera en solitario bajo el nombre de Vandermou. Desde esa fecha hasta la actualidad, ha conseguido hacerse un hueco en la escena de la ciudad, actuando en la gran mayoría de clubs y grandes eventos del estilo (Dub Elements & Friends). Eso le ha dado oportunidad para actuar también en otras ciudades españolas (Barcelona, Malaga, Granada, Jaen, Cadiz, Huelva y Córdoba) y en paises como Croacia (Outlook Festival 2016 y 2017), Republica Checa (Cross Club) y Reino Unido. Sus sets destacan por la rapidez y contundencia, pudiendo escuchar la gran mayoría de los estilos de Neurofunk. En cuanto a producción, busca esa misma variedad creando tracks de estilos Neurofunk y Deep. En Junio de 2017 sacó su primer EP a la venta por el sello Nagual Recordings y actualmente cuenta con otras referencias en sellos como FMR, Black Monsta Records, Histeria Records, Nu Error Audio, Wild Ravers Records, Melting Pot Records, Gutting Audio, Suspect Device Music, Wharf Recordings, Drumad y Space Pirate Recordings. En Marzo de 2020 creó su último proyecto, Gutting Audio. Un nuevo sello discográfico dedicado a los sonidos neurofunk.',
     socialLinks: {
-      instagram: 'https://instagram.com/artista1',
-      soundcloud: 'https://soundcloud.com/artista1',
+      instagram: 'https://www.instagram.com/vandermou.sl_small/',
+      soundcloud: 'https://soundcloud.com/vandermou',
     },
   },
 }
