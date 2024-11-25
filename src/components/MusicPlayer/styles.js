@@ -1,37 +1,43 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-  background-color: rgba(0, 0, 0, 0.5);
-  border: 1px solid rgb(221, 221, 221, 0.5);
-  border-radius: 16px;
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+position: relative;
+  background-color: rgba(0, 0, 0, 0.4);
+  /* border: 1px solid rgb(221, 221, 221, 0.5); */
+  /* border-radius: 16px; */
+  /* box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); */
   display: flex;
   justify-content: center;
   gap: 70px;
   margin: 0 auto;
   padding: 2rem;
+  width: 80vw;
+  height: auto; /* Permite que crezca según el contenido */
   transition: all 0.5s ease;
-  width: auto;
-  /* max-width: 75%; */
-  border: 1px solid white;
+
+
+
   @media (max-width: 1200px) {
     flex-direction: column;
     gap: 0px;
-    width: 100vw;
+    width: 94vw;
     background-color: rgba(0, 0, 0, 0);
     padding: 1rem;
     border: none;
     top: 0;
-    height: 150vh;
+     
+    
   }
 `
 export const Contain = styled.div`
   display: flex;
   flex-direction: column;
-  /* border: 1px solid white; */
+  width: 100%;
+  height: auto;
+ 
   @media (max-width: 1200px) {
-    width: 100%;
-    height: 100%;
+   
+    height: auto;
     align-self: center;
   }
   /* Reorganiza el orden de los elementos en esta resolución */
@@ -60,7 +66,7 @@ export const Cover = styled.div`
     object-fit: cover;
     width: 400px;
     /* border-radius: 16px; */
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    /* box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); */
   }
   @media (max-width: 1200px) {
     /* height: 40%; */
@@ -206,7 +212,9 @@ export const VolumeControl = styled.input`
 `
 export const ReleaseInfo = styled.div`
   width: 100%;
-  height: 100%;
+  height: auto;
+
+  overflow-y: auto;
   padding-top: 0rem;
   padding-bottom: 1rem;
   text-align: justify;
@@ -215,10 +223,12 @@ export const ReleaseInfo = styled.div`
   letter-spacing: 0.06em;
   color: rgb(221, 221, 221, 0.9);
   font-family: kaneda-gothic-light;
+
   @media (max-width: 1200px) {
     font-size: 1.4em;
     line-height: 1.2;
     padding-top: 0rem;
+    height: auto;
   }
   @media (max-width: 480px) {
     font-size: 1.4em;

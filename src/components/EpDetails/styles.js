@@ -42,6 +42,7 @@ export const EpDetailContainer = styled.div`
   }
   @media (max-width: 834px) {
     width: 100vw;
+    height: auto;
     margin: auto;
     /* padding: 0 10px; */
     justify-content: flex-start;

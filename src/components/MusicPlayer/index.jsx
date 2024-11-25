@@ -167,7 +167,11 @@ const MusicPlayer = ({
             two completely different tracks, showing us his great repertoire of
             ideas. Gate delves into the fusion with psy styles creating an
             incredible atmosphere and rhythm and 4AM shows us his best known
-            side in the world of Drum & Bass.
+            side in the world of Drum & Bass.   
+
+          
+
+
           </p>
         </S.ReleaseInfo>
         <S.TrackList>
