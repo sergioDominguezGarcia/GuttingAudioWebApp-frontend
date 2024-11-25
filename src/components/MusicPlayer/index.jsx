@@ -185,10 +185,8 @@ const MusicPlayer = ({
                   }
                 />
               </S.Play>
-
               {/* Track title */}
               {track.title}
-
               {/* Sound icon when track is playing */}
               {isPlaying && currentTrackId === track.id && (
                 <AiFillSound
@@ -202,7 +200,6 @@ const MusicPlayer = ({
             </S.TrackItem>
           ))}
 
-        
           <S.Icons>
             <FontAwesomeIcon
               icon={faCartShopping}
@@ -226,8 +223,6 @@ const MusicPlayer = ({
             />
 
           </S.Icons>
-
-
         </S.TrackList>
 
 

@@ -16,17 +16,15 @@ position: relative;
   transition: all 0.5s ease;
   width: auto;
   /* max-width: 75%; */
-  border: 1px solid white;
+  /* border: 1px solid white; */
   @media (max-width: 1200px) {
     flex-direction: column;
     gap: 0px;
     width: 94vw;
     background-color: rgba(0, 0, 0, 0);
     padding: 1rem;
-    border: none;
-    top: 0;
-     
-    
+    border: none; 
+    top: 0;    
   }
 `
 export const Contain = styled.div`
@@ -34,9 +32,7 @@ export const Contain = styled.div`
   flex-direction: column;
   width: 100%;
   height: auto;
- 
   @media (max-width: 1200px) {
-   
     height: auto;
     align-self: center;
   }
@@ -76,7 +72,7 @@ export const Cover = styled.div`
 
     img {
       width: 100%;
-      max-height: 250px;
+      max-height: 350px;
     }
   }
 `
@@ -241,7 +237,7 @@ export const ReleaseInfo = styled.div`
 export const TrackList = styled.div`
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
+  /* flex-grow: 1; */
   padding: 10px;
   /* border-radius: 8px; */
   background-color: rgba(255, 255, 255, 0.2);
@@ -251,11 +247,10 @@ export const TrackList = styled.div`
     padding: 0px;
     /* height: 40%; */
   }
-  /* border-top: 1px solid gray; */
+  /* border: 1px solid gray; */
 `
 export const TrackItem = styled.div`
   cursor: pointer;
-  gap: 6px;
   color: rgb(221, 221, 221);
   padding: 10px;
   gap: 1rem;
@@ -272,9 +267,9 @@ export const TrackItem = styled.div`
 
 export const Icons = styled.div`
   border-top: 1px solid rgb(221, 221, 221, 0.3);
-  padding: 12px 8px 6px 8px;
+  padding: 12px 10px 6px 8px;
   display: flex;
-
+  box-sizing: border-box;
   justify-content: flex-start;
   gap: 18px;
   @media (max-width: 1200px) {
