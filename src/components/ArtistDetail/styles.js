@@ -1,14 +1,14 @@
 import styled from 'styled-components'
 
 export const ArtistDetail = styled.div`
-  background-color: rgba(0, 0, 0, 0.4);
-  border: 1px solid rgb(221, 221, 221, 0.5);
+  background-color: rgba(0, 0, 0, 0.3);
+  /* border: 1px solid rgb(221, 221, 221, 0.5); */
   /* border-radius: 16px; */
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  /* box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); */
   display: flex;
   margin: auto;
-  padding: 3rem;
-  /* box-sizing: border-box; */
+  padding: 3rem 5rem;
+  box-sizing: border-box;
   transition: all 0.5s ease;
   width: 90%;
   /* height: 60vh; */
@@ -25,7 +25,8 @@ export const ArtistDetail = styled.div`
 
 export const ArtistImage = styled.img`
   width: 25vw;
-  /* border-radius: 8px; */
+  display:flex ;
+  /* align-self: center; */
   @media (max-width: 834px) {
     width: 100%;
     height: auto;
@@ -42,7 +43,7 @@ export const Releases = styled.div`
     font-size: 2vw;
     gap: 2.5em;
     text-shadow: 1px 1px 2px black;
-    border-bottom: 0.2 px solid rgb(221, 221, 221, 0.5);
+    border-bottom: 1 px solid rgb(221, 221, 221, 0.5);
     width: 75%;
   }
   @media (max-width: 834px) {
@@ -53,7 +54,7 @@ export const Releases = styled.div`
   }
 `
 export const EpCover = styled.div`
-  padding: 4rem 0rem;
+  /* padding: 4rem 0rem; */
   justify-content: center;
   @media (max-width: 834px) {
     img {
@@ -122,6 +123,9 @@ export const SocialLinks = styled.div`
 export const LefttBox = styled.div`
   width: 50%;
   height: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   @media (max-width: 834px) {
     width: 100%;
     flex-direction: column;

@@ -31,18 +31,15 @@ const EpDetail = () => {
     <>
       <S.EpDetailContainer backgroundImage={selectedEp.coverUrl}>
         <S.EpContent>
-
           <MusicPlayer
             track={
               selectedEp.tracks.find((track) => track.id === currentTrackId) ||
-              {}
-            }
+              {}}
             currentTrackId={currentTrackId}
             setCurrentTrackId={setCurrentTrackId}
             selectedEp={selectedEp}
           />
         </S.EpContent>
-
       </S.EpDetailContainer>
       {/* <Footer /> */}
     </>
