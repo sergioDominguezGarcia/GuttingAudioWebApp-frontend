@@ -1,9 +1,9 @@
 import styled from 'styled-components'
 
 export const Home = styled.div`
-  max-width: 100%;
-  /* overflow-x: hidden; */
-  
+  width: 100vw;
+  overflow-x: hidden;
+  /* overflow-y: hidden; */
   height: 100vh;
 `
 
@@ -15,22 +15,22 @@ export const Content = styled.div`
   background-size: center;
   justify-content: center;
   height: 100%;
-  margin: 3rem 0rem 0rem 0rem;
   z-index: -1;
   width: 100%;
 `
 
 export const Artists = styled.div`
   display: flex;
-  flex-direction: row;
-  background: #000000b6;
   color: white;
-  padding: 6rem;
-  justify-content: center;
-  /* width: 80%; */
+  justify-content: 
+  center;
+  align-items: center;
+  border: 1px solid rgb(221, 221, 221, 0.5);
+  width: 100vw;
   height: 100%;
-  box-sizing: border-box;
   @media (max-width: 834px) {
-    padding: 2rem;
+    width: 100vw;
+    padding: 0rem;
+    top: 0px;
   }
 `
