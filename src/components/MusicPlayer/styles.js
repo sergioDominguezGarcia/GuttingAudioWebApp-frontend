@@ -14,6 +14,7 @@ export const Container = styled.div`
   width: auto;
   /* max-width: 75%; */
   border: 1px solid white;
+  
   @media (max-width: 1200px) {
     flex-direction: column;
     gap: 0px;
@@ -262,12 +263,14 @@ export const TrackItem = styled.div`
 
 export const Icons = styled.div`
   border-top: 1px solid rgb(221, 221, 221, 0.3);
-  padding: 16px 8px;
+  padding: 12px 8px 6px 8px;
   display: flex;
-  /* flex-direction: start; */
+
   justify-content: flex-start;
   gap: 18px;
-  /* border: 1px solid gray; */
+  @media (max-width: 1200px) {
+    padding: 16px 8px;
+  }
 `
 
 export const StyledAudio = styled.audio`
