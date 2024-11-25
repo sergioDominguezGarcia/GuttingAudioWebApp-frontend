@@ -78,7 +78,7 @@ export const EpContent = styled.div`
   }
   @media (max-width: 834px) {
     width: 100vw;
-
+    margin-top: 6vh;
   }
 `
 

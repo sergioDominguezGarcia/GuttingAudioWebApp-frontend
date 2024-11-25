@@ -55,7 +55,8 @@ export const ArtistImage = styled.img`
 `
 
 export const ArtistName = styled.div`
-   width: 100%;
+  text-transform: uppercase;
+  width: 100%;
   height: auto;
   background: rgba(
     0,
