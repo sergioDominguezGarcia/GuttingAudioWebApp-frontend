@@ -170,7 +170,7 @@ const TituloPrincipal = () => {
     <InfoContainer>
       <InfoColumnPie>
         <Columna>
-          <FooterLink to="/">HOME</FooterLink>
+          <FooterLink to="/">NEWS</FooterLink>
           <FooterLink to="/radio">GUTTING RADIO</FooterLink>
           <FooterLink to="/mixingmastering">MIXING MASTERING</FooterLink>
        

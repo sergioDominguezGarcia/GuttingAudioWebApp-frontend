@@ -302,7 +302,7 @@ const Headermain = () => {
 
             <TheMenu>
               <MenuItem>
-                <MenuLink onClick={toggleMenu} to="/" isOpen={isOpen}>HOME</MenuLink>
+                <MenuLink onClick={toggleMenu} to="/" isOpen={isOpen}>NEWS</MenuLink>
               </MenuItem>
 
               <MenuItem>

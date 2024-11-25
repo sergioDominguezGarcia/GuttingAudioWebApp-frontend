@@ -8,6 +8,7 @@ const Header = () => {
   const navigate = useNavigate()
   const [isVisible, setIsVisible] = useState(true)
   const [lastScrollY, setLastScrollY] = useState(0)
+  const [isIphone, setIsIphone] = useState(false)
 
   const handleGoToArtists = useCallback(() => {
     navigate('/artists')
@@ -25,8 +26,11 @@ const Header = () => {
     navigate('/home')
   }, [navigate])
 
+
+
+
   const controlHeaderVisibility = useCallback(() => {
-    if (typeof window !== 'undefined') {
+    if (!isIphone && typeof window !== 'undefined') { // Solo aplica para dispositivos que no son iPhone
       if (window.scrollY > lastScrollY) {
         setIsVisible(false) 
       } else {
@@ -34,17 +38,30 @@ const Header = () => {
       }
       setLastScrollY(window.scrollY)
     }
-  }, [lastScrollY])
+  }, [lastScrollY, isIphone])
+
+
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
-      window.addEventListener('scroll', controlHeaderVisibility)
-  
+      // Detecta si es un iPhone
+      const userAgent = window.navigator.userAgent || window.navigator.vendor || window.opera
+      if (/iPhone|iPad|iPod/i.test(userAgent)) {
+        setIsIphone(true)
+      }
+
+      // Solo agrega el event listener si no es un iPhone
+      if (!isIphone) {
+        window.addEventListener('scroll', controlHeaderVisibility)
+      }
+
       return () => {
-        window.removeEventListener('scroll', controlHeaderVisibility)
+        if (!isIphone) {
+          window.removeEventListener('scroll', controlHeaderVisibility)
+        }
       }
     }
-  }, [controlHeaderVisibility])
+  }, [controlHeaderVisibility, isIphone])
 
   return (
     <S.Header isVisible={isVisible}>

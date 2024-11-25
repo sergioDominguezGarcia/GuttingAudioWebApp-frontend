@@ -197,6 +197,8 @@ const MusicPlayer = ({
               )}
             </S.TrackItem>
           ))}
+
+        
           <S.Icons>
             <FontAwesomeIcon
               icon={faCartShopping}
@@ -207,6 +209,8 @@ const MusicPlayer = ({
               }}
               onClick={() => handlePurchase(track)}
             />
+
+          
             <FontAwesomeIcon
               icon={faShare}
               style={{
@@ -216,8 +220,13 @@ const MusicPlayer = ({
               }}
               onClick={() => handleShare(track)}
             />
+
           </S.Icons>
+
+
         </S.TrackList>
+
+
         <S.StyledAudio ref={audioRef} src={track.audioUrl} />
       </S.Contain>
     </S.Container>

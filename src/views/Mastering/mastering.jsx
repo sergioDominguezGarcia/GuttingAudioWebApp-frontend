@@ -99,27 +99,6 @@ const StyledImage = styled.img`
   }
 `;
 
-const Title = styled.h1`
-  color: #ffffff; 
-  text-decoration: none;
-  font-family: 'kaneda-gothic-extrabold';
-  text-transform: uppercase;
-  display: block;
- 
-  margin: 0vw 0vw 0vw 0vw;
-  font-size: 5vw;
- 
- 
-  @media (max-width: 768px) {
-    margin: 0vw 0vw 0vw 0vw;
-    font-size: 9vw;
-   
-  }
-
-
-
-  
-`;
 
 const Description = styled.p`
  font-size: 2.0rem;
@@ -239,6 +218,30 @@ const LineSeparator = styled.div`
  margin-bottom: 8px;
  
 `;
+
+const Title = styled.h1`
+  color: #ffffff; 
+  text-decoration: none;
+  font-family: 'kaneda-gothic-extrabold';
+  text-transform: uppercase;
+  display: block;
+ 
+  margin: 0vw 0vw 0vw 0vw;
+  font-size: 5vw;
+ 
+ 
+  @media (max-width: 768px) {
+    margin: 0vw 0vw 0vw 0vw;
+    font-size: 9vw;
+   
+  }
+
+
+
+  
+`;
+
+
 
 const ImageCarousel = memo(({ images, height }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
