@@ -40,7 +40,7 @@ export const EpDetailContainer = styled.div`
     ); /* Cambia el color y la opacidad según prefieras */
     z-index: -1;
   }
-  @media (max-width: 834px) {
+  @media (max-width: 1200px) {
     width: 100vw;
     margin: auto;
     /* padding: 0 10px; */
@@ -70,13 +70,14 @@ export const EpContent = styled.div`
   justify-content: space-around;
   z-index: 1; /* Asegura que el contenido esté por encima del fondo */
 
+  @media (max-width: 1200px) {
+    width: 85vw;
+    margin-top: 8vh;
+    align-items: flex-start;
+  }
   @media (max-width: 834px) {
     width: 100vw;
-    margin-top: 8vh;
-    /* padding: 0 10px; */
 
-    align-items: flex-start;
-    /* border: 1px solid white; */
   }
 `
 
