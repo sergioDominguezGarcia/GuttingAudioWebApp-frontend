@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
 position: relative;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.3);
   /* border: 1px solid rgb(221, 221, 221, 0.5); */
   /* border-radius: 16px; */
   /* box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); */
@@ -60,7 +60,7 @@ export const Cover = styled.div`
   justify-content: center;
   img {
     object-fit: cover;
-    width: 400px;
+    width: 600px;
     /* border-radius: 16px; */
     /* box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); */
   }
@@ -85,14 +85,14 @@ export const Info = styled.div`
   }
 `
 export const Tittle = styled.h1`
-  font-size: 1.7rem;
+  font-size: 5rem;
   display: flex;
-  justify-content: center;
+  justify-content: left;
   margin: 0;
   color: rgb(221, 221, 221);
   font-family: kaneda-gothic-extrabold;
   letter-spacing: 0.09em;
-  font-size: 1.6vw;
+
   @media (max-width: 1200px) {
     font-size: 1.8em;
     line-height: 1.3;
@@ -100,10 +100,13 @@ export const Tittle = styled.h1`
   }
 `
 export const Artist = styled.a`
-  font-size: 1.4rem;
+  font-size: 2rem;
+  border-top: 1px solid gray;
+  padding-top: 10px;
+  font-size: 3rem;
   font-weight: 700;
   display: flex;
-  justify-content: center;
+  justify-content: left;
   color: rgb(221, 221, 221);
   font-family: kaneda-gothic-light;
   letter-spacing: 0.3em;
@@ -116,9 +119,9 @@ export const PlayerProgress = styled.div`
   background-color: #f0f0f0;
   border-radius: 5px;
   cursor: pointer;
-  margin: 40px 20px 35px;
+  margin: 40px auto;
   width: 90%;
-  height: 5px;
+  height: 8px;
   @media (max-width: 480px) {
     margin: 25px 20px 15px;
   }
@@ -135,13 +138,13 @@ export const MusicDuracion = styled.div`
   top: -30px;
   display: flex;
   justify-content: space-between;
-  font-size: 1rem;
+  font-size: 0.85rem;
 `
 export const CurrentTime = styled.span`
-  color: rgb(221, 221, 221);
+  color: rgb(221, 221, 221, 0.9);
 `
 export const Duration = styled.span`
-  color: rgb(221, 221, 221);
+  color: rgb(221, 221, 221, 0.9);
 `
 export const ControlsContainer = styled.div`
   display: flex;
@@ -154,17 +157,16 @@ export const ControlsContainer = styled.div`
   }
 `
 export const Controls = styled.div`
-  position: relative;
-  top: -20px;
-  display: flex;
   align-items: center;
-  padding: 0px 15px;
-  justify-content: center;
-  /* align-items: center; */
-  gap: 15px;
-  font-size: 1.8rem;
   color: #0009;
   cursor: pointer;
+  display: flex;
+  font-size: 3.85rem;
+  justify-content: center;
+  position: relative;
+  /* padding: 0px 15px; */
+  top: -20px;
+  gap: 25px;
   user-select: none;
   transition: all 0.3s ease;
   @media (max-width: 1200px) {
@@ -172,19 +174,22 @@ export const Controls = styled.div`
   }
 `
 export const Prev = styled.i`
-  color: rgb(221, 221, 221);
+  color: rgb(221, 221, 221, 0.9);
+  font-size: 2.5rem;
   &:active {
     filter: brightness(40%);
   }
 `
 export const Next = styled.i`
-  color: rgb(221, 221, 221);
+  color: rgb(221, 221, 221, 0.9);
+  font-size: 2.5rem;
   &:active {
     filter: brightness(40%);
   }
 `
 export const Play = styled.i`
-  color: rgb(221, 221, 221);
+  color: rgb(221, 221, 221, 0.9);
+  
   &:active {
     filter: brightness(40%);
   }
@@ -209,13 +214,12 @@ export const VolumeControl = styled.input`
 export const ReleaseInfo = styled.div`
   width: 100%;
   height: auto;
-
   overflow-y: auto;
-  padding-top: 0rem;
+  
   padding-bottom: 1rem;
-  text-align: justify;
+
   line-height: 1.5;
-  font-size: 1.8em;
+  font-size: 2.2rem;
   letter-spacing: 0.06em;
   color: rgb(221, 221, 221, 0.9);
   font-family: kaneda-gothic-light;
@@ -223,13 +227,12 @@ export const ReleaseInfo = styled.div`
   @media (max-width: 1200px) {
     font-size: 1.4em;
     line-height: 1.2;
-    padding-top: 0rem;
+    
     height: auto;
   }
   @media (max-width: 480px) {
     font-size: 1.4em;
     line-height: 1em;
-    padding-top: 0rem;
     align-self: center;
     width: 100%;
   }
@@ -258,7 +261,7 @@ export const TrackItem = styled.div`
   display: flex;
   align-items: center;
   font-family: kaneda-gothic-light;
-  font-size: 1.6em;
+  font-size: 2.2em;
   letter-spacing: 0.1em;
   &:active {
     background-color: rgba(186, 186, 186, 0.5);
@@ -267,11 +270,11 @@ export const TrackItem = styled.div`
 
 export const Icons = styled.div`
   border-top: 1px solid rgb(221, 221, 221, 0.3);
-  padding: 12px 10px 6px 8px;
+  padding: 18px 15px 6px 8px;
   display: flex;
   box-sizing: border-box;
   justify-content: flex-start;
-  gap: 18px;
+  gap: 30px;
   @media (max-width: 1200px) {
     padding: 16px 8px;
   }

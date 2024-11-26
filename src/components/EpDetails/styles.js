@@ -36,7 +36,7 @@ export const EpDetailContainer = styled.div`
       0,
       0,
       0,
-      0.6
+      0.0
     ); /* Cambia el color y la opacidad según prefieras */
     z-index: -1;
   }
