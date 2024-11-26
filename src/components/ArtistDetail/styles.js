@@ -91,7 +91,7 @@ export const ArtistBio = styled.div`
   display: flex;
   top: -10px;
   line-height: 1.5;
-  text-align: justify;
+  text-align: center;
   color: #dadada;
   p {
     font-family: 'kaneda-gothic-light';
