@@ -1,6 +1,5 @@
 import React, { useRef, useState, useEffect } from 'react'
 import * as S from './styles'
-import { AiFillSound } from 'react-icons/ai'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faPlay,
