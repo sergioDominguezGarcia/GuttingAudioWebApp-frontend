@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styled, { createGlobalStyle, keyframes } from "styled-components";
 import { Link } from 'react-router-dom';
 import Gutting from '../../assets/Gutting.jpg'
@@ -186,6 +186,9 @@ const MenuFooter = styled.div`
   opacity: ${({ isOpen }) => (isOpen ? '1' : '0')};
   transition: transform 0.6s ease, opacity 0.6s ease;
 `;
+
+
+
 const Logo = styled.div`
   position: absolute;
   top: -8px;
@@ -230,7 +233,7 @@ const RedesSocialesContainer = styled.div`
 const EnlaceRedSocial = styled.a`
   font-family: 'kaneda-gothic-LIGHT';
   color: #9b9b9b;
-  font-size: 5vw;
+  font-size: 6vw;
   text-decoration: none;
   transition: color 0.3s ease;
 
@@ -256,17 +259,91 @@ const EnlaceRedSocial = styled.a`
   }
 `;
 
+const InstallButton = styled.button`
+ font-family: kaneda-gothic-extrabold;
+  color: #9b9b9b;
+  font-size: 7vw;
+  text-decoration: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  display: ${({ isMobile }) => (isMobile ? "block" : "none")};
+  padding: 0; 
+  text-align: left;
+  margin-bottom: 20px; /* Separación del resto del contenido */
+  margin-left: 20px;
+  &:hover {
+    color: #ffffff;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 1.8vw;
+    display: none; /* Ocultar en pantallas mayores a móvil */
+  }
+
+  @media (max-width: 768px) {
+    color: #ffffff; /* Siempre blanco en móvil */
+
+    &:hover {
+      color: #ffffff; /* Sin cambio de color en hover para móvil */
+    }
+  }
+`;
+
 
 const Headermain = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isActive, setIsActive] = useState(false);
+
+  const [deferredPrompt, setDeferredPrompt] = useState(null);
+  const [isMobile, setIsMobile] = useState(false);
+
+
+ 
+  // Detectar si es móvil
+  useEffect(() => {
+    const updateIsMobile = () => setIsMobile(window.innerWidth <= 768);
+    updateIsMobile();
+    window.addEventListener("resize", updateIsMobile);
+    return () => window.removeEventListener("resize", updateIsMobile);
+  }, []);
+
+  useEffect(() => {
+    const handleBeforeInstallPrompt = (e) => {
+      e.preventDefault();
+      setDeferredPrompt(e);
+    };
+
+    window.addEventListener("beforeinstallprompt", handleBeforeInstallPrompt);
+
+    return () => {
+      window.removeEventListener("beforeinstallprompt", handleBeforeInstallPrompt);
+    };
+  }, []);
+
+  const handleInstallClick = () => {
+    if (deferredPrompt) {
+      deferredPrompt.prompt();
+      deferredPrompt.userChoice.then((choiceResult) => {
+        if (choiceResult.outcome === "accepted") {
+          console.log("El usuario aceptó la instalación");
+        } else {
+          console.log("El usuario rechazó la instalación");
+        }
+        setDeferredPrompt(null);
+      });
+    } else {
+      alert("La instalación no está disponible en este momento.");
+    }
+  };
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
 
     if (!isOpen) {
       const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
-      document.documentElement.style.setProperty('--scrollbar-width', `${scrollbarWidth}px`);
+      document.documentElement.style.setProperty("--scrollbar-width", `${scrollbarWidth}px`);
       document.body.classList.add("ovhidden");
     } else {
       document.body.classList.remove("ovhidden");
@@ -278,9 +355,12 @@ const Headermain = () => {
     }, 2000);
   };
 
+
   return (
     <Container>
       <GlobalStyle />
+
+   
       <BurgerButton
         isOpen={isOpen}
         className={`${isActive ? 'active' : ''}`}
@@ -294,7 +374,6 @@ const Headermain = () => {
       <SiteNavigation isOpen={isOpen}>
         <BgMenu isOpen={isOpen}>
           <MenuWrapper>
-
 
             <Logo isOpen={isOpen}>
               <img src={Gutting} width="220px" alt="Logo" />
@@ -322,6 +401,9 @@ const Headermain = () => {
               </MenuItem>
 
 
+ 
+
+
             </TheMenu>
 
 
@@ -329,6 +411,10 @@ const Headermain = () => {
         </BgMenu>
 
         <MenuFooter isOpen={isOpen}>
+        <InstallButton onClick={handleInstallClick} isMobile={isMobile}>
+    + AÑADIR APP
+  </InstallButton>
+
           <RedesSocialesContainer>
             <EnlaceRedSocial href="https://www.instagram.com/gttnaudio/" target="_blank" rel="noopener noreferrer">
               + INSTAGRAM
