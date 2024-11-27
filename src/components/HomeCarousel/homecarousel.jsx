@@ -48,7 +48,7 @@ const HomeCarousel = () => {
       overlayImage: "Home/ONLYNEUROFUNK.jpg",
       image: "Home/ONLYNEUROFUNK.jpg",
       tag: "Event",
-      link: "",
+      link: "https://www.instagram.com/p/DCUILqrCxkO/",
     },
 
 
@@ -57,7 +57,7 @@ const HomeCarousel = () => {
       text: "GTTNPOD011 - HACKWAVES",
       image: "Home/GTTNPOD011HACKWAVES.jpg",
       tag: "Newest Mix",
-      link: "",
+      link: "www.guttingaudio.com/radio",
     },
 
 
@@ -65,7 +65,7 @@ const HomeCarousel = () => {
     {
       text: "Merchandising",
       image: "Home/merchandising.jpg",
-      tag: "News",
+      tag: "coming soon ",
       link: "",
     },
 
@@ -141,21 +141,34 @@ const HomeCarousel = () => {
           </SlideTitle>
         </FixedTextContainer>
 
+
+
+
         <ArrowButtonContainer>
-          <MoreInfoButton href={items[currentIndex].link} target="_blank" rel="noopener noreferrer">
-            More Info
-          </MoreInfoButton>
-          <ArrowStyle
-            className="slick-prev"
-            arrowUrl={arrowLeftUrl}
-            onClick={() => sliderRef.current && sliderRef.current.slickPrev()}
-          />
-          <ArrowStyle
-            className="slick-next"
-            arrowUrl={arrowRightUrl}
-            onClick={() => sliderRef.current && sliderRef.current.slickNext()}
-          />
-        </ArrowButtonContainer>
+  <MoreInfoButton 
+    href={items[currentIndex].link || undefined} 
+    target="_blank" 
+    rel="noopener noreferrer"
+    style={{ visibility: items[currentIndex].link ? "visible" : "hidden" }}
+  >
+    More Info
+  </MoreInfoButton>
+  <ArrowStyle
+    className="slick-prev"
+    arrowUrl={arrowLeftUrl}
+    onClick={() => sliderRef.current && sliderRef.current.slickPrev()}
+  />
+  <ArrowStyle
+    className="slick-next"
+    arrowUrl={arrowRightUrl}
+    onClick={() => sliderRef.current && sliderRef.current.slickNext()}
+  />
+</ArrowButtonContainer>
+
+
+
+
+
 
         <IndicatorContainer>
           {items.map((_, index) => (
