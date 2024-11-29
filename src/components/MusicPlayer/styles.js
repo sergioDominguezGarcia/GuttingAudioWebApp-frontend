@@ -94,9 +94,10 @@ export const Tittle = styled.h1`
   letter-spacing: 0.09em;
 
   @media (max-width: 1200px) {
-    font-size: 1.8em;
+    font-size: 2em;
     line-height: 1.3;
     padding-top: 0rem;
+    justify-content: right;
   }
 `
 export const Artist = styled.a`
@@ -113,6 +114,7 @@ export const Artist = styled.a`
   @media (max-width: 1200px) {
     font-size: 1.5em;
     line-height: 1;
+    justify-content: right;
   }
 `
 export const PlayerProgress = styled.div`

@@ -34,7 +34,7 @@ const ArtistDetail = () => {
                 <img
                   src={ep.coverUrl}
                   alt={`Portada de ${ep.title}`}
-                  style={{ width: '25%', height: 'auto'}}
+                  style={{ width: '20%', height: 'auto'}}
                 />
               <h3>{ep.title}</h3>
               </S.EpCover>
@@ -52,16 +52,15 @@ const ArtistDetail = () => {
             icon={faInstagram}
             style={{
               cursor: 'pointer',
-              height: '3.5rem',
+              height: '4rem',
             }}
           />
-
           <FontAwesomeIcon
             onClick={() => openLink(artist.socialLinks.soundcloud)}
             icon={faSoundcloud}
             style={{
               cursor: 'pointer',
-              height: '3.5rem',
+              height: '4rem',
             }}
           />
         </S.SocialLinks>
