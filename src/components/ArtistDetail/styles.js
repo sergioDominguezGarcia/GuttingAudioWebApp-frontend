@@ -2,46 +2,44 @@ import styled from 'styled-components'
 
 export const ArtistDetail = styled.div`
   background-color: rgba(0, 0, 0, 0.12);
-  /* border: 1px solid rgb(221, 221, 221, 0.5); */
-  /* border-radius: 16px; */
   box-shadow: 0 13px 20px rgba(0, 0, 0, 0.5);
   display: flex;
   margin: auto;
   padding: 3rem 5rem;
   /* box-sizing: border-box; */
   transition: all 0.5s ease;
-  width: 90%;
-  /* height: 60vh; */
+  /* width: 90%; */
+  max-width: 1920px;
   @media (max-width: 1200px) {
     width: 100%;
-    height: 86%;
     flex-direction: column;
     padding: 0rem;
-    border: none;
-    
-    /* padding-top: 70px; */
+    margin-top: 0;
     flex-wrap: nowrap;
+  }
+  @media (max-width: 425px) {
+    width: 100%;
+    flex-direction: column;
+    padding: 0rem;
+    flex-wrap: nowrap;
+    margin-top: 0;
   }
 `
 
 export const ArtistImage = styled.img`
+  max-width: 55rem;
   width: 100%;
-  /* min-width: 30em; */
   height: auto;
   display: flex;
-  margin-bottom: 6rem;
-
-  /* align-self: center; */
   @media (max-width: 1200px) {
-    width: 100%;
-    margin-bottom: 0rem;
-  }
 
+  }
   @media (max-width: 425px) {
-    margin-bottom: 8rem;
+    /* margin-bottom: 8rem; */
   }
 `
 export const Releases = styled.div`
+  border: 1px solid rgb(221, 221, 221, 0.5);
   h3 {
     /* padding: 1rem 1rem; */
     font-family: kaneda-gothic-extrabold;
@@ -57,7 +55,6 @@ export const Releases = styled.div`
   }
   @media (max-width: 1200px) {
     display: none;
-
   }
 `
 export const EpCover = styled.div`
@@ -81,7 +78,7 @@ export const ArtistName = styled.div`
   font-size: 3em;
   letter-spacing: 0.06em;
   border-bottom: 1px solid gray;
-  width: 100%;
+  width: 80%;
   h3 {
     font-family: kaneda-gothic-extrabold;
     letter-spacing: 0.6px;
@@ -170,7 +167,7 @@ export const RightBox = styled.div`
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  height: 90%;
+  /* height: 90%; */
   width: 50%;
   @media (max-width: 1200px) {
     width: 100%;
