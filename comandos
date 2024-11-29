@@ -18,7 +18,7 @@ git branch  # mostrar ramas locales y resaltar la rama actual
 
 git checkout home      # Cambia de rama
 
-git add .; git commit -m "add service Worker para añadir App en el movil"; git push origin fix
+git add .; git commit -m "add fader volumen radio"; git push origin fix
 
 
 
