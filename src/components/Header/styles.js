@@ -44,6 +44,12 @@ z-index: 50;
       margin-top: -2px;
       max-width: 32vw;
     }
+
+    @media (min-width: 769px) and (max-width: 1700px) {
+      margin-top: -2px;
+      max-width: 67vw;
+    }
+ 
   }
 `
 
