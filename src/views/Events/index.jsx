@@ -1,28 +1,13 @@
 import { memo } from 'react'
 import * as S from './styles'
 import back from '../../assets/back.webp'
-import ArtistsList from '../../components/ArtistsList'
+import EventList from '../../components/EventList'
 
-const Artists = () => {
+const Events = () => {
+  return <S.Content background={back}>
 
-
-  return (
-    <S.Home background={back}>
-
-
-      
-      <S.Content>
-
-
-<S.Title>Artists</S.Title>
-<S.LineSeparator></S.LineSeparator>
-
-        <S.Artists>
-          <ArtistsList />
-        </S.Artists>
-      </S.Content>
-    </S.Home>
-  )
+    <EventList />
+  </S.Content>
 }
 
-export default memo(Artists)
+export default memo(Events)
