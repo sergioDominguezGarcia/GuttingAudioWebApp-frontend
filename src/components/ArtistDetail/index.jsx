@@ -28,7 +28,6 @@ const ArtistDetail = () => {
       <S.LefttBox>
         <S.ArtistImage src={artist.image} alt={artist.name} />
         <S.Releases>          
-            <h3>Releases:</h3>
             {filteredEps.map((ep) => (
               <S.EpCover key={ep.id}>
                 <img
@@ -36,7 +35,6 @@ const ArtistDetail = () => {
                   alt={`Portada de ${ep.title}`}
                   style={{ width: '20%', height: 'auto'}}
                 />
-              <h3>{ep.title}</h3>
               </S.EpCover>
             ))}
         </S.Releases>

@@ -3,8 +3,10 @@ import styled from 'styled-components'
 export const Home = styled.div`
   width: 100vw;
   overflow-x: hidden;
-  /* overflow-y: hidden; */
   height: 100vh;
+  @media (max-width: 1200px) {
+    margin-top: 50px;
+  }
 `
 
 export const Content = styled.div`
