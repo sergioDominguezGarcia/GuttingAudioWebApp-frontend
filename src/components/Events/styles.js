@@ -1,7 +1,6 @@
 import styled from 'styled-components'
-import { Link } from 'react-router-dom'
 
-export const ArtistsList = styled.div`
+export const EventList = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -14,8 +13,7 @@ export const ArtistsList = styled.div`
     gap: 3.5vw;
   }
 `
-
-export const ArtistCard = styled.div`
+export const EventCard = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
@@ -46,15 +44,7 @@ export const ArtistCard = styled.div`
     /* border-radius: 4px; */
   }
 `
-  // border: 1px solid white;
-
-export const ArtistImage = styled.img`
-  /* max-height: 20vw; */
-  width: 100%;
-  height: 100%;
-`
-
-export const ArtistName = styled.div`
+export const EvenTitle = styled.div`
   text-transform: uppercase;
   width: 100%;
   height: auto;
@@ -75,14 +65,6 @@ export const ArtistName = styled.div`
     gap: 2.5em;
     text-shadow: 1px 1px 2px black;
   }
-  p {
-    font-family: 'kaneda-gothic-light';
-    margin: 0;
-    font-size: 1.1vw;
-    letter-spacing: 0.13em;
-    text-shadow: 1px 1px 2px black;
-  }
-
   @media (max-width: 1200px) {
     h3 {
       font-family: kaneda-gothic-extrabold;
@@ -90,13 +72,6 @@ export const ArtistName = styled.div`
       margin: 0;
       font-size: 1.7vw;
       gap: 2.5em;
-      text-shadow: 1px 1px 2px black;
-    }
-    p {
-      font-family: 'kaneda-gothic-light';
-      margin: 0;
-      font-size: 1.3vw;
-      letter-spacing: 0.13em;
       text-shadow: 1px 1px 2px black;
     }
   }
@@ -109,13 +84,5 @@ export const ArtistName = styled.div`
       gap: 2.5em;
       text-shadow: 1px 1px 2px black;
     }
-    p {
-      font-family: 'kaneda-gothic-light';
-      margin: 0;
-      font-size: 2.6vw;
-      letter-spacing: 0.13em;
-      text-shadow: 1px 1px 2px black;
-    }
   }
 `
-
