@@ -89,7 +89,7 @@ const VolumeControl = styled.input`
   border-radius: 5px;
   outline: none;
   opacity: 0.9;
-  z-index: 1000;
+  z-index: 100;
   transition: opacity 0.3s, background 0.3s;
 
   &:hover {
