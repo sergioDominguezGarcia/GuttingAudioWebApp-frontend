@@ -11,6 +11,7 @@ import Events from '../../views/Events'
 import Home from '../../views/Home/home.jsx'
 import Radio from '../../views/Radio/radio'
 import Mastering from '../../views/Mastering/mastering'
+import Contact from '../../views/Contact/contact'
 
 const ScrollToTop = () => {
   const { pathname } = useLocation()
@@ -35,7 +36,8 @@ const Router = () => {
         <Route path="/artists/:slug" element={<Detail />} />
         <Route path="/radio" element={<Radio />} />
         <Route path="/mixingmastering" element={<Mastering />} />
-        <Route path="/events" element={<Events />} /> {/* AGREGAR A HEADER MENU */}
+        <Route path="/events" element={<Events />} /> 
+        <Route path="/contact" element={<Contact />} /> 
 
         
     </Routes>
