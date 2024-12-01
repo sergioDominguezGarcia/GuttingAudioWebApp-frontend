@@ -125,7 +125,7 @@ const fadeIn = keyframes`
 const MenuLink = styled(Link)`
   color: #9b9b9b;
   line-height: 1.2;
-  font-size: 16vw;
+  font-size: 14vw;
   text-decoration: none;
   font-family: kaneda-gothic-extrabold;
   text-transform: uppercase;
@@ -153,7 +153,7 @@ const MenuLink = styled(Link)`
   }
 
   @media (min-width: 768px) {
-    font-size: 4.5vw;
+    font-size: 4.1vw;
     line-height: 1.5;
 
     &:hover {
@@ -224,7 +224,7 @@ const RedesSocialesContainer = styled.div`
   padding: 2vw 3vw; 
 
   @media (max-width: 768px) {
-    padding: 2vw 6vw; 
+    padding: 2vw 4vw; 
     }
 
 
@@ -397,6 +397,10 @@ const Headermain = () => {
               </MenuItem>
 
               <MenuItem>
+                <MenuLink onClick={toggleMenu} to="/events" isOpen={isOpen}>EVENTS</MenuLink>
+              </MenuItem>
+
+              <MenuItem>
                 <MenuLink onClick={toggleMenu} to="/mixingmastering" isOpen={isOpen}>MIXING MASTERING</MenuLink>
               </MenuItem>
 
@@ -412,7 +416,7 @@ const Headermain = () => {
 
         <MenuFooter isOpen={isOpen}>
         <InstallButton onClick={handleInstallClick} isMobile={isMobile}>
-    + AÑADIR APP
+    {/* + AÑADIR APP */}
   </InstallButton>
 
           <RedesSocialesContainer>
@@ -425,6 +429,10 @@ const Headermain = () => {
             <EnlaceRedSocial href="https://www.beatport.com/label/gutting-audio/85715?srsltid=AfmBOopuZ8oplwdX91tEwFdH9OwRqFDm03NuZoN9fVoXxqZm34SkkPRk" target="_blank" rel="noopener noreferrer">
               + BEATPORT
             </EnlaceRedSocial>
+
+            <EnlaceRedSocial as={Link} to="/contact" onClick={toggleMenu}>
+      + CONTACT
+    </EnlaceRedSocial>
           </RedesSocialesContainer>
         </MenuFooter>
 

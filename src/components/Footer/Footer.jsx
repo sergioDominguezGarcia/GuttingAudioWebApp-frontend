@@ -144,6 +144,45 @@ const RedesSociales = styled.p`
     animation: ${lineAnimation} 0.3s forwards;
   }
 `;
+const Contact = styled.p`
+  font-family: 'kaneda-gothic-LIGHT';
+  color: #9b9b9b;
+  margin: 0;
+  padding: 0vw 0;
+  font-size: 1.5vw;
+  position: relative;
+ 
+
+
+
+  @media (max-width: 768px) {
+    color: #ffffff;
+    font-size: 5vw;
+    margin-top: 0px;
+  }
+
+  &:hover {
+    color: #ffffff;
+  }
+
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+   
+    width: 0;
+  
+  }
+
+  &:hover:after {
+    width: 100%;
+    animation: ${lineAnimation} 0.3s forwards;
+  }
+`;
+
 const Enlace = styled.a`
   color: inherit;
   text-decoration: none;
@@ -180,6 +219,7 @@ const TituloPrincipal = () => {
 
         <FooterLink to="/releases">RELEASES</FooterLink>
         <FooterLink to="/artists">ARTISTS</FooterLink>
+        <FooterLink to="/events">EVENTS</FooterLink>
         
        
         </Columna>
@@ -198,6 +238,11 @@ const TituloPrincipal = () => {
           <Enlace href="https://www.beatport.com/label/gutting-audio/85715?srsltid=AfmBOopuZ8oplwdX91tEwFdH9OwRqFDm03NuZoN9fVoXxqZm34SkkPRk" target="_blank" rel="noopener noreferrer">
             <RedesSociales>+ BEATPORT</RedesSociales>
           </Enlace>
+
+          <FooterLink to="/contact">
+    <Contact>+ CONTACT</Contact>
+  </FooterLink>
+
         </ColumnaDerecha>
       </InfoColumnPie>
       <Copyright>© 2024 Gutting Audio. All rights reserved.</Copyright>

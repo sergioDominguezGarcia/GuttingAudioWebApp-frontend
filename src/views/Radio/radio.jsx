@@ -2,6 +2,10 @@ import { useRef, useEffect, useState, memo } from 'react';
 import styled from 'styled-components';
 import Texto from '../../components/TextoInfinitoVertical/textoinfinitovertical';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faVolumeUp, faVolumeMute } from '@fortawesome/free-solid-svg-icons';
+
+
 const Container = styled.div`
   margin-top: 8vh;
   display: flex;
@@ -77,19 +81,45 @@ const Iframe = styled.iframe`
   }
 `;
 
-const VolumeControl = styled.input`
+const VolumeWrapper = styled.div`
   position: fixed;
   bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
-  width: 150px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  z-index: 100;
+`;
+
+const VolumeButton = styled.button`
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.8); /* Sombra para destacar el ícono */
+
+  &:hover {
+    color: #ff0000;
+    transition: color 0.3s ease;
+    text-shadow: 0px 0px 6px rgba(255, 0, 0, 0.8); /* Cambia la sombra al pasar el cursor */
+  }
+`;
+
+
+const VolumeControl = styled.input`
   appearance: none;
+  width: 150px;
   height: 6px;
-  background: linear-gradient(90deg, #ffffff 0%, #ff0000 100%);
+  background: linear-gradient(90deg, #ffffff 0%, #969696 100%);
   border-radius: 5px;
   outline: none;
   opacity: 0.9;
-  z-index: 100;
   transition: opacity 0.3s, background 0.3s;
 
   &:hover {
@@ -103,7 +133,6 @@ const VolumeControl = styled.input`
     background: #000000;
     border: 2px solid #ffffff;
     border-radius: 50%;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
     cursor: pointer;
     transition: background 0.3s, transform 0.2s;
   }
@@ -112,40 +141,7 @@ const VolumeControl = styled.input`
     background: #000000;
     transform: scale(1.1);
   }
-
-  &::-moz-range-thumb {
-    width: 20px;
-    height: 20px;
-    background: #ffffff;
-    border: 2px solid #000000;
-    border-radius: 50%;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-    cursor: pointer;
-    transition: background 0.3s, transform 0.2s;
-  }
-
-  &::-moz-range-thumb:hover {
-    background: #007bff;
-    transform: scale(1.1);
-  }
-
-  &::-ms-thumb {
-    width: 20px;
-    height: 20px;
-    background: #ffffff;
-    border: 2px solid #000000;
-    border-radius: 50%;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-    cursor: pointer;
-    transition: background 0.3s, transform 0.2s;
-  }
-
-  &::-ms-thumb:hover {
-    background: #ff0000;
-    transform: scale(1.1);
-  }
 `;
-
 
 const sessions = [
   { name: 'GTTNPOD001 - DAVID SYNTH', year: 2020, audioSrc: 'https://api.soundcloud.com/tracks/799891507' },
@@ -171,6 +167,8 @@ const sortedSessions = sessions.sort((a, b) => {
 const Radio = () => {
   const players = useRef([]);
   const [volume, setVolume] = useState(100);
+  const [isMuted, setIsMuted] = useState(false);
+  const [previousVolume, setPreviousVolume] = useState(volume);
 
 
 
@@ -221,27 +219,49 @@ const Radio = () => {
   }, [volume]); // Asegúrate de incluir `volume` como dependencia
   
   
-
   const handleVolumeChange = (e) => {
     const newVolume = Number(e.target.value);
-    console.log(`Volume slider changed: ${newVolume}`);
-
-    if (newVolume === volume) return; // Evita cambios redundantes
-
-    setVolume(newVolume); // Actualiza el estado del slider
-
-    players.current.forEach((player) => {
-      if (player) {
-        player.setVolume(newVolume / 100); // Ajusta el volumen en los widgets
-        console.log(`Widget volume updated to: ${newVolume / 100}`);
-      }
-    });
+    setVolume(newVolume);
+    setIsMuted(false);
   };
+
+  const toggleMute = () => {
+    if (isMuted) {
+      setVolume(previousVolume);
+      setIsMuted(false);
+    } else {
+      setPreviousVolume(volume);
+      setVolume(0);
+      setIsMuted(true);
+    }
+  };
+
 
   return (
     <Container>
       <Texto />
-      <VolumeControl type="range" min="0" max="100" value={volume} onChange={handleVolumeChange} />
+
+
+      
+      <VolumeWrapper>
+
+
+     <VolumeButton onClick={toggleMute}>
+  <FontAwesomeIcon icon={isMuted ? faVolumeMute : faVolumeUp} />
+</VolumeButton>
+
+
+        <VolumeControl
+          type="range"
+          min="0"
+          max="100"
+          value={volume}
+          onChange={handleVolumeChange}
+        />
+      </VolumeWrapper>
+
+
+
 
       {sortedSessions.map((session, index) => (
         <div key={index}>
