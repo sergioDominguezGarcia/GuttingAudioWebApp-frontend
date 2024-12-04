@@ -1,8 +1,8 @@
 import styled from 'styled-components'
 
 export const ArtistDetail = styled.div`
-  background-color: rgba(0, 0, 0, 0.12);
-  box-shadow: 0 13px 20px rgba(0, 0, 0, 0.5);
+  /* background-color: rgba(0, 0, 0, 0.12); */
+  /* box-shadow: 0 13px 20px rgba(0, 0, 0, 0.5); */
   display: flex;
   margin: auto;
   padding: 3rem 5rem;
@@ -39,7 +39,7 @@ export const ArtistImage = styled.img`
   }
 `
 export const Releases = styled.div`
-  border: 1px solid rgb(221, 221, 221, 0.5);
+  /* border: 1px solid rgb(221, 221, 221, 0.5); */
   h3 {
     /* padding: 1rem 1rem; */
     font-family: kaneda-gothic-extrabold;

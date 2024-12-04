@@ -1,12 +1,10 @@
 import styled from 'styled-components'
 
 export const Content = styled.div`
-  margin-top: 55px;
-  height: 100vh;
   width: 100%;
+  height: auto;
+  margin-top: 60px;
   box-sizing: border-box;
-
-
   &::before {
     content: '';
     position: absolute;

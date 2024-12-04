@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import styled, { css } from 'styled-components';
-import emailjs from 'emailjs-com';
+import React, { useState } from 'react'
+import styled, { css } from 'styled-components'
+import emailjs from 'emailjs-com'
 
 const ContainerFormulario = styled.div`
   z-index: 30;
@@ -13,14 +13,8 @@ const ContainerFormulario = styled.div`
 
   @media (max-width: 768px) {
     padding: 0vw 0vw 5vw 0vw;
-
- 
- 
-    
   }
-
-`;
-
+`
 
 const Row = styled.div`
   display: flex;
@@ -31,21 +25,19 @@ const Row = styled.div`
 
   @media (max-width: 808px) {
     flex-direction: column;
-    margin: 0 auto; 
+    margin: 0 auto;
     gap: 20px; /* Más espacio en pantallas pequeñas */
   }
-`;
+`
 
 const Column = styled.div`
   flex: 1;
   min-width: 00px;
   margin: 0px;
-
- 
-`;
+`
 
 const Input = styled.input`
-  backdrop-filter: blur(8px); 
+  backdrop-filter: blur(8px);
   color: #ffffff;
   background-color: rgba(255, 255, 255, 0.13);
   font-family: 'M Ying', sans-serif;
@@ -54,36 +46,33 @@ const Input = styled.input`
   margin: 10px 0;
   border: 1px solid #000000;
   border-radius: 0px;
-  font-size: 1.0vw;
+  font-size: 1vw;
   box-sizing: border-box; /* Incluye el padding y el borde en el ancho */
   transition: border-color 0.3s ease;
-
 
   &:focus {
     border-color: #ffffff; /* Cambia el borde a verde al hacer focus */
     outline: none; /* Elimina el borde por defecto del navegador */
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
-    
   }
 
   @media (max-width: 768px) {
     font-size: 4.2vw;
     margin: 6px 0;
   }
-`;
-
+`
 
 const TextArea = styled.textarea`
-  backdrop-filter: blur(8px); 
+  backdrop-filter: blur(8px);
   color: #ffffff;
   background-color: rgba(255, 255, 255, 0.13);
   font-family: 'M Ying', sans-serif;
-  width: 100%; 
+  width: 100%;
   padding: 15px;
   margin: 10px 0;
   border: 1px solid #000000;
   border-radius: 0px;
-  font-size: 1.0vw;
+  font-size: 1vw;
   box-sizing: border-box; /* Incluye el padding y el borde en el ancho */
   resize: vertical;
   transition: border-color 0.3s ease;
@@ -92,7 +81,6 @@ const TextArea = styled.textarea`
   &:focus {
     border-color: #ffffff; /* Cambia el borde a verde al hacer focus */
     outline: none; /* Elimina el borde por defecto del navegador */
- 
   }
 
   @media (max-width: 768px) {
@@ -100,8 +88,7 @@ const TextArea = styled.textarea`
     height: 155px;
     margin: 0px 0;
   }
-`;
-
+`
 
 const RowBotones = styled.div`
   display: flex;
@@ -120,7 +107,7 @@ const RowBotones = styled.div`
     padding: 0; /* Asegura que no se agregue espacio adicional */
     justify-content: space-between; /* Cambia para que no agregue espacio en los extremos */
   }
-`;
+`
 
 const Button = styled.button`
   color: #ffffff;
@@ -132,17 +119,14 @@ const Button = styled.button`
   margin: 0px;
   border: 1px solid #000000;
   border-radius: 0px;
-  font-size: 3.0rem;
+  font-size: 3rem;
   cursor: pointer;
   text-transform: uppercase; /* Todo en mayúsculas */
-
 
   &:focus {
     color: #ffffff;
     outline: none; /* Elimina el borde por defecto del navegador */
-   
   }
-
 
   ${(props) =>
     props.selected &&
@@ -154,16 +138,16 @@ const Button = styled.button`
   @media (max-width: 768px) {
     width: 160px;
     font-size: 1.4rem;
-  
+
     padding: 7px;
   }
-`;
+`
 
 const TituloBotones = styled.div`
   color: #ffffff; /* Color grisaceo */
   font-family: 'kaneda-gothic-light';
-  
-  margin-top: 2.0vw;
+
+  margin-top: 2vw;
   font-size: 2.5rem;
   text-transform: uppercase; /* Todo en mayúsculas */
 
@@ -171,11 +155,11 @@ const TituloBotones = styled.div`
     margin-top: 20px;
     font-size: 5.8vw;
   }
-`;
+`
 
 const EnviarButton = styled.button`
-  margin-top: 50PX;
-  padding: 0.8vw 1.4vw;  /* Ajuste del padding para hacerlo más pequeño */
+  margin-top: 50px;
+  padding: 0.8vw 1.4vw; /* Ajuste del padding para hacerlo más pequeño */
   font-size: 1vw;
   font-family: 'M Ying', sans-serif;
   color: #a7a7a7;
@@ -190,9 +174,8 @@ const EnviarButton = styled.button`
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3); /* Sombra negra intensa */
   }
 
-
   &:hover {
-    background-color:  #ffffffda;
+    background-color: #ffffffda;
     color: #000000;
     border: 1px solid black;
   }
@@ -201,114 +184,138 @@ const EnviarButton = styled.button`
     font-size: 4.2vw;
     margin-top: 5vh;
   }
-`;
+`
 
 const SuccessMensaje = styled.div`
   color: #56af44;
   font-size: 14px;
   margin-top: 5px;
   margin-left: 10px;
-`;
+`
 
 const ErrorMensaje = styled.div`
-position: absolute;
- 
+  position: absolute;
+
   color: #ff000094;
   font-size: 19px;
   margin-top: 5px;
   @media (max-width: 768px) {
     font-size: 14px;
   }
-`;
+`
 
 const FormularioContacto = () => {
-  const [selectedButtons, setSelectedButtons] = useState([false, false, false, false]);
-  const [nombre, setNombre] = useState('');
-  const [email, setEmail] = useState('');
-  const [telefono, setTelefono] = useState('');
-  const [consulta, setConsulta] = useState('');
-  const [error, setError] = useState('');
-  const [successMessage, setSuccessMessage] = useState('');
+  const [selectedButtons, setSelectedButtons] = useState([
+    false,
+    false,
+    false,
+    false,
+  ])
+  const [nombre, setNombre] = useState('')
+  const [email, setEmail] = useState('')
+  const [telefono, setTelefono] = useState('')
+  const [consulta, setConsulta] = useState('')
+  const [error, setError] = useState('')
+  const [successMessage, setSuccessMessage] = useState('')
 
   const toggleButton = (index) => {
-    const newSelectedButtons = [...selectedButtons];
-    newSelectedButtons[index] = !newSelectedButtons[index];
-    setSelectedButtons(newSelectedButtons);
-  };
+    const newSelectedButtons = [...selectedButtons]
+    newSelectedButtons[index] = !newSelectedButtons[index]
+    setSelectedButtons(newSelectedButtons)
+  }
 
   const handleSubmit = (event) => {
-    event.preventDefault();
+    event.preventDefault()
 
     // Validar campos
-    if (!nombre || !email || selectedButtons.every(btn => !btn)) {
-      setError('Por favor completa todos los campos requeridos.');
-      return;
+    if (!nombre || !email || selectedButtons.every((btn) => !btn)) {
+      setError('Por favor completa todos los campos requeridos.')
+      return
     }
 
-    let nuevaConsulta = '';
+    let nuevaConsulta = ''
     selectedButtons.forEach((selected, idx) => {
       if (selected) {
-        nuevaConsulta += (nuevaConsulta.length > 0 ? ' ' : '') + ['Mastering', ' Mixing', 'Events', 'Consulta general'][idx];
+        nuevaConsulta +=
+          (nuevaConsulta.length > 0 ? ' ' : '') +
+          ['Mastering', ' Mixing', 'Events', 'Consulta general'][idx]
       }
-    });
+    })
 
     // Limpiar errores si todo está bien
-    setError('');
+    setError('')
 
     // Preparar datos para enviar con EmailJS
     const templateParams = {
-      user_name: nombre,         // Nombre del usuario
-      reply_to: email,           // Correo electrónico del usuario, usamos "reply_to"
-      telefono: telefono,        // Teléfono del usuario
-      mensaje: consulta,         // Mensaje o consulta del usuario
-      project_interest: nuevaConsulta  // Interés del proyecto (por ejemplo: Sitio Web, etc.)
-    };
+      user_name: nombre, // Nombre del usuario
+      reply_to: email, // Correo electrónico del usuario, usamos "reply_to"
+      telefono: telefono, // Teléfono del usuario
+      mensaje: consulta, // Mensaje o consulta del usuario
+      project_interest: nuevaConsulta, // Interés del proyecto (por ejemplo: Sitio Web, etc.)
+    }
 
-    emailjs.send('service', 'template', templateParams, 'code')
+    emailjs
+      .send(
+        'service_8v3gwl7',
+        'template_7cvpfxj',
+        templateParams,
+        'zKKpga6of9pJY-95G'
+      )
 
-      .then((response) => {
-        console.log('SUCCESS!', response.status, response.text);
-        setSuccessMessage('Mensaje enviado con éxito'); 
-      }, (error) => {
-        console.log('FAILED...', error);
-      });
+      .then(
+        (response) => {
+          console.log('SUCCESS!', response.status, response.text)
+          setSuccessMessage('Mensaje enviado con éxito')
+        },
+        (error) => {
+          console.log('FAILED...', error)
+        }
+      )
 
-
-    setNombre('');
-    setEmail('');
-    setTelefono('');
-    setConsulta('');
-    setSelectedButtons([false, false, false, false]);
-  };
+    setNombre('')
+    setEmail('')
+    setTelefono('')
+    setConsulta('')
+    setSelectedButtons([false, false, false, false])
+  }
 
   return (
     <ContainerFormulario>
-
-
-
       <form onSubmit={handleSubmit}>
-
-
-
-
-        <TituloBotones>Selecciona el tipo de servicio o colaboración que te interesa:</TituloBotones>
-
+        <TituloBotones>
+          Selecciona el tipo de servicio o colaboración que te interesa:
+        </TituloBotones>
 
         <RowBotones>
-          <Button type="button" selected={selectedButtons[0]} onClick={() => toggleButton(0)}>
+          <Button
+            type="button"
+            selected={selectedButtons[0]}
+            onClick={() => toggleButton(0)}
+          >
             Mastering
           </Button>
-          <Button type="button" selected={selectedButtons[1]} onClick={() => toggleButton(1)}>
+          <Button
+            type="button"
+            selected={selectedButtons[1]}
+            onClick={() => toggleButton(1)}
+          >
             Mixing
           </Button>
-          <Button type="button" selected={selectedButtons[2]} onClick={() => toggleButton(2)}>
+          <Button
+            type="button"
+            selected={selectedButtons[2]}
+            onClick={() => toggleButton(2)}
+          >
             Events
           </Button>
-          <Button type="button" selected={selectedButtons[3]} onClick={() => toggleButton(3)}>
+          <Button
+            type="button"
+            selected={selectedButtons[3]}
+            onClick={() => toggleButton(3)}
+          >
             Consulta General
           </Button>
         </RowBotones>
-
 
         <Row>
           <Column>
@@ -340,10 +347,6 @@ const FormularioContacto = () => {
           </Column>
         </Row>
 
-
-
-
-
         {error && <ErrorMensaje>{error}</ErrorMensaje>}
         {successMessage && <SuccessMensaje>{successMessage}</SuccessMensaje>}
         <Row>
@@ -353,7 +356,7 @@ const FormularioContacto = () => {
         </Row>
       </form>
     </ContainerFormulario>
-  );
-};
+  )
+}
 
-export default FormularioContacto;
+export default FormularioContacto
