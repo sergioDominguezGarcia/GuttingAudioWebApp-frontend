@@ -151,6 +151,8 @@ const Contact = styled.p`
   padding: 0vw 0;
   font-size: 1.5vw;
   position: relative;
+  margin-top: 0px;
+  line-height: 0.8;
  
 
 
@@ -212,6 +214,7 @@ const TituloPrincipal = () => {
           <FooterLink to="/">NEWS</FooterLink>
           <FooterLink to="/radio">GUTTING RADIO</FooterLink>
           <FooterLink to="/mixingmastering">MIXING MASTERING</FooterLink>
+          {/* <FooterLink to="/youtube">YOUTUBE</FooterLink> */}
        
         </Columna>
 

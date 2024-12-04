@@ -11,6 +11,7 @@ import Events from '../../views/Events'
 import Home from '../../views/Home/home.jsx'
 import Radio from '../../views/Radio/radio'
 import Mastering from '../../views/Mastering/mastering'
+import Youtube from '../../views/YouTube/youtube.jsx'
 import Contact from '../../views/Contact/contact'
 
 const ScrollToTop = () => {
@@ -26,9 +27,9 @@ const ScrollToTop = () => {
 const Router = () => {
   return (
     <BrowserRouter>
-    <ScrollToTop />
-    <Header />
-    <Routes>
+      <ScrollToTop />
+      <Header />
+      <Routes>
         <Route path="/*" element={<Home />} />
         <Route path="/releases" element={<Releases />} />
         <Route path="/releases/:epId" element={<ReleasesDetails eps={eps} />} />
@@ -36,12 +37,12 @@ const Router = () => {
         <Route path="/artists/:slug" element={<Detail />} />
         <Route path="/radio" element={<Radio />} />
         <Route path="/mixingmastering" element={<Mastering />} />
-        <Route path="/events" element={<Events />} /> 
-        <Route path="/contact" element={<Contact />} /> 
+        <Route path="/events" element={<Events />} />
+        <Route path="/youtube" element={<Youtube />} />
+        <Route path="/contact" element={<Contact />} />
 
-        
-    </Routes>
-    <Footer />
+      </Routes>
+      <Footer />
     </BrowserRouter>
   )
 }
