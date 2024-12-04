@@ -125,7 +125,7 @@ const fadeIn = keyframes`
 const MenuLink = styled(Link)`
   color: #9b9b9b;
   line-height: 1.2;
-  font-size: 14vw;
+  font-size: 6.0vh;
   text-decoration: none;
   font-family: kaneda-gothic-extrabold;
   text-transform: uppercase;
@@ -153,7 +153,7 @@ const MenuLink = styled(Link)`
   }
 
   @media (min-width: 768px) {
-    font-size: 4.1vw;
+    font-size: 6.0vh;
     line-height: 1.5;
 
     &:hover {
@@ -233,7 +233,7 @@ const RedesSocialesContainer = styled.div`
 const EnlaceRedSocial = styled.a`
   font-family: 'kaneda-gothic-LIGHT';
   color: #9b9b9b;
-  font-size: 6vw;
+  font-size: 3vh;
   text-decoration: none;
   transition: color 0.3s ease;
 
@@ -403,6 +403,10 @@ const Headermain = () => {
               <MenuItem>
                 <MenuLink onClick={toggleMenu} to="/mixingmastering" isOpen={isOpen}>MIXING MASTERING</MenuLink>
               </MenuItem>
+
+              {/* <MenuItem>
+                <MenuLink onClick={toggleMenu} to="/youtube" isOpen={isOpen}>YouTube</MenuLink>
+              </MenuItem> */}
 
 
  

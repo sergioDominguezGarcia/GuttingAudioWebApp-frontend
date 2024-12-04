@@ -20,8 +20,9 @@ const CarouselContainer = styled.div`
 position: absolute;;
   display: flex;
   justify-content: flex-end; /* Alínea el carrusel a la derecha */
-  width: 100%;
+
   height: ${({ height }) => height || 'auto'}; /* Permite definir la altura desde las props */
+
 
   @media (max-width: 1200px) {
     display: none; /* Oculta el carrusel en dispositivos menores a 1200px */
@@ -32,6 +33,8 @@ const Carousel = styled.div`
 margin-top: 9%;
 margin-right: 5%;
   width: 48%; /* Tamaño del carrusel */
+  max-width: 100%; /* Limita el ancho máximo al viewport */
+
   height: 100%;
   display: flex;
   overflow: hidden;
@@ -241,7 +244,11 @@ const Title = styled.h1`
   
 `;
 
-
+const PageWrapper = styled.div`
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+`;
 
 const ImageCarousel = memo(({ images, height }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -256,6 +263,7 @@ const ImageCarousel = memo(({ images, height }) => {
 
 
   return (
+    <PageWrapper>
     <CarouselContainer height={height}>
       <Carousel>
         {images.map((src, index) => (
@@ -268,6 +276,7 @@ const ImageCarousel = memo(({ images, height }) => {
         ))}
       </Carousel>
     </CarouselContainer>
+    </PageWrapper>
   );
 });
 
