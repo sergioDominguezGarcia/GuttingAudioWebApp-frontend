@@ -2,13 +2,14 @@ import { useEffect, useState, memo } from 'react';
 import styled from 'styled-components';
 
 const Container = styled.div`
+
   margin-top: 8vh;
   display: flex;
   flex-direction: column;
   padding: 2vw 2.6vw;
   height: 100%;
 
-  
+  position: relative; 
 
   @media (max-width: 768px) {
     padding: 4vw 4vw 4vw 4vw;
@@ -17,22 +18,23 @@ const Container = styled.div`
 `;
 
 const CarouselContainer = styled.div`
-position: absolute;;
+
+  position: absolute;
   display: flex;
-  justify-content: flex-end; /* Alínea el carrusel a la derecha */
-
-  height: ${({ height }) => height || 'auto'}; /* Permite definir la altura desde las props */
-
+  justify-content: flex-end; /* Alinea al centro */
+  width: 100%; /* Asegúrate de que use todo el ancho */
+  height: ${({ height }) => height || 'auto'};
 
   @media (max-width: 1200px) {
     display: none; /* Oculta el carrusel en dispositivos menores a 1200px */
   }
 `;
 
+
 const Carousel = styled.div`
 margin-top: 9%;
-margin-right: 5%;
-  width: 48%; /* Tamaño del carrusel */
+margin-right: 5.2%;
+  width: 46%; /* Tamaño del carrusel */
   max-width: 100%; /* Limita el ancho máximo al viewport */
 
   height: 100%;
@@ -248,6 +250,7 @@ const PageWrapper = styled.div`
     width: 100%;
     max-width: 100%;
     overflow-x: hidden;
+    /* position: relative; */
 `;
 
 const ImageCarousel = memo(({ images, height }) => {
@@ -383,3 +386,4 @@ const Mastering = () => {
 };
 
 export default memo(Mastering);
+
