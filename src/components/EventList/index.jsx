@@ -10,7 +10,11 @@ const EventList = () => {
       {events.map((event) => (
         <S.EventCard key={event.id} image={event.image}>
           <S.EvenTitle>
+            <h3>{event.title}</h3>
             <h3>{event.date}</h3>
+            <a href={event.url} target="_blank" rel="noopener noreferrer">
+              Buy ticket!
+            </a>
           </S.EvenTitle>
         </S.EventCard>
       ))}

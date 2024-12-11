@@ -12,33 +12,45 @@ import j from './img/j.png'
 export const events = [
   {
     id: '1',
-    date: 'Compra anticipada',
+    title: 'GUTTING AUDIO NIGHT: IMPEX',
+    date: '24/03',
     image: a,
+    url: 'https://www.monsterticket.com/evento/lemon-jueves-05-diciembre',
   },
   {
     id: '2',
-    date: '24/07/1995',
+    title: 'GUTTING AUDIO NIGHT: MV',
+    date: '24/07',
     image: b,
+    url: 'https://www.monsterticket.com/evento/lemon-jueves-05-diciembre',
   },
   {
     id: '3',
+    title: 'GUTTING AUDIO NIGHT: IMPEX',
     date: '15/01/1998',
     image: c,
+    url: 'https://www.monsterticket.com/evento/lemon-jueves-05-diciembre',
   },
   {
     id: '4',
+    title: 'GUTTING AUDIO NIGHT: MV',
     date: '02/12/2000',
     image: d,
+    url: 'https://www.monsterticket.com/evento/lemon-jueves-05-diciembre',
   },
   {
     id: '5',
+    title: 'GUTTING AUDIO NIGHT: IMPEX',
     date: '11/11/2003',
     image: e,
+    url: 'https://www.monsterticket.com/evento/lemon-jueves-05-diciembre',
   },
   {
     id: '6',
+    title: 'GUTTING AUDIO NIGHT: MV',
     date: '30/06/2005',
     image: f,
+    url: 'https://www.monsterticket.com/evento/lemon-jueves-05-diciembre',
   },
   {
     id: '7',

@@ -21,26 +21,26 @@ export const EventCard = styled.div`
   align-items: center;
   /* border-radius: 8px; */
   overflow: hidden;
-  cursor: pointer;
+  /* cursor: pointer; */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   background-image: url(${(props) => props.image});
   background-size: cover;
   background-position: center;
-  width: 23vw;
-  height: 23vw;
+  width: 22vw;
+  height: 28vw;
   transition: transform 0.5s ease, box-shadow 0.3s ease;
   &:hover {
     transform: translateY(-10px);
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
   }
   @media (max-width: 1200px) {
-    width: 29vw;
-    height: 29vw;
+    width: 17vw;
+    height: 26vw;
     /* border-radius: 4px; */
   }
   @media (max-width: 932px) {
-    width: 45vw;
-    height: 45vw;
+    width: 17vw;
+    height: 26vw;
     /* border-radius: 4px; */
   }
 `
@@ -48,6 +48,7 @@ export const EvenTitle = styled.div`
   text-transform: uppercase;
   width: 100%;
   height: auto;
+ 
   background: rgba(
     0,
     0,
@@ -57,6 +58,11 @@ export const EvenTitle = styled.div`
   color: rgba(255, 255, 255, 0.8);
   text-align: center;
   padding: 10px;
+  a{
+    font-weight: 800;
+    color: inherit; /* Usa el color del elemento padre */
+    text-decoration: none;
+  }
   h3 {
     font-family: kaneda-gothic-extrabold;
     letter-spacing: 0.09em;
