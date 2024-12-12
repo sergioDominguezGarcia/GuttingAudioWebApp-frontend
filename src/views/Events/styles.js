@@ -3,7 +3,6 @@ import styled from 'styled-components'
 export const Content = styled.div`
   width: 100%;
   height: 100%;
-  margin-top: 100px;
   box-sizing: border-box;
   &::before {
     content: '';
