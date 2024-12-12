@@ -1,6 +1,21 @@
 import { useEffect, useState, memo } from 'react';
 import styled from 'styled-components';
 
+const Background = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100vh - 1px); 
+  
+
+  background-image: url('Mastering/4.jpg');
+  background-size: cover;
+  background-position: center;
+  filter: opacity(0.2);
+  z-index: -1;
+`;
+
 const Container = styled.div`
 
   margin-top: 8vh;
@@ -8,8 +23,8 @@ const Container = styled.div`
   flex-direction: column;
   padding: 2vw 2.6vw;
   height: 100%;
-
   position: relative; 
+  
 
   @media (max-width: 768px) {
     padding: 4vw 4vw 4vw 4vw;
@@ -22,7 +37,7 @@ const CarouselContainer = styled.div`
   position: absolute;
   display: flex;
   justify-content: flex-end; /* Alinea al centro */
-  width: 100%; /* Asegúrate de que use todo el ancho */
+  width: 97%; /* Asegúrate de que use todo el ancho */
   height: ${({ height }) => height || 'auto'};
 
   @media (max-width: 1200px) {
@@ -33,7 +48,7 @@ const CarouselContainer = styled.div`
 
 const Carousel = styled.div`
 margin-top: 9%;
-margin-right: 5.2%;
+margin-right: 2.2%;
   width: 46%; /* Tamaño del carrusel */
   max-width: 100%; /* Limita el ancho máximo al viewport */
 
@@ -77,20 +92,6 @@ const ContainerHalf = styled.div`
 
 `;
 
-
-const Background = styled.div`
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: calc(100vh - 1px); 
-
-  background-image: url('Mastering/4.jpg');
-  background-size: cover;
-  background-position: center;
-  filter: opacity(0.2);
-  z-index: -1;
-`;
 
 const StyledImage = styled.img`
   display: none; /* Ocultar por defecto */
@@ -250,7 +251,8 @@ const PageWrapper = styled.div`
     width: 100%;
     max-width: 100%;
     overflow-x: hidden;
-    /* position: relative; */
+ 
+
 `;
 
 const ImageCarousel = memo(({ images, height }) => {
