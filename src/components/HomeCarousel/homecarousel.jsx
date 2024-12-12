@@ -288,28 +288,26 @@ const slideDownOut = keyframes`
   100% { transform: translateY(200%);  }
 `;
 
-const Tag = styled.div.attrs(() => ({
-  isExiting: undefined,
-}))`
 
+
+const Tag = styled.div`
   font-family: monospace;
   font-size: 1.0vw;
   color: #ffd700;
   margin: 0 0px 10px 33px;
   text-transform: uppercase;
   line-height: 1;
-  animation: ${(props) => (props.isExiting ? slideDownOut : slideDownIn)} 0.6s ease forwards;
+  animation: ${(props) => (props.isExiting ? slideDownOut : slideDownIn)} 0.7s ease forwards;
 
   @media (max-width: 768px) {
-   margin-left: 10px;
+    margin-left: 10px;
     font-size: 3.2vw;
   }
 `;
 
-const SlideTitle = styled.h3.attrs(() => ({
-  isExiting: undefined,
-}))`
 
+
+const SlideTitle = styled.h3`
   font-family: kaneda-gothic-extrabold;
   font-size: 8vw;
   color: #f5f5f5;
