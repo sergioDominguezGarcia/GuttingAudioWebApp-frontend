@@ -8,6 +8,7 @@ export const Content = styled.div`
   gap: 0.9vw;
   margin-bottom: 1rem;
   width: 100%;
+  height: auto;
   box-sizing: border-box;
   @media (max-width: 834px) {
     gap: 3.5vw;
