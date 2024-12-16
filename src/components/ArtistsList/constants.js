@@ -4,8 +4,30 @@ import mancha from './img/mancha.jpg'
 import maniatics from './img/maniatics.jpg'
 import vandermou from './img/vandermou.jpg'
 import suspect from './img/suspect.jpg'
+import cidiah from './img/cidiah.jpg'
+import hackwaves from './img/hackwaves.jpg'
+import badLegs from './img/badLegs.jpg'
+import moderate from './img/moderate.jpg'
+import mv from './img/mv.jpg'
+import sete from './img/sete.jpg'
+import state from './img/state.jpg'
+import superRush from './img/superRush.jpg'
+import impex from './img/impex.jpg'
+import helium from './img/helium.jpg'
 
 export const artists = [
+  {
+    id: 'Bad Legs',
+    name: 'Bad Legs',
+    image: badLegs,
+    slug: 'Bad Legs',
+  },
+  {
+    id: 'Cidiah',
+    name: 'Cidiah',
+    image: cidiah,
+    slug: 'Cidiah',
+  },
   {
     id: 'DavidSynth',
     name: 'David Synth',
@@ -13,10 +35,28 @@ export const artists = [
     slug: 'DavidSynth',
   },
   {
+    id: 'Hackwaves',
+    name: 'Hackwaves',
+    image: hackwaves,
+    slug: 'Hackwaves',
+  },
+  {
     id: 'Hebra',
     name: 'Hebra',
     image: hebra,
     slug: 'Hebra',
+  },
+  {
+    id: 'Helium',
+    name: 'Helium',
+    image: helium,
+    slug: 'Helium',
+  },
+  {
+    id: 'Impex',
+    name: 'Impex',
+    image: impex,
+    slug: 'Impex',
   },
   {
     id: 'Mancha',
@@ -29,6 +69,36 @@ export const artists = [
     name: 'Maniatics',
     image: maniatics,
     slug: 'Maniatics',
+  },
+  {
+    id: 'Moderate',
+    name: 'Moderate',
+    image: moderate,
+    slug: 'Moderate',
+  },
+  {
+    id: 'Mv',
+    name: 'Mv',
+    image: mv,
+    slug: 'Mv',
+  },
+  {
+    id: 'Sete',
+    name: 'Sete',
+    image: sete,
+    slug: 'Sete',
+  },
+  {
+    id: 'State of Disorder',
+    name: 'State of Disorder',
+    image: state,
+    slug: 'StateOfDisorder',
+  },
+  {
+    id: 'Super Rush',
+    name: 'Super Rush',
+    image: superRush,
+    slug: 'SuperRush',
   },
   {
     id: 'Suspect',
@@ -41,66 +111,6 @@ export const artists = [
     name: 'Vandermou',
     image: vandermou,
     slug: 'Vandermou',
-  },
-  {
-    id: 'davidSynth',
-    name: 'David Synth',
-    image: david,
-    slug: 'DavidSynth',
-  },
-  {
-    id: 'Hebra',
-    name: 'Hebra',
-    image: hebra,
-    slug: 'Hebra',
-  },
-  {
-    id: 'Mancha',
-    name: 'Mancha',
-    image: mancha,
-    slug: 'Mancha',
-  },
-  {
-    id: 'Maniatics',
-    name: 'Maniatics',
-    image: maniatics,
-    slug: 'Maniatics',
-  },
-  {
-    id: 'Suspect',
-    name: 'Suspect',
-    image: suspect,
-    slug: 'Suspect',
-  },
-  {
-    id: 'Vandermou',
-    name: 'Vandermou',
-    image: vandermou,
-    slug: 'Vandermou',
-  },
-  {
-    id: 'davidSynth',
-    name: 'David Synth',
-    image: david,
-    slug: 'DavidSynth',
-  },
-  {
-    id: 'hebra',
-    name: 'Hebra',
-    image: hebra,
-    slug: 'Hebra',
-  },
-  {
-    id: 'Mancha',
-    name: 'Mancha',
-    image: mancha,
-    slug: 'Mancha',
-  },
-  {
-    id: 'Maniatics',
-    name: 'Maniatics',
-    image: maniatics,
-    slug: 'Maniatics',
   },
 
 ]

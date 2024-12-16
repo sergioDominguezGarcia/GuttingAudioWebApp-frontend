@@ -4,6 +4,17 @@ import mancha from '../ArtistsList/img/mancha.jpg'
 import maniatics from '../ArtistsList/img/maniatics.jpg'
 import vandermou from '../ArtistsList/img/vandermou.jpg'
 import suspect from '../ArtistsList/img/suspect.jpg'
+import impex from '../ArtistsList/img/impex.jpg'
+import cidiah from '../ArtistsList/img/cidiah.jpg'
+import badLegs from '../ArtistsList/img/badLegs.jpg'
+import hackwaves from '../ArtistsList/img/hackwaves.jpg'
+import moderate from '../ArtistsList/img/moderate.jpg'
+import mv from '../ArtistsList/img/mv.jpg'
+import sete from '../ArtistsList/img/sete.jpg'
+import state from '../ArtistsList/img/state.jpg'
+import superRush from '../ArtistsList/img/superRush.jpg'
+import helium from '../ArtistsList/img/helium.jpg'
+
 export const artistsData = {
   DavidSynth: {
     name: 'David Synth',
@@ -57,6 +68,98 @@ export const artistsData = {
     socialLinks: {
       instagram: 'https://www.instagram.com/vandermou.sl_small/',
       soundcloud: 'https://soundcloud.com/vandermou',
+    },
+  },
+  Cidiah: {
+    name: 'Cidiah',
+    image: cidiah,
+    bio: 'Jesús Pascual, productor emergente con base en Sevilla, está influenciado por el rock y ha iniciado una nueva etapa creativa dentro del Drum & Bass. Desde joven, su pasión por la música lo llevó a explorar sonidos intensos y enérgicos, lo que finalmente lo guió hacia los terrenos más pesados y oscuros del género. Su estilo se define por una potente fusión entre la fuerza del rock y la contundencia del neurofunk y el hard dnb. En esta nueva etapa de su carrera, Jesús ya ha logrado firmar temas con sellos como Milleville Music y Bass Boost. Su visión es clara: establecerse como una figura destacada en la escena drum and bass, llevando su sonido único a nuevos públicos y escenarios. Con un enfoque dedicado en la producción, sigue empujando los límites del género hacia nuevos horizontes,siempre buscando evolucionar y perfeccionar su arte.',
+    socialLinks: {
+      instagram: 'https://www.instagram.com/cidiah13/ ',
+      soundcloud: 'https://soundcloud.com/user-895780807 ',
+    },
+  },
+  BadLegs: {
+    name: 'BAD LEGS',
+    image: badLegs,
+    bio: 'BAD LEGS, a Breakbeats & Dnb producer and DJ from Paradas, Seville (Spain). He played his Breakbeats sets with this Deejays: Lady Waks, The Magnet Mens, Freq Nasty, Backdraft, D-Ranged, Retchord, Deekline, Stanton Warriors, Son Of Mecha, DistortionZ, MIAU, Jay Cunning, Muttiny, Baobinga, Freestyler, Free Fall Colective (International Deejays) Anuschka, Pray For Bass, BreaksMafia, Shade K, TERRIE KYND, Aldo Ferrari, Kuplay, Aggresivnes, The Brainkiller, etc (Deejays from Spain). His best tracks, released by Funktasty Crew (Top 1 Worldwide Breaks on Beatport), Space pizza records, Elektroshok record, Nipponer, Guachinche, Empire Music Records, etc. And yes: he use a wheelchair, cuz his LEGS are in BAD condition... ;)',
+    socialLinks: {
+      instagram: 'https://www.instagram.com/badlegs_el_peki96/ ',
+      soundcloud: 'https://soundcloud.com/badlegs ',
+    },
+  },
+  Impex: {
+    name: 'Impex',
+    image: impex,
+    bio: 'Impex ‘s origins go back to being a bass player in Metal, Rock and Hardcore bands since 2004. This is where his love for performing and creating heavier music begins. As a part of the rythmic section of the groups, he quickly developed a taste for broken beats and groovy basslines. After finding himself trapped between the other paths that band members wanted to follow, he chooses to go on his own. After attending his first Therapy Sessions in Lisbon in 2009 decided that Drum n Bass was the way to go. With the help of other producers and friends, he suddenly found himself absolutely submerged in music production and experimentation with sound design. More than just another tune, another track, another sound… it’s a New vibe, a New approach and an expression of feelings.',
+    socialLinks: {
+      instagram: 'https://www.instagram.com/marcos_impex/',
+      soundcloud: 'https://soundcloud.com/impex_music',
+    },
+  },
+  Hackwaves: {
+    name: 'Hackwaves',
+    image: hackwaves,
+    bio: 'DJ/Producer Drum&Bass Neurofunk Music.Fernando Leal aka Hackwaves started this new project in 2022. Influenced by harder styles like Hard Dnb, Crossbreed/Hardcore, he decided to transform his sounds into a more NeuroFunk style, with more synthetic bass lines and with powerfull´s drums.Always linked to the scene, he has shared a booth with great international artists (Limewax, Audio, Aeph, Agressor Bunx, June Miller, DJ Hidden, Technical Itch, Panacea, Counterstrike, Hallucinator, Cooh, Dub Elements, Impak, eDUB... ). ',
+    socialLinks: {
+      instagram: 'https://www.instagram.com/hackwavesdnb/',
+      soundcloud: 'https://soundcloud.com/hackwaves',
+    },
+  },
+  ModerateHate: {
+    name: 'Moderate Hate',
+    image: moderate,
+    bio: 'Moderate Hate (Sergio Fenández) nace de la evolución artística de las ganas de experimentar y crear tracks con nuevos ritmos tocando casi todos los subgéneros del Drum ‘n Bass . Carga sus sesiones buscando siempre los bajos mas contundentes, las baterías mas frenéticas y los tracks mas pisteros trasmitiendo gran energía en sus sets y producciones. En 2019 comienza a formar parte del equipo de BLACK MONSTA, en el cual ha ido editando varios EPs y a su vez perteneciendo al Booking del sello. Asimismo ha sacado a la venta otros trabajos en distintos sellos discográ□cos como son INHABIT RECORDS, MELTING POT RECORDS, HISTERIA RECORDS ,GHOST BASS LABEL, PARALLEL DEPTH, GUTTING AUDIO…. ',
+    socialLinks: {
+      instagram: 'https://www.instagram.com/moderatehate/?hl=es ',
+      soundcloud: 'https://soundcloud.com/moderate-hate ',
+    },
+  },
+  Helium: {
+    name: 'Helium',
+    image: helium,
+    bio: 'pasame la bio cabronazo pasame la bio cabronazo pasame la bio cabronazo pasame la bio cabronazo pasame la bio cabronazo pasame la bio cabronazo pasame la bio cabronazo pasame la bio cabronazo pasame la bio cabronazo pasame la bio cabronazo pasame la bio cabronazo pasame la bio cabronazo pasame la bio cabronazo pasame la bio cabronazo pasame la bio cabronazo pasame la bio cabronazo pasame la bio cabronazo pasame la bio cabronazo pasame la bio cabronazo pasame la bio cabronazo pasame la bio cabronazo pasame la bio cabronazo ',
+    socialLinks: {
+      instagram: 'https://www.instagram.com/heliumdnb/?hl=es ',
+      soundcloud: 'https://soundcloud.com/heliumdnb',
+    },
+  },
+  Mv: {
+    name: 'Mv',
+    image: mv,
+    bio: 'No me hagas escribirla a mano mamon No me hagas escribirla a mano mamon No me hagas escribirla a mano mamon No me hagas escribirla a mano mamon No me hagas escribirla a mano mamon No me hagas escribirla a mano mamon No me hagas escribirla a mano mamon No me hagas escribirla a mano mamon No me hagas escribirla a mano mamon No me hagas escribirla a mano mamon No me hagas escribirla a mano mamon No me hagas escribirla a mano mamon No me hagas escribirla a mano mamon No me hagas escribirla a mano mamon No me hagas escribirla a mano mamon No me hagas escribirla a mano mamon No me hagas escribirla a mano mamon No me hagas escribirla a mano mamon No me hagas escribirla a mano mamon No me hagas escribirla a mano mamon No me hagas escribirla a mano mamon No me hagas escribirla a mano mamon No me hagas escribirla a mano mamon No me hagas escribirla a mano mamon No me hagas escribirla a mano mamon No me hagas escribirla a mano mamon No me hagas escribirla a mano mamon No me hagas escribirla a mano mamon  ',
+    socialLinks: {
+      instagram: 'https://www.instagram.com/bass_music_mv/',
+      soundcloud: 'https://soundcloud.com/bassmusicmv',
+    },
+  },
+  Sete: {
+    name: 'Sete',
+    image: sete,
+    bio: 'Influenciado por el sonido del Neurofunk de artistas como Black Sun Empire, State of Mind o Phace, SETE comenzó a darse a conocer en la escena del Drum & Bass gracias al colectivo Bass Company Spain, el cual le dio la oportunidad de compartir cartel con lo mejor de la escena nacional e internacional y donde se le permitió dejar huella con su estilo personal y sus mezclas rápidas y contundentes a 4 platos cargadas del Neurofunk más duro que caracterizan todas las sesiones de este joven dj y productor Sevillano al que no puedes perderte!! ',
+    socialLinks: {
+      instagram: 'https://www.instagram.com/setednb/',
+      soundcloud: 'https://soundcloud.com/setednb',
+    },
+  },
+  StateOfDisorder: {
+    name: 'State of Disorder',
+    image: state,
+    bio: 'BIO [SPA] Dj y productor Sevillano, caracterizado por fuertes y contundentes líneas de baterías enriquecida por otros géneros obteniendo sets muy fuertes y elegantes, entró en la escena de la mano del promotora The House Party , este artista siente la necesidad de cambiar la dinámica musical del Drum and Bass tanto en Sevilla como fuera de casa, apostando por pistas desconocidas y estilos menos sonados en Andalucía. en sus sesiones se nota la influencia de otros estilos musicales como el funky , soul, jazz, blues, rap, etc., creando conjuntos sonoros muy elaborados pero siempre respetando la fuerza y contundencia  de las cajas, para así mantener una estructura rolling personal y seria, escúchalo.',
+    // 'BIO [ENG]',
+    // 'Sevillian Dj and producer, characterized by strong and forceful drum lines enriched by other genres obtaining very strong and elegant sets, entered the scene of the hand of the promoters Jack The Ripper, this artist feels the need to change the drum & bass scene both in Seville as away from home, betting on unknown tracks and less popular styles in Andalusia. In his sessions you can see the influence of other musical styles such as soul, jazz, blues, rap, etc., creating a different sound set but always respecting the strength and forcefulness of the batteries, in order to maintain a personal and serious rolling structure, listen to it .',
+    socialLinks: {
+      instagram: 'https://www.instagram.com/stateofdisorder.dnb/',
+      soundcloud: 'https://soundcloud.com/stateofdisorde',
+    },
+  },
+  SuperRush: {
+    name: 'Super Rush',
+    image: superRush,
+    bio: 'Super Rush, joven dj/productor andaluz actualmente dedicandose explícitamente a la produccion de DNB. Destacando sus sesiones al mas puro ritmo del Neurofunk con mezclas contundentes y absueltas por los ritmos "enfermos". Perteneciente al colectivo "Bass Invassion". Hasta hace poco sus tracks dieron que hablar en la famosa web Edm.com colocando sus canciones en el top ranking. Super Rush, young andalusian dj/producer that is actually focused in DNB. Neurofunk style mixes with doped beats, he belongs to "The Bass Family". Recently his songs gave a lot to talk at the famous web Edm.com positioning them at the top.PRIZE ',
+    socialLinks: {
+      instagram: 'https://www.instagram.com/superrushdnb/',
+      soundcloud: 'https://soundcloud.com/superrush',
     },
   },
 }
