@@ -17,10 +17,10 @@ import helium from './img/helium.jpg'
 
 export const artists = [
   {
-    id: 'Bad Legs',
+    id: 'BadLegs',
     name: 'Bad Legs',
     image: badLegs,
-    slug: 'Bad Legs',
+    slug: 'BadLegs',
   },
   {
     id: 'Cidiah',
@@ -71,10 +71,10 @@ export const artists = [
     slug: 'Maniatics',
   },
   {
-    id: 'Moderate',
-    name: 'Moderate',
+    id: 'ModerateHate',
+    name: 'Moderate Hate',
     image: moderate,
-    slug: 'Moderate',
+    slug: 'ModerateHate',
   },
   {
     id: 'Mv',
@@ -89,13 +89,13 @@ export const artists = [
     slug: 'Sete',
   },
   {
-    id: 'State of Disorder',
+    id: 'StateOfDisorder',
     name: 'State of Disorder',
     image: state,
     slug: 'StateOfDisorder',
   },
   {
-    id: 'Super Rush',
+    id: 'SuperRush',
     name: 'Super Rush',
     image: superRush,
     slug: 'SuperRush',
@@ -112,5 +112,4 @@ export const artists = [
     image: vandermou,
     slug: 'Vandermou',
   },
-
 ]
