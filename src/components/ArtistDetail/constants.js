@@ -16,6 +16,24 @@ import superRush from '../ArtistsList/img/superRush.jpg'
 import helium from '../ArtistsList/img/helium.jpg'
 
 export const artistsData = {
+  BadLegs: {
+    name: 'BAD LEGS',
+    image: badLegs,
+    bio: 'BAD LEGS, a Breakbeats & Dnb producer and DJ from Paradas, Seville (Spain). He played his Breakbeats sets with this Deejays: Lady Waks, The Magnet Mens, Freq Nasty, Backdraft, D-Ranged, Retchord, Deekline, Stanton Warriors, Son Of Mecha, DistortionZ, MIAU, Jay Cunning, Muttiny, Baobinga, Freestyler, Free Fall Colective (International Deejays) Anuschka, Pray For Bass, BreaksMafia, Shade K, TERRIE KYND, Aldo Ferrari, Kuplay, Aggresivnes, The Brainkiller, etc (Deejays from Spain). His best tracks, released by Funktasty Crew (Top 1 Worldwide Breaks on Beatport), Space pizza records, Elektroshok record, Nipponer, Guachinche, Empire Music Records, etc. And yes: he use a wheelchair, cuz his LEGS are in BAD condition... ;)',
+    socialLinks: {
+      instagram: 'https://www.instagram.com/badlegs_el_peki96/ ',
+      soundcloud: 'https://soundcloud.com/badlegs ',
+    },
+  },
+  Cidiah: {
+    name: 'Cidiah',
+    image: cidiah,
+    bio: 'Jesús Pascual, productor emergente con base en Sevilla, está influenciado por el rock y ha iniciado una nueva etapa creativa dentro del Drum & Bass. Desde joven, su pasión por la música lo llevó a explorar sonidos intensos y enérgicos, lo que finalmente lo guió hacia los terrenos más pesados y oscuros del género. Su estilo se define por una potente fusión entre la fuerza del rock y la contundencia del neurofunk y el hard dnb. En esta nueva etapa de su carrera, Jesús ya ha logrado firmar temas con sellos como Milleville Music y Bass Boost. Su visión es clara: establecerse como una figura destacada en la escena drum and bass, llevando su sonido único a nuevos públicos y escenarios. Con un enfoque dedicado en la producción, sigue empujando los límites del género hacia nuevos horizontes,siempre buscando evolucionar y perfeccionar su arte.',
+    socialLinks: {
+      instagram: 'https://www.instagram.com/cidiah13/ ',
+      soundcloud: 'https://soundcloud.com/user-895780807 ',
+    },
+  },
   DavidSynth: {
     name: 'David Synth',
     image: david,
@@ -25,6 +43,15 @@ export const artistsData = {
       soundcloud: 'https://soundcloud.com/d4vidsynth',
     },
   },
+  Hackwaves: {
+    name: 'Hackwaves',
+    image: hackwaves,
+    bio: 'DJ/Producer Drum&Bass Neurofunk Music.Fernando Leal aka Hackwaves started this new project in 2022. Influenced by harder styles like Hard Dnb, Crossbreed/Hardcore, he decided to transform his sounds into a more NeuroFunk style, with more synthetic bass lines and with powerfull´s drums.Always linked to the scene, he has shared a booth with great international artists (Limewax, Audio, Aeph, Agressor Bunx, June Miller, DJ Hidden, Technical Itch, Panacea, Counterstrike, Hallucinator, Cooh, Dub Elements, Impak, eDUB... ). ',
+    socialLinks: {
+      instagram: 'https://www.instagram.com/hackwavesdnb/',
+      soundcloud: 'https://soundcloud.com/hackwaves',
+    },
+  },
   Hebra: {
     name: 'Hebra',
     image: hebra,
@@ -32,6 +59,24 @@ export const artistsData = {
     socialLinks: {
       instagram: 'https://www.instagram.com/hebra_dnb/',
       soundcloud: 'https://soundcloud.com/hebradnb',
+    },
+  },
+  Helium: {
+    name: 'Helium',
+    image: helium,
+    bio: 'pasame la bio cabronazo pasame la bio cabronazo pasame la bio cabronazo pasame la bio cabronazo pasame la bio cabronazo pasame la bio cabronazo pasame la bio cabronazo pasame la bio cabronazo pasame la bio cabronazo pasame la bio cabronazo pasame la bio cabronazo pasame la bio cabronazo pasame la bio cabronazo pasame la bio cabronazo pasame la bio cabronazo pasame la bio cabronazo pasame la bio cabronazo pasame la bio cabronazo pasame la bio cabronazo pasame la bio cabronazo pasame la bio cabronazo pasame la bio cabronazo ',
+    socialLinks: {
+      instagram: 'https://www.instagram.com/heliumdnb/?hl=es ',
+      soundcloud: 'https://soundcloud.com/heliumdnb',
+    },
+  },
+  Impex: {
+    name: 'Impex',
+    image: impex,
+    bio: 'Impex ‘s origins go back to being a bass player in Metal, Rock and Hardcore bands since 2004. This is where his love for performing and creating heavier music begins. As a part of the rythmic section of the groups, he quickly developed a taste for broken beats and groovy basslines. After finding himself trapped between the other paths that band members wanted to follow, he chooses to go on his own. After attending his first Therapy Sessions in Lisbon in 2009 decided that Drum n Bass was the way to go. With the help of other producers and friends, he suddenly found himself absolutely submerged in music production and experimentation with sound design. More than just another tune, another track, another sound… it’s a New vibe, a New approach and an expression of feelings.',
+    socialLinks: {
+      instagram: 'https://www.instagram.com/marcos_impex/',
+      soundcloud: 'https://soundcloud.com/impex_music',
     },
   },
   Mancha: {
@@ -52,60 +97,6 @@ export const artistsData = {
       soundcloud: 'https://soundcloud.com/maniatics',
     },
   },
-  Suspect: {
-    name: 'Suspect',
-    image: suspect,
-    bio: 'Mario Cotorruelo, aka Suspect es un productor y DJ sevillano. Entró en el mundo del Drum & Bass en 2013 y desde entonces dedica su tiempo libre a la producción de Drum and Bass, más específicamente neurofunk, pero sin fijarse en un sólo subgenero. Todas sus creciones tienen en común un elemento, el ritmo y el groove del funk. Desde que produce ha sacado en sellos internacionales como Raving Panda Records (Alemania) y Stagma Records (Irlanda). Sus sets se caracterizan por la variedad de subgéneros, con un énfasis en el neurofunk, old school y deep/rolling. Desde 2015 lleva pinchando esporádicamente en salas pero sobre todo en raves, aunque su pasión principal es la producción musical también es un amante de los platos y de hacer bailar a las masas en directo.',
-    socialLinks: {
-      instagram: 'https://www.instagram.com/svspectdnb/',
-      soundcloud: 'https://soundcloud.com/svspectdnb',
-    },
-  },
-  Vandermou: {
-    name: 'Vandermou',
-    image: vandermou,
-    bio: '(ES) Dj/Productor de Sevilla (España). Desde muy pequeño empezó a sentirse atraido por la música electrónica observando a su tío, Interagent (Berlín), mezclar sus vinilos. Su primera experiencia fué con el grupo Diversity en 2010 dedicado al sonido Breakbeat. Tras varios años de evolución y aprendizaje decide dedicarse en exclusiva al genero Drum & Bass, creando en 2014 la promotora Jack The Ripper Events, con la que lleva más de 8 años trayendo artistas de primer nivel a su ciudad, y formando el grupo Aimlessly Team. Pero es en Mayo de 2016 cuando decide iniciar su carrera en solitario bajo el nombre de Vandermou. Desde esa fecha hasta la actualidad, ha conseguido hacerse un hueco en la escena de la ciudad, actuando en la gran mayoría de clubs y grandes eventos del estilo (Dub Elements & Friends). Eso le ha dado oportunidad para actuar también en otras ciudades españolas (Barcelona, Malaga, Granada, Jaen, Cadiz, Huelva y Córdoba) y en paises como Croacia (Outlook Festival 2016 y 2017), Republica Checa (Cross Club) y Reino Unido. Sus sets destacan por la rapidez y contundencia, pudiendo escuchar la gran mayoría de los estilos de Neurofunk. En cuanto a producción, busca esa misma variedad creando tracks de estilos Neurofunk y Deep. En Junio de 2017 sacó su primer EP a la venta por el sello Nagual Recordings y actualmente cuenta con otras referencias en sellos como FMR, Black Monsta Records, Histeria Records, Nu Error Audio, Wild Ravers Records, Melting Pot Records, Gutting Audio, Suspect Device Music, Wharf Recordings, Drumad y Space Pirate Recordings. En Marzo de 2020 creó su último proyecto, Gutting Audio. Un nuevo sello discográfico dedicado a los sonidos neurofunk.',
-    socialLinks: {
-      instagram: 'https://www.instagram.com/vandermou.sl_small/',
-      soundcloud: 'https://soundcloud.com/vandermou',
-    },
-  },
-  Cidiah: {
-    name: 'Cidiah',
-    image: cidiah,
-    bio: 'Jesús Pascual, productor emergente con base en Sevilla, está influenciado por el rock y ha iniciado una nueva etapa creativa dentro del Drum & Bass. Desde joven, su pasión por la música lo llevó a explorar sonidos intensos y enérgicos, lo que finalmente lo guió hacia los terrenos más pesados y oscuros del género. Su estilo se define por una potente fusión entre la fuerza del rock y la contundencia del neurofunk y el hard dnb. En esta nueva etapa de su carrera, Jesús ya ha logrado firmar temas con sellos como Milleville Music y Bass Boost. Su visión es clara: establecerse como una figura destacada en la escena drum and bass, llevando su sonido único a nuevos públicos y escenarios. Con un enfoque dedicado en la producción, sigue empujando los límites del género hacia nuevos horizontes,siempre buscando evolucionar y perfeccionar su arte.',
-    socialLinks: {
-      instagram: 'https://www.instagram.com/cidiah13/ ',
-      soundcloud: 'https://soundcloud.com/user-895780807 ',
-    },
-  },
-  BadLegs: {
-    name: 'BAD LEGS',
-    image: badLegs,
-    bio: 'BAD LEGS, a Breakbeats & Dnb producer and DJ from Paradas, Seville (Spain). He played his Breakbeats sets with this Deejays: Lady Waks, The Magnet Mens, Freq Nasty, Backdraft, D-Ranged, Retchord, Deekline, Stanton Warriors, Son Of Mecha, DistortionZ, MIAU, Jay Cunning, Muttiny, Baobinga, Freestyler, Free Fall Colective (International Deejays) Anuschka, Pray For Bass, BreaksMafia, Shade K, TERRIE KYND, Aldo Ferrari, Kuplay, Aggresivnes, The Brainkiller, etc (Deejays from Spain). His best tracks, released by Funktasty Crew (Top 1 Worldwide Breaks on Beatport), Space pizza records, Elektroshok record, Nipponer, Guachinche, Empire Music Records, etc. And yes: he use a wheelchair, cuz his LEGS are in BAD condition... ;)',
-    socialLinks: {
-      instagram: 'https://www.instagram.com/badlegs_el_peki96/ ',
-      soundcloud: 'https://soundcloud.com/badlegs ',
-    },
-  },
-  Impex: {
-    name: 'Impex',
-    image: impex,
-    bio: 'Impex ‘s origins go back to being a bass player in Metal, Rock and Hardcore bands since 2004. This is where his love for performing and creating heavier music begins. As a part of the rythmic section of the groups, he quickly developed a taste for broken beats and groovy basslines. After finding himself trapped between the other paths that band members wanted to follow, he chooses to go on his own. After attending his first Therapy Sessions in Lisbon in 2009 decided that Drum n Bass was the way to go. With the help of other producers and friends, he suddenly found himself absolutely submerged in music production and experimentation with sound design. More than just another tune, another track, another sound… it’s a New vibe, a New approach and an expression of feelings.',
-    socialLinks: {
-      instagram: 'https://www.instagram.com/marcos_impex/',
-      soundcloud: 'https://soundcloud.com/impex_music',
-    },
-  },
-  Hackwaves: {
-    name: 'Hackwaves',
-    image: hackwaves,
-    bio: 'DJ/Producer Drum&Bass Neurofunk Music.Fernando Leal aka Hackwaves started this new project in 2022. Influenced by harder styles like Hard Dnb, Crossbreed/Hardcore, he decided to transform his sounds into a more NeuroFunk style, with more synthetic bass lines and with powerfull´s drums.Always linked to the scene, he has shared a booth with great international artists (Limewax, Audio, Aeph, Agressor Bunx, June Miller, DJ Hidden, Technical Itch, Panacea, Counterstrike, Hallucinator, Cooh, Dub Elements, Impak, eDUB... ). ',
-    socialLinks: {
-      instagram: 'https://www.instagram.com/hackwavesdnb/',
-      soundcloud: 'https://soundcloud.com/hackwaves',
-    },
-  },
   ModerateHate: {
     name: 'Moderate Hate',
     image: moderate,
@@ -113,15 +104,6 @@ export const artistsData = {
     socialLinks: {
       instagram: 'https://www.instagram.com/moderatehate/?hl=es ',
       soundcloud: 'https://soundcloud.com/moderate-hate ',
-    },
-  },
-  Helium: {
-    name: 'Helium',
-    image: helium,
-    bio: 'pasame la bio cabronazo pasame la bio cabronazo pasame la bio cabronazo pasame la bio cabronazo pasame la bio cabronazo pasame la bio cabronazo pasame la bio cabronazo pasame la bio cabronazo pasame la bio cabronazo pasame la bio cabronazo pasame la bio cabronazo pasame la bio cabronazo pasame la bio cabronazo pasame la bio cabronazo pasame la bio cabronazo pasame la bio cabronazo pasame la bio cabronazo pasame la bio cabronazo pasame la bio cabronazo pasame la bio cabronazo pasame la bio cabronazo pasame la bio cabronazo ',
-    socialLinks: {
-      instagram: 'https://www.instagram.com/heliumdnb/?hl=es ',
-      soundcloud: 'https://soundcloud.com/heliumdnb',
     },
   },
   Mv: {
@@ -162,4 +144,26 @@ export const artistsData = {
       soundcloud: 'https://soundcloud.com/superrush',
     },
   },
+  Suspect: {
+    name: 'Suspect',
+    image: suspect,
+    bio: 'Mario Cotorruelo, aka Suspect es un productor y DJ sevillano. Entró en el mundo del Drum & Bass en 2013 y desde entonces dedica su tiempo libre a la producción de Drum and Bass, más específicamente neurofunk, pero sin fijarse en un sólo subgenero. Todas sus creciones tienen en común un elemento, el ritmo y el groove del funk. Desde que produce ha sacado en sellos internacionales como Raving Panda Records (Alemania) y Stagma Records (Irlanda). Sus sets se caracterizan por la variedad de subgéneros, con un énfasis en el neurofunk, old school y deep/rolling. Desde 2015 lleva pinchando esporádicamente en salas pero sobre todo en raves, aunque su pasión principal es la producción musical también es un amante de los platos y de hacer bailar a las masas en directo.',
+    socialLinks: {
+      instagram: 'https://www.instagram.com/svspectdnb/',
+      soundcloud: 'https://soundcloud.com/svspectdnb',
+    },
+  },
+  Vandermou: {
+    name: 'Vandermou',
+    image: vandermou,
+    bio: '(ES) Dj/Productor de Sevilla (España). Desde muy pequeño empezó a sentirse atraido por la música electrónica observando a su tío, Interagent (Berlín), mezclar sus vinilos. Su primera experiencia fué con el grupo Diversity en 2010 dedicado al sonido Breakbeat. Tras varios años de evolución y aprendizaje decide dedicarse en exclusiva al genero Drum & Bass, creando en 2014 la promotora Jack The Ripper Events, con la que lleva más de 8 años trayendo artistas de primer nivel a su ciudad, y formando el grupo Aimlessly Team. Pero es en Mayo de 2016 cuando decide iniciar su carrera en solitario bajo el nombre de Vandermou. Desde esa fecha hasta la actualidad, ha conseguido hacerse un hueco en la escena de la ciudad, actuando en la gran mayoría de clubs y grandes eventos del estilo (Dub Elements & Friends). Eso le ha dado oportunidad para actuar también en otras ciudades españolas (Barcelona, Malaga, Granada, Jaen, Cadiz, Huelva y Córdoba) y en paises como Croacia (Outlook Festival 2016 y 2017), Republica Checa (Cross Club) y Reino Unido. Sus sets destacan por la rapidez y contundencia, pudiendo escuchar la gran mayoría de los estilos de Neurofunk. En cuanto a producción, busca esa misma variedad creando tracks de estilos Neurofunk y Deep. En Junio de 2017 sacó su primer EP a la venta por el sello Nagual Recordings y actualmente cuenta con otras referencias en sellos como FMR, Black Monsta Records, Histeria Records, Nu Error Audio, Wild Ravers Records, Melting Pot Records, Gutting Audio, Suspect Device Music, Wharf Recordings, Drumad y Space Pirate Recordings. En Marzo de 2020 creó su último proyecto, Gutting Audio. Un nuevo sello discográfico dedicado a los sonidos neurofunk.',
+    socialLinks: {
+      instagram: 'https://www.instagram.com/vandermou.sl_small/',
+      soundcloud: 'https://soundcloud.com/vandermou',
+    },
+  },
+
+
+
+
 }
