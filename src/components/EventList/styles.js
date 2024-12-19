@@ -41,8 +41,8 @@ export const EventCard = styled.div`
     /* border-radius: 4px; */
   }
   @media (max-width: 932px) {
-    width: 17vw;
-    height: 26vw;
+    width: 40vw;
+    height: 52vw;
     /* border-radius: 4px; */
   }
 `
@@ -50,17 +50,17 @@ export const EvenTitle = styled.div`
   text-transform: uppercase;
   width: 100%;
   height: auto;
- 
+
   background: rgba(
     0,
     0,
     0,
-    0.6
+    0.9
   ); /* Fondo semitransparente para destacar el texto */
   color: rgba(255, 255, 255, 0.8);
   text-align: center;
   padding: 10px;
-  a{
+  a {
     font-weight: 800;
     color: inherit; /* Usa el color del elemento padre */
     text-decoration: none;
@@ -74,6 +74,9 @@ export const EvenTitle = styled.div`
     text-shadow: 1px 1px 2px black;
   }
   @media (max-width: 1200px) {
+    a {
+      font-size: 2vw;
+    }
     h3 {
       font-family: kaneda-gothic-extrabold;
       letter-spacing: 0.09em;
@@ -88,7 +91,7 @@ export const EvenTitle = styled.div`
       font-family: kaneda-gothic-extrabold;
       letter-spacing: 0.09em;
       margin: 0;
-      font-size: 3.4vw;
+
       gap: 2.5em;
       text-shadow: 1px 1px 2px black;
     }
