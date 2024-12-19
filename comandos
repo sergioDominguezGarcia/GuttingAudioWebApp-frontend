@@ -5,7 +5,7 @@
 
 yarn run build                         # Generar una nueva versión de tu sitio
 
-git add .; git commit -m "add fader volumen"; git push origin main
+git add .; git commit -m "add fader volumen"; git push origin fix
 
 
 
