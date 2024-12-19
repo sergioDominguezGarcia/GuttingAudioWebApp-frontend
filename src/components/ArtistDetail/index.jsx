@@ -28,6 +28,7 @@ const ArtistDetailview = () => {
         <hr />
       </Header>
       <Content>
+
         <LeftBox>
           <ArtistImage src={artist.image} alt={artist.name} />
           <Releases>
@@ -72,14 +73,11 @@ const ArtistDetail = styled.div`
   margin: auto;
   padding: 3rem 5rem;
   max-width: 1920px;
-  @media (max-width: 1200px) {
+  @media (max-width: 768px) {
     width: 100%;
-    padding: 0rem;
+    padding: 3rem 1rem;
   }
-  @media (max-width: 425px) {
-    width: 100%;
-    padding: 0rem;
-  }
+
 `
 
 const Header = styled.div`
@@ -87,15 +85,16 @@ const Header = styled.div`
   flex-direction: column;
   align-items: flex-start;
   width: 100%;
+
   h3 {
     font-family: kaneda-gothic-extrabold;
     font-size: 5.5em;
-    color: rgb(221, 221, 221, 0.95);
+    color: white;
     text-shadow: 2px 1px 2px black;
     margin: 0;
     text-transform: uppercase; 
 
-    @media (max-width: 834px) {
+    @media (max-width: 768px) {
       font-size: 3.5em;
   }
   }
@@ -104,87 +103,97 @@ const Header = styled.div`
   hr {
     width: 100%;
     border: none;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid white;
     margin: 0.5rem 0;
+    margin-bottom: 50px;
+
+    @media (max-width: 768px) {
+      margin-bottom: 30px;
+  }
   }
 `
 
 const Content = styled.div`
   display: flex;
   width: 100%;
-  @media (max-width: 1200px) {
+  @media (max-width: 768px) {
     flex-direction: column;
+    align-items: center; /* Centra los elementos horizontalmente */
   }
-`
+`;
 
 const ArtistImage = styled.img`
-  max-width: 55rem;
+  max-width: 40vw;
   width: 100%;
   height: auto;
   display: flex;
+  @media (max-width: 768px) {
+    max-width: 100%;
+  }
 `
 
 const Releases = styled.div`
-  @media (max-width: 1200px) {
-    display: none;
+  @media (max-width: 768px) {
+   
   }
 `
 
 const EpCover = styled.div`
   justify-content: center;
-  @media (max-width: 834px) {
-    img {
-      width: 50%;
-    }
+  margin-top: 20px;
+  @media (max-width: 768px) {
+   
   }
 `
 
 const ArtistBio = styled.div`
-  line-height: 32px;
-  padding: 2rem;
+  padding: 0rem 2rem;
   color: #dadada;
   p {
     font-family: 'kaneda-gothic-light';
-    font-size: 2em;
+    font-size: 1.8rem;
     letter-spacing: 1.4px;
     text-shadow: 1px 1px 2px black;
     margin: 0;
   }
-  @media (max-width: 1200px) {
-    padding: 1.5em;
+  @media (max-width: 768px) {
+    padding: 1rem 0rem;
     p {
-      font-size: 1.8em;
+      font-size: 1.3em;
     }
   }
-`
+`;
+
 
 const SocialLinks = styled.div`
   margin: 2em 0;
   display: flex;
   gap: 2rem;
   justify-content: center;
-  @media (max-width: 834px) {
-    margin-left: 3.5em;
+  @media (max-width: 768px) {
     gap: 1.5rem;
   }
-`
+`;
 
 const LeftBox = styled.div`
   width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  @media (max-width: 1200px) {
+  @media (max-width: 768px) {
     width: 100%;
+ 
   }
-`
+`;
+
 
 const RightBox = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 50%;
-  @media (max-width: 1200px) {
+  @media (max-width: 768px) {
     width: 100%;
+    order: 2; /* El texto irá debajo de la imagen en móviles */
   }
-`
+`;
