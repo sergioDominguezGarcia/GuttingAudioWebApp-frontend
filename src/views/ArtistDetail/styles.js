@@ -12,14 +12,15 @@ export const Home = styled.div`
 export const Content = styled.div`
   background-image: url(${(props) => props.background});
   background-position: center;
-  display: flex;
   background-attachment: scroll;
-  background-size: center;
+  background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
+  display: flex;
   justify-content: center;
-  height: 100%;
-  z-index: -1;
+  align-items: center; /* Opcional, alinea el contenido dentro del contenedor */
+  min-height: 100vh; /* Asegura que ocupe al menos el alto completo de la ventana */
   width: 100%;
-`
+  z-index: -1;
+`;
 
 export const Artists = styled.div`
   display: flex;

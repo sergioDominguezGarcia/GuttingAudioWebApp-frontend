@@ -123,14 +123,18 @@ const Content = styled.div`
 `;
 
 const ArtistImage = styled.img`
-  max-width: 40vw;
-  width: 100%;
-  height: auto;
-  display: flex;
+  width: 37vw; /* Ancho fijo al 40% del viewport */
+  max-height: 40vh; /* Limita la altura máxima al 60% del viewport */
+  object-fit: cover; /* Recorta la imagen para ajustarse sin deformarla */
+  object-position: top; /* Muestra siempre la parte superior de la imagen */
+
+  display: block;
   @media (max-width: 768px) {
-    max-width: 100%;
+    width: 100%; /* En móviles ocupa todo el ancho disponible */
+    max-height: unset; /* No hay límite de altura en móviles */
+    object-fit: contain; /* En móviles muestra todo el contenido sin recortar */
   }
-`
+`;
 
 const Releases = styled.div`
   @media (max-width: 768px) {
@@ -147,7 +151,7 @@ const EpCover = styled.div`
 `
 
 const ArtistBio = styled.div`
-  padding: 0rem 2rem;
+  padding: 0rem 0rem 0rem 2rem;
   color: #dadada;
   p {
     font-family: 'kaneda-gothic-light';
