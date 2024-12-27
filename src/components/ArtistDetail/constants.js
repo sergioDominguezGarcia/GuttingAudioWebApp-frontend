@@ -64,7 +64,7 @@ export const artistsData = {
   Helium: {
     name: 'Helium',
     image: helium,
-    bio: 'pasame la bio cabronazo pasame la bio cabronazo pasame la bio cabronazo pasame la bio cabronazo pasame la bio cabronazo pasame la bio cabronazo pasame la bio cabronazo pasame la bio cabronazo pasame la bio cabronazo pasame la bio cabronazo pasame la bio cabronazo pasame la bio cabronazo pasame la bio cabronazo pasame la bio cabronazo pasame la bio cabronazo pasame la bio cabronazo pasame la bio cabronazo pasame la bio cabronazo pasame la bio cabronazo pasame la bio cabronazo pasame la bio cabronazo pasame la bio cabronazo ',
+    bio: '',
     socialLinks: {
       instagram: 'https://www.instagram.com/heliumdnb/?hl=es ',
       soundcloud: 'https://soundcloud.com/heliumdnb',
@@ -109,7 +109,7 @@ export const artistsData = {
   Mv: {
     name: 'Mv',
     image: mv,
-    bio: 'No me hagas escribirla a mano mamon No me hagas escribirla a mano mamon No me hagas escribirla a mano mamon No me hagas escribirla a mano mamon No me hagas escribirla a mano mamon No me hagas escribirla a mano mamon No me hagas escribirla a mano mamon No me hagas escribirla a mano mamon No me hagas escribirla a mano mamon No me hagas escribirla a mano mamon No me hagas escribirla a mano mamon No me hagas escribirla a mano mamon No me hagas escribirla a mano mamon No me hagas escribirla a mano mamon No me hagas escribirla a mano mamon No me hagas escribirla a mano mamon No me hagas escribirla a mano mamon No me hagas escribirla a mano mamon No me hagas escribirla a mano mamon No me hagas escribirla a mano mamon No me hagas escribirla a mano mamon No me hagas escribirla a mano mamon No me hagas escribirla a mano mamon No me hagas escribirla a mano mamon No me hagas escribirla a mano mamon No me hagas escribirla a mano mamon No me hagas escribirla a mano mamon No me hagas escribirla a mano mamon  ',
+    bio: ' ',
     socialLinks: {
       instagram: 'https://www.instagram.com/bass_music_mv/',
       soundcloud: 'https://soundcloud.com/bassmusicmv',
