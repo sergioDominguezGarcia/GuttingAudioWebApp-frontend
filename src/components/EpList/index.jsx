@@ -1,8 +1,7 @@
 import React from 'react'
 import * as S from './styles'
 import { useNavigate } from 'react-router-dom'
-import eps  from '../../data/eps.json' 
-
+import eps from '../../data/eps.json'
 
 const EpList = () => {
   const navigate = useNavigate()
@@ -11,9 +10,12 @@ const EpList = () => {
     navigate(`/releases/${epId}`)
   }
 
+  // Ordena los EPs en orden descendente por ID
+  const sortedEps = [...eps].sort((a, b) => b.id - a.id)
+
   return (
     <S.EpGrid>
-      {eps.map((ep) => (
+      {sortedEps.map((ep) => (
         <S.EpCard
           key={ep.id}
           coverUrl={ep.coverUrl}
