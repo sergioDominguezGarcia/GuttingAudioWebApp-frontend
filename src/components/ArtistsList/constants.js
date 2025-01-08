@@ -46,12 +46,6 @@ export const artists = [
     image: hebra,
     slug: 'Hebra',
   },
-  // {
-  //   id: 'Helium',
-  //   name: 'Helium',
-  //   image: helium,
-  //   slug: 'Helium',
-  // },
   {
     id: 'Impex',
     name: 'Impex',
