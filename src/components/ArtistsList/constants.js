@@ -13,7 +13,7 @@ import sete from './img/sete.jpg'
 import state from './img/state.jpg'
 import superRush from './img/superRush.jpg'
 import impex from './img/impex.jpg'
-import helium from './img/helium.jpg'
+
 
 export const artists = [
   {
