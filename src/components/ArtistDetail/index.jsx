@@ -28,10 +28,10 @@ const ArtistDetailview = () => {
         <hr />
       </Header>
       <Content>
-
         <LeftBox>
           <ArtistImage src={artist.image} alt={artist.name} />
-          <Releases>
+          <Releases className="desktop-releases">
+            {filteredEps.length > 0 && <ReleasesTitle>Releases</ReleasesTitle>}
             {filteredEps.map((ep) => (
               <EpCover key={ep.id}>
                 <img
@@ -59,6 +59,18 @@ const ArtistDetailview = () => {
               style={{ cursor: 'pointer', height: '2rem' }}
             />
           </SocialLinks>
+          <Releases className="mobile-releases">
+            {filteredEps.length > 0 && <ReleasesTitle>Releases</ReleasesTitle>}
+            {filteredEps.map((ep) => (
+              <EpCover key={ep.id}>
+                <img
+                  src={ep.coverUrl}
+                  alt={`Portada de ${ep.title}`}
+                  style={{ width: '20%', height: 'auto' }}
+                />
+              </EpCover>
+            ))}
+          </Releases>
         </RightBox>
       </Content>
     </ArtistDetail>
@@ -77,7 +89,6 @@ const ArtistDetail = styled.div`
     width: 100%;
     padding: 3rem 1rem;
   }
-
 `
 
 const Header = styled.div`
@@ -89,16 +100,15 @@ const Header = styled.div`
   h3 {
     font-family: kaneda-gothic-extrabold;
     font-size: 5.5em;
-    color: white;
+    color: #ffffffea;
     text-shadow: 2px 1px 2px black;
     margin: 0;
-    text-transform: uppercase; 
+    text-transform: uppercase;
 
     @media (max-width: 768px) {
       font-size: 3.5em;
+    }
   }
-  }
-
 
   hr {
     width: 100%;
@@ -109,7 +119,7 @@ const Header = styled.div`
 
     @media (max-width: 768px) {
       margin-bottom: 30px;
-  }
+    }
   }
 `
 
@@ -118,41 +128,64 @@ const Content = styled.div`
   width: 100%;
   @media (max-width: 768px) {
     flex-direction: column;
-    align-items: center; /* Centra los elementos horizontalmente */
+    align-items: center;
   }
-`;
+`
 
 const ArtistImage = styled.img`
-  width: 37vw; /* Ancho fijo al 40% del viewport */
-  max-height: 40vh; /* Limita la altura máxima al 60% del viewport */
-  object-fit: cover; /* Recorta la imagen para ajustarse sin deformarla */
-  object-position: top; /* Muestra siempre la parte superior de la imagen */
+  width: 37vw;
+  max-height: 40vh;
+  object-fit: cover;
+  object-position: top;
 
   display: block;
   @media (max-width: 768px) {
-    width: 100%; /* En móviles ocupa todo el ancho disponible */
-    max-height: unset; /* No hay límite de altura en móviles */
-    object-fit: contain; /* En móviles muestra todo el contenido sin recortar */
+    width: 100%;
+    max-height: unset;
+    object-fit: contain;
   }
-`;
+`
 
 const Releases = styled.div`
-  @media (max-width: 768px) {
-   
+  margin-top: 20px;
+
+  &.desktop-releases {
+    display: block; /* Visible por defecto en escritorio */
+    @media (max-width: 768px) {
+      display: none; /* Oculto en móvil */
+    }
   }
+
+  &.mobile-releases {
+    display: none; /* Oculto por defecto en escritorio */
+    @media (max-width: 768px) {
+      display: block; /* Visible solo en móvil */
+      margin-top: 20px;
+    }
+  }
+`
+
+const ReleasesTitle = styled.h4`
+  font-family: kaneda-gothic-extrabold;
+  font-size: 3rem;
+  color: #ffffffea;
+  text-shadow: 1px 1px 2px black;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+  text-transform: uppercase;
+
+
+
 `
 
 const EpCover = styled.div`
   justify-content: center;
   margin-top: 20px;
-  @media (max-width: 768px) {
-   
-  }
 `
 
 const ArtistBio = styled.div`
   padding: 0rem 0rem 0rem 2rem;
-  color: #dadada;
+  color: #ffffff;
   p {
     font-family: 'kaneda-gothic-light';
     font-size: 1.8rem;
@@ -166,8 +199,7 @@ const ArtistBio = styled.div`
       font-size: 1.3em;
     }
   }
-`;
-
+`
 
 const SocialLinks = styled.div`
   margin: 2em 0;
@@ -177,7 +209,7 @@ const SocialLinks = styled.div`
   @media (max-width: 768px) {
     gap: 1.5rem;
   }
-`;
+`
 
 const LeftBox = styled.div`
   width: 50%;
@@ -186,10 +218,8 @@ const LeftBox = styled.div`
   justify-content: center;
   @media (max-width: 768px) {
     width: 100%;
- 
   }
-`;
-
+`
 
 const RightBox = styled.div`
   display: flex;
@@ -198,6 +228,6 @@ const RightBox = styled.div`
   width: 50%;
   @media (max-width: 768px) {
     width: 100%;
-    order: 2; /* El texto irá debajo de la imagen en móviles */
+    order: 2;
   }
-`;
+`
