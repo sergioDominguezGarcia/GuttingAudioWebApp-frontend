@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react'
+import styled from 'styled-components';
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom'
 import Releases from '../../views/Releases'
 import eps from '../../data/eps.json'
@@ -27,24 +28,39 @@ const ScrollToTop = () => {
 const Router = () => {
   return (
     <BrowserRouter>
-      <ScrollToTop />
-      <Header />
-      <Routes>
-        <Route path="/*" element={<Home />} />
-        <Route path="/releases" element={<Releases />} />
-        <Route path="/releases/:epId" element={<ReleasesDetails eps={eps} />} />
-        <Route path="/artists" element={<Artists />} />
-        <Route path="/artists/:slug" element={<Detail />} />
-        <Route path="/radio" element={<Radio />} />
-        <Route path="/mixingmastering" element={<Mastering />} />
-        <Route path="/events" element={<Events />} />
-        <Route path="/youtube" element={<Youtube />} />
-        <Route path="/contact" element={<Contact />} />
-
-      </Routes>
-      <Footer />
-    </BrowserRouter>
+    <ScrollToTop />
+    <MainLayout>
+      <Header /> 
+      <Content>
+        <Routes>
+          <Route path="/*" element={<Home />} />
+          <Route path="/releases" element={<Releases />} />
+          <Route path="/releases/:epId" element={<ReleasesDetails eps={eps} />} />
+          <Route path="/artists" element={<Artists />} />
+          <Route path="/artists/:slug" element={<Detail />} />
+          <Route path="/radio" element={<Radio />} />
+          <Route path="/mixingmastering" element={<Mastering />} />
+          <Route path="/events" element={<Events />} />
+          <Route path="/youtube" element={<Youtube />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </Content>
+      <Footer /> 
+    </MainLayout>
+  </BrowserRouter>
   )
 }
 
 export default Router
+
+
+
+const MainLayout = styled.div`
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
+`;
+
+const Content = styled.div`
+  flex: 1; 
+`;

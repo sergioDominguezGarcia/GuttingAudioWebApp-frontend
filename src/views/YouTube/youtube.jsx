@@ -7,10 +7,10 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   padding: 2vw 2.6vw;
-  height: 100%;
+  min-height: auto;
 
   @media (max-width: 768px) {
-    padding: 4vw;
+    padding: 2vw;
   }
 `;
 
@@ -38,8 +38,21 @@ const VideoList = styled.div`
   margin-top: 40px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 30px;
+
+
+  max-width: 1200px;
+  margin: 8vh auto 0;
+
+
+
+  @media (max-width: 768px) {
+    padding: 0vw;
+  }
+
+
 `;
+
 
 const VideoItem = styled.div`
   display: flex;
@@ -54,7 +67,7 @@ const VideoItem = styled.div`
     border-radius: 8px;
     width: 100%;
     aspect-ratio: 16 / 9; /* Mantiene la proporción del video */
-    border: 2px solid #333;
+    border: 1px solid #333;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 
     &:hover {
@@ -83,10 +96,11 @@ const VideoItem = styled.div`
 const Youtube = () => {
 
   const videos = [
-    { name: '', url: 'https://www.youtube.com/embed/8Pb-MQCPQsc' },
-    { name: '', url: 'https://www.youtube.com/embed/jjbiMXfe2NU' },
-    { name: '', url: 'https://www.youtube.com/embed/kxstMJY2Q28' },
+    { name: 'Gutting Audio Showcase 001 - VANDERMOU x DAVID SYNTH x HACKWAVES x SETE', url: 'https://www.youtube-nocookie.com/embed/9e8iQoGAFzI'
+ },
+
   ];
+
 
 
   return (
@@ -97,14 +111,15 @@ const Youtube = () => {
       <VideoList>
         {videos.map((video, index) => (
           <VideoItem key={index}>
+            <h3>{video.name}</h3>
             <iframe
               src={video.url}
               title={video.name}
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
+              playsInline
             ></iframe>
-            <h3>{video.name}</h3>
           </VideoItem>
         ))}
       </VideoList>

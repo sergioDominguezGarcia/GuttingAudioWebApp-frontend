@@ -6,10 +6,10 @@ export const Content = styled.div`
   justify-content: center;
   align-content: flex-start;
   gap: 0.9vw;
-  margin-bottom: 1rem;
   width: 100%;
   height: auto;
   box-sizing: border-box;
+  min-height: auto;
   
   @media (max-width: 834px) {
     gap: 3.5vw;
@@ -21,9 +21,8 @@ export const EventCard = styled.div`
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  /* border-radius: 8px; */
   overflow: hidden;
-  /* cursor: pointer; */
+  cursor: pointer;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   background-image: url(${(props) => props.image});
   background-size: cover;
@@ -31,6 +30,7 @@ export const EventCard = styled.div`
   width: 22vw;
   height: 28vw;
   transition: transform 0.5s ease, box-shadow 0.3s ease;
+  margin-bottom: 4vw;
   &:hover {
     transform: translateY(-10px);
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
@@ -38,14 +38,15 @@ export const EventCard = styled.div`
   @media (max-width: 1200px) {
     width: 17vw;
     height: 26vw;
-    /* border-radius: 4px; */
+   
   }
   @media (max-width: 932px) {
     width: 40vw;
     height: 52vw;
-    /* border-radius: 4px; */
+  
   }
 `
+
 export const EvenTitle = styled.div`
   text-transform: uppercase;
   width: 100%;

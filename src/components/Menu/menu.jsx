@@ -404,9 +404,9 @@ const Headermain = () => {
                 <MenuLink onClick={toggleMenu} to="/mixingmastering" isOpen={isOpen}>MIXING MASTERING</MenuLink>
               </MenuItem>
 
-              {/* <MenuItem>
+              <MenuItem>
                 <MenuLink onClick={toggleMenu} to="/youtube" isOpen={isOpen}>YouTube</MenuLink>
-              </MenuItem> */}
+              </MenuItem>
 
 
  
