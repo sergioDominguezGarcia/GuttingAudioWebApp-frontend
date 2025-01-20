@@ -162,10 +162,9 @@ const MusicPlayer = ({
         <S.ReleaseInfo>
           <p>
             Let's pick up the pace again! Here is our new reference produced by
-            another newcomer in our family, Moderate Hate. He presents us with
-            two completely different tracks, showing us his great repertoire of
-            ideas. Gate delves into the fusion with psy styles creating an
-            incredible atmosphere and rhythm and 4AM shows us his best known
+            another newcomer in our family. He presents us with
+            awesome tracks, showing us his great repertoire of
+            ideas and shows us his best known
             side in the world of Drum & Bass.
           </p>
         </S.ReleaseInfo>
