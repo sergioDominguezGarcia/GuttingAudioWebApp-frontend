@@ -17,5 +17,8 @@ export const events = [
     url: 'https://www.monsterticket.com/evento/lemon-jueves-05-diciembre',
   }
   
+
+
+  
 ]
 

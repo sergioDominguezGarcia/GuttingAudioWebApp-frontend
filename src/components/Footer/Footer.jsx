@@ -214,21 +214,21 @@ const TituloPrincipal = () => {
           <FooterLink to="/">NEWS</FooterLink>
           <FooterLink to="/radio">GUTTING RADIO</FooterLink>
           <FooterLink to="/mixingmastering">MIXING MASTERING</FooterLink>
-          {/* <FooterLink to="/youtube">YOUTUBE</FooterLink> */}
-       
+          <FooterLink to="/youtube">YOUTUBE</FooterLink>
+
         </Columna>
 
         <Columna>
 
-        <FooterLink to="/releases">RELEASES</FooterLink>
-        <FooterLink to="/artists">ARTISTS</FooterLink>
-        <FooterLink to="/events">EVENTS</FooterLink>
-        
-       
+          <FooterLink to="/releases">RELEASES</FooterLink>
+          <FooterLink to="/artists">ARTISTS</FooterLink>
+          <FooterLink to="/events">EVENTS</FooterLink>
+
+
         </Columna>
 
 
-      
+
 
 
         <ColumnaDerecha>
@@ -243,8 +243,8 @@ const TituloPrincipal = () => {
           </Enlace>
 
           <FooterLink to="/contact">
-    <Contact>+ CONTACT</Contact>
-  </FooterLink>
+            <Contact>+ CONTACT</Contact>
+          </FooterLink>
 
         </ColumnaDerecha>
       </InfoColumnPie>
