@@ -6,14 +6,14 @@ import * as S from './styles'
 
 // import Footer from '../Footer'
 const EpDetail = () => {
-  const { epId } = useParams()
+  const { epSlug } = useParams()
   const [selectedEp, setSelectedEp] = useState(null)
   const [currentTrackId, setCurrentTrackId] = useState(null)
 
   useEffect(() => {
-    const ep = eps.find((ep) => ep.id === epId)
+    const ep = eps.find((ep) => ep.slug === epSlug)
     setSelectedEp(ep)
-  }, [epId])
+  }, [epSlug])
 
   useEffect(() => {
     if (selectedEp && selectedEp.tracks.length > 0) {

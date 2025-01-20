@@ -28,26 +28,29 @@ const ScrollToTop = () => {
 const Router = () => {
   return (
     <BrowserRouter>
-    <ScrollToTop />
-    <MainLayout>
-      <Header /> 
-      <Content>
-        <Routes>
-          <Route path="/*" element={<Home />} />
-          <Route path="/releases" element={<Releases />} />
-          <Route path="/releases/:epId" element={<ReleasesDetails eps={eps} />} />
-          <Route path="/artists" element={<Artists />} />
-          <Route path="/artists/:slug" element={<Detail />} />
-          <Route path="/radio" element={<Radio />} />
-          <Route path="/mixingmastering" element={<Mastering />} />
-          <Route path="/events" element={<Events />} />
-          <Route path="/youtube" element={<Youtube />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
-      </Content>
-      <Footer /> 
-    </MainLayout>
-  </BrowserRouter>
+      <ScrollToTop />
+      <MainLayout>
+        <Header />
+        <Content>
+          <Routes>
+            <Route path="/*" element={<Home />} />
+            <Route path="/releases" element={<Releases />} />
+            <Route
+              path="/releases/:epSlug"
+              element={<ReleasesDetails eps={eps} />}
+            />
+            <Route path="/artists" element={<Artists />} />
+            <Route path="/artists/:slug" element={<Detail />} />
+            <Route path="/radio" element={<Radio />} />
+            <Route path="/mixingmastering" element={<Mastering />} />
+            <Route path="/events" element={<Events />} />
+            <Route path="/youtube" element={<Youtube />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </Content>
+        <Footer />
+      </MainLayout>
+    </BrowserRouter>
   )
 }
 

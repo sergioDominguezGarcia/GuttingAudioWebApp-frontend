@@ -1,7 +1,7 @@
 [
   {
     "id": "001",
-    "gttn": "GTTNVA001",
+    "slug": "GTTNVA001",
     "title": "THE SUN VA",
     "artist": "Various Artists",
     "coverUrl": "/Portadas/GTTNVA001.png",
@@ -53,7 +53,7 @@
   },
   {
     "id": "002",
-    "gttn": "GTTNEP001",
+    "slug": "GTTNEP001",
     "title": "HIT ME DOWN EP",
     "artist": "MANIATICS",
     "coverUrl": "/Portadas/GTTNEP001.png",
@@ -75,7 +75,7 @@
   },
   {
     "id": "003",
-    "gttn": "GTTNEP002",
+    "slug": "GTTNEP002",
     "title": "RAMPAGE EP",
     "artist": "FEARLESS",
     "coverUrl": "/Portadas/GTTNEP002.png",
@@ -97,7 +97,7 @@
   },
   {
     "id": "004",
-    "gttn": "GTTNEP003",
+    "slug": "GTTNEP003",
     "title": "ASSAULT EP",
     "artist": "SUSPECT",
     "coverUrl": "/Portadas/GTTNEP003.png",
@@ -119,7 +119,7 @@
   },
   {
     "id": "005",
-    "gttn": "GTTNEP004",
+    "slug": "GTTNEP004",
     "title": "STRONGER THINGS EP",
     "artist": "QKHACK",
     "coverUrl": "/Portadas/GTTNEP004.png",
@@ -141,7 +141,7 @@
   },
   {
     "id": "006",
-    "gttn": "GTTNEP005",
+    "slug": "GTTNEP005",
     "title": "BACKSPIN EP",
     "artist": "MANCHA",
     "coverUrl": "/Portadas/GTTNEP005.png",
@@ -163,7 +163,7 @@
   },
   {
     "id": "007",
-    "gttn": "GTTNEP006",
+    "slug": "GTTNEP006",
     "title": "PUSH BUTTON EP",
     "artist": "HEBRA",
     "coverUrl": "/Portadas/GTTNEP006.png",
@@ -185,7 +185,7 @@
   },
   {
     "id": "008",
-    "gttn": "GTTNEP007",
+    "slug": "GTTNEP007",
     "title": "UNCLEAN EP",
     "artist": "DAVID SYNTH",
     "coverUrl": "/Portadas/GTTNEP007.png",
@@ -207,7 +207,7 @@
   },
   {
     "id": "009",
-    "gttn": "GTTNEP008",
+    "slug": "GTTNEP008",
     "title": "THE CATHEDRAL EP",
     "artist": "VANDERMOU",
     "coverUrl": "/Portadas/GTTNEP008.png",
@@ -229,7 +229,7 @@
   },
   {
     "id": "010",
-    "gttn": "GTTNVA002",
+    "slug": "GTTNVA002",
     "title": "THE SUN REMIXES VA",
     "artist": "Various Artists",
     "coverUrl": "/Portadas/GTTNVA002.png",
@@ -281,7 +281,7 @@
   },
   {
     "id": "011",
-    "gttn": "GTTNEP009",
+    "slug": "GTTNEP009",
     "title": "ANOTHER BEGINNING EP",
     "artist": "SETE",
     "coverUrl": "/Portadas/GTTNEP009.png",
@@ -309,7 +309,7 @@
   },
   {
     "id": "012",
-    "gttn": "GTTNEP010",
+    "slug": "GTTNEP010",
     "title": "WE STILL HAVE BASS EP",
     "artist": "HEBRA & VANDERMOU",
     "coverUrl": "/Portadas/GTTNEP010.png",
@@ -331,7 +331,7 @@
   },
   {
     "id": "013",
-    "gttn": "GTTNEP011",
+    "slug": "GTTNEP011",
     "title": "SHUT UP EP",
     "artist": "HELIUM",
     "coverUrl": "/Portadas/GTTNEP011.png",
@@ -353,7 +353,7 @@
   },
   {
     "id": "014",
-    "gttn": "GTTNEP012",
+    "slug": "GTTNEP012",
     "title": "PRINCIPAL GATE EP",
     "artist": "MODERATE HATE",
     "coverUrl": "/Portadas/GTTNEP012.png",
@@ -372,9 +372,10 @@
         "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/02.Moderate%20Hate%20-%204AM.mp3?alt=media&token=4ae490a8-d1bb-4ff3-872c-617fb2bec57a"
       }
     ]
-  },{
+  },
+  {
     "id": "015",
-    "gttn": "GTTNEP013",
+    "slug": "GTTNEP013",
     "title": "UFO EP",
     "artist": "STATE OF DISORDER",
     "coverUrl": "/Portadas/GTTNEP013.png",
@@ -396,7 +397,7 @@
   },
   {
     "id": "016",
-    "gttn": "GTTNEP014",
+    "slug": "GTTNEP014",
     "title": "SKYCRAPER EP",
     "artist": "SUPER RUSH",
     "coverUrl": "/Portadas/GTTNEP014.png",
@@ -418,7 +419,7 @@
   },
   {
     "id": "017",
-    "gttn": "GTTNEP015",
+    "slug": "GTTNEP015",
     "title": "MOUNT RIDER EP",
     "artist": "IMPEX",
     "coverUrl": "/Portadas/GTTNEP015.png",
@@ -440,7 +441,7 @@
   },
   {
     "id": "018",
-    "gttn": "GTTNEP016",
+    "slug": "GTTNEP016",
     "title": "TIME TO FLY EP",
     "artist": "MV",
     "coverUrl": "/Portadas/GTTNEP016.png",
@@ -462,7 +463,7 @@
   },
   {
     "id": "019",
-    "gttn": "GTTNVA003",
+    "slug": "GTTNVA003",
     "title": "THE WINERY VA",
     "artist": "Various Artists",
     "coverUrl": "/Portadas/GTTNVA003.png",
@@ -496,7 +497,7 @@
   },
   {
     "id": "020",
-    "gttn": "GTTNLP001",
+    "slug": "GTTNLP001",
     "title": "METAPORPHOSIS LP",
     "artist": "BAD LEGS",
     "coverUrl": "/Portadas/GTTNLP001.png",
@@ -536,7 +537,7 @@
   },
   {
     "id": "021",
-    "gttn": "GTTNEP017",
+    "slug": "GTTNEP017",
     "title": "TRIBALERO EP",
     "artist": "HEBRA & VANDERMOU",
     "coverUrl": "/Portadas/GTTNEP017.png",
@@ -556,9 +557,9 @@
       }
     ]
   },
-    {
+  {
     "id": "022",
-    "gttn": "GTTNVA004",
+    "slug": "GTTNVA004",
     "title": "THE TABERN VA",
     "artist": "Various Artists",
     "coverUrl": "/Portadas/GTTNVA004.png",
@@ -592,7 +593,7 @@
   },
   {
     "id": "023",
-    "gttn": "GTTNEP018",
+    "slug": "GTTNEP018",
     "title": "MAOA EP",
     "artist": "CiDiaH",
     "coverUrl": "/Portadas/GTTNEP018.png",
@@ -612,4 +613,4 @@
       }
     ]
   }
-]
+  ]

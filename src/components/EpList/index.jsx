@@ -17,12 +17,12 @@ const EpList = () => {
     <S.EpGrid>
       {sortedEps.map((ep) => (
         <S.EpCard
-          key={ep.id}
+          key={ep.slug}
           coverUrl={ep.coverUrl}
-          onClick={() => handleEpClick(ep.id)}
+          onClick={() => handleEpClick(ep.slug)}
         >
           <S.EpInfo2>
-            <p>{ep.gttn}</p>
+            <p>{ep.slug}</p>
           </S.EpInfo2>
           <S.Overlay>
             <S.PlayIcon>▶</S.PlayIcon>
