@@ -17,10 +17,21 @@ const HomeCarousel = () => {
 
   const items = [
 
+
+    {
+      text: "CiDiaH - MAOA EP",
+      image: "Home/GTTNEP018_CIDIAH_MAOA_FULL.jpg",
+      tag: "new release",
+      link: "/releases/001",
+
+    },
+
+
+
     {
       text: "THE TAVERN VA",
       image: "Home/GTTNVA004.jpg",
-      tag: "new release",
+      tag: "release",
       link: "/releases/001",
 
     },
