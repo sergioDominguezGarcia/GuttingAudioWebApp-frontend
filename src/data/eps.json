@@ -1,6 +1,58 @@
 [
   {
     "id": "001",
+    "gttn": "GTTNVA001",
+    "title": "THE SUN VA",
+    "artist": "Various Artists",
+    "coverUrl": "/Portadas/GTTNVA001.png",
+    "purchaseUrl": "https://guttingaudio.bandcamp.com/album/gttnva001-the-sun",
+    "tracks": [
+      {
+        "id": "001-1",
+        "title": "Out Of Control - MANIATICS",
+        "artist": "MANIATICS",
+        "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/VA001.%20Maniatics%20-%20Out%20Of%20Control.mp3?alt=media&token=8e7cbc0a-aea9-49ce-b8d2-8dd89a46a83c"
+      },
+      {
+        "id": "001-2",
+        "title": "Black Dragon - FEARLESS",
+        "artist": "FEARLESS",
+        "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/VA002.%20Fearless%20-%20Black%20Dragon.mp3?alt=media&token=d6f58631-a795-43ce-94ab-9b71e662c892"
+      },
+      {
+        "id": "001-3",
+        "title": "Psicodelic Experience - QKHACK",
+        "artist": "QKHACK",
+        "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/VA003.%20Qkhack%20-%20Psicodelic%20Experience.mp3?alt=media&token=aafbe34f-38fc-4fcf-ab13-ff1c96b68a8c"
+      },
+      {
+        "id": "001-4",
+        "title": "Aftermath - MANCHA",
+        "artist": "MANCHA",
+        "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/VA004.%20Mancha%20-%20Aftermath.mp3?alt=media&token=e901a4e8-a0c5-4e74-bcc8-fee3dd929c68"
+      },
+      {
+        "id": "001-5",
+        "title": "Beta Decay - DAVID SYNTH",
+        "artist": "DAVID SYNTH",
+        "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/VA005.%20David%20Synth%20-%20Beta%20Decay.mp3?alt=media&token=f9226ec0-fd62-40f4-9cca-77bed89d4139"
+      },
+      {
+        "id": "001-6",
+        "title": "Mi Neurosis - HEBRA",
+        "artist": "HEBRA",
+        "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/VA006.%20Hebra%20-%20Mi%20Neurosis.mp3?alt=media&token=10196ab5-f663-474e-a852-8684bfa43f8a"
+      },
+      {
+        "id": "001-7",
+        "title": "Horfield - VANDERMOU",
+        "artist": "VANDERMOU",
+        "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/VA007.%20Vandermou%20-%20Horfield.mp3?alt=media&token=2774f643-0b6e-4c80-9c44-76635286c5c7"
+      }
+    ]
+  },
+  {
+    "id": "002",
     "gttn": "GTTNEP001",
     "title": "HIT ME DOWN EP",
     "artist": "MANIATICS",
@@ -8,13 +60,13 @@
     "purchaseUrl": "https://guttingaudio.bandcamp.com/album/gttnep001-maniatics-hit-me-down-ep",
     "tracks": [
       {
-        "id": "001-1",
+        "id": "002-1",
         "title": "Hit Me Down",
         "artist": "Maniatics",
         "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/01%20Maniatics%20-%20Hit%20Me%20Down.mp3?alt=media&token=7860d3f1-87dd-47f2-b1f3-ee78e66e35a7"
       },
       {
-        "id": "001-2",
+        "id": "002-2",
         "title": "Brutal Murder",
         "artist": "Maniatics",
         "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/02%20Maniatics%20-%20Brutal%20Murder.mp3?alt=media&token=f24af656-29db-44d5-a225-01f37950ecd4"
@@ -22,7 +74,7 @@
     ]
   },
   {
-    "id": "002",
+    "id": "003",
     "gttn": "GTTNEP002",
     "title": "RAMPAGE EP",
     "artist": "FEARLESS",
@@ -30,13 +82,13 @@
     "purchaseUrl": "https://guttingaudio.bandcamp.com/album/gttnep002-fearless-rampage-ep",
     "tracks": [
       {
-        "id": "002-1",
+        "id": "003-1",
         "title": "Rampage",
         "artist": "Fearless",
         "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/01.Fearless%20-%20Rampage.mp3?alt=media&token=4077885b-3e11-4811-936d-c6f48f00bcad"
       },
       {
-        "id": "002-2",
+        "id": "003-2",
         "title": "Daybreak",
         "artist": "Fearless",
         "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/02.Fearless%20-%20Daybreak.mp3?alt=media&token=5e4e1514-bf09-4908-ac68-5dd3d791af73"
@@ -44,7 +96,7 @@
     ]
   },
   {
-    "id": "003",
+    "id": "004",
     "gttn": "GTTNEP003",
     "title": "ASSAULT EP",
     "artist": "SUSPECT",
@@ -52,13 +104,13 @@
     "purchaseUrl": "https://guttingaudio.bandcamp.com/album/gttnep003-suspect-assault-ep",
     "tracks": [
       {
-        "id": "003-1",
+        "id": "004-1",
         "title": "Assault",
         "artist": "Suspect",
         "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/Suspect%20-%20Assault.mp3?alt=media&token=fa68bba9-3729-4e78-b5e5-fbe820b934b2"
       },
       {
-        "id": "003-2",
+        "id": "004-2",
         "title": "Gloom",
         "artist": "Suspect",
         "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/Suspect%20-%20Gloom.mp3?alt=media&token=407d3beb-abe0-48e8-994a-208f189cce5e"
@@ -66,7 +118,7 @@
     ]
   },
   {
-    "id": "004",
+    "id": "005",
     "gttn": "GTTNEP004",
     "title": "STRONGER THINGS EP",
     "artist": "QKHACK",
@@ -74,13 +126,13 @@
     "purchaseUrl": "https://guttingaudio.bandcamp.com/album/gttnep004-qkhack-stronger-things-ep",
     "tracks": [
       {
-        "id": "004-1",
+        "id": "005-1",
         "title": "Take Yours",
         "artist": "QKHack",
         "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/01%20QKhack%20-%20Take%20Yours.mp3?alt=media&token=33878512-3221-4916-9243-d5e5fd402113"
       },
       {
-        "id": "004-2",
+        "id": "005-2",
         "title": "Come Up (ft. Vandermou)",
         "artist": "QKHack",
         "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/02%20QKhack%20-%20Come%20up%20(ft.%20Vandermou).mp3?alt=media&token=1d157092-e2a7-4f17-86f1-d2a3e542be9e"
@@ -88,7 +140,7 @@
     ]
   },
   {
-    "id": "005",
+    "id": "006",
     "gttn": "GTTNEP005",
     "title": "BACKSPIN EP",
     "artist": "MANCHA",
@@ -96,13 +148,13 @@
     "purchaseUrl": "https://guttingaudio.bandcamp.com/album/gttnep005-mancha-backspin-ep",
     "tracks": [
       {
-        "id": "005-1",
+        "id": "006-1",
         "title": "Backspin",
         "artist": "Mancha",
         "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/Mancha%20-%20Backspin.mp3?alt=media&token=f7074fe1-c453-45d5-a659-ae2a3f162978"
       },
       {
-        "id": "005-2",
+        "id": "006-2",
         "title": "Dementis",
         "artist": "Mancha",
         "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/Macha%20-%20Dementis.mp3?alt=media&token=81d5ab9f-7c27-4366-9b21-fcbd9d5baab1"
@@ -110,7 +162,7 @@
     ]
   },
   {
-    "id": "006",
+    "id": "007",
     "gttn": "GTTNEP006",
     "title": "PUSH BUTTON EP",
     "artist": "HEBRA",
@@ -118,13 +170,13 @@
     "purchaseUrl": "https://guttingaudio.bandcamp.com/album/gttnep006-hebra-push-button-ep",
     "tracks": [
       {
-        "id": "006-1",
+        "id": "007-1",
         "title": "Push Button",
         "artist": "Hebra",
         "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/01.Hebra%20-%20Push%20Buttton.mp3?alt=media&token=911becf9-be66-48e7-a7e0-dddf77abb31a"
       },
       {
-        "id": "006-2",
+        "id": "007-2",
         "title": "Revolution",
         "artist": "Hebra",
         "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/02.Hebra%20-%20Revolution.mp3?alt=media&token=2a4914df-3d32-4dfa-89f8-32c0aa84eb6e"
@@ -132,7 +184,7 @@
     ]
   },
   {
-    "id": "007",
+    "id": "008",
     "gttn": "GTTNEP007",
     "title": "UNCLEAN EP",
     "artist": "DAVID SYNTH",
@@ -140,13 +192,13 @@
     "purchaseUrl": "https://guttingaudio.bandcamp.com/album/gttnep007-david-synth-unclean-ep",
     "tracks": [
       {
-        "id": "007-1",
+        "id": "008-1",
         "title": "Unclean",
         "artist": "David Synth",
         "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/Red%20Shark%20-%20Danger.mp3?alt=media&token=2d57bb7e-69a6-4b07-bcc7-d545b3fc69e6"
       },
       {
-        "id": "007-2",
+        "id": "008-2",
         "title": "Becquerel",
         "artist": "David Synth",
         "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/Red%20Shark%20-%20Shadows.mp3?alt=media&token=99ef8cc1-d83c-49d7-97c7-5b95a39ae96e"
@@ -154,7 +206,7 @@
     ]
   },
   {
-    "id": "008",
+    "id": "009",
     "gttn": "GTTNEP008",
     "title": "THE CATHEDRAL EP",
     "artist": "VANDERMOU",
@@ -162,13 +214,13 @@
     "purchaseUrl": "https://guttingaudio.bandcamp.com/album/gttnep008-vandermou-the-cathedral-ep",
     "tracks": [
       {
-        "id": "008-1",
+        "id": "009-1",
         "title": "The Cathedral",
         "artist": "Vandermou",
         "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/01.Vandermou%20-%20The%20Cathedral.mp3?alt=media&token=9285ca1a-3e16-4ecb-a748-c53e39efe8f9"
       },
       {
-        "id": "008-2",
+        "id": "009-2",
         "title": "Fuego",
         "artist": "Vandermou",
         "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/02.Vandermou%20ft%20Jennifly%20-%20Fuego.mp3?alt=media&token=f50f58b5-988d-410e-9d28-3363f0a28ea7"
@@ -176,7 +228,59 @@
     ]
   },
   {
-    "id": "009",
+    "id": "010",
+    "gttn": "GTTNVA002",
+    "title": "THE SUN REMIXES VA",
+    "artist": "Various Artists",
+    "coverUrl": "/Portadas/GTTNVA002.png",
+    "purchaseUrl": "https://guttingaudio.bandcamp.com/album/gttnva002-the-sun-remixes-va",
+    "tracks": [
+      {
+        "id": "010-1",
+        "title": "Out Of Control - MANIATICS (NICKBEE RMX)",
+        "artist": "MANIATICS",
+        "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/01.Maniatics%20-%20Out%20Of%20Control%20(%20NickBee%20Remix%20).mp3?alt=media&token=16825320-dc4a-40d4-9e98-0cf0afdcf8c7"
+      },
+      {
+        "id": "010-2",
+        "title": "Black Dragon - FEARLESS (IMPAK RMX)",
+        "artist": "FEARLESS",
+        "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/02.Fearless%20-%20Black%20Dragon%20(Impak%20Remix).mp3?alt=media&token=48d85a1f-c7c3-4567-9cfe-e1891a7ffe62"
+      },
+      {
+        "id": "010-3",
+        "title": "Psicodelic Experience - QKHACK (DUB ELEMENTS RMX)",
+        "artist": "QKHACK",
+        "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/03.QKhack%20-%20Psicodelic%20Exprecience%20(Dub%20Elements%20Remix).mp3?alt=media&token=2919e531-09d6-452c-a9c5-5f951691db65"
+      },
+      {
+        "id": "010-4",
+        "title": "Aftermath - MANCHA (KURSIVA RMX)",
+        "artist": "MANCHA",
+        "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/04.Mancha%20-%20Aftermath%20(Kursiva%20Remix).mp3?alt=media&token=f8a4df59-ddd4-4a57-8267-970c8369bb88"
+      },
+      {
+        "id": "010-5",
+        "title": "Beta Decay - DAVID SYNTH (BLACK BARREL RMX)",
+        "artist": "DAVID SYNTH",
+        "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/05.David%20Synth%20-%20Beta%20Decay%20(Black%20Barrel%20Remix).mp3?alt=media&token=f5e7d6a8-5ca9-4a18-9dee-269e152f3606"
+      },
+      {
+        "id": "010-6",
+        "title": "Mi Neurosis - HEBRA (CZA RMX)",
+        "artist": "HEBRA",
+        "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/06.Hebra%20-%20Mi%20Neurosis%20(CZA%20Remix).mp3?alt=media&token=78243123-f7d5-41fc-8696-f9c73ef0af6e"
+      },
+      {
+        "id": "010-7",
+        "title": "Horfield - VANDERMOU (SAVE THE RAVE RMX)",
+        "artist": "VANDERMOU",
+        "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/07.Vandermou%20-%20Horfield%20(Save%20The%20Rave%20Remix).mp3?alt=media&token=e4791ce8-9783-44ab-9380-abe02acd6d6e"
+      }
+    ]
+  },
+  {
+    "id": "011",
     "gttn": "GTTNEP009",
     "title": "ANOTHER BEGINNING EP",
     "artist": "SETE",
@@ -184,19 +288,19 @@
     "purchaseUrl": "https://guttingaudio.bandcamp.com/album/gttnep009-sete-another-beginning-ep",
     "tracks": [
       {
-        "id": "009-1",
+        "id": "011-1",
         "title": "Another Beginning",
         "artist": "Sete",
         "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/01.SETE%20-%20Another%20Beginning.mp3?alt=media&token=1191fa88-38e2-4fd5-be09-510f95d070e4"
       },
       {
-        "id": "009-2",
+        "id": "011-2",
         "title": "Meditation",
         "artist": "Sete",
         "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/02.SETE%20-%20Meditation.mp3?alt=media&token=12b38746-786d-4f17-9ae3-960734c8bb10"
       },
       {
-        "id": "009-3",
+        "id": "011-3",
         "title": "Perfect World",
         "artist": "Sete",
         "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/03.SETE%20-%20Perfect%20World.mp3?alt=media&token=e6778e16-2348-4a40-a727-21a12c0585b5"
@@ -204,7 +308,7 @@
     ]
   },
   {
-    "id": "010",
+    "id": "012",
     "gttn": "GTTNEP010",
     "title": "WE STILL HAVE BASS EP",
     "artist": "HEBRA & VANDERMOU",
@@ -212,13 +316,13 @@
     "purchaseUrl": "https://guttingaudio.bandcamp.com/album/gttnep010-hebra-vandermou-we-still-have-bass-ep",
     "tracks": [
       {
-        "id": "010-1",
+        "id": "012-1",
         "title": "Guitarra",
         "artist": "Hebra & Vandermou",
         "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/01.Hebra%20%26%20Vandermou%20-%20Guitarra.mp3?alt=media&token=de39fe14-3283-4e1a-a3a7-5e9ce4ea5011"
       },
       {
-        "id": "010-2",
+        "id": "012-2",
         "title": "We Still Have Bass",
         "artist": "Hebra & Vandermou",
         "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/02.Hebra%20%26%20Vandermou%20-%20We%20Still%20Have%20Bass.mp3?alt=media&token=93d2f839-9648-4a6b-82e9-a5379429fbe3"
@@ -226,7 +330,7 @@
     ]
   },
   {
-    "id": "011",
+    "id": "013",
     "gttn": "GTTNEP011",
     "title": "SHUT UP EP",
     "artist": "HELIUM",
@@ -234,13 +338,13 @@
     "purchaseUrl": "https://guttingaudio.bandcamp.com/album/gttnep011-helium-shut-up-ep",
     "tracks": [
       {
-        "id": "011-1",
+        "id": "013-1",
         "title": "Shut Up",
         "artist": "Helium",
         "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/Nemesis%20-%20Oblivion.mp3?alt=media&token=1c9e7319-2b97-46f1-8b0e-08d8b32f9dfb"
       },
       {
-        "id": "011-2",
+        "id": "013-2",
         "title": "If You",
         "artist": "Helium",
         "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/Nemesis%20-%20Descent.mp3?alt=media&token=234abed5-0b3b-4f6a-986b-b4fc09c9a07e"
@@ -248,7 +352,7 @@
     ]
   },
   {
-    "id": "012",
+    "id": "014",
     "gttn": "GTTNEP012",
     "title": "PRINCIPAL GATE EP",
     "artist": "MODERATE HATE",
@@ -256,21 +360,20 @@
     "purchaseUrl": "https://guttingaudio.bandcamp.com/album/gttnep012-moderate-hate-principal-gate-ep",
     "tracks": [
       {
-        "id": "012-1",
+        "id": "014-1",
         "title": "Gate",
         "artist": "Moderate Hate",
         "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/01.Moderate%20Hate%20%20-%20Gate.mp3?alt=media&token=bcd29e81-37df-43df-ab78-d1dffffe3cac"
       },
       {
-        "id": "012-2",
+        "id": "014-2",
         "title": "4AM",
         "artist": "Moderate Hate",
         "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/02.Moderate%20Hate%20-%204AM.mp3?alt=media&token=4ae490a8-d1bb-4ff3-872c-617fb2bec57a"
       }
     ]
-  },
-  {
-    "id": "013",
+  },{
+    "id": "015",
     "gttn": "GTTNEP013",
     "title": "UFO EP",
     "artist": "STATE OF DISORDER",
@@ -278,13 +381,13 @@
     "purchaseUrl": "https://guttingaudio.bandcamp.com/album/gttnep013-state-of-disorder-ufo-ep",
     "tracks": [
       {
-        "id": "013-1",
+        "id": "015-1",
         "title": "UFO",
         "artist": "State Of Disorder",
         "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/01.State%20of%20Disorder%20-%20UFO.mp3?alt=media&token=a3e4e3e2-d332-40e2-bf0b-a9bc3a7c217e"
       },
       {
-        "id": "013-2",
+        "id": "015-2",
         "title": "Dementia",
         "artist": "State Of Disorder",
         "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/02.State%20of%20Disorder%20-%20Dementia.mp3?alt=media&token=e105b28d-b87b-487a-9c52-071666535bf9"
@@ -292,7 +395,7 @@
     ]
   },
   {
-    "id": "014",
+    "id": "016",
     "gttn": "GTTNEP014",
     "title": "SKYCRAPER EP",
     "artist": "SUPER RUSH",
@@ -300,13 +403,13 @@
     "purchaseUrl": "https://guttingaudio.bandcamp.com/album/gttnep014-super-rush-skycraper-ep",
     "tracks": [
       {
-        "id": "014-1",
+        "id": "016-1",
         "title": "Skycraper",
         "artist": "Super Rush",
         "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/01.Super%20Rush%20-%20Skycraper.mp3?alt=media&token=458fb4b6-8612-4693-bea0-d60349caaf8f"
       },
       {
-        "id": "014-2",
+        "id": "016-2",
         "title": "Deep Space",
         "artist": "Super Rush",
         "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/02.Super%20Rush%20-%20Deep%20Space.mp3?alt=media&token=e07c7efa-0b7c-48ab-87a9-c6641eefa1a7"
@@ -314,7 +417,7 @@
     ]
   },
   {
-    "id": "015",
+    "id": "017",
     "gttn": "GTTNEP015",
     "title": "MOUNT RIDER EP",
     "artist": "IMPEX",
@@ -322,13 +425,13 @@
     "purchaseUrl": "https://guttingaudio.bandcamp.com/album/gttnep015-impex-mount-rider-ep",
     "tracks": [
       {
-        "id": "015-1",
+        "id": "017-1",
         "title": "Mount Rider",
         "artist": "Impex",
         "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/01.Impex%20-%20Mount%20Rider.mp3?alt=media&token=352be2f7-1833-4c1d-9c1c-febff8249d4b"
       },
       {
-        "id": "015-2",
+        "id": "017-2",
         "title": "Snow White",
         "artist": "Impex",
         "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/02.Impex%20-%20Snow%20White.mp3?alt=media&token=008a90d2-01cf-4799-9ad4-ef7b749368f3"
@@ -336,7 +439,7 @@
     ]
   },
   {
-    "id": "016",
+    "id": "018",
     "gttn": "GTTNEP016",
     "title": "TIME TO FLY EP",
     "artist": "MV",
@@ -344,13 +447,13 @@
     "purchaseUrl": "https://guttingaudio.bandcamp.com/album/gttnep016-mv-time-to-fly-ep",
     "tracks": [
       {
-        "id": "016-1",
+        "id": "018-1",
         "title": "Time to Fly",
         "artist": "MV",
         "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/01.MV%20-%20Time%20to%20Fly.mp3?alt=media&token=7f767df0-2db2-4f11-9c3f-8f3d004dabf4"
       },
       {
-        "id": "016-2",
+        "id": "018-2",
         "title": "Zara",
         "artist": "MV",
         "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/02.MV%20-%20Zara.mp3?alt=media&token=a755953e-a844-4481-a9b0-0459500b3a8e"
@@ -358,51 +461,41 @@
     ]
   },
   {
-    "id": "017",
-    "gttn": "GTTNEP017",
-    "title": "TRIBALERO EP",
-    "artist": "HEBRA & VANDERMOU",
-    "coverUrl": "/Portadas/GTTNEP017.png",
-    "purchaseUrl": "https://guttingaudio.bandcamp.com/album/gttnep017-hebra-vandermou-tribalero",
-    "tracks": [
-      {
-        "id": "017-1",
-        "title": "Tribalero",
-        "artist": "HEBRA & VANDERMOU",
-        "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/01Hebra%20%26%20Vandermou%20-%20Tribalero.mp3?alt=media&token=f46aba05-682f-4e1e-8c21-1f590caae017"
-      },
-      {
-        "id": "017-2",
-        "title": "Crazy",
-        "artist": "HEBRA & VANDERMOU",
-        "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/02Hebra%20%26%20Vandermou%20-%20Crazy.mp3?alt=media&token=67d7fd73-b279-4a4b-ab76-84f8ea4e7252"
-      }
-    ]
-  },
-  {
-    "id": "018",
-    "gttn": "GTTNEP018",
-    "title": "MAOA EP",
-    "artist": "CiDiaH",
-    "coverUrl": "/Portadas/GTTNEP018.png",
-    "purchaseUrl": "https://soundcloud.com/gutting-audio/sets/maoaep",
-    "tracks": [
-      {
-        "id": "018-1",
-        "title": "Dub Mind",
-        "artist": "CiDiaH",
-        "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/01.CiDiaH%20-%20Dub%20Mind.mp3?alt=media&token=b76cb05d-8af3-4f15-ad92-f56841a3657f"
-      },
-      {
-        "id": "018-2",
-        "title": "Requiem for a Death",
-        "artist": "CiDiaH",
-        "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/02.CiDiaH%20-%20Requiem%20for%20a%20Death.mp3?alt=media&token=efa07238-7811-4cd7-bba3-6c2dfa407c6c"
-      }
-    ]
-  },
-  {
     "id": "019",
+    "gttn": "GTTNVA003",
+    "title": "THE WINERY VA",
+    "artist": "Various Artists",
+    "coverUrl": "/Portadas/GTTNVA003.png",
+    "purchaseUrl": "https://guttingaudio.bandcamp.com/album/gttnva003-the-winery",
+    "tracks": [
+      {
+        "id": "019-1",
+        "title": "Destroy - HACKWAVES",
+        "artist": "HACKWAVES",
+        "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/01.HackWaves%20-%20Destroy.mp3?alt=media&token=47092749-30ed-4f6f-8343-453557fc0f0d"
+      },
+      {
+        "id": "019-2",
+        "title": "Dystopian Generation - DAVID SYNTH",
+        "artist": "DAVID SYNTH",
+        "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/02.David%20Synth%20-%20Dystopian%20Generation.mp3?alt=media&token=72854a6c-fe7a-4a7b-8bba-c6c004da2af2"
+      },
+      {
+        "id": "019-3",
+        "title": "Valhalla - MODERATE HATE",
+        "artist": "MODERATE HATE",
+        "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/03.Moderate%20Hate%20-%20Valhalla.mp3?alt=media&token=8fa8a765-b54b-4997-8bff-ffa4377e99da"
+      },
+      {
+        "id": "019-4",
+        "title": "Distortion in the Veins - CiDiaH",
+        "artist": "CiDiaH",
+        "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/04.CiDiaH%20-Distortion%20in%20the%20Veins.mp3?alt=media&token=1beb1a38-8a82-4b0c-b5e7-f01e3008daba"
+      }
+    ]
+  },
+  {
+    "id": "020",
     "gttn": "GTTNLP001",
     "title": "METAPORPHOSIS LP",
     "artist": "BAD LEGS",
@@ -410,31 +503,31 @@
     "purchaseUrl": "https://guttingaudio.bandcamp.com/album/gttnep016-mv-time-to-fly-ep",
     "tracks": [
       {
-        "id": "019-1",
+        "id": "020-1",
         "title": "Metamorphosis",
         "artist": "BAD LEGS",
         "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/1%20Bad%20Legs%20-%20Metamorphosis.mp3?alt=media&token=dbedcc74-f586-4497-a35a-e514703ed0a7"
       },
       {
-        "id": "019-2",
+        "id": "020-2",
         "title": "The Exorcist",
         "artist": "BAD LEGS",
         "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/2%20Bad%20Legs%20%20-%20The%20Exorcist.mp3?alt=media&token=84b30a7c-d663-4bab-9fcb-028a50309529"
       },
       {
-        "id": "019-3",
+        "id": "020-3",
         "title": "Venom",
         "artist": "BAD LEGS",
         "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/3%20Bad%20Legs%20-%20Venom.mp3?alt=media&token=58e0ca24-e407-49e5-9c6d-3af6fb5f1a6b"
       },
       {
-        "id": "019-4",
+        "id": "020-4",
         "title": "Cyberneuro",
         "artist": "BAD LEGS",
         "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/4%20Bad%20Legs%20%20-%20Cyberneuro.mp3?alt=media&token=49ffaed4-76f7-437d-bf9c-61ba76e09b47"
       },
       {
-        "id": "019-5",
+        "id": "020-5",
         "title": "Tension",
         "artist": "BAD LEGS",
         "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/5%20Bad%20Legs%20-%20Tension%20.mp3?alt=media&token=1868a51b-f4ca-4bac-a6ea-c88b13adc21a"
@@ -442,54 +535,80 @@
     ]
   },
   {
-    "id": "020",
-    "gttn": "GTTNVA001",
-    "title": "THE SUN LP",
-    "artist": "Various Artists",
-    "coverUrl": "/Portadas/GTTNVA001.png",
-    "purchaseUrl": "https://guttingaudio.bandcamp.com/album/gttnva001-the-sun",
+    "id": "021",
+    "gttn": "GTTNEP017",
+    "title": "TRIBALERO EP",
+    "artist": "HEBRA & VANDERMOU",
+    "coverUrl": "/Portadas/GTTNEP017.png",
+    "purchaseUrl": "https://guttingaudio.bandcamp.com/album/gttnep017-hebra-vandermou-tribalero",
     "tracks": [
       {
-        "id": "020-1",
-        "title": "Out Of Control (NICKBEE RMX)",
-        "artist": "MANIATICS",
-        "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/01.Maniatics%20-%20Out%20Of%20Control%20(%20NickBee%20Remix%20).mp3?alt=media&token=16825320-dc4a-40d4-9e98-0cf0afdcf8c7"
+        "id": "021-1",
+        "title": "Tribalero",
+        "artist": "HEBRA & VANDERMOU",
+        "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/01Hebra%20%26%20Vandermou%20-%20Tribalero.mp3?alt=media&token=f46aba05-682f-4e1e-8c21-1f590caae017"
       },
       {
-        "id": "020-2",
-        "title": "Black Dragon (IMPAK RMX)",
-        "artist": "FEARLESS",
-        "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/02.Fearless%20-%20Black%20Dragon%20(Impak%20Remix).mp3?alt=media&token=48d85a1f-c7c3-4567-9cfe-e1891a7ffe62"
+        "id": "021-2",
+        "title": "Crazy",
+        "artist": "HEBRA & VANDERMOU",
+        "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/02Hebra%20%26%20Vandermou%20-%20Crazy.mp3?alt=media&token=67d7fd73-b279-4a4b-ab76-84f8ea4e7252"
+      }
+    ]
+  },
+    {
+    "id": "022",
+    "gttn": "GTTNVA004",
+    "title": "THE TABERN VA",
+    "artist": "Various Artists",
+    "coverUrl": "/Portadas/GTTNVA004.png",
+    "purchaseUrl": "",
+    "tracks": [
+      {
+        "id": "022-1",
+        "title": "Move and Destroy - MV",
+        "artist": "MV",
+        "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/VA004-01.%20MV%20-%20Move%20and%20Destroy.mp3?alt=media&token=f87b8d6c-3c73-4602-9f0a-0c0ee2ac630e"
       },
       {
-        "id": "020-3",
-        "title": "Psicodelic Experience (DUB ELEMENTS RMX)",
-        "artist": "QKHACK",
-        "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/03.QKhack%20-%20Psicodelic%20Exprecience%20(Dub%20Elements%20Remix).mp3?alt=media&token=2919e531-09d6-452c-a9c5-5f951691db65"
+        "id": "022-2",
+        "title": "Awaken - SETE ",
+        "artist": "SETE",
+        "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/VA004-02.%20Sete%20-%20Awaken.mp3?alt=media&token=03c2adfb-7e48-44f5-a946-dc649020f796"
       },
       {
-        "id": "020-4",
-        "title": "Aftermath (KURSIVA RMX)",
-        "artist": "MANCHA",
-        "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/04.Mancha%20-%20Aftermath%20(Kursiva%20Remix).mp3?alt=media&token=f8a4df59-ddd4-4a57-8267-970c8369bb88"
-      },
-      {
-        "id": "020-5",
-        "title": "Beta Decay (BLACK BARREL RMX)",
-        "artist": "DAVID SYNTH",
-        "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/05.David%20Synth%20-%20Beta%20Decay%20(Black%20Barrel%20Remix).mp3?alt=media&token=f5e7d6a8-5ca9-4a18-9dee-269e152f3606"
-      },
-      {
-        "id": "020-6",
-        "title": "Mi Neurosis (CZA RMX)",
-        "artist": "HEBRA",
-        "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/06.Hebra%20-%20Mi%20Neurosis%20(CZA%20Remix).mp3?alt=media&token=78243123-f7d5-41fc-8696-f9c73ef0af6e"
-      },
-      {
-        "id": "020-7",
-        "title": "Horfield (SAVE THE RAVE RMX)",
+        "id": "022-3",
+        "title": "Our Chance - VANDERMOU",
         "artist": "VANDERMOU",
-        "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/07.Vandermou%20-%20Horfield%20(Save%20The%20Rave%20Remix).mp3?alt=media&token=e4791ce8-9783-44ab-9380-abe02acd6d6e"
+        "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/VA004-03.%20Vandermou%20-%20Our%20Chance.mp3?alt=media&token=366d9f04-3fed-4b4f-8f70-439acce9324e"
+      },
+      {
+        "id": "022-4",
+        "title": "Moving Forward - NEOCRESS",
+        "artist": "NEOCRESS",
+        "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/VA004-04.%20Neocress%20-%20Moving%20Forward.mp3?alt=media&token=bc1e40d9-396f-4f0b-bb64-1a40e3826c3f"
+      }
+    ]
+  },
+  {
+    "id": "023",
+    "gttn": "GTTNEP018",
+    "title": "MAOA EP",
+    "artist": "CiDiaH",
+    "coverUrl": "/Portadas/GTTNEP018.png",
+    "purchaseUrl": "https://soundcloud.com/gutting-audio/sets/maoaep",
+    "tracks": [
+      {
+        "id": "023-1",
+        "title": "Dub Mind",
+        "artist": "CiDiaH",
+        "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/01.CiDiaH%20-%20Dub%20Mind.mp3?alt=media&token=b76cb05d-8af3-4f15-ad92-f56841a3657f"
+      },
+      {
+        "id": "023-2",
+        "title": "Requiem for a Death",
+        "artist": "CiDiaH",
+        "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/02.CiDiaH%20-%20Requiem%20for%20a%20Death.mp3?alt=media&token=efa07238-7811-4cd7-bba3-6c2dfa407c6c"
       }
     ]
   }
