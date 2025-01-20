@@ -407,5 +407,90 @@
           "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/02.MV%20-%20Zara.mp3?alt=media&token=a755953e-a844-4481-a9b0-0459500b3a8e"
       }
     ]
-  }
+  },
+    {
+      "id": "017",
+      "gttn": "GTTNEP017",
+      "title": "TRIBALERO EP",
+      "artist": "HEBRA & VANDERMOU",
+      "coverUrl": "/Portadas/GTTNEP017.png",
+      "purchaseUrl": "https://guttingaudio.bandcamp.com/album/gttnep017-hebra-vandermou-tribalero",
+      "tracks": [
+        {
+          "id": "017-1",
+          "title": "Tribalero",
+          "artist": "HEBRA & VANDERMOU",
+          "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/01Hebra%20%26%20Vandermou%20-%20Tribalero.mp3?alt=media&token=f46aba05-682f-4e1e-8c21-1f590caae017"
+        },
+        {
+          "id": "017-2",
+          "title": "Crazy",
+          "artist": "HEBRA & VANDERMOU",
+          "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/02Hebra%20%26%20Vandermou%20-%20Crazy.mp3?alt=media&token=67d7fd73-b279-4a4b-ab76-84f8ea4e7252"
+        }
+      ]
+    },
+    {
+      "id": "018",
+      "gttn": "GTTNEP018",
+      "title": "MAOA EP",
+      "artist": "CiDiaH",
+      "coverUrl": "/Portadas/GTTNEP018.png",
+      "purchaseUrl": "https://soundcloud.com/gutting-audio/sets/maoaep",
+      "tracks": [
+        {
+          "id": "018-1",
+          "title": "Dub Mind",
+          "artist": "CiDiaH",
+          "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/01.CiDiaH%20-%20Dub%20Mind.mp3?alt=media&token=b76cb05d-8af3-4f15-ad92-f56841a3657f"
+        },
+        {
+          "id": "018-2",
+          "title": "Requiem for a Death",
+          "artist": "CiDiaH",
+          "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/02.CiDiaH%20-%20Requiem%20for%20a%20Death.mp3?alt=media&token=efa07238-7811-4cd7-bba3-6c2dfa407c6c"
+        }
+      ]
+    },
+        {
+          "id": "019",
+          "gttn": "GTTNLP001",
+          "title": "METAPORPHOSIS LP",
+          "artist": "BAD LEGS",
+          "coverUrl": "/Portadas/GTTNLP001.png",
+          "purchaseUrl": "https://guttingaudio.bandcamp.com/album/gttnep016-mv-time-to-fly-ep",
+          "tracks": [
+            {
+              "id": "019-1",
+              "title": "Metamorphosis",
+              "artist": "BAD LEGS",
+              "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/1%20Bad%20Legs%20-%20Metamorphosis.mp3?alt=media&token=dbedcc74-f586-4497-a35a-e514703ed0a7"
+            },
+            {
+              "id": "019-2",
+              "title": "The Exorcist",
+              "artist": "BAD LEGS",
+              "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/2%20Bad%20Legs%20%20-%20The%20Exorcist.mp3?alt=media&token=84b30a7c-d663-4bab-9fcb-028a50309529"
+            },
+            {
+              "id": "019-3",
+              "title": "Venom",
+              "artist": "BAD LEGS",
+              "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/3%20Bad%20Legs%20-%20Venom.mp3?alt=media&token=58e0ca24-e407-49e5-9c6d-3af6fb5f1a6b"
+            },
+            {
+              "id": "019-4",
+              "title": "Cyberneuro",
+              "artist": "BAD LEGS",
+              "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/4%20Bad%20Legs%20%20-%20Cyberneuro.mp3?alt=media&token=49ffaed4-76f7-437d-bf9c-61ba76e09b47"
+            },
+            {
+              "id": "019-5",
+              "title": "Tension",
+              "artist": "BAD LEGS",
+              "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/5%20Bad%20Legs%20-%20Tension%20.mp3?alt=media&token=1868a51b-f4ca-4bac-a6ea-c88b13adc21a"
+            }
+          ]
+        }
 ]
+
