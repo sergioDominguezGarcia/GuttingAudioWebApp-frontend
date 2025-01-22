@@ -45,6 +45,7 @@ export const artistsData = {
   },
   Hackwaves: {
     name: 'Hackwaves',
+    aka: 'Qkhack',
     image: hackwaves,
     bio: 'DJ/Producer Drum&Bass Neurofunk Music.Fernando Leal aka Hackwaves started this new project in 2022. Influenced by harder styles like Hard Dnb, Crossbreed/Hardcore, he decided to transform his sounds into a more NeuroFunk style, with more synthetic bass lines and with powerfull´s drums.Always linked to the scene, he has shared a booth with great international artists (Limewax, Audio, Aeph, Agressor Bunx, June Miller, DJ Hidden, Technical Itch, Panacea, Counterstrike, Hallucinator, Cooh, Dub Elements, Impak, eDUB... ). ',
     socialLinks: {

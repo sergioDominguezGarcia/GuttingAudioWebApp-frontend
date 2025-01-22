@@ -35,7 +35,7 @@ export const artists = [
     slug: 'DavidSynth',
   },
   {
-    id: 'Hackwaves',
+    id: 'Hackwaves', 
     name: 'Hackwaves',
     image: hackwaves,
     slug: 'Hackwaves',

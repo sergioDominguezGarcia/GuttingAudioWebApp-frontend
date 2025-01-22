@@ -92,6 +92,8 @@ export const EpInfo = styled.div`
   color: rgba(255, 255, 255, 0.8);
   text-align: center;
   padding: 10px;
+  /* margin-left: 2rem;
+  margin-right: 2rem; */
   h3 {
     font-family: kaneda-gothic-extrabold;
     letter-spacing: 0.09em;
@@ -104,7 +106,7 @@ export const EpInfo = styled.div`
   p {
     font-family: 'kaneda-gothic-light';
     margin: 0;
-    font-size: 1.1vw;
+    font-size: 1.0vw;
     letter-spacing: 0.13em;
     text-shadow: 1px 1px 2px black;
   }

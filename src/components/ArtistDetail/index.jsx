@@ -1,30 +1,42 @@
 import React from 'react'
 import styled from 'styled-components'
-import { useParams } from 'react-router-dom'
+import { useParams, useNavigate } from 'react-router-dom'
 import { artistsData } from './constants'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faInstagram, faSoundcloud } from '@fortawesome/free-brands-svg-icons'
-import eps from "../../data/eps.json"
+import eps from '../../data/eps.json'
 import videos from '../../data/videos.json'
 const ArtistDetailview = () => {
   const openLink = (url) => {
     window.open(url, '_blank', 'noopener,noreferrer')
   }
   const { slug } = useParams() // Recibe el slug desde la URL
+  const navigate = useNavigate()
   const artist = artistsData[slug] // Busca los datos del artista
 
   if (!artist) {
     return <p>Artista no encontrado</p>
   }
 
-  const filteredEps = eps.filter(
-    (ep) => ep.artist.toLowerCase() === artist.name.toLowerCase() // Comparación en minúsculas
+  // Crear un array con el nombre y el alias del artista en minúsculas
+  const artistNames = [artist.name.toLowerCase()]
+  if (artist.aka) {
+    artistNames.push(artist.aka.toLowerCase())
+  }
+
+  // Filtrar EPs que coincidan con el nombre o el alias
+  const filteredEps = eps.filter((ep) =>
+    artistNames.includes(ep.artist.toLowerCase())
   )
 
-  // Filtrar videos asociados al artista (por tags)
+  // Filtrar videos asociados al artista (por tags que coincidan con el nombre o alias)
   const filteredVideos = videos.filter((video) =>
-    video.tags.some((tag) => tag.toLowerCase() === artist.name.toLowerCase())
+    video.tags.some((tag) => artistNames.includes(tag.toLowerCase()))
   )
+
+  const goToEpDetail = (epId) => {
+    navigate(`/eps/${epId}`) // Navegar a la vista de detalle del EP
+  }
 
   return (
     <ArtistDetail>
@@ -38,12 +50,13 @@ const ArtistDetailview = () => {
           <Releases className="desktop-releases">
             {filteredEps.length > 0 && <ReleasesTitle>Releases</ReleasesTitle>}
             {filteredEps.map((ep) => (
-              <EpCover key={ep.id}>
+              <EpCover key={ep.id} onClick={() => goToEpDetail(ep.id)}>
                 <img
                   src={ep.coverUrl}
                   alt={`Portada de ${ep.title}`}
                   style={{ width: '20%', height: 'auto' }}
                 />
+                <EpTitle>{ep.title}</EpTitle>
               </EpCover>
             ))}
           </Releases>
@@ -147,7 +160,7 @@ const Header = styled.div`
 const Content = styled.div`
   display: flex;
   width: 100%;
-  border: 1px solid white;
+  
   @media (max-width: 768px) {
     flex-direction: column;
     align-items: center;
@@ -172,7 +185,6 @@ const Releases = styled.div`
   margin-top: 20px;
   display: flex;
 
- 
   /* border: 1px solid green; */
   &.desktop-releases {
     display: block; /* Visible por defecto en escritorio */
@@ -198,14 +210,17 @@ const ReleasesTitle = styled.h4`
   margin-top: 0rem;
   margin-bottom: 0rem;
   text-transform: uppercase;
-
-
-
 `
 
 const EpCover = styled.div`
   justify-content: center;
   margin-top: 20px;
+`
+const EpTitle = styled.p`
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  /* text-align: center; */
+  color: #fff;
 `
 
 const ArtistBio = styled.div`
