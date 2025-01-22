@@ -5,7 +5,7 @@ import { artistsData } from './constants'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faInstagram, faSoundcloud } from '@fortawesome/free-brands-svg-icons'
 import eps from "../../data/eps.json"
-
+import videos from '../../data/videos.json'
 const ArtistDetailview = () => {
   const openLink = (url) => {
     window.open(url, '_blank', 'noopener,noreferrer')
@@ -19,6 +19,11 @@ const ArtistDetailview = () => {
 
   const filteredEps = eps.filter(
     (ep) => ep.artist.toLowerCase() === artist.name.toLowerCase() // Comparación en minúsculas
+  )
+
+  // Filtrar videos asociados al artista (por tags)
+  const filteredVideos = videos.filter((video) =>
+    video.tags.some((tag) => tag.toLowerCase() === artist.name.toLowerCase())
   )
 
   return (
@@ -51,14 +56,30 @@ const ArtistDetailview = () => {
             <FontAwesomeIcon
               onClick={() => openLink(artist.socialLinks.instagram)}
               icon={faInstagram}
-              style={{ cursor: 'pointer', height: '2rem' }}
+              style={{ cursor: 'pointer', height: '4rem' }}
             />
             <FontAwesomeIcon
               onClick={() => openLink(artist.socialLinks.soundcloud)}
               icon={faSoundcloud}
-              style={{ cursor: 'pointer', height: '2rem' }}
+              style={{ cursor: 'pointer', height: '4rem' }}
             />
           </SocialLinks>
+          <VideosSection>
+            {filteredVideos.length > 0 && <ReleasesTitle>Videos</ReleasesTitle>}
+            {filteredVideos.map((video, index) => (
+              <VideoItem key={index}>
+                <h3>{video.name}</h3>
+                <iframe
+                  src={video.url}
+                  title={video.name}
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  playsInline
+                ></iframe>
+              </VideoItem>
+            ))}
+          </VideosSection>
           <Releases className="mobile-releases">
             {filteredEps.length > 0 && <ReleasesTitle>Releases</ReleasesTitle>}
             {filteredEps.map((ep) => (
@@ -126,6 +147,7 @@ const Header = styled.div`
 const Content = styled.div`
   display: flex;
   width: 100%;
+  border: 1px solid white;
   @media (max-width: 768px) {
     flex-direction: column;
     align-items: center;
@@ -148,7 +170,10 @@ const ArtistImage = styled.img`
 
 const Releases = styled.div`
   margin-top: 20px;
+  display: flex;
 
+ 
+  /* border: 1px solid green; */
   &.desktop-releases {
     display: block; /* Visible por defecto en escritorio */
     @media (max-width: 768px) {
@@ -216,6 +241,7 @@ const LeftBox = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  /* border: 1px solid green; */
   @media (max-width: 768px) {
     width: 100%;
   }
@@ -226,8 +252,57 @@ const RightBox = styled.div`
   flex-direction: column;
   align-items: center;
   width: 50%;
+  position: relative;
   @media (max-width: 768px) {
     width: 100%;
     order: 2;
   }
+`
+const VideosSection = styled.div`
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  iframe {
+    border-radius: 8px;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border: 1px solid #333;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      transform: scale(1.02);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    }
+  }
+
+  h3 {
+    color: #fff;
+    font-size: 18px;
+    margin: 10px 0 0;
+  }
+
+  @media (max-width: 768px) {
+    iframe {
+      aspect-ratio: 16 / 9;
+    }
+
+    h3 {
+      font-size: 16px;
+    }
+  }
+`
+
+const VideoItem = styled.div`
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  background: #1a1a1a;
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
 `

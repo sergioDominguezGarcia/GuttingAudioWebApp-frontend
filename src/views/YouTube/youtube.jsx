@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-
+  import videos from '../../data/videos.json'
 
 const Container = styled.div`
   margin-top: 8vh;
@@ -95,11 +95,11 @@ const VideoItem = styled.div`
 
 const Youtube = () => {
 
-  const videos = [
-    { name: 'Gutting Audio Showcase 001 - VANDERMOU x DAVID SYNTH x HACKWAVES x SETE', url: 'https://www.youtube-nocookie.com/embed/9e8iQoGAFzI'
- },
+  // const videos = [
+  //   { name: 'Gutting Audio Showcase 001 - VANDERMOU x DAVID SYNTH x HACKWAVES x SETE', url: 'https://www.youtube-nocookie.com/embed/9e8iQoGAFzI'
+  // },
 
-  ];
+  // ];
 
 
 
