@@ -92,8 +92,8 @@ export const EpInfo = styled.div`
   color: rgba(255, 255, 255, 0.8);
   text-align: center;
   padding: 10px;
-  /* margin-left: 2rem;
-  margin-right: 2rem; */
+  justify-content: center;
+  /* margin-right: 2rem;  */
   h3 {
     font-family: kaneda-gothic-extrabold;
     letter-spacing: 0.09em;
@@ -106,7 +106,7 @@ export const EpInfo = styled.div`
   p {
     font-family: 'kaneda-gothic-light';
     margin: 0;
-    font-size: 1.0vw;
+    font-size: 1vw;
     letter-spacing: 0.13em;
     text-shadow: 1px 1px 2px black;
   }
@@ -146,6 +146,11 @@ export const EpInfo = styled.div`
     }
   }
 `
+export const ArtistName = styled.div`
+  padding: 0px 20px;
+  
+`
+
 export const EpInfo2 = styled.div`
   display: flex;
   top: -0.7vw;

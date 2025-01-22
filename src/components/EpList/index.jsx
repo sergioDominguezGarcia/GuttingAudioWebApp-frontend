@@ -28,7 +28,7 @@ const EpList = () => {
             <S.PlayIcon>▶</S.PlayIcon>
           </S.Overlay>
           <S.EpInfo>
-            <p>{ep.artist}</p>
+            <S.ArtistName><p>{ep.artist}</p></S.ArtistName>
             <h3>{ep.title}</h3>
           </S.EpInfo>
         </S.EpCard>
