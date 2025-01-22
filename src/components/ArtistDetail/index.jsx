@@ -61,51 +61,71 @@ const ArtistDetailview = () => {
             ))}
           </Releases>
         </LeftBox>
+
+
         <RightBox>
-          <ArtistBio>
-            <p>{artist.bio}</p>
-          </ArtistBio>
-          <SocialLinks>
-            <FontAwesomeIcon
-              onClick={() => openLink(artist.socialLinks.instagram)}
-              icon={faInstagram}
-              style={{ cursor: 'pointer', height: '4rem' }}
-            />
-            <FontAwesomeIcon
-              onClick={() => openLink(artist.socialLinks.soundcloud)}
-              icon={faSoundcloud}
-              style={{ cursor: 'pointer', height: '4rem' }}
-            />
-          </SocialLinks>
-          <VideosSection>
-            {filteredVideos.length > 0 && <ReleasesTitle>Videos</ReleasesTitle>}
-            {filteredVideos.map((video, index) => (
-              <VideoItem key={index}>
-                <h3>{video.name}</h3>
-                <iframe
-                  src={video.url}
-                  title={video.name}
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                  playsInline
-                ></iframe>
-              </VideoItem>
-            ))}
-          </VideosSection>
-          <Releases className="mobile-releases">
-            {filteredEps.length > 0 && <ReleasesTitle>Releases</ReleasesTitle>}
-            {filteredEps.map((ep) => (
-              <EpCover key={ep.id}>
-                <img
-                  src={ep.coverUrl}
-                  alt={`Portada de ${ep.title}`}
-                  style={{ width: '20%', height: 'auto' }}
-                />
-              </EpCover>
-            ))}
-          </Releases>
-        </RightBox>
+  <ArtistBio>
+    <p>{artist.bio}</p>
+  </ArtistBio>
+  <SocialLinks>
+    <FontAwesomeIcon
+      onClick={() => openLink(artist.socialLinks.instagram)}
+      icon={faInstagram}
+      style={{ cursor: 'pointer', height: '2rem' }}
+    />
+    <FontAwesomeIcon
+      onClick={() => openLink(artist.socialLinks.soundcloud)}
+      icon={faSoundcloud}
+      style={{ cursor: 'pointer', height: '2rem' }}
+    />
+  </SocialLinks>
+
+  <Releases className="mobile-releases">
+    {filteredEps.length > 0 && <ReleasesTitle>Releases</ReleasesTitle>}
+    {filteredEps.map((ep) => (
+      <EpCover key={ep.id}>
+        <img
+          src={ep.coverUrl}
+          alt={`Portada de ${ep.title}`}
+          style={{ width: '40%', height: 'auto' }}
+        />
+      </EpCover>
+    ))}
+  </Releases>
+
+  <VideosSection>
+    {filteredVideos.length > 0 && <ReleasesTitle>Videos</ReleasesTitle>}
+    {filteredVideos.map((video, index) => (
+      <VideoItem key={index}>
+        <h3>{video.name}</h3>
+        <iframe
+          src={video.url}
+          title={video.name}
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+          playsInline
+        ></iframe>
+      </VideoItem>
+    ))}
+  </VideosSection>
+</RightBox>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       </Content>
     </ArtistDetail>
   )
@@ -160,7 +180,7 @@ const Header = styled.div`
 const Content = styled.div`
   display: flex;
   width: 100%;
-  
+ 
   @media (max-width: 768px) {
     flex-direction: column;
     align-items: center;
@@ -246,8 +266,10 @@ const SocialLinks = styled.div`
   display: flex;
   gap: 2rem;
   justify-content: center;
+  padding: 0rem 0rem 0rem 2rem;
   @media (max-width: 768px) {
     gap: 1.5rem;
+    padding: 0rem 0rem 0rem 0rem;
   }
 `
 
@@ -265,7 +287,7 @@ const LeftBox = styled.div`
 const RightBox = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   width: 50%;
   position: relative;
   @media (max-width: 768px) {
@@ -274,12 +296,11 @@ const RightBox = styled.div`
   }
 `
 const VideosSection = styled.div`
-  position: absolute;
-  bottom: 0;
-  left: 0;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 20px;
+  margin-top: 30px;
+  padding: 0rem 0rem 0rem 2rem;
 
   iframe {
     border-radius: 8px;
@@ -301,6 +322,9 @@ const VideosSection = styled.div`
   }
 
   @media (max-width: 768px) {
+
+    padding: 0rem 0rem 0rem 0rem;
+
     iframe {
       aspect-ratio: 16 / 9;
     }
@@ -309,15 +333,16 @@ const VideosSection = styled.div`
       font-size: 16px;
     }
   }
-`
+`;
+
 
 const VideoItem = styled.div`
   display: flex;
-  width: 50%;
+  width: auto;
   flex-direction: column;
   background: #1a1a1a;
-  padding: 10px;
-  border-radius: 12px;
+
+  border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   overflow: hidden;
 `
