@@ -25,13 +25,9 @@ const ArtistDetailview = () => {
   }
 
   // Filtrar EPs que coincidan con el nombre o el alias
-  const filteredEps = eps.filter((ep) => {
-    const epArtists = ep.artist
-      .toLowerCase()
-      .split('·')
-      .map((artist) => artist.trim()) // Divide y limpia los nombres de artistas
-    return epArtists.some((epArtist) => artistNames.includes(epArtist)) // Comprueba si algún artista coincide
-  })
+  const filteredEps = eps.filter((ep) =>
+    artistNames.includes(ep.artist.toLowerCase())
+  )
 
   // Filtrar videos asociados al artista (por tags que coincidan con el nombre o alias)
   const filteredVideos = videos.filter((video) =>
@@ -39,7 +35,7 @@ const ArtistDetailview = () => {
   )
 
   const goToEpDetail = (epId) => {
-    navigate(`/releases/${epId}`) // Navegar a la vista de detalle del EP
+    navigate(`/eps/${epId}`) // Navegar a la vista de detalle del EP
   }
 
   return (
@@ -51,6 +47,25 @@ const ArtistDetailview = () => {
       <Content>
         <LeftBox>
           <ArtistImage src={artist.image} alt={artist.name} />
+          <Releases className="desktop-releases">
+            {filteredEps.length > 0 && <ReleasesTitle>Releases</ReleasesTitle>}
+            {filteredEps.map((ep) => (
+              <EpCover key={ep.id} onClick={() => goToEpDetail(ep.id)}>
+                <img
+                  src={ep.coverUrl}
+                  alt={`Portada de ${ep.title}`}
+                  style={{ width: '20%', height: 'auto' }}
+                />
+                <EpTitle>{ep.title}</EpTitle>
+              </EpCover>
+            ))}
+          </Releases>
+        </LeftBox>
+
+        <RightBox>
+          <ArtistBio>
+            <p>{artist.bio}</p>
+          </ArtistBio>
           <SocialLinks>
             <FontAwesomeIcon
               onClick={() => openLink(artist.socialLinks.instagram)}
@@ -63,49 +78,25 @@ const ArtistDetailview = () => {
               style={{ cursor: 'pointer', height: '2rem' }}
             />
           </SocialLinks>
-        </LeftBox>
 
-        <RightBox>
-          <ArtistBio>
-            <BioTitle>
-              Biografia
-              {/* <hr /> */}
-            </BioTitle>
-            <p>{artist.bio}</p>
-          </ArtistBio>
-        </RightBox>
-        <BottomBox>
-          <Releases
-          // className="desktop-releases"
-          >
-            {filteredEps.length > 0 && (
-              <ReleasesTitle>
-                Releases 
-                {/* <hr /> */}
-              </ReleasesTitle>
-            )}
-            <ReleasesContainer>
-              {filteredEps.map((ep) => (
-                <EpCover key={ep.slug} onClick={() => goToEpDetail(ep.slug)}>
-                  <img
-                    src={ep.coverUrl}
-                    alt={`Portada de ${ep.title}`}
-                    style={{ width: '100%', height: 'auto' }}
-                  />
-                  <EpTitle>{ep.title}</EpTitle>
-                </EpCover>
-              ))}
-            </ReleasesContainer>
+          <Releases className="mobile-releases">
+            {filteredEps.length > 0 && <ReleasesTitle>Releases</ReleasesTitle>}
+            {filteredEps.map((ep) => (
+              <EpCover key={ep.id}>
+                <img
+                  src={ep.coverUrl}
+                  alt={`Portada de ${ep.title}`}
+                  style={{ width: '40%', height: 'auto' }}
+                />
+              </EpCover>
+            ))}
           </Releases>
+
           <VideosSection>
-            {filteredVideos.length > 0 && (
-              <ReleasesTitle>
-                Videos
-                {/* <hr /> */}
-              </ReleasesTitle>
-            )}
+            {filteredVideos.length > 0 && <ReleasesTitle>Videos</ReleasesTitle>}
             {filteredVideos.map((video, index) => (
               <VideoItem key={index}>
+                <h3>{video.name}</h3>
                 <iframe
                   src={video.url}
                   title={video.name}
@@ -114,11 +105,10 @@ const ArtistDetailview = () => {
                   allowFullScreen
                   playsInline
                 ></iframe>
-                {/* <h3>{video.name}</h3> */}
               </VideoItem>
             ))}
           </VideosSection>
-        </BottomBox>
+        </RightBox>
       </Content>
     </ArtistDetail>
   )
@@ -129,22 +119,12 @@ export default ArtistDetailview
 const ArtistDetail = styled.div`
   display: flex;
   flex-direction: column;
-  margin: 2rem 2rem;
+  margin: auto;
   padding: 3rem 5rem;
   max-width: 1920px;
-  justify-content: center;
   @media (max-width: 768px) {
     width: 100%;
-    max-width: 100vw;
-    margin: 0rem 0rem 0rem 0rem;
-
-    padding: 1rem;
-  }
-  @media (max-width: 420px) {
-    width: 100%;
-    max-width: 100vw;
-    margin: 0rem;
-    padding: 1rem;
+    padding: 3rem 1rem;
   }
 `
 
@@ -164,15 +144,11 @@ const Header = styled.div`
 
     @media (max-width: 768px) {
       font-size: 3.5em;
-      padding-top: 2rem;
-    }
-    @media (max-width: 420px) {
-      padding-top: 0rem;
     }
   }
 
   hr {
-    width: 95%;
+    width: 100%;
     border: none;
     border-bottom: 1px solid white;
     margin: 0.5rem 0;
@@ -186,104 +162,46 @@ const Header = styled.div`
 
 const Content = styled.div`
   display: flex;
-  flex-wrap: wrap;
   width: 100%;
-  /* gap: 1rem; */
-  justify-content: center;
+
   @media (max-width: 768px) {
     flex-direction: column;
-    justify-content: flex-start;
-    /* padding: 0.5rem; */
-    width: 100%;
-  }
-`
-const LeftBox = styled.div`
-  flex: 1;
-  max-width: 50%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  /* border: 1px solid green; */
-  @media (max-width: 768px) {
-    width: 100%;
-    max-width: 100%;
-  }
-  @media (max-width: 420px) {
-    max-width: 100%;
-
-    justify-content: flex-start;
-  }
-`
-
-const RightBox = styled.div`
-  flex: 1; /* Ocupa el 50% del espacio en escritorio */
-  max-width: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  flex-basis: 100%;
-  @media (max-width: 768px) {
-    max-width: 100%;
-
-    justify-content: flex-start;
-  }
-`
-
-const BottomBox = styled.div`
-  flex-basis: 100%;
-  display: flex;
-  gap: 1rem;
-  padding: 1rem;
-  margin-top: 1rem;
-  @media (max-width: 768px) {
-    flex-direction: column;
+    align-items: center;
   }
 `
 
 const ArtistImage = styled.img`
-  padding: 1rem;
-  width: 85%;
-  height: 100%;
+  width: 37vw;
   max-height: 40vh;
   object-fit: cover;
   object-position: top;
-  /* border: 1px solid green; */
+
   display: block;
   @media (max-width: 768px) {
     width: 100%;
     max-height: unset;
-  }
-  @media (max-width: 420px) {
-    width: 100%;
+    object-fit: contain;
   }
 `
 
 const Releases = styled.div`
-  width: 50%;
+  margin-top: 20px;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  @media (max-width: 768px) {
-    width: 100%;
-  }
-`
 
-const ReleasesContainer = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: left;
-  gap: 30px;
-  /* padding: 10px; */
-  @media (max-width: 768px) {
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: left;
-    padding: 0px;
+  /* border: 1px solid green; */
+  &.desktop-releases {
+    display: block; /* Visible por defecto en escritorio */
+    @media (max-width: 768px) {
+      display: none; /* Oculto en móvil */
+    }
   }
-  @media (max-width: 420px) {
-    gap: 10px;
+
+  &.mobile-releases {
+    display: none; /* Oculto por defecto en escritorio */
+    @media (max-width: 768px) {
+      display: block; /* Visible solo en móvil */
+      margin-top: 20px;
+    }
   }
 `
 
@@ -295,38 +213,11 @@ const ReleasesTitle = styled.h4`
   margin-top: 0rem;
   margin-bottom: 0rem;
   text-transform: uppercase;
-  hr {
-    width: 85%;
-    border: none;
-    border-bottom: 1px solid white;
-    margin: 0.5rem 0;
-    margin-bottom: 10px;
+`
 
-    @media (max-width: 768px) {
-      margin-bottom: 20px;
-      width: 100%;
-    }
-  }
-`
-const BioTitle = styled(ReleasesTitle)`
-    margin-bottom: 25px;
-  hr {
-    visibility: hidden;
-    @media (max-width: 768px) {
-      margin-bottom: 10px;
-    }
-  }
-`
 const EpCover = styled.div`
-  display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
   margin-top: 20px;
-  width: 18rem;
-  @media (max-width: 420px) {
-    width: 45%;
-  }
 `
 const EpTitle = styled.p`
   margin-top: 0.5rem;
@@ -336,10 +227,8 @@ const EpTitle = styled.p`
 `
 
 const ArtistBio = styled.div`
-  /* padding: 0rem 0rem 0rem 2rem; */
+  padding: 0rem 0rem 0rem 2rem;
   color: #ffffff;
-  margin-top: 0rem;
-  width: 90%;
   p {
     font-family: 'kaneda-gothic-light';
     font-size: 1.8rem;
@@ -348,7 +237,7 @@ const ArtistBio = styled.div`
     margin: 0;
   }
   @media (max-width: 768px) {
-    width: 100%;
+    padding: 1rem 0rem;
     p {
       font-size: 1.3em;
     }
@@ -356,31 +245,46 @@ const ArtistBio = styled.div`
 `
 
 const SocialLinks = styled.div`
-  /* margin-top: 2em; */
+  margin: 2em 0;
   display: flex;
   gap: 2rem;
-  justify-content: right;
-  padding: 1rem 9rem 0rem 0rem;
-  /* border: 1px solid green; */
+  justify-content: center;
+  padding: 0rem 0rem 0rem 2rem;
   @media (max-width: 768px) {
-    gap: 1rem;
-    padding-right: 1rem;
+    gap: 1.5rem;
+    padding: 0rem 0rem 0rem 0rem;
   }
 `
 
+const LeftBox = styled.div`
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* border: 1px solid green; */
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+`
+
+const RightBox = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 50%;
+  position: relative;
+  @media (max-width: 768px) {
+    width: 100%;
+    order: 2;
+  }
+`
 const VideosSection = styled.div`
   display: flex;
   flex-direction: column;
-  width: 50%;
   gap: 20px;
-  position: relative;
+  margin-top: 30px;
+  padding: 0rem 0rem 0rem 2rem;
 
-  margin-bottom: 1rem;
-  border-radius: 10px;
-  @media (max-width: 768px) {
-    width: 100%;
-    justify-content: center;
-  }
   iframe {
     border-radius: 8px;
     width: 100%;
@@ -396,32 +300,30 @@ const VideosSection = styled.div`
 
   h3 {
     color: #fff;
-    padding: 6px;
     font-size: 18px;
-    height: 16px;
-  
+    margin: 10px 0 0;
   }
-  hr {
-    width: 100%;
-    border: none;
-    border-bottom: 1px solid white;
-    margin: 0.5rem 0;
-    margin-bottom: 15px;
-    @media (max-width: 768px) {
-      margin-bottom: 10px;
+
+  @media (max-width: 768px) {
+    padding: 0rem 0rem 0rem 0rem;
+
+    iframe {
+      aspect-ratio: 16 / 9;
+    }
+
+    h3 {
+      font-size: 16px;
     }
   }
 `
 
 const VideoItem = styled.div`
   display: flex;
-  width: 70%;
+  width: auto;
   flex-direction: column;
   background: #1a1a1a;
+
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   overflow: hidden;
-  @media (max-width: 768px) {
-    width: auto;
-  }
 `
