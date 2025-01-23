@@ -234,7 +234,7 @@ const BottomBox = styled.div`
   flex-basis: 100%;
   display: flex;
   gap: 1rem;
-  padding: 1rem;
+  /* padding: 1rem; */
   margin-top: 1rem;
   @media (max-width: 768px) {
     flex-direction: column;
@@ -242,7 +242,7 @@ const BottomBox = styled.div`
 `
 
 const ArtistImage = styled.img`
-  padding: 1rem;
+  padding-top: 1rem;
   width: 85%;
   height: 100%;
   max-height: 40vh;
