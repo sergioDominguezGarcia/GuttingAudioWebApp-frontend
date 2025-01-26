@@ -67,11 +67,10 @@ const ArtistDetailview = () => {
 
         <RightBox>
           <ArtistBio>
-            <BioTitle>
-              Biografia
-              {/* <hr /> */}
-            </BioTitle>
-            <p>{artist.bio}</p>
+            <BioTitle>Biografía</BioTitle>
+            {artist.bio.split('\n').map((line, index) => (
+              <p key={index}>{line}</p>
+            ))}
           </ArtistBio>
         </RightBox>
         <BottomBox>
@@ -80,7 +79,7 @@ const ArtistDetailview = () => {
           >
             {filteredEps.length > 0 && (
               <ReleasesTitle>
-                Releases 
+                Releases
                 {/* <hr /> */}
               </ReleasesTitle>
             )}
