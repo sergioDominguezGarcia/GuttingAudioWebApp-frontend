@@ -3,6 +3,7 @@
     "id": "001",
     "slug": "GTTNVA001",
     "title": "THE SUN VA",
+    "info": "PRIMERA REFERENCIA DE GUTTING AUDIO EN DESCARGA GRATUITA.",
     "artist": "MANIATICS · FEARLESS · QKHACK · MANCHA · DAVID SYNTH · HEBRA · VANDERMOU",
     "coverUrl": "/Portadas/GTTNVA001.png",
     "purchaseUrl": "https://guttingaudio.bandcamp.com/album/gttnva001-the-sun",
@@ -56,6 +57,7 @@
     "slug": "GTTNEP001",
     "title": "HIT ME DOWN EP",
     "artist": "MANIATICS",
+    "info": "Gutting Audio presenta su primer EP en solitario, compuesto por dos tracks del grupo sevillano Maniatics. Dos producciones marcadas por el estilo personal, contundente y directo al que nos tienen acostumbrados estos grandes artistas.", 
     "coverUrl": "/Portadas/GTTNEP001.png",
     "purchaseUrl": "https://guttingaudio.bandcamp.com/album/gttnep001-maniatics-hit-me-down-ep",
     "tracks": [
@@ -78,6 +80,7 @@
     "slug": "GTTNEP002",
     "title": "RAMPAGE EP",
     "artist": "FEARLESS",
+    "info": "Segundo EP en solitario a la venta de Gutting Audio. Esta vez producido por el sevillano residente en Barcelona Fearless (aka Alexander Head). Nos presenta Rampage, su nuevo trabajo compuesto por dos producciones en las que sigue dejando su sello inconfundible de sonidos y ritmos más hard, adaptándolos a su nueva propuesta musical",
     "coverUrl": "/Portadas/GTTNEP002.png",
     "purchaseUrl": "https://guttingaudio.bandcamp.com/album/gttnep002-fearless-rampage-ep",
     "tracks": [
@@ -98,8 +101,9 @@
   {
     "id": "004",
     "slug": "GTTNEP003",
-    "title": "ASSAULT EP",
+    "title": "ASSAULT EP", 
     "artist": "SUSPECT",
+    "info": "Llega el tercer trabajo en solitario de Gutting Audio a cargo del joven productor sevillano Suspect. Dos tracks donde nos demuestra su gran habilidad para crear ritmos frenéticos y continuos que harán que no puedas dejar de bailar escuchándolos.",
     "coverUrl": "/Portadas/GTTNEP003.png",
     "purchaseUrl": "https://guttingaudio.bandcamp.com/album/gttnep003-suspect-assault-ep",
     "tracks": [
@@ -122,6 +126,7 @@
     "slug": "GTTNEP004",
     "title": "STRONGER THINGS EP",
     "artist": "QKHACK",
+    "info": "Llega el cuarto trabajo de Gutting Audio realizado por Qkhack. Un primer track donde desarrolla su estilo hard y contundente y un segundo en colaboración con Vandermou donde fusionan sus ideas para darte un ritmo especial.",
     "coverUrl": "/Portadas/GTTNEP004.png",
     "purchaseUrl": "https://guttingaudio.bandcamp.com/album/gttnep004-qkhack-stronger-things-ep",
     "tracks": [
@@ -144,6 +149,7 @@
     "slug": "GTTNEP005",
     "title": "BACKSPIN EP",
     "artist": "MANCHA",
+    "info": "Llega la quinta entrega de Gutting Audio a manos de Mancha. Backspin y Dementis son las nuevas propuestas que nos presenta para seguir demostrando la gran progresión de este artista. Dos tracks serios, con grandes ambientaciones y ese es estilo personal que lo diferencian del resto.",
     "coverUrl": "/Portadas/GTTNEP005.png",
     "purchaseUrl": "https://guttingaudio.bandcamp.com/album/gttnep005-mancha-backspin-ep",
     "tracks": [
@@ -166,6 +172,7 @@
     "slug": "GTTNEP006",
     "title": "PUSH BUTTON EP",
     "artist": "HEBRA",
+    "info": "Llega el 6° EP de Gutting Audio, producido por el sevillano afincado en Bristol, Hebra. Nos presenta dos tracks donde muestra su adaptación a los sonidos has neurofunk, sin olvidar su estilo deep/rolling. Push Button y Revolution son la apuesta de Hebra para dejar claro que viene para quedarse.",
     "coverUrl": "/Portadas/GTTNEP006.png",
     "purchaseUrl": "https://guttingaudio.bandcamp.com/album/gttnep006-hebra-push-button-ep",
     "tracks": [
@@ -188,6 +195,7 @@
     "slug": "GTTNEP007",
     "title": "UNCLEAN EP",
     "artist": "DAVID SYNTH",
+    "info": "Llega el 6° EP de Gutting Audio, producido por el sevillano afincado en Bristol, Hebra. Nos presenta dos tracks donde muestra su adaptación a los sonidos has neurofunk, sin olvidar su estilo deep/rolling. Push Button y Revolution son la apuesta de Hebra para dejar claro que viene para quedarse.",
     "coverUrl": "/Portadas/GTTNEP007.png",
     "purchaseUrl": "https://guttingaudio.bandcamp.com/album/gttnep007-david-synth-unclean-ep",
     "tracks": [
@@ -210,6 +218,7 @@
     "slug": "GTTNEP008",
     "title": "THE CATHEDRAL EP",
     "artist": "VANDERMOU",
+    "info": "Llega la 8ª referencia de Gutting Audio a cargo de otro productor sevillano afincado en Bristol, Vandermou. Presenta dos tracks diferentes donde, The Catedral, nos muestra su lado más reconocible: ritmo contundente y línea de bajos agresiva y continua. En Fuego, junto a la vocalista Jennifly, investiga nuevos ritmos sin perder nunca su estilo y su sonido.",
     "coverUrl": "/Portadas/GTTNEP008.png",
     "purchaseUrl": "https://guttingaudio.bandcamp.com/album/gttnep008-vandermou-the-cathedral-ep",
     "tracks": [
@@ -231,7 +240,8 @@
     "id": "010",
     "slug": "GTTNVA002",
     "title": "THE SUN REMIXES VA",
-    "artist": "Various Artists",
+    "artist": "MANIATICS · FEARLESS · QKHACK · MANCHA · DAVID SYNTH · HEBRA · VANDERMOU",
+    "info": "Nueva entrega de nuestra serie de Varlous Artists, Para esta ocasión contamos con tres de nuestros miembros como son MV, Sete y Vandermou, demás del debut en nuestro sello de Neocress. Un recopilatorio muy completo donde sonidos y ritmos neurofunk son los auténticos protagonistas. Cada productor a su estilo nos muestra que el nivel del drum & bass español sigue en constante crecimiento y buscando su sitlo en el panorama Internacional.",
     "coverUrl": "/Portadas/GTTNVA002.png",
     "purchaseUrl": "https://guttingaudio.bandcamp.com/album/gttnva002-the-sun-remixes-va",
     "tracks": [
@@ -284,6 +294,7 @@
     "slug": "GTTNEP009",
     "title": "ANOTHER BEGINNING EP",
     "artist": "SETE",
+    "info": "Ya esta aquí la primera referencia de nuestro segundo año! Esta vez contamos con estos 3 tracks que nos presenta el sevillano SETE. Un EP muy completo donde primero encontramos una intro que nos lleva a dos tracks que muestran la verdadera cara de este artista. Neurofunk serio a la vez de contundente y con unos ritmos imparables.",
     "coverUrl": "/Portadas/GTTNEP009.png",
     "purchaseUrl": "https://guttingaudio.bandcamp.com/album/gttnep009-sete-another-beginning-ep",
     "tracks": [
@@ -312,6 +323,7 @@
     "slug": "GTTNEP010",
     "title": "WE STILL HAVE BASS EP",
     "artist": "HEBRA & VANDERMOU",
+    "info": "Nuestro primer EP del año ya está aquil Para esta ocasión, presentamos el primer trabajo como grupo de dos de nuestros artistas, Hebra & Vandermou. Un EP cargado de ritmos rápidos y contundentes con dos tracks que nos demuestran que ocurre cuando estos artistas se juntan. Neurofunk al estilo más clásico.",
     "coverUrl": "/Portadas/GTTNEP010.png",
     "purchaseUrl": "https://guttingaudio.bandcamp.com/album/gttnep010-hebra-vandermou-we-still-have-bass-ep",
     "tracks": [
@@ -334,6 +346,7 @@
     "slug": "GTTNEP011",
     "title": "SHUT UP EP",
     "artist": "HELIUM",
+    "info": "Después de un pequeño descanso, estamos de vuelta con una nueva referencia a cargo del productor sevillano HELIUM. Dos tracks de una producción esquisita donde nos muestra su lado más oscuro y contundente, mezclados con esas ambientaciones tan características de este artista. Una auténtica experiencia auditiva que nos encanta poder tener con nosotros.",
     "coverUrl": "/Portadas/GTTNEP011.png",
     "purchaseUrl": "https://guttingaudio.bandcamp.com/album/gttnep011-helium-shut-up-ep",
     "tracks": [
@@ -356,6 +369,7 @@
     "slug": "GTTNEP012",
     "title": "PRINCIPAL GATE EP",
     "artist": "MODERATE HATE",
+    "info": "Volvemos a coger ritmo! Ya está aquí nuestra nueva referencia producida por otro debutante en nuestra familia, MODERATE HATE. Nos presenta dos tracks muy diferentes, mostrándonos su gran repertorio de ideas. Gate se adentra en la fusión con estilos!psy creando una atmósfera y un ritmo increíble y 4AM nos muestra su lado más conocido en el mundo del Drum & Bass",
     "coverUrl": "/Portadas/GTTNEP012.png",
     "purchaseUrl": "https://guttingaudio.bandcamp.com/album/gttnep012-moderate-hate-principal-gate-ep",
     "tracks": [
@@ -378,6 +392,7 @@
     "slug": "GTTNEP013",
     "title": "UFO EP",
     "artist": "STATE OF DISORDER",
+    "info": "¡Continuamos recibiendo a grandes productores del panorama nacional! Esta vez es el turno de uno de los pesos pesados, STATE OF DISORDER.Acostumbrados a sus producciones deep, nos presenta UFO y Dementia, donde deja libre su lado más neurofunk. Dos tracks de una unión perfecta entre ambos estilos.",
     "coverUrl": "/Portadas/GTTNEP013.png",
     "purchaseUrl": "https://guttingaudio.bandcamp.com/album/gttnep013-state-of-disorder-ufo-ep",
     "tracks": [
@@ -400,6 +415,7 @@
     "slug": "GTTNEP014",
     "title": "SKYCRAPER EP",
     "artist": "SUPER RUSH",
+    "info": "Es hora de anunciar nuestra siguiente referencia a cargo de uno de los productores españoles más reconocidos por su estilo personal e inconfundible,SUPER RUSH. Scrycaper EP es la conclusión a una evolución constante de este artista. Fusión perfecta de un estilo claro y serio con ritmos constantes y oscuros hacen de esta referencia una joya que tendrás a buen seguro en tu playlist.",
     "coverUrl": "/Portadas/GTTNEP014.png",
     "purchaseUrl": "https://guttingaudio.bandcamp.com/album/gttnep014-super-rush-skycraper-ep",
     "tracks": [
@@ -422,6 +438,7 @@
     "slug": "GTTNEP015",
     "title": "MOUNT RIDER EP",
     "artist": "IMPEX",
+    "info": "Después de un pequeño descanso, volvemos con más fuerza que nunca presentando nuestro primer EP realizado por un artista internacional. Hoy presentamos 'Mount Rider EP' producido por IMPEX. Nos presenta dos tracks para lo amantes del más puro estilo neurofunk con una gran fuerza y energía que estarán a buen seguro en tu tracklist. Mount Rider y Snow White muestran porqué este artista cada vez está más presente en la escena internacional.",
     "coverUrl": "/Portadas/GTTNEP015.png",
     "purchaseUrl": "https://guttingaudio.bandcamp.com/album/gttnep015-impex-mount-rider-ep",
     "tracks": [
@@ -444,6 +461,7 @@
     "slug": "GTTNEP016",
     "title": "TIME TO FLY EP",
     "artist": "MV",
+    "info": "Es el momento de presentar uno de los mejores trabajos que hemos tenido hasta la fecha. Una joya producida por uno de los grandes productores de neurofunk de nuestra escena, el canario MV. 'Time To Fly' y 'Zara' son sus propuestas. Un estilo personal donde mandan los ritmos oscuros junto a ambientaciones muy cuidadas. No te pierdas este gran trabajo que seguro que dará mucho que hablar.",
     "coverUrl": "/Portadas/GTTNEP016.png",
     "purchaseUrl": "https://guttingaudio.bandcamp.com/album/gttnep016-mv-time-to-fly-ep",
     "tracks": [
@@ -466,6 +484,7 @@
     "slug": "GTTNVA003",
     "title": "THE WINERY VA",
     "artist": "HACKWAVES · DAVID SYNTH · MODERATE HATE · CiDiaH",
+    "info": "Como celebración de nuestro 4° Aniversario presentamos nuestro tercer Various Artist! Un trabajo donde han formado parte tres de nuestros artistas: HackWaves, David Synth y Moderate Hate además del debut de CIDiaH. Una combinación de estilos donde se refleja el gran talento que tenemos en nuestra tierra. Desde los ritmos más funkys hasta la mezcla con hard/metal dan a este álbum un toque diferente a lo que estábamos acostumbrados.",
     "coverUrl": "/Portadas/GTTNVA003.png",
     "purchaseUrl": "https://guttingaudio.bandcamp.com/album/gttnva003-the-winery",
     "tracks": [
@@ -500,6 +519,7 @@
     "slug": "GTTNLP001",
     "title": "METAMORPHOSIS LP",
     "artist": "BAD LEGS",
+    "info": "Es un momento especial presentar el primer LP de nuestro sello. Un trabajo que ha llevado mucho tiempo de esfuerzo y dedicación por parte de uno de los productores de Breakbeat más reconocidos de la escena española que entra por la puerta grande en el mundo del neurofunk. Un placer presentar este trabajo de Bad Legs. Un LP con 8 tracks donde descubrimos el lado más personal de este productor. Una combinación cuidada de ritmos y ambientaciones oscuras con baterías eléctricas hacen que te vaya ser diffcil elegir cuál es tu favorito. Desde los ritmos más pisteros hasta melodías hipnóticas, desde neurofunk a neurobreaks, desde Andalucía para el mundo, esto es Metamorphosis.",
     "coverUrl": "/Portadas/GTTNLP001.png",
     "purchaseUrl": "https://guttingaudio.bandcamp.com/album/gttnep016-mv-time-to-fly-ep",
     "tracks": [
@@ -540,6 +560,7 @@
     "slug": "GTTNEP017",
     "title": "TRIBALERO EP",
     "artist": "HEBRA & VANDERMOU",
+    "info": "Llega nuestro cuarto trabajo de este 2024, Tras la gran acogida de su primera referencia 'We Still Have Bass EP' vuelven con nosotros Hebra & Vandermou. El grupo sevillano nos presenta dos nuevas propuestas donde dejan claro la gran energía que crean cuando se juntan. Tribalero' y 'Crazy son dos tracks de bajos contundentes y ritmos continuos ambientados por melodías hipnóticas, pero siempre contando con su estilo personal.",
     "coverUrl": "/Portadas/GTTNEP017.png",
     "purchaseUrl": "https://guttingaudio.bandcamp.com/album/gttnep017-hebra-vandermou-tribalero",
     "tracks": [
@@ -562,6 +583,7 @@
     "slug": "GTTNVA004",
     "title": "THE TABERN VA",
     "artist": "MV · SETE · VANDERMOU · NEOCRESS",
+    "info": "Nueva entrega de nuestra serie de Various Artists. Para esta ocasión contamos con tres de nuestros miembros como son MV, Sete y Vandermou, además del debut en nuestro sello de Neocress. Un recopilatorio muy completo donde sonidos y ritmos neurofunk son los auténticos protagonistas. Cada productor a su estilo nos muestra que el nivel del drum & bass español sigue en constante crecimiento y buscando su sitio en el panorama internacional.",
     "coverUrl": "/Portadas/GTTNVA004.png",
     "purchaseUrl": "",
     "tracks": [
@@ -596,6 +618,7 @@
     "slug": "GTTNEP018",
     "title": "MAOA EP",
     "artist": "CiDiaH",
+    "info": "Nuestra última referencia del año viene cargada de energía con el nuevo de trabajo del productor sevillano CIDiaH. Tras debutar con nosotros el pasado mes de Abril, nos presenta su primer Ep en solitario donde el metal-drum&bass es el protagonista. 'Dub Mind' y 'Requiem for a Death' son dos producciones de ritmos de bajos frenéticos acompañados por líneas de guitarra y vocales duras que marcan el estilo personal de este productor que va a dar mucho que hablar.",
     "coverUrl": "/Portadas/GTTNEP018.png",
     "purchaseUrl": "https://soundcloud.com/gutting-audio/sets/maoaep",
     "tracks": [

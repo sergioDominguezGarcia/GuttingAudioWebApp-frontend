@@ -156,18 +156,10 @@ const MusicPlayer = ({
       </S.Cover>
       <S.Contain>
         <S.Info>
-          <S.Tittle>{selectedEp.title || 'TEST TITLE'}</S.Tittle>
-          <S.Artist>{selectedEp.artist || 'TEST ARTIST'}</S.Artist>
+          <S.Tittle>{selectedEp.title || 'TITLE'}</S.Tittle>
+          <S.Artist>{selectedEp.artist || 'ARTIST'}</S.Artist>
         </S.Info>
-        <S.ReleaseInfo>
-          <p>
-            Let's pick up the pace again! Here is our new reference produced by
-            another newcomer in our family. He presents us with
-            awesome tracks, showing us his great repertoire of
-            ideas and shows us his best known
-            side in the world of Drum & Bass.
-          </p>
-        </S.ReleaseInfo>
+        <S.ReleaseInfo>{selectedEp.info }</S.ReleaseInfo>
         <S.TrackList>
           {selectedEp.tracks.map((track) => (
             <S.TrackItem key={track.id}>
@@ -205,7 +197,6 @@ const MusicPlayer = ({
               onClick={() => handlePurchase(track)}
             />
 
-          
             <FontAwesomeIcon
               icon={faShare}
               style={{
@@ -215,10 +206,8 @@ const MusicPlayer = ({
               }}
               onClick={() => handleShare(track)}
             />
-
           </S.Icons>
         </S.TrackList>
-
 
         <S.StyledAudio ref={audioRef} src={track.audioUrl} />
       </S.Contain>
