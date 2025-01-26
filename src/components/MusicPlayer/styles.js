@@ -3,21 +3,20 @@ import styled from 'styled-components'
 export const Container = styled.div`
 position: relative;
   background-color: rgba(0, 0, 0, 0.3);
-  /* border: 1px solid rgb(221, 221, 221, 0.5); */
-  /* border-radius: 16px; */
-  /* box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); */
+
   display: flex;
   justify-content: center;
   gap: 70px;
   margin: 0 auto;
   padding: 2rem;
   width: 80vw;
-  height: auto; /* Permite que crezca según el contenido */
+  height: auto;
   transition: all 0.5s ease;
-  width: auto;
-  /* max-width: 75%; */
-  /* border: 1px solid white; */
+  transform-origin: center; 
+  transform: scale(0.8); 
+
   @media (max-width: 1200px) {
+    transform: scale(1); 
     flex-direction: column;
     gap: 0px;
     width: 94vw;
@@ -28,6 +27,7 @@ position: relative;
   }
 `
 export const Contain = styled.div`
+
   display: flex;
   flex-direction: column;
   width: 100%;

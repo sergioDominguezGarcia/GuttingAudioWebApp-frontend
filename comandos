@@ -5,7 +5,7 @@
 
 yarn run build                         # Generar una nueva versión de tu sitio
 
-git add .; git commit -m "fix footer"; git push origin main
+git add .; git commit -m "scale 0.8 reproductor"; git push origin main
 
 
 
