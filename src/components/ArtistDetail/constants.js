@@ -13,8 +13,8 @@ import mv from '../ArtistsList/img/mv.jpg'
 import sete from '../ArtistsList/img/sete.jpg'
 import state from '../ArtistsList/img/state.jpg'
 import superRush from '../ArtistsList/img/superRush.jpg'
-import helium from '../ArtistsList/img/helium.jpg'
-
+import helium from '../ArtistsList/img/helium.jpg'   
+import HEBRAVANDERMOU from '../ArtistsList/img/HEBRAVANDERMOU.jpg'
 export const artistsData = {
   BadLegs: {
     name: 'BAD LEGS',
@@ -161,6 +161,15 @@ export const artistsData = {
     socialLinks: {
       instagram: 'https://www.instagram.com/vandermou.dnb/',
       soundcloud: 'https://soundcloud.com/vandermou',
+    },
+  },
+  HebraVandermou: {
+    name: 'Hebra & Vandermou',
+    image: HEBRAVANDERMOU,
+    bio: 'Hebra y Vandermou son dos artistas sevillanos que después de su primera sesión conjunta de producción, allá por 2017, decidieron iniciar un nuevo proyecto como grupo. Desde el principio, sintieron esa conexión a la hora de crear y mezclar que les ha llevado hasta el día de hoy, donde han conseguido ser reconocidos por sus producciones diferentes. Tracks como "The VaccinE" , "The Sound of the South" , "We Still Have Bass" o su versión de "Beso en la Boca" se han convertido en habituales de los eventos andaluces. Han actuado en Sevilla, en 2017 y 2023, compartiendo cartel con The Clamps en una de ellas y en Bristol, en los clubs Black Swan y Basement45.',
+    socialLinks: {
+      instagram: 'https://www.instagram.com/hebra_vandermou.dnb/',
+      soundcloud: 'https://soundcloud.com/hebravandermou',
     },
   },
 }

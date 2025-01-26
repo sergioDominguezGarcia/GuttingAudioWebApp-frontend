@@ -12,8 +12,8 @@ import mv from './img/mv.jpg'
 import sete from './img/sete.jpg'
 import state from './img/state.jpg'
 import superRush from './img/superRush.jpg'
-import impex from './img/impex.jpg'
-
+import impex from './img/impex.jpg' 
+import HEBRAVANDERMOU from './img/HEBRAVANDERMOU.jpg'
 
 export const artists = [
   {
@@ -35,7 +35,7 @@ export const artists = [
     slug: 'DavidSynth',
   },
   {
-    id: 'Hackwaves', 
+    id: 'Hackwaves',
     name: 'Hackwaves',
     image: hackwaves,
     slug: 'Hackwaves',
@@ -45,6 +45,12 @@ export const artists = [
     name: 'Hebra',
     image: hebra,
     slug: 'Hebra',
+  },
+  {
+    id: 'HebraVandermou',
+    name: 'Hebra & Vandermou',
+    image: HEBRAVANDERMOU,
+    slug: 'Hebra&Vandermou',
   },
   {
     id: 'Impex',
