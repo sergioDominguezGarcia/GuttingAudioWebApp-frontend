@@ -22,7 +22,7 @@ const HomeCarousel = () => {
       text: "CiDiaH - MAOA EP",
       image: "Home/GTTNEP018_CIDIAH_MAOA_FULL.jpg",
       tag: "new release",
-      link: "/releases/001",
+      link: "/releases/GTTNEP018",
 
     },
 
@@ -32,7 +32,7 @@ const HomeCarousel = () => {
       text: "THE TAVERN VA",
       image: "Home/GTTNVA004.jpg",
       tag: "release",
-      link: "/releases/001",
+      link: "/releases/GTTNVA004",
 
     },
 
@@ -42,7 +42,7 @@ const HomeCarousel = () => {
       text: "Hebra & Vandermou - Tribalero",
       image: "Home/GTTNEP017.jpg",
       tag: "release",
-      link: "/releases/001",
+      link: "/releases/GTTNEP017",
 
     },
 
@@ -51,7 +51,7 @@ const HomeCarousel = () => {
       text: "Bad Legs - Metamorphosis LP",
       image: "Home/GTTNLP001.jpg",
       tag: "release",
-      link: "/releases/001",
+      link: "/releases/GTTNLP001",
     },
 
     {
@@ -68,7 +68,7 @@ const HomeCarousel = () => {
       text: "GTTNPOD011 - HACKWAVES",
       image: "Home/GTTNPOD011HACKWAVES.jpg",
       tag: "Newest Mix",
-      link: "www.guttingaudio.com/radio",
+      link: "/radio",
     },
 
 
@@ -156,14 +156,17 @@ const HomeCarousel = () => {
 
 
         <ArrowButtonContainer>
+
+
   <MoreInfoButton 
     href={items[currentIndex].link || undefined} 
-    target="_blank" 
-    rel="noopener noreferrer"
+
     style={{ visibility: items[currentIndex].link ? "visible" : "hidden" }}
   >
     More Info
   </MoreInfoButton>
+
+
   <ArrowStyle
     className="slick-prev"
     arrowUrl={arrowLeftUrl}

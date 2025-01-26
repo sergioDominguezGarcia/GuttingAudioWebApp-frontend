@@ -132,6 +132,7 @@ const ArtistDetail = styled.div`
   padding: 3rem 5rem;
   max-width: 1920px;
   justify-content: center;
+
   @media (max-width: 768px) {
     width: 100%;
     max-width: 100vw;
@@ -323,16 +324,30 @@ const EpCover = styled.div`
   align-items: center;
   margin-top: 20px;
   width: 18rem;
+  cursor: pointer; /* Muestra la "manita" */
+  transition: transform 0.3s ease; /* Suaviza la animación de escala */
+
+  &:hover {
+    transform: scale(1.05); /* Aplica el efecto de "zoom in" al hacer hover */
+  }
+
   @media (max-width: 420px) {
     width: 45%;
   }
-`
+`;
+
+
+
+
 const EpTitle = styled.p`
+
+
+font-family: 'kaneda-gothic-light';
   margin-top: 0.5rem;
-  font-size: 1rem;
-  /* text-align: center; */
+  font-size: 1.8rem;
   color: #fff;
 `
+
 
 const ArtistBio = styled.div`
   /* padding: 0rem 0rem 0rem 2rem; */
@@ -361,6 +376,9 @@ const SocialLinks = styled.div`
   justify-content: right;
   padding: 1rem 9rem 0rem 0rem;
   /* border: 1px solid green; */
+
+
+  
   @media (max-width: 768px) {
     gap: 1rem;
     padding-right: 1rem;

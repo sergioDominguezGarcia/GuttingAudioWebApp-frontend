@@ -1,8 +1,9 @@
 import styled from 'styled-components'
 
 export const Home = styled.div`
-  overflow-x: hidden;
-  height: 100vh;
+
+min-height: 100vh;
+
   @media (max-width: 1200px) {
     margin-top: 50px;
   }
@@ -16,9 +17,9 @@ export const Content = styled.div`
   display: flex;
   justify-content: center;
   align-items: center; /* Opcional, alinea el contenido dentro del contenedor */
-  min-height: 100vh; /* Asegura que ocupe al menos el alto completo de la ventana */
+ /* Asegura que ocupe al menos el alto completo de la ventana */
   width: 100%;
-  z-index: -1;
+ 
 `;
 
 export const Artists = styled.div`
