@@ -17,11 +17,11 @@ const EventList = () => {
         >
           onClick=
           {() => window.open(event.url, '_blank', 'noopener noreferrer')}
-          <S.EvenTitle>
+          {/* <S.EvenTitle>
             <a href={event.url} target="_blank" rel="noopener noreferrer">
-              Buy ticket!
+              
             </a>
-          </S.EvenTitle>
+          </S.EvenTitle> */}
         </S.EventCard>
       ))}
     </S.Content>
