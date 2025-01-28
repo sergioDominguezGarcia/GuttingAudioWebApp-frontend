@@ -195,7 +195,7 @@
     "slug": "GTTNEP007",
     "title": "UNCLEAN EP",
     "artist": "DAVID SYNTH",
-    "info": "Llega el 6° EP de Gutting Audio, producido por el sevillano afincado en Bristol, Hebra. Nos presenta dos tracks donde muestra su adaptación a los sonidos has neurofunk, sin olvidar su estilo deep/rolling. Push Button y Revolution son la apuesta de Hebra para dejar claro que viene para quedarse.",
+    "info": "Llega la 7ª referencia de Gutting Audio a cargo de uno los productores de moda de la escena sevillana, David Synth. Unclean y Becquerel son sus nuevos trabajos donde sigue apostando por este estilo tan personal adáptandolo a nuevos ritmos.",
     "coverUrl": "/Portadas/GTTNEP007.png",
     "purchaseUrl": "https://guttingaudio.bandcamp.com/album/gttnep007-david-synth-unclean-ep",
     "tracks": [
@@ -218,7 +218,7 @@
     "slug": "GTTNEP008",
     "title": "THE CATHEDRAL EP",
     "artist": "VANDERMOU",
-    "info": "Llega la 8ª referencia de Gutting Audio a cargo de otro productor sevillano afincado en Bristol, Vandermou. Presenta dos tracks diferentes donde, The Catedral, nos muestra su lado más reconocible: ritmo contundente y línea de bajos agresiva y continua. En Fuego, junto a la vocalista Jennifly, investiga nuevos ritmos sin perder nunca su estilo y su sonido.",
+    "info": "Llega la 8ª referencia de Gutting Audio a cargo de otro productor sevillano afincado en Bristol, Vandermou. Presenta dos tracks diferentes donde, The Cathedral, nos muestra su lado más reconocible: ritmo contundente y línea de bajos agresiva y continua. En Fuego, junto a la vocalista Jennifly, investiga nuevos ritmos sin perder nunca su estilo y su sonido.",
     "coverUrl": "/Portadas/GTTNEP008.png",
     "purchaseUrl": "https://guttingaudio.bandcamp.com/album/gttnep008-vandermou-the-cathedral-ep",
     "tracks": [
@@ -241,49 +241,49 @@
     "slug": "GTTNVA002",
     "title": "THE SUN REMIXES VA",
     "artist": "MANIATICS · FEARLESS · QKHACK · MANCHA · DAVID SYNTH · HEBRA · VANDERMOU",
-    "info": "Nueva entrega de nuestra serie de Varlous Artists, Para esta ocasión contamos con tres de nuestros miembros como son MV, Sete y Vandermou, demás del debut en nuestro sello de Neocress. Un recopilatorio muy completo donde sonidos y ritmos neurofunk son los auténticos protagonistas. Cada productor a su estilo nos muestra que el nivel del drum & bass español sigue en constante crecimiento y buscando su sitlo en el panorama Internacional.",
+    "info": "¡Ya está aquí nuestro primer aniversario! Y para celebrarlo, os presentamos este LP de Remixes a la que fue nuestra primera referencia, THE SUN. En ella hemos tenido el enorme placer de contar con 3 grandes artistas internacionales, punteros en la escena Drum & Bass, como NICKBEE, BLACK BARREL y CZA, y con 4 de los nombres más representativos de nuestra escena nacional: DUB ELEMENTS, KURSIVA, IMPAK y SAVE THE RAVE. Variedad de estilos y ritmos centrados en un único objetivo: NEUROFUNK. Toda una apuesta por nuestra parte de seguir creciendo poco a poco y seguir avanzando en nuestros propósitos.",
     "coverUrl": "/Portadas/GTTNVA002.png",
     "purchaseUrl": "https://guttingaudio.bandcamp.com/album/gttnva002-the-sun-remixes-va",
     "tracks": [
       {
         "id": "010-1",
-        "title": "Out Of Control - MANIATICS (NICKBEE RMX)",
+        "title": "MANIATICS - Out Of Control (NICKBEE RMX)",
         "artist": "MANIATICS",
         "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/01.Maniatics%20-%20Out%20Of%20Control%20(%20NickBee%20Remix%20).mp3?alt=media&token=16825320-dc4a-40d4-9e98-0cf0afdcf8c7"
       },
       {
         "id": "010-2",
-        "title": "Black Dragon - FEARLESS (IMPAK RMX)",
+        "title": "FEARLESS - Black Dragon (IMPAK RMX)",
         "artist": "FEARLESS",
         "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/02.Fearless%20-%20Black%20Dragon%20(Impak%20Remix).mp3?alt=media&token=48d85a1f-c7c3-4567-9cfe-e1891a7ffe62"
       },
       {
         "id": "010-3",
-        "title": "Psicodelic Experience - QKHACK (DUB ELEMENTS RMX)",
+        "title": "QKHACK - Psicodelic Experience (DUB ELEMENTS RMX)",
         "artist": "QKHACK",
         "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/03.QKhack%20-%20Psicodelic%20Exprecience%20(Dub%20Elements%20Remix).mp3?alt=media&token=2919e531-09d6-452c-a9c5-5f951691db65"
       },
       {
         "id": "010-4",
-        "title": "Aftermath - MANCHA (KURSIVA RMX)",
+        "title": "MANCHA - Aftermath (KURSIVA RMX)",
         "artist": "MANCHA",
         "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/04.Mancha%20-%20Aftermath%20(Kursiva%20Remix).mp3?alt=media&token=f8a4df59-ddd4-4a57-8267-970c8369bb88"
       },
       {
         "id": "010-5",
-        "title": "Beta Decay - DAVID SYNTH (BLACK BARREL RMX)",
+        "title": "DAVID SYNTH - Beta Decay (BLACK BARREL RMX)",
         "artist": "DAVID SYNTH",
         "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/05.David%20Synth%20-%20Beta%20Decay%20(Black%20Barrel%20Remix).mp3?alt=media&token=f5e7d6a8-5ca9-4a18-9dee-269e152f3606"
       },
       {
         "id": "010-6",
-        "title": "Mi Neurosis - HEBRA (CZA RMX)",
+        "title": "HEBRA - Mi Neurosis (CZA RMX)",
         "artist": "HEBRA",
         "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/06.Hebra%20-%20Mi%20Neurosis%20(CZA%20Remix).mp3?alt=media&token=78243123-f7d5-41fc-8696-f9c73ef0af6e"
       },
       {
         "id": "010-7",
-        "title": "Horfield - VANDERMOU (SAVE THE RAVE RMX)",
+        "title": "VANDERMOU - Horfield (SAVE THE RAVE RMX)",
         "artist": "VANDERMOU",
         "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/07.Vandermou%20-%20Horfield%20(Save%20The%20Rave%20Remix).mp3?alt=media&token=e4791ce8-9783-44ab-9380-abe02acd6d6e"
       }
@@ -369,7 +369,7 @@
     "slug": "GTTNEP012",
     "title": "PRINCIPAL GATE EP",
     "artist": "MODERATE HATE",
-    "info": "Volvemos a coger ritmo! Ya está aquí nuestra nueva referencia producida por otro debutante en nuestra familia, MODERATE HATE. Nos presenta dos tracks muy diferentes, mostrándonos su gran repertorio de ideas. Gate se adentra en la fusión con estilos!psy creando una atmósfera y un ritmo increíble y 4AM nos muestra su lado más conocido en el mundo del Drum & Bass",
+    "info": "Volvemos a coger ritmo! Ya está aquí nuestra nueva referencia producida por otro debutante en nuestra familia, MODERATE HATE. Nos presenta dos tracks muy diferentes, mostrándonos su gran repertorio de ideas. Gate se adentra en la fusión con estilos psy creando una atmósfera y un ritmo increíble y 4AM nos muestra su lado más conocido en el mundo del Drum & Bass",
     "coverUrl": "/Portadas/GTTNEP012.png",
     "purchaseUrl": "https://guttingaudio.bandcamp.com/album/gttnep012-moderate-hate-principal-gate-ep",
     "tracks": [
@@ -560,7 +560,7 @@
     "slug": "GTTNEP017",
     "title": "TRIBALERO EP",
     "artist": "HEBRA & VANDERMOU",
-    "info": "Llega nuestro cuarto trabajo de este 2024, Tras la gran acogida de su primera referencia 'We Still Have Bass EP' vuelven con nosotros Hebra & Vandermou. El grupo sevillano nos presenta dos nuevas propuestas donde dejan claro la gran energía que crean cuando se juntan. Tribalero' y 'Crazy son dos tracks de bajos contundentes y ritmos continuos ambientados por melodías hipnóticas, pero siempre contando con su estilo personal.",
+    "info": "Llega nuestro cuarto trabajo de este 2024, Tras la gran acogida de su primera referencia 'We Still Have Bass EP' vuelven con nosotros Hebra & Vandermou. El grupo sevillano nos presenta dos nuevas propuestas donde dejan claro la gran energía que crean cuando se juntan. 'Tribalero' y 'Crazy' son dos tracks de bajos contundentes y ritmos continuos ambientados por melodías hipnóticas, pero siempre contando con su estilo personal.",
     "coverUrl": "/Portadas/GTTNEP017.png",
     "purchaseUrl": "https://guttingaudio.bandcamp.com/album/gttnep017-hebra-vandermou-tribalero",
     "tracks": [
