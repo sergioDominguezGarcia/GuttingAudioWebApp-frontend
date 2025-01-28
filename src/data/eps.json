@@ -57,7 +57,7 @@
     "slug": "GTTNEP001",
     "title": "HIT ME DOWN EP",
     "artist": "MANIATICS",
-    "info": "Gutting Audio presenta su primer EP en solitario, compuesto por dos tracks del grupo sevillano Maniatics. Dos producciones marcadas por el estilo personal, contundente y directo al que nos tienen acostumbrados estos grandes artistas.", 
+    "info": "Gutting Audio presenta su primer EP en solitario, compuesto por dos tracks del grupo sevillano Maniatics. Dos producciones marcadas por el estilo personal, contundente y directo al que nos tienen acostumbrados estos grandes artistas.",
     "coverUrl": "/Portadas/GTTNEP001.png",
     "purchaseUrl": "https://guttingaudio.bandcamp.com/album/gttnep001-maniatics-hit-me-down-ep",
     "tracks": [
@@ -101,7 +101,7 @@
   {
     "id": "004",
     "slug": "GTTNEP003",
-    "title": "ASSAULT EP", 
+    "title": "ASSAULT EP",
     "artist": "SUSPECT",
     "info": "Llega el tercer trabajo en solitario de Gutting Audio a cargo del joven productor sevillano Suspect. Dos tracks donde nos demuestra su gran habilidad para crear ritmos frenéticos y continuos que harán que no puedas dejar de bailar escuchándolos.",
     "coverUrl": "/Portadas/GTTNEP003.png",
@@ -552,6 +552,24 @@
         "title": "Tension",
         "artist": "BAD LEGS",
         "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/5%20Bad%20Legs%20-%20Tension%20.mp3?alt=media&token=1868a51b-f4ca-4bac-a6ea-c88b13adc21a"
+      },
+      {
+        "id": "020-6",
+        "title": "Apocalipsis",
+        "artist": "BAD LEGS",
+        "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/6%20Bad%20Legs%20%20-%20Apocalipsis.mp3?alt=media&token=164ab154-9865-47bf-89ae-c23b54f53903"
+      },
+      {
+        "id": "020-7",
+        "title": "Vengeance",
+        "artist": "BAD LEGS",
+        "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/7%20Bad%20Legs%20%20-%20Vengeance.mp3?alt=media&token=7dcd5f0f-8a01-4356-ae13-4fe5849aa66b"
+      },
+      {
+        "id": "020-8",
+        "title": "Hospitalized",
+        "artist": "BAD LEGS",
+        "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/8%20Bad%20Legs%20-%20Hospitalized.mp3?alt=media&token=0debe26d-dda0-498c-8e75-c55d7852e13c"
       }
     ]
   },
@@ -636,4 +654,4 @@
       }
     ]
   }
-  ]
+]
