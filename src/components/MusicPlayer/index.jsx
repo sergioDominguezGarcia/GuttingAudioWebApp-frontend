@@ -192,7 +192,7 @@ const MusicPlayer = ({
               style={{
                 cursor: 'pointer',
                 color: '#ddd',
-                height: '2.3em',
+                height: '1.3vw',
               }}
               onClick={() => handlePurchase(track)}
             />
@@ -202,7 +202,7 @@ const MusicPlayer = ({
               style={{
                 cursor: 'pointer',
                 color: '#ddd',
-                height: '2.3em',
+                height: '1.3vw',
               }}
               onClick={() => handleShare(track)}
             />

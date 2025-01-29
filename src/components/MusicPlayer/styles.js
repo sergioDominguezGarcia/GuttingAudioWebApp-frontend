@@ -60,7 +60,7 @@ export const Cover = styled.div`
   justify-content: center;
   img {
     object-fit: cover;
-    width: 600px;
+    width: 25vw;
     /* border-radius: 16px; */
     /* box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); */
   }
@@ -85,7 +85,7 @@ export const Info = styled.div`
   }
 `
 export const Tittle = styled.h1`
-  font-size: 5rem;
+  font-size: 4vw;
   display: flex;
   justify-content: left;
   margin: 0;
@@ -101,10 +101,9 @@ export const Tittle = styled.h1`
   }
 `
 export const Artist = styled.a`
-  font-size: 2rem;
+  font-size: 2vw;
   border-top: 1px solid gray;
   padding-top: 10px;
-  font-size: 3rem;
   font-weight: 700;
   display: flex;
   justify-content: left;
@@ -264,7 +263,7 @@ export const TrackItem = styled.div`
   display: flex;
   align-items: center;
   font-family: kaneda-gothic-light;
-  font-size: 2.2em;
+  font-size: 1.5vw;
   letter-spacing: 0.1em;
   &:active {
     background-color: rgba(186, 186, 186, 0.5);
