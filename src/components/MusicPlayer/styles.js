@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const Container = styled.div`
 position: relative;
   background-color: rgba(0, 0, 0, 0.3);
-
+  /* border: 1px solid green; */
   display: flex;
   justify-content: center;
   gap: 70px;
@@ -220,8 +220,9 @@ export const ReleaseInfo = styled.div`
   margin-top: 16px;
   /* padding-bottom: 1rem; */
 
-  line-height: 34px;
-  font-size: 2.1rem;
+  line-height: 1.6vw;
+  font-size: 1.5vw;
+  
   letter-spacing: 0.06em;
   color: rgb(221, 221, 221, 0.9);
   font-family: kaneda-gothic-light;
@@ -229,7 +230,7 @@ export const ReleaseInfo = styled.div`
   @media (max-width: 1200px) {
     font-size: 1.4em;
     line-height: 1.2;
-    
+
     height: auto;
   }
   @media (max-width: 480px) {
@@ -257,7 +258,7 @@ export const TrackList = styled.div`
 export const TrackItem = styled.div`
   cursor: pointer;
   color: rgb(221, 221, 221);
-  padding: 7px;
+  padding: 5px;
   gap: 1rem;
   border-radius: 8px;
   display: flex;
