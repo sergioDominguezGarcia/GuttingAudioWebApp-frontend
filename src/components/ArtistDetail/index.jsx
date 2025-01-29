@@ -244,8 +244,8 @@ const BottomBox = styled.div`
 const ArtistImage = styled.img`
   padding-top: 1rem;
   width: 85%;
-  height: 100%;
-  max-height: 40vh;
+  height: 85%;
+ 
   object-fit: cover;
   object-position: top;
   /* border: 1px solid green; */

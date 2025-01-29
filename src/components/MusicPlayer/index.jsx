@@ -169,6 +169,14 @@ const MusicPlayer = ({
                   icon={
                     currentTrackId === track.id && isPlaying ? faPause : faPlay
                   }
+                  style={{
+                    cursor: 'pointer',
+                    color: '#ddd',
+                    width: '1.8rem',
+                    height: '1.8rem',
+                    minWidth: '28px',
+                    minHeight: '28px'
+                  }}
                 />
               </S.Play>
               {/* Track title */}
@@ -187,22 +195,28 @@ const MusicPlayer = ({
           ))}
 
           <S.Icons>
-            <FontAwesomeIcon
-              icon={faCartShopping}
-              style={{
-                cursor: 'pointer',
-                color: '#ddd',
-                height: '1.3vw',
-              }}
-              onClick={() => handlePurchase(track)}
-            />
+          <FontAwesomeIcon
+  icon={faCartShopping}
+  style={{
+    cursor: 'pointer',
+    color: '#ddd',
+    width: '1.8rem',
+    height: '1.8rem',
+    minWidth: '28px',
+    minHeight: '28px'
+  }}
+  onClick={() => handlePurchase(track)}
+/>
 
             <FontAwesomeIcon
               icon={faShare}
               style={{
                 cursor: 'pointer',
                 color: '#ddd',
-                height: '1.3vw',
+                width: '1.8rem',
+                height: '1.8rem',
+                minWidth: '28px',
+                minHeight: '28px'
               }}
               onClick={() => handleShare(track)}
             />
