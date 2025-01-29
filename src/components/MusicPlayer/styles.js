@@ -263,7 +263,7 @@ export const TrackItem = styled.div`
   display: flex;
   align-items: center;
   font-family: kaneda-gothic-light;
-  font-size: 1.5vw;
+  font-size: 1.6em;
   letter-spacing: 0.1em;
   &:active {
     background-color: rgba(186, 186, 186, 0.5);
