@@ -1,6 +1,6 @@
 import david from './img/david.jpg'
 import hebra from './img/hebra.jpg'
-import mancha from './img/mancha.jpg'
+// import mancha from './img/mancha.jpg'
 import maniatics from './img/maniatics.jpg'
 import vandermou from './img/vandermou.jpg'
 import suspect from './img/suspect.jpg'
