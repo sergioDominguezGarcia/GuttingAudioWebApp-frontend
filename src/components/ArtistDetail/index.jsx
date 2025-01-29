@@ -244,7 +244,7 @@ const BottomBox = styled.div`
 const ArtistImage = styled.img`
   padding-top: 1rem;
   width: 85%;
-  height: 85%;
+  max-height: 58vh;
  
   object-fit: cover;
   object-position: top;
@@ -344,7 +344,7 @@ const EpTitle = styled.p`
 
 font-family: 'kaneda-gothic-light';
   margin-top: 0.5rem;
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   color: #fff;
 `
 
