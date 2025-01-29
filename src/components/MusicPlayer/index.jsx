@@ -170,6 +170,7 @@ const MusicPlayer = ({
                     currentTrackId === track.id && isPlaying ? faPause : faPlay
                   }
                   style={{
+                    marginRight: '5px',
                     cursor: 'pointer',
                     color: '#ddd',
                     width: '1.8rem',
