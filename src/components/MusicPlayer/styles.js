@@ -220,8 +220,8 @@ export const ReleaseInfo = styled.div`
   
   padding-bottom: 1rem;
 
-  line-height: 1.5;
-  font-size: 2.2rem;
+  line-height: 1.2;
+  font-size: 2.1rem;
   letter-spacing: 0.06em;
   color: rgb(221, 221, 221, 0.9);
   font-family: kaneda-gothic-light;
