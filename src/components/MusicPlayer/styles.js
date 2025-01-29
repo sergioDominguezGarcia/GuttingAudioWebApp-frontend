@@ -257,14 +257,14 @@ export const TrackList = styled.div`
 export const TrackItem = styled.div`
   cursor: pointer;
   color: rgb(221, 221, 221);
-  padding: 5px;
-  gap: 1rem;
+  padding: 10px;
+
   border-radius: 8px;
   display: flex;
   align-items: center;
-  font-family: kaneda-gothic-light;
+  font-family: kaneda-gothic-extrabold;
   font-size: 1.6em;
-  letter-spacing: 0.1em;
+
   &:active {
     background-color: rgba(186, 186, 186, 0.5);
   }
@@ -276,7 +276,7 @@ export const Icons = styled.div`
   display: flex;
   box-sizing: border-box;
   justify-content: flex-start;
-  gap: 30px;
+  gap: 20px;
   @media (max-width: 1200px) {
     padding: 16px 8px;
   }
