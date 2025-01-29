@@ -58,12 +58,12 @@ export const artists = [
     image: impex,
     slug: 'Impex',
   },
-  {
-    id: 'Mancha',
-    name: 'Mancha',
-    image: mancha,
-    slug: 'Mancha',
-  },
+  // {
+  //   id: 'Mancha',
+  //   name: 'Mancha',
+  //   image: mancha,
+  //   slug: 'Mancha',
+  // },
   {
     id: 'Maniatics',
     name: 'Maniatics',
