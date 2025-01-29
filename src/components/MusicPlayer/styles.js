@@ -217,10 +217,10 @@ export const ReleaseInfo = styled.div`
   width: 100%;
   height: auto;
   overflow-y: auto;
-  
-  padding-bottom: 1rem;
+  margin-top: 16px;
+  /* padding-bottom: 1rem; */
 
-  line-height: 1.2;
+  line-height: 34px;
   font-size: 2.1rem;
   letter-spacing: 0.06em;
   color: rgb(221, 221, 221, 0.9);
