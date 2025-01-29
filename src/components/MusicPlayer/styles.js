@@ -216,7 +216,7 @@ export const VolumeControl = styled.input`
 export const ReleaseInfo = styled.div`
   width: 100%;
   height: auto;
-  overflow-y: auto;
+  /* overflow-y: auto; */
   margin-top: 16px;
   /* padding-bottom: 1rem; */
 
@@ -257,7 +257,7 @@ export const TrackList = styled.div`
 export const TrackItem = styled.div`
   cursor: pointer;
   color: rgb(221, 221, 221);
-  padding: 10px;
+  padding: 7px;
   gap: 1rem;
   border-radius: 8px;
   display: flex;
