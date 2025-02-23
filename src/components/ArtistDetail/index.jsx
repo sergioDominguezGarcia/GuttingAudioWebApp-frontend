@@ -273,7 +273,8 @@ const ReleasesContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: left;
-  gap: 30px;
+  
+  gap: 20px;
   /* padding: 10px; */
   @media (max-width: 768px) {
     flex-direction: row;
