@@ -653,5 +653,34 @@
         "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/02.CiDiaH%20-%20Requiem%20for%20a%20Death.mp3?alt=media&token=efa07238-7811-4cd7-bba3-6c2dfa407c6c"
       }
     ]
+  },
+  {
+    "id": "024",
+    "slug": "GTTNEP019",
+    "title": "THERMAL SHOCK EP",
+    "artist": "DAVID SYNTH",
+    "info": "El primer EP de nuestro 5° año de vida llega desde uno de nuestros jefes, David Synth. Siempre bajo su estilo único y reconocible, David Synth nos presenta como sigue evolucionando dentro de la escena buscando siempre la perfección en cada una de sus producciones. Organic Grounding, Thermal Shock y Machine Learning son las nuevas propuestas para empezar las celebraciones de nuestro quinto aniversario.",
+    "coverUrl": "/Portadas/GTTNEP019.png",
+    "purchaseUrl": "https://soundcloud.com/gutting-audio/sets/gttnep019-david-synth-thermal-shock-ep-out-now",
+    "tracks": [
+      {
+        "id": "024-1",
+        "title": "Organic Grounding",
+        "artist": "DAVID SYNTH",
+        "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/1%20David%20Synth%20-%20Organic%20Grounding.mp3?alt=media&token=47a2724d-1eac-4709-b0a9-1983fd79f6c6"
+      },
+      {
+        "id": "024-2",
+        "title": "Thermal Shock",
+        "artist": "DAVID SYNTH",
+        "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/2%20David%20Synth%20-%20Thermal%20Shock.mp3?alt=media&token=f6aba3e9-62de-4fe7-8ff3-473937b3b657"
+      },
+      {
+        "id": "024-3",
+        "title": "Machine Learning",
+        "artist": "DAVID SYNTH",
+        "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/3%20David%20Synth%20-%20Machine%20Learning.mp3?alt=media&token=6b7a7ace-d874-43e6-a1b7-74cba3a4829d"
+      }
+    ]
   }
 ]
