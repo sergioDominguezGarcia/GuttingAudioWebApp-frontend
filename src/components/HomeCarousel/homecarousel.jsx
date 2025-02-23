@@ -16,71 +16,56 @@ const HomeCarousel = () => {
 
 
   const items = [
-
-
     {
-      text: "CiDiaH - MAOA EP",
-      image: "Home/GTTNEP018_CIDIAH_MAOA_FULL.jpg",
-      tag: "new release",
-      link: "/releases/GTTNEP018",
-
-    },
-
-
-
-    {
-      text: "THE TAVERN VA",
-      image: "Home/GTTNVA004.jpg",
-      tag: "release",
-      link: "/releases/GTTNVA004",
-
-    },
-
-
-
-    {
-      text: "Hebra & Vandermou - Tribalero",
-      image: "Home/GTTNEP017.jpg",
-      tag: "release",
-      link: "/releases/GTTNEP017",
-
-    },
-
-
-    {
-      text: "Bad Legs - Metamorphosis LP",
-      image: "Home/GTTNLP001.jpg",
-      tag: "release",
-      link: "/releases/GTTNLP001",
+      text: 'DAVID SYNTH - THERMAL SHOCK EP',
+      image: 'Home/GTTNEP019.jpeg',
+      tag: 'new release',
+      link: '/releases/GTTNEP019',
     },
 
     {
-      text: "ONLY NEUROFUNK",
-      overlayImage: "Home/ONLYNEUROFUNK.jpg",
-      image: "Home/ONLYNEUROFUNK.jpg",
-      tag: "Event",
-      link: "https://www.instagram.com/p/DCUILqrCxkO/",
+      text: 'CiDiaH - MAOA EP',
+      image: 'Home/GTTNEP018_CIDIAH_MAOA_FULL.jpg',
+      tag: 'new release',
+      link: '/releases/GTTNEP018',
     },
-
-
 
     {
-      text: "GTTNPOD011 - HACKWAVES",
-      image: "Home/GTTNPOD011HACKWAVES.jpg",
-      tag: "Newest Mix",
-      link: "/radio",
+      text: 'THE TAVERN VA',
+      image: 'Home/GTTNVA004.jpg',
+      tag: 'release',
+      link: '/releases/GTTNVA004',
     },
-
-
 
     {
-      text: "Merchandising",
-      image: "Home/merchandising.jpg",
-      tag: "coming soon ",
-      link: "",
+      text: 'Bad Legs - Metamorphosis LP',
+      image: 'Home/GTTNLP001.jpg',
+      tag: 'release',
+      link: '/releases/GTTNLP001',
     },
 
-  ];
+    {
+      text: 'ONLY NEUROFUNK',
+      overlayImage: 'Home/ONLYNEUROFUNK.jpg',
+      image: 'Home/ONLYNEUROFUNK.jpg',
+      tag: 'Event',
+      link: 'https://www.instagram.com/p/DCUILqrCxkO/',
+    },
+
+    {
+      text: 'GTTNPOD011 - HACKWAVES',
+      image: 'Home/GTTNPOD011HACKWAVES.jpg',
+      tag: 'Newest Mix',
+      link: '/radio',
+    },
+
+    {
+      text: 'Merchandising',
+      image: 'Home/merchandising.jpg',
+      tag: 'coming soon ',
+      link: '',
+    },
+  ]
 
   const settings = {
     dots: true,
