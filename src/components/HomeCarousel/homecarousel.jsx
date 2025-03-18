@@ -17,6 +17,12 @@ const HomeCarousel = () => {
 
   const items = [
     {
+      text: 'GRX INVITES X GUTTING AUDIO',
+      image: 'Home/5años.png',
+      tag: 'new event',
+      link: '/events',
+    },
+    {
       text: 'DAVID SYNTH - THERMAL SHOCK EP',
       image: 'Home/GTTNEP019.jpeg',
       tag: 'new release',
@@ -42,14 +48,6 @@ const HomeCarousel = () => {
       image: 'Home/GTTNLP001.jpg',
       tag: 'release',
       link: '/releases/GTTNLP001',
-    },
-
-    {
-      text: 'ONLY NEUROFUNK',
-      overlayImage: 'Home/ONLYNEUROFUNK.jpg',
-      image: 'Home/ONLYNEUROFUNK.jpg',
-      tag: 'Event',
-      link: 'https://www.instagram.com/p/DCUILqrCxkO/',
     },
 
     {
