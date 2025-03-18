@@ -5,14 +5,14 @@ import a from './img/a.png'
 export const option1 = 'EVENT END'
 export const option2 = 'BUY TICKETS!'
 export const events = [
-    {
+  {
     id: '3',
-    title: 'GRX INVITES X GUTTING AUDIO',
+    title: 'GUTTING AUDIO X GRX INVITES SHOWCASE',
     date: '11/04',
     image: a,
     mensaje: option2,
     url: 'https://www.monsterticket.com/evento/gutting-audio-x-grx-invites-showcase',
-  },  
+  },
   {
     id: '2',
     title: 'GUTTING AUDIO NIGHT: MV',
@@ -29,7 +29,5 @@ export const events = [
     mensaje: option1,
     url: '',
   },
-
-
 ]
 

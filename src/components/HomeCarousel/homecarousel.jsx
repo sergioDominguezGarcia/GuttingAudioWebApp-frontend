@@ -17,7 +17,7 @@ const HomeCarousel = () => {
 
   const items = [
     {
-      text: 'GRX INVITES X GUTTING AUDIO',
+      text: 'GUTTING AUDIO X GRX INVITES SHOWCASE',
       image: 'Home/5años.png',
       tag: 'new event',
       link: '/events',
