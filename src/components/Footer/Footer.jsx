@@ -207,6 +207,7 @@ const Copyright = styled.div`
 `;
 
 const TituloPrincipal = () => {
+  const currentYear = new Date().getFullYear();
   return (
     <InfoContainer>
       <InfoColumnPie>
@@ -248,7 +249,7 @@ const TituloPrincipal = () => {
 
         </ColumnaDerecha>
       </InfoColumnPie>
-      <Copyright>© 2024 Gutting Audio. All rights reserved.</Copyright>
+      <Copyright>© {currentYear} Gutting Audio. All rights reserved.</Copyright>
     </InfoContainer>
   );
 };
