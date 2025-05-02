@@ -16,9 +16,9 @@ const HomeCarousel = () => {
 
 
   const items = [
-    {
-      text: 'GUTTING AUDIO X GRX INVITES SHOWCASE',
-      image: 'Home/5años.png',
+    { 
+      text: 'DRUM & BASS A+ KAIRA',
+      image: 'Home/kaira2.png',
       tag: 'new event',
       link: '/events',
     },
