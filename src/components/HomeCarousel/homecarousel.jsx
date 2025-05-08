@@ -16,11 +16,17 @@ const HomeCarousel = () => {
 
 
   const items = [
-    { 
+    {
       text: 'DRUM & BASS A+ KAIRA',
       image: 'Home/kaira2.png',
       tag: 'new event',
       link: '/events',
+    },
+    {
+      text: 'DEADFUSSION - KILL SEQUENCE EP',
+      image: 'Home/GTTNEP020.png',
+      tag: 'New release',
+      link: '/releases/GTTNEP020',
     },
     {
       text: 'DAVID SYNTH - THERMAL SHOCK EP',
@@ -49,14 +55,6 @@ const HomeCarousel = () => {
       tag: 'release',
       link: '/releases/GTTNLP001',
     },
-
-    {
-      text: 'GTTNPOD011 - HACKWAVES',
-      image: 'Home/GTTNPOD011HACKWAVES.jpg',
-      tag: 'Newest Mix',
-      link: '/radio',
-    },
-
     {
       text: 'Merchandising',
       image: 'Home/merchandising.jpg',
