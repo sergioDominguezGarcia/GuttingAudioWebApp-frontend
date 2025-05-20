@@ -15,6 +15,8 @@ import state from '../ArtistsList/img/state.jpg'
 import superRush from '../ArtistsList/img/superRush.jpg'
 import helium from '../ArtistsList/img/helium.jpg'   
 import HEBRAVANDERMOU from '../ArtistsList/img/HEBRAVANDERMOU.jpg'
+import deadfussion2 from '../ArtistsList/img/deadfussion2.jpg'
+
 export const artistsData = {
   BadLegs: {
     name: 'BAD LEGS',
@@ -41,6 +43,15 @@ export const artistsData = {
     socialLinks: {
       instagram: 'https://www.instagram.com/_davidsynth/',
       soundcloud: 'https://soundcloud.com/d4vidsynth',
+    },
+  },
+  Deadfussion: {
+    name: 'Deadfussion',
+    image: deadfussion2,
+    bio: 'Deadfussion es un DJ y productor de drum and bass originario de Jaén capital, actualmente residente en Granada. Especializado en Neurofunk auténtico, Deadfussion destaca por un sonido potente, técnico y enérgico que conecta de forma directa con la pista de baile. A lo largo de su carrera ha actuado en festivales y salas de referencia como Winter Festival (donde tuvo el honor de realizar el cierre), Industrial Copera, Consentidos y otros eventos destacados.Ha compartido cartel con grandes leyendas de la escena internacional como Spor, Audio, Merikan, Black Sun Empire, Pendulum, Friction, Delta Heavy, entre muchos otros. Su último trabajo, el EP “Kill Sequence”, ha sido lanzado a través del sello Gutting Audio, consolidando su evolución como productor y su apuesta firme por un Neurofunk puro, visceral y sin concesiones. Deadfussion es energía, es pasión, y es compromiso absoluto con la esencia del drum and bass.',
+    socialLinks: {
+      instagram: 'https://www.instagram.com/deadfussion/',
+      soundcloud: 'https://soundcloud.com/dead-fussion',
     },
   },
   Hackwaves: {

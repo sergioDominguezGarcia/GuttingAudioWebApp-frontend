@@ -1,6 +1,5 @@
 import david from './img/david.jpg'
 import hebra from './img/hebra.jpg'
-// import mancha from './img/mancha.jpg'
 import maniatics from './img/maniatics.jpg'
 import vandermou from './img/vandermou.jpg'
 import suspect from './img/suspect.jpg'
@@ -14,6 +13,8 @@ import state from './img/state.jpg'
 import superRush from './img/superRush.jpg'
 import impex from './img/impex.jpg' 
 import HEBRAVANDERMOU from './img/HEBRAVANDERMOU.jpg'
+import deadfussion from './img/deadfussion.jpg' 
+
 
 export const artists = [
   {
@@ -33,6 +34,12 @@ export const artists = [
     name: 'David Synth',
     image: david,
     slug: 'DavidSynth',
+  },
+  {
+    id: 'Deadfussion',
+    name: 'Deadfussion',
+    image: deadfussion,
+    slug: 'Deadfussion',
   },
   {
     id: 'Hackwaves',
