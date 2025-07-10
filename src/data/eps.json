@@ -711,5 +711,70 @@
         "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/03.Deadfussion%20-%20In%20The%20Heart%20Of%20Prague.mp3?alt=media&token=b74d4835-403d-4bbd-9213-b1c17640e899"
       }
     ]
+  },
+  {
+    "id": "026",
+    "slug": "GTTNVA005",
+    "title": "5 YEARS VA",
+    "artist": "MV · IMPEX · HACKWAVES · SETE  · HEBRA & VANDERMOU· DAVID SYNTH",
+    "info": "Presentamos nuestro álbum especial del 5.º aniversario. Una recopilación con varios de nuestros artistas habituales (MV, Impex, ckwaves, Sete, Hebra & Vandermou y David Synth) junto con tres uevos artistas (CPTL PNSHMNT, Skorp y Nimeim). 9 temas donde podrás disfrutar del neurofunk en todas sus formas, ofreciendo un ejemplo de diversidad dentro de este gran género..",
+    "coverUrl": "/Portadas/GTTNVA005.png",
+    "purchaseUrl": "https://guttingaudio.bandcamp.com/album/gttnva005-5-years-va",
+    "tracks": [
+      {
+        "id": "026-1",
+        "title": "MV - The Problem Is You",
+        "artist": "MV",
+        "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/1.%20MV%20-%20The%20Problem%20Is%20You.mp3?alt=media&token=d0876c72-0f9e-461c-9df3-4db87bf30d58"
+      },
+      {
+        "id": "026-2",
+        "title": " Impex - Ex-Snap",
+        "artist": "IMPEX",
+        "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/2.%20Impex%20-%20Ex-Snap.mp3?alt=media&token=2a34b268-63c9-4ab1-9ab8-5cac8dda2aba"
+      },
+      {
+        "id": "026-3",
+        "title": "Hackwaves - Warning",
+        "artist": "HACKWAVES",
+        "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/3.%20Hackwaves%20-%20Warning.mp3?alt=media&token=dcaee002-11d1-48e9-aadc-dc3857d0ecf0"
+      },
+      {
+        "id": "026-4",
+        "title": "SETE - FlipSwitch",
+        "artist": "SETE",
+        "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/4.%20SETE%20-%20FlipSwitch.mp3?alt=media&token=21b3a594-919e-4c4f-a8c7-652b7d8f2b59"
+      },
+      {
+        "id": "026-5",
+        "title": "Hebra & Vandermou - Get Ready",
+        "artist": "HEBRA & VANDERMOU",
+        "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/5.%20Hebra%20%26%20Vandermou%20-%20Get%20Ready.mp3?alt=media&token=73bc18b7-d5e1-4db9-8672-b6f487647364"
+      },
+      {
+        "id": "026-6",
+        "title": "David Synth - Deformation",
+        "artist": "DAVID SYNTH",
+        "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/6.%20David%20Synth%20-%20Deformation.mp3?alt=media&token=ea8d29bd-01a5-4ddc-8360-d7c4261a2d48"
+      },
+      {
+        "id": "026-7",
+        "title": "CPTL PNSHMNT - Bichote",
+        "artist": "CPTL PNSHMNT",
+        "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/7.%20CPTL%20PNSHMNT%20-%20Bichote.mp3?alt=media&token=584011b7-df1c-4ce2-a9e1-b3f3671755f6"
+      },
+      {
+        "id": "026-8",
+        "title": "Skorp - Kerfuffle",
+        "artist": "SKORP",
+        "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/8.%20Skorp%20-%20Kerfuffle.mp3?alt=media&token=5090b644-af2f-4c73-9a72-451fad7b882d"
+      },
+      {
+        "id": "026-9",
+        "title": "Nimeim - Bring It Back",
+        "artist": "NIMEIM",
+        "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/9.%20Nimeim%20-%20Bring%20It%20Back.mp3?alt=media&token=aaf93bda-d807-4e69-a83e-501abf4356db"
+      }
+    ]
   }
 ]
