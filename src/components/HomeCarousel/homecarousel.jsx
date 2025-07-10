@@ -17,6 +17,12 @@ const HomeCarousel = () => {
 
   const items = [
     {
+      text: '5 YEARS VA',
+      image: 'Home/GTTNVA005.png',
+      tag: 'New release',
+      link: '/releases/GTTNVA005',
+    },
+    {
       text: 'DRUM & BASS A+ KAIRA',
       image: 'Home/kaira2.png',
       tag: 'new event',
@@ -47,13 +53,6 @@ const HomeCarousel = () => {
       image: 'Home/GTTNVA004.jpg',
       tag: 'release',
       link: '/releases/GTTNVA004',
-    },
-
-    {
-      text: 'Bad Legs - Metamorphosis LP',
-      image: 'Home/GTTNLP001.jpg',
-      tag: 'release',
-      link: '/releases/GTTNLP001',
     },
     {
       text: 'Merchandising',
