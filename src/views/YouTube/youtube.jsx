@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-  import videos from '../../data/videos.json'
+import videos from '../../data/videos.json'
 
 const Container = styled.div`
   margin-top: 8vh;
