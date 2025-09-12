@@ -15,7 +15,13 @@ import state from '../ArtistsList/img/state.jpg'
 import superRush from '../ArtistsList/img/superRush.jpg'
 import helium from '../ArtistsList/img/helium.jpg'   
 import HEBRAVANDERMOU from '../ArtistsList/img/HEBRAVANDERMOU.jpg'
-import deadfussion2 from '../ArtistsList/img/deadfussion2.jpg'
+import deadfussion2 from '../ArtistsList/img/deadfussion2.jpg'  
+import nimeim from '../ArtistsList/img/nimeim.jpg'
+import cptlPnshmnt from '../ArtistsList/img/cptlPnshmnt.jpg'
+import skorp from '../ArtistsList/img/skorp.jpg'
+
+
+
 
 export const artistsData = {
   BadLegs: {
@@ -34,6 +40,15 @@ export const artistsData = {
     socialLinks: {
       instagram: 'https://www.instagram.com/cidiah13/ ',
       soundcloud: 'https://soundcloud.com/cidiah13',
+    },
+  },
+  cptlPnshmnt: {
+    name: 'CPTL PNSHMNT',
+    image: cptlPnshmnt,
+    bio: 'CPTL PNSHMNT son conocidos como dos de los miembros más venerados de la escena bass puertorriqueña/estadounidense. El dúo, compuesto por Stephen Zaccariello y Joseph Figueroa, se ha propuesto compartir los sonidos de su "Isla del Encanto" con el mundo. Con lanzamientos en algunos de los principales sellos de drum & bass como Eatbrain, Bad Taste, Close 2 Death, Korsakov y Neuropunk. CPTL PNSHMNT continúa impulsando su sabor caribeño o "Sazón" a la vanguardia de la comunidad D&B. ',
+    socialLinks: {
+      instagram: 'https://www.instagram.com/cptlpnshmntmusic/',
+      soundcloud: 'https://soundcloud.com/cptlpnshmntmusic ',
     },
   },
   DavidSynth: {
@@ -127,6 +142,15 @@ export const artistsData = {
       soundcloud: 'https://soundcloud.com/bassmusicmv',
     },
   },
+  Nimeim: {
+    name: 'Nimeim',
+    image: nimeim,
+    bio: 'DJ y productor granadino de 26 años, enfocado en los sonidos más oscuros y frenéticos del Drum & Bass y la electrónica. Desde los 16 años tras los platos, ha pasado por salas como Industrial Copera, El Tren o Cosmos, y eventos como Terror Bass Planet o Dub Elements & Friends, compartiendo cartel con los nombres más importantes de la escena como Pendulum, Gydra, Black Sun Empire... Es el motor de SinePhase Collective, plataforma que impulsa la cultura bass desde Granada con eventos y propuestas underground. Ahora, sigue puliendo su sonido en el estudio, dejando claro que esto acaba de empezar. ',
+    socialLinks: {
+      instagram: 'https://www.instagram.com/nimeim_music/',
+      soundcloud: 'https://soundcloud.com/nimeim',
+    },
+  },
   Sete: {
     name: 'Sete',
     image: sete,
@@ -134,6 +158,15 @@ export const artistsData = {
     socialLinks: {
       instagram: 'https://www.instagram.com/setednb/',
       soundcloud: 'https://soundcloud.com/setednb',
+    },
+  },
+  Skorp: {
+    name: 'Skorp',
+    image: skorp,
+    bio: 'Antonio Pérez aka Skorp, productor/dj sevillano se introduce en la escena local lanzando su primer release por el sello menorquín Talayotik Sound en 2019.Influenciado siempre por los sonidos mas underground le lleva a producir tracks con la idea de marcar una linea envolvente y oscura.Durante este tiempo ha publicado en sellos como Transparent Audio, Parallel Depht, Rollerz, Abyssal Audio, Black Monsta, Pray4Rave entre otros.Teniendo asi la oportunidad de pinchar localmente en clubs como Industrial Copera, Paris15, Sala Cosmos, True Torremolinos, etc y llegando a compartir escenario con artistas como Molecular, Resslek, Invadhertz, Minor Forms, Kuplay, Turno, IHR entre otros.',
+    socialLinks: {
+      instagram: 'https://www.instagram.com/skorp.dnb/',
+      soundcloud: 'https://soundcloud.com/skorp_dnb',
     },
   },
   StateOfDisorder: {
@@ -168,7 +201,7 @@ export const artistsData = {
   Vandermou: {
     name: 'Vandermou',
     image: vandermou,
-    bio: 'Dj/Productor de Sevilla (España). Desde muy pequeño empezó a sentirse atraido por la música electrónica observando a su tío, Interagent (Berlín), mezclar sus vinilos. Su primera experiencia fué con el grupo Diversity en 2010 dedicado al sonido Breakbeat. Tras varios años de evolución y aprendizaje decide dedicarse en exclusiva al genero Drum & Bass, creando en 2014 la promotora Jack The Ripper Events, con la que lleva más de 8 años trayendo artistas de primer nivel a su ciudad, y formando el grupo Aimlessly Team. Pero es en Mayo de 2016 cuando decide iniciar su carrera en solitario bajo el nombre de Vandermou. Desde esa fecha hasta la actualidad, ha conseguido hacerse un hueco en la escena de la ciudad, actuando en la gran mayoría de clubs y grandes eventos del estilo (Dub Elements & Friends). Eso le ha dado oportunidad para actuar también en otras ciudades españolas (Barcelona, Malaga, Granada, Jaen, Cadiz, Huelva y Córdoba) y en paises como Croacia (Outlook Festival 2016 y 2017), Republica Checa (Cross Club) y Reino Unido. Sus sets destacan por la rapidez y contundencia, pudiendo escuchar la gran mayoría de los estilos de Neurofunk. En cuanto a producción, busca esa misma variedad creando tracks de estilos Neurofunk y Deep. En Junio de 2017 sacó su primer EP a la venta por el sello Nagual Recordings y actualmente cuenta con otras referencias en sellos como FMR, Black Monsta Records, Histeria Records, Nu Error Audio, Wild Ravers Records, Melting Pot Records, Gutting Audio, Suspect Device Music, Wharf Recordings, Drumad y Space Pirate Recordings. En Marzo de 2020 creó su último proyecto, Gutting Audio. Un nuevo sello discográfico dedicado a los sonidos neurofunk.',
+    bio: 'Procedente de Sevilla, España, Vandermou ha estado desarrollando su sonido desde 2010, evolucionando de sus raíces en el breakbeat hasta un estilo propio de Drum & Bass. Desde que inició su carrera en solitario en 2016, ha actuado en diferentes ciudades de España y en eventos internacionales como Outlook Festival (Croacia), Cross Club y Fabric Ostrava (República Checa), así como en Neuroheadz Festival, Trinity Centre y Black Swan (Reino Unido). Conocido por sus potentes y vertiginosos sets de neurofunk, Vandermou ha publicado en sellos como Neuroheadz, Skamele Recordings, Raving Panda y Histeria Records, además de dirigir su propio sello, Gutting Audio, dedicado a los sonidos más vanguardistas del neurofunk. ',
     socialLinks: {
       instagram: 'https://www.instagram.com/vandermou.dnb/',
       soundcloud: 'https://soundcloud.com/vandermou',

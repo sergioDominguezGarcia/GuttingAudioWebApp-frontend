@@ -9,12 +9,14 @@ import badLegs from './img/badLegs.jpg'
 import moderate from './img/moderate.jpg'
 import mv from './img/mv.jpg'
 import sete from './img/sete.jpg'
+import skorp from './img/skorp.jpg'
 import state from './img/state.jpg'
 import superRush from './img/superRush.jpg'
 import impex from './img/impex.jpg' 
 import HEBRAVANDERMOU from './img/HEBRAVANDERMOU.jpg'
 import deadfussion from './img/deadfussion.jpg' 
-
+import nimeim from './img/nimeim.jpg'
+import cptlPnshmnt from './img/cptlPnshmnt.jpg'
 
 export const artists = [
   {
@@ -28,6 +30,12 @@ export const artists = [
     name: 'Cidiah',
     image: cidiah,
     slug: 'Cidiah',
+  },
+  {
+    id: 'cptlPnshmnt',
+    name: 'CPTL PNSHMNT',
+    image: cptlPnshmnt,
+    slug: 'cptlPnshmnt',
   },
   {
     id: 'DavidSynth',
@@ -90,11 +98,24 @@ export const artists = [
     slug: 'Mv',
   },
   {
+    id: 'Nimeim',
+    name: 'Nimeim',
+    image: nimeim,
+    slug: 'Nimeim',
+  },
+  {
     id: 'Sete',
     name: 'Sete',
     image: sete,
     slug: 'Sete',
   },
+  {
+    id: 'Skorp',
+    name: 'Skorp',
+    image: skorp,
+    slug: 'Skorp',
+  },
+
   {
     id: 'StateOfDisorder',
     name: 'State of Disorder',
