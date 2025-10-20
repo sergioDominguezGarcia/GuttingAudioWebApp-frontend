@@ -1,23 +1,33 @@
 [
   {
+    "name": "Gutting Audio Showcase 006 - David Synth",
+    "url": "https://www.youtube.com/embed/GvUjTNkr5P4?si=xMEknwW40pgcdgPb",
+    "tags": ["David Synth"]
+  },
+  {
+    "name": "Gutting Audio Showcase 005 - SETE ",
+    "url": "https://www.youtube.com/embed/twouH-EtrDE?si=wpe4oIVdM46hRgNV",
+    "tags": ["Sete"]
+  },
+  {
     "name": "Gutting Audio Showcase 004 - IMPEX ",
     "url": "https://www.youtube.com/embed/rVnzaXBJykQ",
-    "tags":["IMPEX"]
+    "tags": ["IMPEX"]
   },
   {
     "name": "Gutting Audio Showcase 003 - NEOCRESS ",
     "url": "https://www.youtube.com/embed/nQZ91dL-EhE",
-    "tags":["NEOCRESS"]
+    "tags": ["NEOCRESS"]
   },
   {
-      "name": "Gutting Audio Showcase 002 - MV ",
-      "url": "https://www.youtube.com/embed/4wFmRybFHzY",
-      "tags":["MV"]
-    },
+    "name": "Gutting Audio Showcase 002 - MV ",
+    "url": "https://www.youtube.com/embed/4wFmRybFHzY",
+    "tags": ["MV"]
+  },
   {
     "name": "Gutting Audio Showcase 001 - VANDERMOU x DAVID SYNTH x HACKWAVES x SETE ",
     "url": "https://www.youtube-nocookie.com/embed/9e8iQoGAFzI",
-    "tags":["Vandermou", "David Synth", "HackWaves", "Sete"]
+    "tags": ["Vandermou", "David Synth", "HackWaves", "Sete"]
   }
 ]
 
