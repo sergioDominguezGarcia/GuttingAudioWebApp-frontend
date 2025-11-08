@@ -17,6 +17,12 @@ const HomeCarousel = () => {
 
   const items = [
     {
+      text: 'METAMORPHOSIS REMIXES LP',
+      image: 'Home/GTTNLP002.png',
+      tag: 'New release',
+      link: '/releases/GTTNLP002',
+    },
+    {
       text: '5 YEARS VA',
       image: 'Home/GTTNVA005.png',
       tag: 'New release',
@@ -46,13 +52,6 @@ const HomeCarousel = () => {
       image: 'Home/GTTNEP018_CIDIAH_MAOA_FULL.jpg',
       tag: 'new release',
       link: '/releases/GTTNEP018',
-    },
-
-    {
-      text: 'THE TAVERN VA',
-      image: 'Home/GTTNVA004.jpg',
-      tag: 'release',
-      link: '/releases/GTTNVA004',
     },
     {
       text: 'Merchandising',

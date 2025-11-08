@@ -776,5 +776,65 @@
         "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/9.%20Nimeim%20-%20Bring%20It%20Back.mp3?alt=media&token=aaf93bda-d807-4e69-a83e-501abf4356db"
       }
     ]
+  },
+  {
+    "id": "027",
+    "slug": "GTTNLP002",
+    "title": "METAMORPHOSIS REMIXES LP",
+    "artist": "HACKWAVES · MV · DAVID SYNTH · SEEKFLOW · HEBRA & VANDERMOU · REGUN · WIGUEZ · ROADBOY",
+    "info": " Después de las vacaciones de verano, estamos de vuelta con un lanzamiento muy especial. Presentamos los remixes de METAMORPHOSIS LP. Una selección cuidadosamente curada de ocho producciones donde la variedad musical reina suprema. Desde Neurofunk hasta Dubstep y Neurobreaks, estamos seguros de que hemos logrado darle a este LP una gran segunda vida.",
+    "coverUrl": "/Portadas/GTTNLP002.png",
+    "purchaseUrl": "https://soundcloud.com/gutting-audio/sets/gttnlp002-bad-legs-metamorphosis-remixes-out-now",
+    "tracks": [
+      {
+        "id": "27-1",
+        "title": "Bad Legs - Metamorphosis (HACKWAVES REMIX)",
+        "artist": "HACKWAVES",
+        "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/1.%20Bad%20Legs%20-%20Metamorphosis%20(Hackwaves%20Remix).mp3?alt=media&token=ad333ec9-c19b-4828-a656-44720a773e4a"
+      },
+      {
+        "id": "27-2",
+        "title": "Bad Legs - The Exorcist (MV REMIX)",
+        "artist": "MV",
+        "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/2.%20Bad%20Legs%20-%20The%20Exorcist%20(MV%20Remix).mp3?alt=media&token=01db8480-775b-4937-af72-f5dbb9f767da"
+      },
+      {
+        "id": "27-3",
+        "title": "Bad Legs - Venom (DAVID SYNTH REMIX)",
+        "artist": "DAVID SYNTH",
+        "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/3.%20Bad%20Legs%20-%20Venom%20(%20David%20Synth%20Remix)%20.mp3?alt=media&token=180a4d1f-003e-442d-a247-a702941cb8e2"
+      },
+      {
+        "id": "27-4",
+        "title": "Bad Legs - Cyberneuro (SEEKFLOW REMIX)",
+        "artist": "SEEKFLOW",
+        "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/4.%20Bad%20Legs%20-%20Cyberneuro%20(Seekflow%20Remix).mp3?alt=media&token=2a3bb81b-0653-4684-8e87-453b63482434"
+      },
+      {
+        "id": "27-5",
+        "title": "Bad Legs - Tension (HEBRA & VANDERMOU REMIX)",
+        "artist": "HEBRA & VANDERMOU",
+        "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/5.%20Bad%20Legs%20-%20Tension%20(Hebra%20%26%20Vandermou%20Remix).mp3?alt=media&token=81bd8a67-720f-4795-9a4a-31e2c106b2d1"
+      },
+      {
+        "id": "27-6",
+        "title": "Bad Legs - Apocalipsis (REGUN REMIX)",
+        "artist": "REGUN",
+        "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/6.%20Bad%20Legs%20-%20Apocalipsis%20(Regun%20Remix).mp3?alt=media&token=c5524012-5c6f-4942-acf1-d8e86c1f63db"
+      },
+      {
+        "id": "27-7",
+        "title": "Bad Legs - Vengeance (WIGUEZ REMIX)",
+        "artist": "WIGUEZ",
+        "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/7.%20Bad%20Legs%20-%20Vengeance%20(Wiguez%20Remix).mp3?alt=media&token=3ce9e5ec-8026-4fa0-8a29-4b3c891eaea8"
+      },
+      {
+        "id": "27-8",
+        "title": "Bad Legs - Hospitalized (ROADBOY REMIX)",
+        "artist": "ROADBOY",
+        "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/8.%20Bad%20Legs%20-%20Hospitalized%20(Roadboyz%20Remix).mp3?alt=media&token=a7a639b1-6ed4-4fdb-9731-b468bccefe47"
+      }
+ 
+    ]
   }
 ]
