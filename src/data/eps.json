@@ -834,7 +834,35 @@
         "artist": "ROADBOY",
         "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/8.%20Bad%20Legs%20-%20Hospitalized%20(Roadboyz%20Remix).mp3?alt=media&token=a7a639b1-6ed4-4fdb-9731-b468bccefe47"
       }
- 
+    ]
+  },
+  {
+    "id": "028",
+    "slug": "GTTNEP021",
+    "title": "LULLABY EP",
+    "artist": "VANDERMOU",
+    "info": "We're wrapping up this very special year with a new release from one of our bosses. Vandermou returns after more than four years to present his new solo EP. A compilation of three tracks showcasing his development during this time. Carefully crafted intros with melodies and instrumentation, alongside powerful and explosive drops, make for a perfect end to our fifth year.",
+    "coverUrl": "/Portadas/GTTNEP021.png",
+    "purchaseUrl": "https://soundcloud.com/gutting-audio/sets/gttnep021-vandermou-lullaby-ep",
+    "tracks": [
+      {
+        "id": "28-1",
+        "title": "Confessions",
+        "artist": "VANDERMOU",
+        "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/01.Vandermou%20-%20Confessions.mp3?alt=media&token=0a950e66-995f-45b7-912c-a8fd34b0edb0"
+      },
+      {
+        "id": "28-2",
+        "title": "Lullaby ft Shellby",
+        "artist": "VANDERMOU",
+        "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/02.Vandermou%20ft%20Shelly%20-%20Lullaby.mp3?alt=media&token=d82aa3d3-e33e-4549-916d-cab5e3047002"
+      },
+      {
+        "id": "28-3",
+        "title": "Quejío",
+        "artist": "VANDERMOU",
+        "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/03.Vandermou%20-%20Quej%C3%ADo.mp3?alt=media&token=2a77c5e9-06cc-40d8-a2f5-c8cc14eb6e87"
+      }
     ]
   }
 ]
