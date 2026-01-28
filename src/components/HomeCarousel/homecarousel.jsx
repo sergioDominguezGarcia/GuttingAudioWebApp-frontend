@@ -17,6 +17,12 @@ const HomeCarousel = () => {
 
   const items = [
     {
+      text: 'LULLABY EP',
+      image: 'Home/GTTNEP021.png',
+      tag: 'New release',
+      link: '/releases/GTTNEP021',
+    },
+    {
       text: 'METAMORPHOSIS REMIXES LP',
       image: 'Home/GTTNLP002.png',
       tag: 'New release',
@@ -45,13 +51,6 @@ const HomeCarousel = () => {
       image: 'Home/GTTNEP019.jpeg',
       tag: 'new release',
       link: '/releases/GTTNEP019',
-    },
-
-    {
-      text: 'CiDiaH - MAOA EP',
-      image: 'Home/GTTNEP018_CIDIAH_MAOA_FULL.jpg',
-      tag: 'new release',
-      link: '/releases/GTTNEP018',
     },
     {
       text: 'Merchandising',
