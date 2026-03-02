@@ -3,10 +3,18 @@ import i from './img/i.png'
 import a from './img/a.png'
 import k from './img/k.png'
 import b from './img/b.png'
-
-export const option1 = 'EVENT END'
+import c from './img/c.png'
+export const option1 = 'SOLD OUT!'
 export const option2 = 'BUY TICKETS!'
 export const events = [
+  {
+    id: '6',
+    title: 'GUTTING AUDIO x STRANGER BEATS',
+    date: '16/05',
+    image: c,
+    mensaje: option2,
+    url: 'https://www.monsterticket.com/evento/gutting-audio-xxl',
+  },
   {
     id: '5',
     title: 'GUTTING AUDIO x STRANGER BEATS',
