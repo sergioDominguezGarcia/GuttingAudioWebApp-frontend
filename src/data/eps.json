@@ -864,5 +864,57 @@
         "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/03.Vandermou%20-%20Quej%C3%ADo.mp3?alt=media&token=2a77c5e9-06cc-40d8-a2f5-c8cc14eb6e87"
       }
     ]
+  },
+  {
+    "id": "029",
+    "slug": "GTTNEP022",
+    "title": "MY OWN MIND EP",
+    "artist": "NIMEIM",
+    "info": "The first release of 2026 comes from one of the most talked-about emerging Spanish producers of last year. It's a pleasure to welcome Nimeim back. After a year full of accolades, this artist from Granada showcases his full musical splendor with this EP. A meticulously crafted composition where we revel in immersive soundscapes culminating in powerful, hard-hitting drops. A great way to kick off the new year.",
+    "coverUrl": "/Portadas/GTTNEP022.png",
+    "purchaseUrl": "https://soundcloud.com/gutting-audio/sets/gttnep022-nimeim-my-own-mind-ep",
+    "tracks": [
+      {
+        "id": "29-1",
+        "title": "Time",
+        "artist": "NIMEIM",
+        "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/01.Nimeim%20-%20Time.mp3?alt=media&token=346a0168-ed15-4107-9d4f-05f3f1b66d06"
+      },
+      {
+        "id": "29-2",
+        "title": "Past Thoughts",
+        "artist": "NIMEIM",
+        "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/02.Nimeim%20-%20Past%20Thoughts.mp3?alt=media&token=8c623df6-7112-4bf2-afbc-21ed90eae93e"
+      }
+    ]
+  },
+  {
+    "id": "030",
+    "slug": "GTTNEP023",
+    "title": "LULLABY EP",
+    "artist": "IMPEX",
+    "info": "We're thrilled to welcome back our Portuguese brother, Impex. He presents a three-track release packed with energy and power, designed to make a huge impact on the dancefloor. The EP features a potent collaboration with Vandermou, further elevating the intensity and character of the project. A must-have for fans of uncompromising, straightforward neurofunk.",
+    "coverUrl": "/Portadas/GTTNEP023.png",
+    "purchaseUrl": "https://soundcloud.com/gutting-audio/sets/gttnep023-impex-bad-boys-ep",
+    "tracks": [
+      {
+        "id": "30-1",
+        "title": "Don't Stay Safe",
+        "artist": "IMPEX",
+        "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/01.Impex%20-%20Don't%20Stay%20Safe.mp3?alt=media&token=afe357c8-36f2-4660-bac0-53a6d27b6c71"
+      },
+      {
+        "id": "30-2",
+        "title": "Bad Boys",
+        "artist": "IMPEX",
+        "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/02.Impex%20%26%20Vandermou%20-%20Bad%20Boys.mp3?alt=media&token=ee08c729-f16c-434e-a3a8-ec8b9dd05420"
+      },
+      {
+        "id": "30-3",
+        "title": "Split Lip",
+        "artist": "IMPEX",
+        "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/03.Impex%20-%20Split%20Lip.mp3?alt=media&token=ecc108bd-bb3a-4da7-8035-069cf43d084f"
+      }
+    ]
   }
 ]
