@@ -17,6 +17,12 @@ const HomeCarousel = () => {
 
   const items = [
     {
+      text: 'MV - VERY BAD EP',
+      image: 'Home/GTTNEP024.png',
+      tag: 'new release',
+      link: '/releases/GTTNEP024',
+    },
+    {
       text: 'LULLABY EP',
       image: 'Home/GTTNEP021.png',
       tag: 'New release',

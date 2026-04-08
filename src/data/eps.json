@@ -916,5 +916,28 @@
         "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/03.Impex%20-%20Split%20Lip.mp3?alt=media&token=ecc108bd-bb3a-4da7-8035-069cf43d084f"
       }
     ]
+  },
+  {
+    "id": "031",
+    "slug": "GTTNEP024",
+    "title": "VERY BAD EP",
+    "artist": "MV",
+    "info": "MV presents his new EP for Gutting Audio, a two-track work focused on the most precise and immersive neurofunk, where razor-sharp basslines, pinpoint drums, and futuristic atmospheres build a constant, club-oriented tension. Each track develops its own sonic narrative, combining detailed sound design with a direct and powerful punch. With a dark and dynamic aesthetic, the EP showcases the artist's most technical and energetic side, maintaining a balance between rhythmic complexity and dancefloor functionality. A release designed for fans of the most sophisticated and high-impact neurofunk.",
+    "coverUrl": "/Portadas/GTTNEP024.png",
+    "purchaseUrl": "https://soundcloud.com/gutting-audio/sets/gttnep024mvverybadep",
+    "tracks": [
+      {
+        "id": "31-1",
+        "title": "Very Bad",
+        "artist": "MV",
+        "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/01.MV%20-%20Very%20Bad.mp3?alt=media&token=e1e1a0b8-b49e-460e-82ee-4fe0345fef04"
+      },
+      {
+        "id": "31-2",
+        "title": "Everyone is wrong",
+        "artist": "MV",
+        "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/02.MV%20-%20Everyone%20is%20Wrong.mp3?alt=media&token=21e18162-1865-4bbd-a622-2163661dbe10"
+      }
+    ]
   }
 ]
