@@ -17,7 +17,7 @@ import HEBRAVANDERMOU from './img/HEBRAVANDERMOU.jpg'
 import deadfussion from './img/deadfussion.jpg' 
 import nimeim from './img/nimeim.jpg'
 import cptlPnshmnt from './img/cptlPnshmnt.jpg'
-
+import Drelio from './img/Drelio.jpg'
 export const artists = [
   {
     id: 'BadLegs',
@@ -48,6 +48,12 @@ export const artists = [
     name: 'Deadfussion',
     image: deadfussion,
     slug: 'Deadfussion',
+  },
+  {
+    id: 'Drelio',
+    name: 'Drelio',
+    image: Drelio,
+    slug: 'Drelio',
   },
   {
     id: 'Hackwaves',

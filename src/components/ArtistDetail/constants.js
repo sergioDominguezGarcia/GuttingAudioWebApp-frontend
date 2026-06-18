@@ -19,7 +19,7 @@ import deadfussion2 from '../ArtistsList/img/deadfussion2.jpg'
 import nimeim from '../ArtistsList/img/nimeim.jpg'
 import cptlPnshmnt from '../ArtistsList/img/cptlPnshmnt.jpg'
 import skorp from '../ArtistsList/img/skorp.jpg'
-
+import Drelio from '../ArtistsList/img/Drelio.jpg'
 
 
 
@@ -67,6 +67,15 @@ export const artistsData = {
     socialLinks: {
       instagram: 'https://www.instagram.com/deadfussion/',
       soundcloud: 'https://soundcloud.com/dead-fussion',
+    },
+  },
+  Drelio: {
+    name: 'Drelio',
+    image: Drelio,
+    bio: 'Jose Manuel García aka Drelio es un productor y DJ de Drum & Bass afincado en Sevilla. Este artista se define por su estilo oscuro y contundente, que se puede escuchar en sus producciones y mezclas. Acumula un total de más de 40 producciones editadas en diferentes sellos nacionales e internacionales, como Rebel Music, Citrus Recording, Parallel Depth, Rollout Records, Identity Records o Gutting Audio, entre otros. También cuenta con un amplio back catalogue de temas aún por editar en sellos como Rollout Records y T3K Recording. Ha compartido cartel con artistas internacionales y nacionales como: A.M.C, Monty, Pola & Bryson, Zero t, Enei, Aphrodite, Wingz, Revan, Kolectiv, Ant Tc1, Brain, Trakker, Nc-17, Zerozero, Phibes,  Able, MC fokus, Gui, Dedman, Oto. He tenido el placer de compartir escenario con estos artistas en el mítico club Volks, en el main de Industrial Copera y en el Jardin de la misma, tambien en Sala Siroco, Sala Cosmos, Sala True, Sala Even, Prisma, Teraza Bembe, Berlin Club, Moonback Club, Tracks Club, Sala Nova y Sala Oshun. Drelio es co-fundador de Insomnia Audio, promotora sevillana. También pertenece al sello Parallel Depth como miembro y booking de este sello, además de ser artista del Booking de Audi0noid, sello malagueño y Dissonance Audio, sello sevillano. ',
+    socialLinks: {
+      instagram: 'https://www.instagram.com/drelio.dnb/',
+      soundcloud: 'https://soundcloud.com/drelio',
     },
   },
   Hackwaves: {

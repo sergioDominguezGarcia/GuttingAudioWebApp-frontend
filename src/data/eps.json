@@ -939,5 +939,51 @@
         "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/02.MV%20-%20Everyone%20is%20Wrong.mp3?alt=media&token=21e18162-1865-4bbd-a622-2163661dbe10"
       }
     ]
-  }
+  },
+  {
+    "id": "032",
+    "slug": "GTTNEP025",
+    "title": "DENIAL OF SERVICE EP",
+    "artist": "HACKWAVES",
+    "info": "Hackwaves presents the Denial of Service EP, a two-track release— Stay Up and Bone —that hits hard from the first beat. With powerful basslines, driving grooves, and relentless energy, the EP delves into a dark and explosive neurofunk sound designed to ignite the dance floor. Each track maintains the intensity with sharp rhythms and a robust sound that blends tension, dynamism, and club attitude. The Denial of Service confirms Hackwaves' direct approach and offers two ready-made weapons for DJs seeking impact and personality in their sets. ",
+    "coverUrl": "/Portadas/GTTNEP025.png",
+    "purchaseUrl": "https://soundcloud.com/gutting-audio/sets/hackwaves-denial-of-service",
+    "tracks": [
+      {
+        "id": "32-1",
+        "title": "Stay Up",
+        "artist": "HACKWAVES",
+        "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/01.Hackwaves%20-%20Stay%20Up.mp3?alt=media&token=1b0dafce-815a-44cf-ac37-c115e321227e"
+      },
+      {
+        "id": "32-2",
+        "title": "Bone",
+        "artist": "HACKWAVES",
+        "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/02.Hackwaves%20-%20Bone.mp3?alt=media&token=2c764a66-dad1-488d-8ac0-3c791623da22 "
+      }
+    ]
+  },
+    {
+      "id": "033",
+      "slug": "GTTNEP026",
+      "title": "NIGHT HUNTERS EP",
+      "artist": "DRELIO · CHOZK",
+      "info": "Drelio & Chozk debut with us with their new EP. A two-track release—Deviljho and Tobi-Kadachi—that unleashes a wild combination of power and attitude. With a vibrant approach and a distinct identity, the duo presents this work, which moves forward with conviction, brimming with drive and designed to keep the dance floor buzzing. The EP stands out for its intense and immersive character, alternating moments of pressure with more dynamic sections that maintain interest from beginning to end. Drelio & Chozk thus deliver a solid and characterful release, perfect for those seeking sounds with grit and presence on the sound system.",
+      "coverUrl": "/Portadas/GTTNEP026.png",
+      "purchaseUrl": "https://soundcloud.com/gutting-audio/sets/drelio-chozknighthuntersep",
+      "tracks": [
+        {
+          "id": "33-1",
+          "title": "DEVILJHO",
+          "artist": "Drelio & Chozk",
+          "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/01.Drelio%20%26%20Chozk%20-%20Deviljho.mp3?alt=media&token=cd2d6193-a844-478c-88c1-bd467ef3f5e1"
+        },
+        {
+          "id": "33-2",
+          "title": "TOBI-KADACHI",
+          "artist": "Drelio & Chozk",
+          "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/02.Chozk%20%26%20Drelio%20-%20Tobi-Kadachi.mp3?alt=media&token=7c77fa98-502d-46ed-8c94-2034c8db24c3"
+        }
+      ]
+    }
 ]
