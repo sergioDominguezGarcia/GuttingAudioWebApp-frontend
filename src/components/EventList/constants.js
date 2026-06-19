@@ -12,7 +12,7 @@ export const events = [
     title: 'GUTTING AUDIO x STRANGER BEATS',
     date: '16/05',
     image: c,
-    mensaje: option2,
+    mensaje: option1,
     url: 'https://www.monsterticket.com/evento/gutting-audio-xxl',
   },
   {

@@ -18,12 +18,20 @@ import deadfussion from './img/deadfussion.jpg'
 import nimeim from './img/nimeim.jpg'
 import cptlPnshmnt from './img/cptlPnshmnt.jpg'
 import Drelio from './img/Drelio.jpg'
+import chozk from './img/chozk.jpg'
+
 export const artists = [
   {
     id: 'BadLegs',
     name: 'Bad Legs',
     image: badLegs,
     slug: 'BadLegs',
+  },
+  {
+    id: 'CHOZK',
+    name: 'CHOZK',
+    image: chozk,
+    slug: 'CHOZK',
   },
   {
     id: 'Cidiah',

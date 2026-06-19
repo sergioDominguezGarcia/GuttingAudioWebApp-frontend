@@ -20,7 +20,7 @@ import nimeim from '../ArtistsList/img/nimeim.jpg'
 import cptlPnshmnt from '../ArtistsList/img/cptlPnshmnt.jpg'
 import skorp from '../ArtistsList/img/skorp.jpg'
 import Drelio from '../ArtistsList/img/Drelio.jpg'
-
+import chozk from '../ArtistsList/img/chozk.jpg'
 
 
 export const artistsData = {
@@ -31,6 +31,15 @@ export const artistsData = {
     socialLinks: {
       instagram: 'https://www.instagram.com/badlegs_el_peki96/ ',
       soundcloud: 'https://soundcloud.com/badlegs ',
+    },
+  },
+  CHOZK: {
+    name: 'CHOZK',
+    image: chozk,
+    bio: 'CHOZK comenzó a interesarse por la música electrónica en 2017, cuando empezó a atender a eventos tipo free party de Drum and Bass, a principios de 2018 se inició en el mundo de mezclar música como DJ y a investigar programas de producción. Ese mismo año empezó a pinchar en free partys y en 2019 se estrenó en su primera fiesta en Sala Prisma, continuando posteriormente en otros locales como Sala Even, Cosmos Club o Planta Baja entre otros. En 2022 fue cofundador de Insomnia Audio siendo junto a esta promotora cuando compartió cartel con artistas referentes del género, como Wingz, ZeroZero o ABLE, además de realizar diferentes lanzamientos en discográficas como Subdue Audio, Rebellion Sound o Guttin Audio. ',
+    socialLinks: {
+      instagram: 'https://www.instagram.com/chozkdnb/',
+      soundcloud: 'https://soundcloud.com/chozk_dnb',
     },
   },
   Cidiah: {
