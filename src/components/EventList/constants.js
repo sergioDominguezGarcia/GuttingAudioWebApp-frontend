@@ -4,12 +4,21 @@ import a from './img/a.png'
 import k from './img/k.png'
 import b from './img/b.png'
 import c from './img/c.png'
+import l from './img/l.png'
 export const option1 = 'SOLD OUT!'
 export const option2 = 'BUY TICKETS!'
 export const events = [
   {
+    id: '7',
+    title: 'GUTTING AUDIO XXL II',
+    date: '21/11',
+    image: l,
+    mensaje: option2,
+    url: 'https://site.fourvenues.com/es/gutting-audio/events/gutting-audio-xxl-ii-21-11-2026-0BSU',
+  },
+  {
     id: '6',
-    title: 'GUTTING AUDIO x STRANGER BEATS',
+    title: 'GUTTING AUDIO XXL',
     date: '16/05',
     image: c,
     mensaje: option1,
