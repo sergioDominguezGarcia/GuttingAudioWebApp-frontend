@@ -985,5 +985,51 @@
           "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/02.Chozk%20%26%20Drelio%20-%20Tobi-Kadachi.mp3?alt=media&token=7c77fa98-502d-46ed-8c94-2034c8db24c3"
         }
       ]
-    }
+    },
+        {
+          "id": "034",
+          "slug": "GTTNEP027",
+          "title": "WARLAND EP",
+          "artist": "STATE OF DISORDER",
+          "info": "After a long time, one of the most sought-after artists on the Spanish scene is back. He is State of Disorder. He presents two sides to his sound. The title track of the EP, Warland, is a collaboration with Sirius where the raw sound of drum & bass intertwines with powerful drums, resulting in a meticulously crafted composition that you'll definitely want to listen to again. The second track, Moloch, is a great piece where he manages to blend his unique style with the sounds and rhythms of contemporary neurofunk. A release poised to explode this summer.",
+          "coverUrl": "/Portadas/GTTNEP027.png",
+          "purchaseUrl": "https://soundcloud.com/gutting-audio/sets/gttnep027stateofdisorderwarladnep",
+          "tracks": [
+            {
+              "id": "34-1",
+              "title": "WARLAND",
+              "artist": "STATE OF DISORDER & SIRIUS",
+              "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/01.State%20of%20Disorder%20%26%20SIRIUS%20-%20Warland.mp3?alt=media&token=25069ab3-c703-46c4-926e-0adc65c65267"
+            },
+            {
+              "id": "34-2",
+              "title": "MOLOCH",
+              "artist": "STATE OF DISORDER",
+              "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/02.State%20of%20Disorder%20-%20%20Moloch.mp3?alt=media&token=d7b64560-63cf-449c-8b87-8d52371fe7ca"
+            }
+          ]
+        },
+            {
+              "id": "035",
+              "slug": "GTTNEP028",
+              "title": "NO ENEMIES",
+              "artist": "MODERATE HATE",
+              "info": "Moderate Hate returns to Gutting Audio with No Enemies, a two-track EP—featuring the title track, No Enemies and Silence —that embraces a dark, precise, and characterful neurofunk sound. Through meticulous production and relentless intensity, both tracks develop their own distinct identity while remaining firmly focused on the dancefloor. With a blend of immersive atmospheres, crushing basslines, and impeccable execution, No Enemies delivers a sonic experience that is both powerful and addictive. This release solidifies Moderate Hate's sound and promises to become an essential addition to even the most demanding DJ sets.",
+              "coverUrl": "/Portadas/GTTNEP028.png",
+              "purchaseUrl": "https://soundcloud.com/gutting-audio/sets/moderate-hate-no-enemies-ep",
+              "tracks": [
+                {
+                  "id": "35-1",
+                  "title": "NO ENEMIES",
+                  "artist": "MODERATE HATE",
+                  "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/01.Moderate%20Hate%20%20-%20No%20Enemies.mp3?alt=media&token=d210cae3-2602-4f1c-9e6f-b6d83430cfb4"
+                },
+                {
+                  "id": "35-2",
+                  "title": "SILENCE",
+                  "artist": "MODERATE HATE",
+                  "audioUrl": "https://firebasestorage.googleapis.com/v0/b/gutting-audio.appspot.com/o/02.Moderate%20Hate%20%20-%20Silence.mp3?alt=media&token=3df007c8-ade7-4571-b986-e6325533bb7f"
+                }
+              ]
+            }
 ]
