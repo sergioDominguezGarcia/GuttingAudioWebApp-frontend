@@ -17,6 +17,36 @@ const HomeCarousel = () => {
 
   const items = [
     {
+      text: 'ROADBOYZ - CRAZY ROLL EP',
+      image: 'Home/GTTNEP029.png',
+      tag: 'New release',
+      link: '/releases/GTTNEP029',
+    },
+    {
+      text: 'MODERATE HATE - NO ENEMIES EP',
+      image: 'Home/GTTNEP028.png',
+      tag: 'New release',
+      link: '/releases/GTTNEP028',
+    },
+    {
+      text: 'STATE OF DISORDER - WARLAND EP',
+      image: 'Home/GTTNEP027.png',
+      tag: 'New release',
+      link: '/releases/GTTNEP027',
+    },
+    {
+      text: 'DRELIO & CHOZK - NIGHT HUNTERS EP',
+      image: 'Home/GTTNEP026.png',
+      tag: 'New release',
+      link: '/releases/GTTNEP026',
+    },
+    {
+      text: 'HACKWAVES - DENIAL OF SERVICE EP',
+      image: 'Home/GTTNEP025.png',
+      tag: 'new release',
+      link: '/releases/GTTNEP025',
+    },
+    {
       text: 'MV - VERY BAD EP',
       image: 'Home/GTTNEP024.png',
       tag: 'new release',
@@ -28,36 +58,7 @@ const HomeCarousel = () => {
       tag: 'New release',
       link: '/releases/GTTNEP021',
     },
-    {
-      text: 'METAMORPHOSIS REMIXES LP',
-      image: 'Home/GTTNLP002.png',
-      tag: 'New release',
-      link: '/releases/GTTNLP002',
-    },
-    {
-      text: '5 YEARS VA',
-      image: 'Home/GTTNVA005.png',
-      tag: 'New release',
-      link: '/releases/GTTNVA005',
-    },
-    {
-      text: 'DRUM & BASS A+ KAIRA',
-      image: 'Home/kaira2.png',
-      tag: 'new event',
-      link: '/events',
-    },
-    {
-      text: 'DEADFUSSION - KILL SEQUENCE EP',
-      image: 'Home/GTTNEP020.png',
-      tag: 'New release',
-      link: '/releases/GTTNEP020',
-    },
-    {
-      text: 'DAVID SYNTH - THERMAL SHOCK EP',
-      image: 'Home/GTTNEP019.jpeg',
-      tag: 'new release',
-      link: '/releases/GTTNEP019',
-    },
+    
     {
       text: 'Merchandising',
       image: 'Home/merchandising.jpg',
