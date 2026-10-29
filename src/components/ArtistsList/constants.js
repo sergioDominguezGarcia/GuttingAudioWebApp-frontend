@@ -20,6 +20,14 @@ import cptlPnshmnt from './img/cptlPnshmnt.jpg'
 import Drelio from './img/Drelio.jpg'
 import chozk from './img/chozk.jpg'
 
+
+
+
+
+
+
+
+
 export const artists = [
   {
     id: 'BadLegs',
